@@ -19,7 +19,7 @@ The publication's mood: *Nirvana in 1990 — grunge, raw, here to shake up the i
 
 **Phase 0, 1, and most of Phase 2 done.** As of 2026-05-19, the production spine is in place: a real-data-backed Inference HTML+TXT renders all 8 sections per reader via the daily orchestrator, against API-Football data + a JSON patch layer for editorial seeds. **8 of 8 generators built.** **Daily orchestrator built** (`src/inference/orchestrate/daily.py`) — fetches → patches → runs 8 generators × N readers → renders → saves. **Resend email pipeline built** (HTML + plain-text fallback). **Subscriber SQLite store + FastAPI signup endpoint built.** **GitHub Actions cron workflow** ready (`.github/workflows/daily.yml`). **33 passing smoke tests.** **7 lenses** (Cultural Critic, Pub-Talker, Tactician, Romantic, Historian, The Diaspora, The Beat Reporter) shaped into all 8 generator prompts. Per-issue cost ~$0.16–$0.21 at gpt-5.5 placeholder pricing (~3-4 min wall time).
 
-Remaining for launch: domain + hosting (user is on it), wire the landing page form to the live `/signup` endpoint, point Resend at a verified sending domain, populate `data/patches/YYYY-MM-DD.json` files for the tournament days, the June 10 dress rehearsal.
+**Infra is LIVE as of 2026-06-02 night:** landing page at `matchdayinference.com` (Cloudflare Pages), signup endpoint at `api.matchdayinference.com` (Fly, TLS active), public GitHub repo `daylayown/matchday-inference` driving the GH Actions cron. Remaining for launch: Google Analytics (GA4 — needs the user's `G-` ID), `www`→apex redirect, Resend sending-domain verify + last 2 GH secrets, per-day `data/patches/YYYY-MM-DD.json` for the tournament days, the June 10 dress rehearsal. **Full ordered detail in the "⏯️ PICK UP HERE" section below.**
 
 ## Naming notes
 
@@ -160,24 +160,34 @@ Domain/deploy prep earlier in the day (see memory `inference-phase2-ready`); the
 5. **`scripts/subscribers.py`** (backlog D) — `{list,verify,unsubscribe,export}` over new `SubscriberStore.list_all()`.
 6. **Tests 21 → 33**, all green. Backlog E (gpt-5.5 pricing) and F (run 2 more lenses, ~$0.32 API) left — F costs money.
 
-## ⏯️ PICK UP HERE — Fly deploy DONE, DNS/secrets/form next (2026-06-02 pm)
+## ⏯️ PICK UP HERE — Infra LIVE end-to-end; Resend + analytics + patches left (2026-06-02 night)
 
-**The signup endpoint is LIVE on Fly.io.** Deployed end-to-end this session once `fly` was on PATH (flyctl installed and authed).
+**The full web stack is live.** Landing page (Cloudflare Pages), signup endpoint (Fly), and `api.` TLS are all up and wired. What remains is email (Resend), analytics (GA4), the `www` redirect, the per-day editorial patches, and the dress rehearsal. **We're close.**
 
-- ✅ **App deployed:** `matchday-inference-signup` (org `nicholas-de-leon`), live at `https://matchday-inference-signup.fly.dev/` — `/health` returns `{"status":"ok"}`. Image 55 MB, single machine (HA off because the org has **no payment method** — add a card before the tournament), `auto_stop_machines` scales to zero when idle.
-- ✅ **Volume:** `inference_data` (`vol_v3g9p1e3ognez9o4`), 1GB, iad, encrypted, mounted at `/data` for `subscribers.sqlite`.
-- ✅ **Secrets set:** `INFERENCE_EXPORT_TOKEN` (32-byte hex) + `INFERENCE_ALLOWED_ORIGINS=https://matchdayinference.com`. The token is NOT stored in this file (Dockerfile copies CLAUDE.md into the image — would leak). Retrieve it with `fly ssh console -C 'printenv INFERENCE_EXPORT_TOKEN'`; it must match the GH Actions secret in DEPLOYMENT.md §4. (Was surfaced to the user in chat at deploy time.)
-- ✅ **Deploy artifacts** (`Dockerfile` + `fly.toml` + `.dockerignore` + `DEPLOYMENT.md`) all sound and consistent; `pyproject.toml` `readme = "CLAUDE.md"` is why the Dockerfile copies CLAUDE.md.
-- ✅ **GitHub repo created + pushed + made PUBLIC** (2026-06-02 pm): `https://github.com/daylayown/matchday-inference`, `gh` authed as `daylayown`. `git init` done here; `.gitignore` extended to exclude `data/*.sqlite`. Default branch `master`. Before going public, scrubbed personal info (email + `/home/nicholas` paths) from CLAUDE.md and **squashed history into one clean root commit** (`3483e46`) so the email is in no reachable commit — verified absent from remote. This repo runs the GH Actions cron and is what Cloudflare Pages connects to.
-- ✅ **GH Actions secrets — 4 of 6 set** via `gh secret set`: `OPENAI_API_KEY` + `API_FOOTBALL_KEY` (from `.env`), `INFERENCE_EXPORT_TOKEN` (matches Fly), `INFERENCE_EXPORT_URL=https://api.matchdayinference.com/export`. **Still need:** `RESEND_API_KEY` + `FROM_EMAIL` (wait on Resend verify).
-- ✅ **`fly certs add api.matchdayinference.com` run** — cert created, awaiting DNS. Records to add in Cloudflare (grey-cloud / DNS-only): `A api → 66.241.124.175`, `AAAA api → 2a09:8280:1::11e:b5ac:0`. Then `fly certs check api.matchdayinference.com`.
-- ✅ **Landing-page form already wired** to `API_BASE=https://api.matchdayinference.com` → `POST /signup` (payload matches `SignupRequest`); localStorage fallback until DNS is live. No code change needed.
-- ⏭️ **Remaining — all user-side dashboard work:**
-  - **Cloudflare DNS:** add the two `api` records above (grey cloud).
-  - DEPLOYMENT.md §3 — **Cloudflare Pages:** connect the `daylayown/matchday-inference` repo, output dir `web/`, add custom domain `matchdayinference.com`.
-  - DEPLOYMENT.md §5 — **Resend:** verify `matchdayinference.com`, add SPF/DKIM/DMARC TXT in Cloudflare, then set the last two GH secrets (`RESEND_API_KEY`, `FROM_EMAIL=matchday@matchdayinference.com`).
-  - Then: per-day patches + June 10 dress rehearsal.
-- **Two autonomous tasks still queued** (offered, user wanted Fly first): (a) batch-generate ~40 patch skeletons `2026-06-11`…`2026-07-19` via `scripts/new_patch.py`; (b) strip the leftover "Sample · v3 · GRUNGE EDITION" dev preview bar from `inference.html.j2` (~lines 1155–1161) so it doesn't render into real emails.
+### ✅ DONE this session (verified live)
+
+- **Fly signup endpoint deployed.** App `matchday-inference-signup` (org `nicholas-de-leon`), live at `https://matchday-inference-signup.fly.dev/` AND on the custom domain `https://api.matchdayinference.com/` — both return `/health` → `{"status":"ok"}`; `/export` correctly returns `401` without the Bearer token. Image 55 MB, single machine (HA off — org has **no payment method**, USER WILL ADD A CARD; do this before the tournament), `auto_stop_machines` scales to zero when idle.
+- **Fly volume** `inference_data` (`vol_v3g9p1e3ognez9o4`), 1GB, iad, encrypted, mounted `/data` for `subscribers.sqlite`.
+- **Fly secrets set:** `INFERENCE_EXPORT_TOKEN` (32-byte hex) + `INFERENCE_ALLOWED_ORIGINS=https://matchdayinference.com`. Token is NOT in any committed file (Dockerfile bakes CLAUDE.md into the image). Retrieve: `fly ssh console -C 'printenv INFERENCE_EXPORT_TOKEN' -a matchday-inference-signup`. Must equal the GH Actions secret of the same name (it does — set both this session).
+- **`api.matchdayinference.com` TLS cert** — Issued & active (Let's Encrypt, via Fly). DNS records added in Cloudflare (`A api → 66.241.124.175`, `AAAA api → 2a09:8280:1::11e:b5ac:0`). `fly certs check api.matchdayinference.com` → verified.
+- **GitHub repo PUBLIC:** `https://github.com/daylayown/matchday-inference` (`gh` authed as `daylayown`, default branch `master`). `git init` + first push done here; `.gitignore` extended to exclude `data/*.sqlite`. Personal info (email + `/home/nicholas` paths) scrubbed from CLAUDE.md and **history squashed to one clean root commit before going public** — email verified absent from all remote history. This repo runs the GH Actions cron and feeds Cloudflare Pages.
+- **GH Actions secrets — 4 of 6 set** (`gh secret set`): `OPENAI_API_KEY` + `API_FOOTBALL_KEY` (from `.env`), `INFERENCE_EXPORT_TOKEN`, `INFERENCE_EXPORT_URL=https://api.matchdayinference.com/export`.
+- **Cloudflare Pages live.** Project connected to the repo (build cmd none, output dir `web/`). Custom domain `matchdayinference.com` attached and serving — verified HTTP 200, real masthead (`<title>MATCHDAY INFERENCE — The Daily Zine · World Cup 2026</title>`, ~77 KB). Apex is proxied (orange cloud) to Cloudflare IPs.
+- **Landing-page form already wired** to `API_BASE=https://api.matchdayinference.com` → `POST /signup` (payload matches `SignupRequest`), localStorage fallback. No change needed; goes live the moment a real submit hits it. (NOT yet smoke-tested with a real POST — see tomorrow list.)
+
+### ⏭️ TOMORROW — ordered remaining work
+
+1. **Google Analytics 4** (user prefers GA4 — already runs it on other sites; decided against Cloudflare-only). No code yet — **needs the user's `G-XXXXXXXXXX` Measurement ID.** Then insert the standard gtag.js snippet near the top of `<head>` in `web/index.html` (head is lines 3–979; insert right after the `<meta>` tags ~line 5, before `<title>`). No analytics present today (verified). Commit + push → Pages auto-redeploys.
+2. **`www` redirect** (user was mid-setup in Cloudflare). Two parts: (a) DNS → add `CNAME www → matchdayinference.com`, **Proxied (orange cloud)**; (b) Rules → Redirect Rules → built-in template **"Redirect from WWW to Root"** (301, preserve path + query). Do NOT add `www` as a second Pages custom domain (that serves both with no redirect). Verify after: `www.` should 301 → apex.
+3. **Resend** — verify `matchdayinference.com` in Resend, add the SPF/DKIM/DMARC TXT records into Cloudflare DNS. Then set the **last 2 GH secrets**: `RESEND_API_KEY` (user provides) + `FROM_EMAIL=matchday@matchdayinference.com`. Resend free tier = 3,000/mo, 100/day (fine to ~100 subs; upgrade before then).
+4. **Live signup smoke test** — POST a throwaway entry to `https://api.matchdayinference.com/signup`, confirm it lands in the Fly SQLite (`fly ssh console -C '...select email,slug from subscribers...' -a matchday-inference-signup`), then delete it. Confirms the full browser→Pages→Fly→SQLite path.
+5. **Per-day editorial patches** `data/patches/2026-06-11.json` … `2026-07-19.json` — the only manual content step. Template: `data/patches/2022-12-18.json`; scaffold each with `scripts/new_patch.py <date>`. (See queued task A — batch-generate all skeletons first.)
+6. **June 10 dress rehearsal** — `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch + a test Resend send.
+
+### Two autonomous tasks still queued (no user input; offered repeatedly, deferred)
+
+- **(A)** Batch-generate ~40 patch skeletons `2026-06-11`…`2026-07-19` via `scripts/new_patch.py` (turns step 5 into fill-in-the-blanks).
+- **(B)** Strip the leftover "Sample · v3 · GRUNGE EDITION" dev preview bar from `inference.html.j2` (~lines 1155–1161) so it never renders into real emails.
 
 ## Next session — first actions
 
