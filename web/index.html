@@ -1354,7 +1354,42 @@ footer {
 
 </main>
 
-<footer>
+<!-- ─── TIP JAR ─── -->
+<style>
+.tipjar { background: var(--ink); color: var(--paper); padding: 72px 24px; position: relative; overflow: hidden; }
+.tipjar .wrap { max-width: var(--max); margin: 0 auto; }
+.tipjar .label { font-family: var(--font-stencil); letter-spacing: 0.22em; text-transform: uppercase; font-size: 13px; color: var(--pink); }
+.tipjar h2 { font-family: var(--font-display); font-size: clamp(38px, 7vw, 84px); line-height: 0.92; letter-spacing: 0.01em; text-transform: uppercase; margin: 10px 0 0; transform: rotate(-1deg); }
+.tipjar h2 em { color: var(--highlight, #F4E04D); font-style: normal; }
+.tipjar .blurb { font-family: var(--font-hand); font-weight: 700; font-size: 22px; max-width: 44ch; margin: 18px 0 40px; color: rgba(241,232,208,0.85); line-height: 1.35; transform: rotate(-0.5deg); }
+.tipjar-jar { display: flex; flex-wrap: wrap; align-items: center; gap: 32px; }
+.tipjar .qr-box { width: 168px; height: 168px; background: var(--paper); display: flex; align-items: center; justify-content: center; padding: 10px; flex: 0 0 auto; transform: rotate(-1.5deg); }
+.tipjar .qr-box img { width: 100%; height: 100%; display: block; }
+.tipjar .jar-meta { flex: 1 1 280px; }
+.tipjar .jar-head { font-family: var(--font-hand); font-weight: 700; font-size: 19px; color: rgba(241,232,208,0.7); margin: 0 0 10px; }
+.tipjar .addr { font-family: var(--font-mono); font-size: 13px; word-break: break-all; color: var(--paper); margin: 0 0 8px; max-width: 34ch; background: var(--ink-soft); padding: 10px 12px; border: 1px dashed rgba(241,232,208,0.35); }
+.tipjar .chain-note { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--pink); text-transform: uppercase; }
+</style>
+<section class="tipjar">
+  <div class="wrap">
+    <span class="label">Nº 06 — The Hat</span>
+    <h2>Tip Jar · <em>Feed the Machine</em></h2>
+    <p class="blurb">No subscription. No paywall. The zine staples itself every morning for free. If it earns its place on your phone, the hat's an ETH wallet — scan it, or don't.</p>
+
+    <div class="tipjar-jar">
+      <div class="qr-box">
+        <img src="tip-qr.svg" alt="Tip wallet QR · 0x4a62…dC7e" />
+      </div>
+      <div class="jar-meta">
+        <p class="jar-head">point a wallet here ↓</p>
+        <p class="addr">0x4a6232e14cFD20B63a30f87a4ED7E89a4D9edC7e</p>
+        <p class="chain-note">USDC / ETH · Base network</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer
   <div class="footer-strip">
     MATCHDAY INFERENCE <span class="star">✦</span> 2026 <span class="star">✦</span> Issue N° 00 <span class="star">✦</span> Stapled at home <span class="star">✦</span> Sibling of Deep Dugout <span class="star">✦</span> Made with care
   </div>
