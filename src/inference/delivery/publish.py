@@ -20,9 +20,12 @@ from pathlib import Path
 
 # Defaults can be overridden by env so CI / a custom domain need no code change.
 DEFAULT_BUCKET = os.environ.get("R2_ISSUES_BUCKET", "matchday-inference-issues")
+# Served from the project's own subdomain (bound to the R2 bucket), NOT the
+# shared pub-*.r2.dev host — Gmail bounces messages containing r2.dev links
+# (it's a shared domain abused for phishing). Override via env if it changes.
 DEFAULT_PUBLIC_BASE = os.environ.get(
     "R2_ISSUES_BASE_URL",
-    "https://pub-229d92135b3f4b14a1ae05cf0e25f9f0.r2.dev",
+    "https://read.matchdayinference.com",
 )
 
 
