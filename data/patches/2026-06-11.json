@@ -1,97 +1,107 @@
 {
   "date": "2026-06-11",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Editorial seeds + context for MATCHDAY INFERENCE — Matchday 1, opening day of WC2026. Marquee fixture: Mexico vs South Africa at the Azteca (the tournament opener); Korea Republic vs Czechia follows in Guadalajara. All four are Group A.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 1 — the tournament opens",
+    "tournament_summary": "The first 48-team World Cup kicks off in Mexico City. Mexico, co-hosts, open the tournament against South Africa at Estadio Azteca — the only ground on earth to have hosted two World Cup finals, and now the first to host games at three World Cups. Korea Republic and Czechia complete Group A's opening night in Guadalajara. From here it runs 104 matches across 38 days, three host nations, to a final at MetLife Stadium on 19 July.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "First World Cup with 48 teams and 104 matches; first hosted across three nations (Mexico, USA, Canada).",
+      "Mexico open the tournament — the third time they have hosted World Cup matches (1970, 1986, 2026).",
+      "Mexico vs South Africa is a rematch of the 2010 opener, which finished 1–1 in Johannesburg.",
+      "Group A: Mexico, South Africa, Korea Republic, Czechia.",
+      "The United States and Canada both begin on 12 June."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Mexico and South Africa — the team that opened 2010, opening again in 2026",
+      "framing": "Sixteen years and an ocean apart, the same two nations walk out for the same job: kicking a World Cup into life. In 2010 it was Johannesburg and the first finals match ever played on African soil. Today it is Mexico City and the first match of the first 48-team World Cup. The thread is the opening whistle itself.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "2010 — Soccer City, Johannesburg", "fact": "South Africa 1–1 Mexico opened the 2010 World Cup — the first finals match ever played in Africa. Siphiwe Tshabalala lashed in the tournament's first goal in the 55th minute; Rafael Márquez equalised on 79." },
+        { "label": "2026 — Estadio Azteca, Mexico City", "fact": "The same fixture reopens the show today, with the roles reversed: Mexico are the hosts now, walking out first in their own cathedral rather than as visitors in someone else's." },
+        { "label": "South Africa's wait", "fact": "Bafana Bafana have not appeared at a World Cup since they hosted in 2010 — the only host nation never to clear the group stage. This is their first finals in sixteen years, and it begins exactly where the last one did: across the line from Mexico." },
+        { "label": "Mexico's standing date", "fact": "Mexico have qualified for, or hosted, almost every World Cup since 1994. The opener is becoming their habit: as hosts in 1970 and 1986 they took the first walk too." },
+        { "label": "The shared ceremony", "fact": "Two opening ceremonies, two continents, one set of opponents. No other pair of teams has bookended the start of two different World Cups." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "3",
+      "surface_stat": "Estadio Azteca · World Cup N° 3",
+      "historical_anchor": "With today's opener, the Azteca becomes the first stadium in history to host matches at three different men's World Cups — 1970, 1986, and 2026. It was already the only ground to have staged two World Cup finals.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1970", "v": "Final — Brazil 4–1 Italy" },
+        { "k": "1986", "v": "Final — Argentina 3–2 W. Germany" },
+        { "k": "2026", "v": "Opening match — Mexico vs South Africa" },
+        { "k": "Opened", "v": "1966 · cap. ~83,000 for 2026" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "In 1970 the Azteca hosted both the final (Pelé's Brazil, Carlos Alberto's goal) and the 'Game of the Century', Italy 4–3 West Germany in extra time — a match marked with a plaque on the stadium wall.",
+        "In 1986 it staged Maradona's quarter-final against England — the 'Hand of God' and the 'Goal of the Century' inside four minutes — and then the final he lifted.",
+        "No other venue at this World Cup has hosted a finals match before. The Azteca has hosted nineteen."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Mexico", "South Africa"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2010",
+        "score": "1 — 1",
+        "host": "South Africa",
+        "round": "Group A · Opening match",
+        "venue": "Soccer City, Johannesburg",
+        "context_line": "South Africa · opening match · Soccer City, Johannesburg",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Tshabalala", "minute": "55'", "note": "(the tournament's first goal — a thunderbolt into the top corner)" },
+          { "scorer": "Márquez", "minute": "79'", "note": "(Mexico's equaliser, between near post and keeper)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "South Africa 1–1 Mexico — the first World Cup match ever played on African soil.",
+          "Tshabalala's strike, and Peter Drury's commentary over it, became the sound of that summer.",
+          "Mexico pressed for the win late but settled for a point; both sides advanced from the group behind Uruguay.",
+          "It remains the only time these two nations have met at a World Cup — until today."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
+      "ledger": "Mexico and South Africa have met once at a World Cup: the 1–1 draw that opened the 2010 tournament. Today's is the second meeting, and again it is the first match of the World Cup."
     },
     "where_played_before": {
       "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
+        "name": "Estadio Azteca",
+        "city": "Mexico City, Mexico",
+        "capacity": 83000,
+        "opened": 1966,
+        "world_cups": [1970, 1986, 2026]
       },
       "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
+        { "year": "1970", "body": "Brazil 4 — 1 Italy, the Final. Pelé opened the scoring; Carlos Alberto finished the move many still call the greatest team goal in World Cup history. Brazil's third title retired the Jules Rimet trophy." },
+        { "year": "1970", "body": "Italy 4 — 3 West Germany, the semi-final remembered as the 'Game of the Century'. Five goals in extra time; a marble plaque on the Azteca wall commemorates it to this day." },
+        { "year": "1986", "body": "Argentina 2 — 1 England, the quarter-final. Maradona scored the 'Hand of God' and, four minutes later, the 'Goal of the Century' — both at this end of this ground." },
+        { "year": "1986", "body": "Argentina 3 — 2 West Germany, the Final. Burruchaga's late breakaway won it; Maradona lifted the trophy as captain in the stadium that had been his stage all month." }
       ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "closer_hint": "Two World Cup finals, the Game of the Century, the Hand of God — and now the first match of a third World Cup. No stadium has carried more of the tournament's history."
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Diego",
+      "asker_city": "Mexico City",
+      "asker_day": "Thu 11 Jun",
+      "question": "People keep saying Mexico can never reach 'el quinto partido' — the fifth game. Is that actually true, or just a sad national joke?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "'El quinto partido' is the quarter-final — the fifth match a team plays if it wins its group and the Round of 16.",
+          "Mexico reached the Round of 16 at seven straight World Cups, 1994 through 2018, and lost every one of them.",
+          "Their only two World Cup quarter-finals both came as hosts: 1970 and 1986 — both runs ending at this very stadium, the Azteca.",
+          "In 2022 they failed to escape the group for the first time since 1978, so the streak now reads: knocked out in the last 16 seven times, then knocked out earlier.",
+          "As co-hosts in 2026 with an automatic place and home crowds, the 'fifth game' is the bar the whole country is once again measuring against."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question assumes a curse. The brief shows a real ceiling — seven consecutive Round-of-16 exits — and that both times Mexico broke through, they were hosts. They are hosts again."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Azteca, three times", "seed": "Estadio Azteca becomes the first stadium to host matches at three different World Cups (1970, 1986, 2026), and remains the only one to have hosted two finals. Every other venue at this tournament is hosting World Cup football for the first time." },
+      { "tag": "The 2010 rematch", "seed": "Mexico vs South Africa opened the 2010 World Cup (1–1 in Johannesburg) and opens this one too. No other pair of teams has started two different World Cups." },
+      { "tag": "48 and 104", "seed": "This is the first 48-team World Cup and the first with 104 matches — up from 32 teams and 64 matches in 2022. It is also the first staged across three host nations." },
+      { "tag": "Bafana's long road back", "seed": "South Africa have not played a World Cup match since hosting in 2010. They remain the only host nation never to advance past the group stage — and their return begins against the same opponent that drew with them on the opening day of that home tournament." },
+      { "tag": "Game of the Century", "seed": "The 1970 Italy 4–3 West Germany semi-final at the Azteca is one of only a handful of matches with its own commemorative plaque bolted to the stadium. Today's opener is played in the same arena." },
+      { "tag": "Host opens the show", "seed": "By tradition the host nation plays the opening match; with three hosts in 2026, Mexico took the honour at the oldest and most storied of the three countries' grounds." }
     ]
   }
 }
