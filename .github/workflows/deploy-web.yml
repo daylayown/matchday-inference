@@ -1,0 +1,29 @@
+name: Deploy landing page
+
+# Deploys web/ to Cloudflare Pages on every push that touches it.
+# Replaces the native GitHub->Pages integration, which fired once at setup
+# and then silently stopped triggering (broke when repo history was squashed).
+# This path is deterministic and fully under our control.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'web/**'
+      - '.github/workflows/deploy-web.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy web/ to Cloudflare Pages (production)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy web/ --project-name=matchday-inference --branch=master
