@@ -57,6 +57,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
 
+      - name: Set up Node + wrangler
+        if: steps.window.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install wrangler
+        if: steps.window.outputs.skip != 'true'
+        run: npm install -g wrangler@4
+        # Used by the publish step (R2 upload) inside run_day --send.
+
       - name: Resolve date + issue number
         if: steps.window.outputs.skip != 'true'
         id: vars
@@ -95,13 +106,17 @@ jobs:
       - name: Run orchestrator
         if: steps.window.outputs.skip != 'true'
         env:
-          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
-          API_FOOTBALL_KEY:  ${{ secrets.API_FOOTBALL_KEY }}
-          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
-          FROM_EMAIL:        ${{ secrets.FROM_EMAIL }}
+          OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
+          API_FOOTBALL_KEY:      ${{ secrets.API_FOOTBALL_KEY }}
+          RESEND_API_KEY:        ${{ secrets.RESEND_API_KEY }}
+          FROM_EMAIL:            ${{ secrets.FROM_EMAIL }}
+          # R2 publish (issues are hosted on the web; the email links to them).
+          CLOUDFLARE_API_TOKEN:  ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           python scripts/run_day.py "${{ steps.vars.outputs.date_iso }}" \
-            --issue "${{ steps.vars.outputs.issue_number }}"
+            --issue "${{ steps.vars.outputs.issue_number }}" \
+            --send
 
       - name: Upload artifacts (rendered HTML)
         if: steps.window.outputs.skip != 'true' && always()

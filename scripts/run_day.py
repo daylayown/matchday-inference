@@ -45,6 +45,46 @@ def _default_readers() -> list[ReaderProfile]:
     ]
 
 
+class _EmailMapStore:
+    """Minimal store shim for send_results — it only needs get_email/close.
+
+    Lets the orchestrator send from a context with no local subscriber DB (the
+    CI runner), using emails carried in the loaded reader source instead.
+    """
+
+    def __init__(self, emails: dict[str, str]):
+        self._emails = emails
+
+    def get_email(self, slug: str) -> str | None:
+        return self._emails.get(slug)
+
+    def close(self) -> None:
+        pass
+
+
+def _load_email_map(source: str) -> dict[str, str]:
+    """Build {slug: email} matching whatever `_load_readers` used as its source.
+
+    sqlite → straight from the DB; json → from the `email` field the /export
+    endpoint now includes in data/readers.json; default → none.
+    """
+    if source == "sqlite" and DEFAULT_DB_PATH.exists():
+        store = SubscriberStore()
+        rows = store.list_all()
+        store.close()
+        return {r["slug"]: r["email"] for r in rows if r.get("email")}
+    if source in ("sqlite", "json") and READERS_FILE.exists():
+        data = json.loads(READERS_FILE.read_text())
+        if isinstance(data, dict):
+            data = data.get("readers", [])
+        return {
+            r["slug"]: r["email"]
+            for r in data
+            if isinstance(r, dict) and r.get("slug") and r.get("email")
+        }
+    return {}
+
+
 def _load_readers(source: str) -> list[ReaderProfile]:
     """Load readers from one of: 'sqlite' (the subscriber store), 'json'
     (data/readers.json), or 'default' (a built-in Marcus profile).
@@ -116,8 +156,10 @@ def main(date_iso: str, issue_number: str, reader_slug: str | None, source: str,
     if send:
         click.echo("")
         click.echo("SENDING via Resend …")
+        email_store = _EmailMapStore(_load_email_map(source))
         outcomes = send_results(
-            results, readers, date_iso=date_iso, issue_number=issue_number
+            results, readers, date_iso=date_iso, issue_number=issue_number,
+            store=email_store,
         )
         for o in outcomes:
             click.echo(str(o))

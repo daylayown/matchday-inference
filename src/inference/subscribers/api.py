@@ -106,7 +106,9 @@ def export(authorization: str | None = Header(default=None)) -> dict[str, Any]:
     then generates issues. Keeps the subscriber DB as a single source of truth
     on the Fly volume — GH Actions never needs direct file access.
 
-    The shape matches `data/readers.json`: {"readers": [ReaderProfile, ...]}.
+    The shape matches `data/readers.json`: {"readers": [ReaderProfile, ...]},
+    with each entry carrying an extra `email` so the orchestrator can send
+    without direct DB access. `ReaderProfile` ignores the extra key on load.
     """
     if not _EXPORT_TOKEN:
         raise HTTPException(status_code=503, detail="export_disabled")
@@ -114,7 +116,11 @@ def export(authorization: str | None = Header(default=None)) -> dict[str, Any]:
     if authorization != expected:
         raise HTTPException(status_code=401, detail="unauthorized")
     store = get_store()
-    readers = [p.model_dump() for p in store.list_active()]
+    readers = []
+    for p in store.list_active():
+        entry = p.model_dump()
+        entry["email"] = store.get_email(p.slug)
+        readers.append(entry)
     return {"readers": readers}
 
 
