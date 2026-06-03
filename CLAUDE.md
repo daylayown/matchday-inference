@@ -1,7 +1,7 @@
 # THE INFERENCE — Project Context
 
 > **The first file Claude should read in any new session for this project.**
-> Last updated: 2026-06-03.
+> Last updated: 2026-06-03 (session 2 — footer pages, delivery rebuild, cron wiring).
 
 ---
 
@@ -19,7 +19,7 @@ The publication's mood: *Nirvana in 1990 — grunge, raw, here to shake up the i
 
 **Phase 0, 1, and most of Phase 2 done.** As of 2026-05-19, the production spine is in place: a real-data-backed Inference HTML+TXT renders all 8 sections per reader via the daily orchestrator, against API-Football data + a JSON patch layer for editorial seeds. **8 of 8 generators built.** **Daily orchestrator built** (`src/inference/orchestrate/daily.py`) — fetches → patches → runs 8 generators × N readers → renders → saves. **Resend email pipeline built** (HTML + plain-text fallback). **Subscriber SQLite store + FastAPI signup endpoint built.** **GitHub Actions cron workflow** ready (`.github/workflows/daily.yml`). **33 passing smoke tests.** **7 lenses** (Cultural Critic, Pub-Talker, Tactician, Romantic, Historian, The Diaspora, The Beat Reporter) shaped into all 8 generator prompts. Per-issue cost ~$0.16–$0.21 at gpt-5.5 placeholder pricing (~3-4 min wall time).
 
-**The SITE is launch-ready as of 2026-06-03.** Everything needed to share the signup link with friends & family is **live and verified**: landing page (`matchdayinference.com`, Cloudflare Pages), signup endpoint (`api.matchdayinference.com`, Fly), GA4 analytics, Resend email (verified + test send confirmed to inbox), a crypto tip jar, honest landing copy, `www`→apex 301 redirect, and a fixed auto-deploy pipeline (GH Actions). A live signup smoke test passed end-to-end. **The ONLY work left is the daily-issue *content*, which the tournament needs by June 11 — not by the soft launch:** fill the 39 per-day `data/patches/YYYY-MM-DD.json` editorial-seed skeletons (already scaffolded), then run the June 10 dress rehearsal. **Full ordered detail in the "⏯️ PICK UP HERE" section below.**
+**The SITE is launch-ready and delivery is rebuilt + proven (2026-06-03, session 2).** Live and verified: landing page + **5 footer pages** (`matchdayinference.com`, Cloudflare Pages), signup endpoint (`api.matchdayinference.com`, Fly), GA4, Resend, crypto tip jar, `www`→apex redirect, auto-deploy. **Delivery was rebuilt this session:** the email is now a small email-safe **teaser**, and the full grunge issue is **hosted on R2 at `read.matchdayinference.com`** (email clients strip the aesthetic) — verified `delivered` + click-through. The **daily cron is wired for real automated sending** (`--send`, R2 publish, emails-in-CI). **June 11 opening-day patch is filled.** **What's left:** (1) run the **CI dress rehearsal** (safe `workflow_dispatch` mode, set up this session) to prove the unattended path, then promote; (2) keep filling patch skeletons (June 12 next). **Full ordered detail in the "⏯️ PICK UP HERE" section below.**
 
 ## Naming notes
 
@@ -63,6 +63,8 @@ The matchday-programme *metaphor* still informs the editorial structure (team sh
 | [`PROMPT.md`](PROMPT.md) | Original brief | Historical — assumptions superseded |
 | [`spike/`](spike/) | Voice/prompt prototype (editor + match_brief + here_and_there for Marcus + Lin) | Built; validated on gpt-5.5 — outputs in `spike/output/`, nano baseline in `spike/output/archive-gpt-5-nano/` |
 | [`web/index.html`](web/index.html) | Landing page + 3-step signup form | Built, grunge aesthetic, form persists to localStorage |
+| `web/{about,colophon,privacy,mixed-zone,press}.html` | Footer pages | Built 2026-06-03 s2, live; share `web/pages.css` |
+| [`web/pages.css`](web/pages.css) | Shared grunge stylesheet for the footer subpages | Built 2026-06-03 s2 |
 | [`web/inference-sample-v3.html`](web/inference-sample-v3.html) | Canonical issue design | Built, grunge aesthetic, 9 pages |
 | [`web/inference-sample-v2.html`](web/inference-sample-v2.html) | Polished fanzine v2 | Historical, can delete |
 | [`web/inference-sample.html`](web/inference-sample.html) | Stats-heavy v1 | Historical, can delete |
@@ -70,10 +72,14 @@ The matchday-programme *metaphor* still informs the editorial structure (team sh
 | [`src/inference/orchestrate/daily.py`](src/inference/orchestrate/daily.py) | Daily pipeline runner — the production spine | Built 2026-05-19 |
 | [`src/inference/data/patches.py`](src/inference/data/patches.py) | JSON patch-layer loader (`data/patches/YYYY-MM-DD.json`) | Built 2026-05-19 |
 | [`src/inference/delivery/email.py`](src/inference/delivery/email.py) | Resend wiring — `send_issue()` | Built 2026-05-19 |
+| [`src/inference/delivery/publish.py`](src/inference/delivery/publish.py) | R2 publish — `publish_issue()` uploads issue HTML, returns `read.matchdayinference.com` URL | Built 2026-06-03 s2 |
+| `src/inference/delivery/templates/teaser.email.{html,txt}.j2` | Email-safe teaser (links to hosted issue) | Built 2026-06-03 s2 |
+| [`src/inference/delivery/dispatch.py`](src/inference/delivery/dispatch.py) | `send_results()` — publish issue to R2, then send teaser | Rewired 2026-06-03 s2 |
 | [`src/inference/subscribers/store.py`](src/inference/subscribers/store.py) | SQLite subscriber store | Built 2026-05-19 |
 | [`src/inference/subscribers/api.py`](src/inference/subscribers/api.py) | FastAPI signup endpoint | Built 2026-05-19 |
-| [`.github/workflows/daily.yml`](.github/workflows/daily.yml) | GH Actions cron for daily orchestrator | Built 2026-05-19; needs repo secrets |
-| [`data/patches/2022-12-18.json`](data/patches/2022-12-18.json) | Sample patch / editorial seeds (ARG–FRA final) | Use as template for the real WC dates |
+| [`.github/workflows/daily.yml`](.github/workflows/daily.yml) | GH Actions cron — generates + publishes + `--send`; `workflow_dispatch` has a `test_email` dress-rehearsal mode | Wired for sending 2026-06-03 s2 |
+| [`data/patches/2026-06-11.json`](data/patches/2026-06-11.json) | **Filled** opening-day patch (Mexico–South Africa, Azteca) | Built 2026-06-03 s2 |
+| [`data/patches/2022-12-18.json`](data/patches/2022-12-18.json) | Sample patch / editorial seeds (ARG–FRA final) | Template for the real WC dates |
 | [`data/readers.json`](data/readers.json) | Reader profiles (default source for `run_day.py`) | Built 2026-05-19 |
 | [`tests/`](tests/) | Smoke test suite (33 passing, mocked LLM, no network) | Built 2026-05-19; +12 on 2026-06-02 |
 
@@ -90,11 +96,12 @@ The matchday-programme *metaphor* still informs the editorial structure (team sh
 | LLM client wrapper (Responses API, `src/inference/content/api.py`) | **Built 2026-05-18.** Two presets: `content` (gpt-5.5, reasoning=medium, verbosity=medium), `utility` (gpt-5.4-nano). Cost tracking via prefix-match on snapshot model IDs. `json_mode=True` opt-in. gpt-5.5 pricing is a placeholder ($2.50/$15 per 1M, matching spike) until OpenAI publishes official numbers. |
 | Generators (8 of them) | **8/8 built — all wired end-to-end.** TEAM SHEET, EDITOR, HERE & THERE, STORY BEHIND THE NUMBER, BACK STORY, WHERE THEY PLAYED BEFORE, FROM THE STANDS, ADDED TIME. All validated end-to-end on ARG–FRA 2022 final across 5 lenses. Cost ~$0.16–$0.21/issue at gpt-5.5 placeholder pricing (~3-4 min wall time); higher end is when a reader follows BOTH teams in the same match → 2 TEAM SHEETs. Outputs at `output/{team_sheets,editor,here_and_there,story_behind_number,back_story,where_played_before,from_the_stands,added_time}/`. Known prompt-compliance gap: model occasionally returns `pull_quote` as string instead of `{text, attribution}` object — display handles both; switch to `json_schema` format if it bites repeatedly. |
 | Lenses (voice registers) | **7 built** — Cultural Critic, Pub-Talker, Tactician, Romantic, Historian, The Diaspora, The Beat Reporter. Each one is a section in all 8 generator prompts. The Diaspora and The Beat Reporter added 2026-05-18; the 5 new generators codify all 7 the same way. Five fully-rendered 8-section issues live at `output/inferences/marcus__argentina__{pub-talker,tactician,romantic,historian,the-diaspora}.html` for cross-lens comparison. The `location` field on ReaderProfile (added 2026-05-19) anchors The Diaspora lens on a real city instead of an invented one. |
-| Email pipeline (Resend) | **Built 2026-05-19.** `src/inference/delivery/email.py` — `send_issue(to, subject, html, text)` returning a `SendResult`. Requires `RESEND_API_KEY` to actually send. Plain-text fallback template at `src/inference/delivery/templates/inference.txt.j2`; `render_inference_txt()` mirrors `render_inference()`. |
+| Email pipeline (Resend) | **Built 2026-05-19; delivery model rebuilt 2026-06-03 s2.** `email.py::send_issue()` still does the raw Resend send, but the email now carries an **email-safe teaser** (not the issue HTML — clients strip the aesthetic). `dispatch.send_results()` publishes the full issue to R2 (`publish.py`), then sends the teaser linking to `read.matchdayinference.com`. Verified `delivered` end-to-end. |
+| Issue hosting (Cloudflare R2) | **Built 2026-06-03 s2.** Bucket `matchday-inference-issues`, public, custom domain `read.matchdayinference.com` (NOT `pub-*.r2.dev` — Gmail bounces those). `publish.py` uploads via `wrangler r2 object put`; token key per issue. CI needs the `CLOUDFLARE_API_TOKEN` to have Workers R2 Storage:Edit (done). |
 | Jinja template + renderer | **Built 2026-05-18, expanded 2026-05-19.** `src/inference/delivery/templates/inference.html.j2` parameterized for all 8 sections (TEAM SHEET, EDITOR, HERE & THERE, STORY BEHIND THE NUMBER, BACK STORY, WHERE THEY PLAYED BEFORE, FROM THE STANDS, ADDED TIME — Pages 02–09). Plain-text fallback `inference.txt.j2` mirrors structure. `src/inference/delivery/render.py` exposes `render_inference()` + `render_inference_txt()`. End-to-end scripts: `scripts/render_inference.py` (one reader, --no-llm cache-friendly) and `scripts/run_day.py` (full orchestrator). Verified: ~77K HTML file rendering all 8 sections + 2 TEAM SHEETs on the ARG–FRA 2022 final via the orchestrator. |
 | Subscriber backend | **Built 2026-05-19.** `src/inference/subscribers/store.py` — `SubscriberStore` over stdlib `sqlite3` with schema (slug PK, email UNIQUE, profile_json, created_at, verified_at, unsubscribed_at). `src/inference/subscribers/api.py` — FastAPI app with `POST /signup`, `POST /unsubscribe`, `GET /health`. Add `pip install -e '.[web]'` for the web extras. Defaults to `data/subscribers.sqlite`. `scripts/run_day.py --source sqlite` loads readers from this store. |
 | Daily orchestrator | **Built 2026-05-19.** `src/inference/orchestrate/daily.py` — `run_for_date(date_iso, readers)` runs the full pipeline: fetch fixtures → apply patches → per-reader run 8 generators → render HTML → save. Per-section failures are captured but don't halt other sections. CLI: `.venv/bin/python scripts/run_day.py 2022-12-18 --issue 04`. Verified end-to-end on the 2022 final, $0.21 / 3.7 min for Marcus following Argentina+France. |
-| GitHub Actions cron | **Built 2026-05-19.** `.github/workflows/daily.yml` — cron at 06:30 UTC, tournament-window guard (June 10–July 19 2026), workflow_dispatch override for manual runs, auto-computed issue number, uploads `output/inferences/` as artifacts. Needs `OPENAI_API_KEY`, `API_FOOTBALL_KEY`, `RESEND_API_KEY`, `FROM_EMAIL` in repo secrets before going live. |
+| GitHub Actions cron | **Built 2026-05-19; wired for real sending 2026-06-03 s2.** Cron 06:30 UTC, tournament-window guard, auto-computed issue number, artifacts. Now: sets up Node + wrangler, passes `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, runs with **`--send`**. `workflow_dispatch` bypasses the window guard and takes a **`test_email`** input (dress-rehearsal mode — one built-in reader to that address, real subscribers untouched). Secrets needed for real sends: the OpenAI/API-Football/Resend/Cloudflare ones (set) + `INFERENCE_EXPORT_URL`/`INFERENCE_EXPORT_TOKEN` (for live subscribers) + Fly redeploy for `/export` emails. |
 | Smoke tests | **Built 2026-05-19; expanded 2026-06-02.** 33 passing tests in `tests/` — one per generator (mocked LLM), patches loader, subscribers store + `list_all`, dispatch/email glue, patch-template (pinned to orchestrator seed keys), render branding, `run_day` readers-shape tolerance. `.venv/bin/python -m pytest tests/`. |
 | Web frontend | **Built and working** (landing page + 3 sample HTMLs) |
 
@@ -177,32 +184,57 @@ Took the site from "infra deployed" to "launch-ready + proven." All verified liv
 
 All 6 GH Actions secrets + 2 Cloudflare secrets are set. 33 tests still green.
 
-## ⏯️ PICK UP HERE — site launch-ready; only daily-issue CONTENT remains (2026-06-03)
+## What was built 2026-06-03 (session 2 — footer pages, delivery rebuild, cron wiring)
 
-**The site is done and live.** You can **soft-launch tomorrow (share the signup link with friends & family) right now** — nothing blocks it. Signup, GA4 analytics, Resend email, the crypto tip jar, the `www`→apex redirect, and push-to-deploy (GH Actions) are all live and verified. The live signup smoke test passed end-to-end.
+A long session that went well past the original ask. Chronological:
 
-**The only work left is the daily-issue CONTENT, needed by June 11 (tournament kickoff), NOT by the soft launch:**
+1. **Five real footer pages** — the footer links all pointed at `#`. Built `web/{about,colophon,privacy,mixed-zone,press}.html` sharing a new `web/pages.css` (same grunge tokens + photocopy grain + masthead/footer as the front page). Privacy is honest to the actual stack (signup fields, GA4, third parties, erasure). Fixed a malformed `<footer` tag in `index.html` and rewired the footer links. All deployed + verified live (Cloudflare clean-URLs: `/about`, etc.).
+2. **About page personalized** — "Who's behind it" now carries Nicholas De Leon's bio (tech reporter, NYC→Tucson 2023, Consumer Reports, links Deep Dugout + LinkedIn). Contact = **nicholas@daylayown.org** (the only monitored inbox; `matchday@matchdayinference.com` is Resend send-only). Aligned that email across Press, Mixed Zone, Privacy too. Saved to memory [[nicholas-bio]].
+3. **Footer strip** — "Sibling of Deep Dugout ✦ Made with care" → single **"Made in Tucson, AZ"** across all 6 pages. Removed "· Feed the Machine" from the tip-jar heading.
+4. **June 11 opening-day patch filled** — `data/patches/2026-06-11.json` (Mexico–South Africa at the Azteca; rematch of the 2010 opener; Azteca = first stadium at 3 World Cups; Mexico's "quinto partido"). All facts web-verified.
+5. **Dress rehearsal run + EDITOR bug fixed** — ran the full pipeline on the live June 11 fixture. Caught a real bug: `_build_day_context` fed today's UNPLAYED match into `yesterday_matches` with a placeholder `0-0`, so the EDITOR wrote about a fictional result. Fix: bucket fixtures by **match status** (finished → recap with score; not-started → new `today_matches` preview, no score) + fetch the previous day for the recap + editor-prompt guardrails. The 2022-final test had masked it (that match was finished).
+6. **Delivery rebuilt: web issue + email teaser** (the big one — see PICK UP HERE "Delivery model"). `src/inference/delivery/publish.py` (R2 upload via wrangler), teaser templates + `render_teaser_email/text()`, `dispatch.send_results()` rewired to publish-then-teaser (both `send_fn`/`publish_fn` injectable). R2 bucket `matchday-inference-issues` created, custom domain `read.matchdayinference.com` bound (zone `64741b23b8a8ced1071e4e556d0cc6bd`). Diagnosed + fixed a Gmail **bounce** caused by `r2.dev` links → confirmed `delivered` from the custom domain.
+7. **Cron wired for real sending** — `/export` now includes each subscriber's `email`; `run_day` builds a `{slug: email}` map (`_load_email_map` + `_EmailMapStore`) so `--send` works on the CI runner with no local DB; `daily.yml` got Node + wrangler + `CLOUDFLARE_*` env + `--send`.
+8. **Safe CI dress-rehearsal mode** — `daily.yml` `workflow_dispatch` now bypasses the window guard and takes a `test_email` input that sends ONE built-in test reader to that address only (real subscribers untouched; email via env, not interpolation).
 
-1. **Fill the 39 patch skeletons** `data/patches/2026-06-11.json` … `2026-07-19.json` — the editorial seeds (`here_there_thread`, `story_behind_number`, `back_story`, `where_played_before`, `from_the_stands`, `anomalies`, `day_context`) for each matchday. Skeletons are already scaffolded (via `scripts/new_patch.py`); the filled template to copy from is `data/patches/2022-12-18.json`. This is the **only manual content step**. Rest days in the range can have their skeleton file deleted. **You do NOT need all 39 to soft-launch — prioritize the June 11 opening day first; the rest can trickle in before each matchday.**
-2. **June 10 dress rehearsal** — `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch, then `--send` a real test issue to yourself to confirm the whole pipeline fires end-to-end on a live-like day. (Email send is already proven; this proves it on a full generated issue.)
+Test count still **33 green** throughout. User confirmed (end of session) the R2 write permission was added to the CI `CLOUDFLARE_API_TOKEN`.
+
+## ⏯️ PICK UP HERE — delivery rebuilt + cron wired; awaiting the CI dress rehearsal (2026-06-03 session 2)
+
+**Site is done/live. Delivery is rebuilt and proven. The cron is wired for real automated sending.** The remaining gate before promoting is a **dress rehearsal of the actual GitHub Actions cron** (the only surface not yet exercised), then keep filling patches.
+
+### Delivery model (CHANGED this session — important)
+The email no longer carries the issue HTML — email clients strip the grunge aesthetic (CSS custom props, web fonts, the photocopy grain), so the inbox version was unstyled. **New flow:** each rendered issue is published to **Cloudflare R2** at an unguessable token URL served from **`read.matchdayinference.com`** (custom domain bound to bucket `matchday-inference-issues`), and the email is a small, email-safe **teaser** (`src/inference/delivery/templates/teaser.email.{html,txt}.j2`) whose button opens the hosted issue. Verified end-to-end: teaser shows Resend `delivered`, click-through renders the full issue.
+- **Do NOT put issue links on `pub-*.r2.dev`** — Gmail BOUNCES messages containing r2.dev links (shared phishing-abused domain). Always use `read.matchdayinference.com` (default in `publish.py`, env-overridable via `R2_ISSUES_BASE_URL`).
+
+### NEXT, in order:
+1. **Run the CI dress rehearsal** (set up this session; safe). GitHub → Actions → **Daily Inference** → **Run workflow** with `date_iso=2026-06-11`, `issue_number=01`, `test_email=<you>`. The new `test_email` input sends ONE issue (built-in Sofía / Mexico / The Diaspora reader) to that address only — real subscribers are NEVER queried; `workflow_dispatch` bypasses the tournament-window guard. CLI: `gh workflow run "Daily Inference" -f date_iso=2026-06-11 -f issue_number=01 -f test_email=<you>`. This proves the real unattended path: CI env + Node + wrangler + the R2 token + `--send` + deliver. ~$0.15. **Once green → clear to promote (LinkedIn drafts in `promo-copy.md`, untracked).**
+2. **Fill the remaining patch skeletons** `data/patches/2026-06-12.json` … `2026-07-19.json`. **June 11 is DONE** (`data/patches/2026-06-11.json`, Mexico–South Africa at the Azteca, fact-checked). June 12 next (USA + Canada open). Copy the shape from `2026-06-11.json` or `2022-12-18.json`. Only manual content step; rest days can have their skeleton deleted.
+
+### Before the cron emails REAL subscribers on June 11 (all user-side):
+- **R2 write on the CI token** — ✅ DONE (user added Workers R2 Storage:Edit to `CLOUDFLARE_API_TOKEN`).
+- **Redeploy the Fly app** (`flyctl deploy`) — the `/export` change that now includes each subscriber's `email` is committed but only goes live after a Fly redeploy.
+- **Set `INFERENCE_EXPORT_URL` + `INFERENCE_EXPORT_TOKEN` GitHub secrets** — else the cron falls back to the committed `data/readers.json` sample instead of real subscribers.
 
 ### To deploy any landing-page change
-Just `git push` anything touching `web/**` — the `deploy-web.yml` GH Actions workflow auto-deploys to Cloudflare Pages. For an immediate manual deploy: `npx wrangler pages deploy web/ --project-name=matchday-inference --branch=master`.
+Just `git push` anything touching `web/**` — the `deploy-web.yml` GH Actions workflow auto-deploys to Cloudflare Pages. Immediate manual deploy: `npx wrangler pages deploy web/ --project-name=matchday-inference --branch=master`.
 
 ### Optional polish (non-blocking)
-- **DMARC** TXT record (`_dmarc` = `v=DMARC1; p=none;`) — only if mail ever lands in spam (test send landed in inbox, so not urgent).
-- **Disconnect the dead native Cloudflare Git integration** in the Pages dashboard (tidiness — GH Actions is the real deploy path now).
+- **DMARC** TXT record (`_dmarc` = `v=DMARC1; p=none;`) — only if mail ever lands in spam.
+- One-click **unsubscribe** link in the teaser (`unsubscribe_url` is wired through but unset; needs a GET unsubscribe endpoint).
+- Disconnect the dead native Cloudflare Git integration in the Pages dashboard (tidiness).
 - **Backlog E:** update the gpt-5.5 price placeholder in `src/inference/content/api.py` if OpenAI published official numbers.
-- **Backlog F:** render Cultural Critic + The Beat Reporter at full 8 sections (~$0.32, ~6 min) for complete cross-lens samples (only 5 of 7 lenses have full cached output).
+- **Backlog F:** render Cultural Critic + The Beat Reporter at full 8 sections (~$0.32) for complete cross-lens samples.
 
 ## Next session — first actions
 
-All infra/setup is DONE and the site is launch-ready (see "⏯️ PICK UP HERE" above for the authoritative state). **Only two things remain, both content, both for June 11 — not for the soft launch:**
+See "⏯️ PICK UP HERE" above for the authoritative state. In short:
 
-1. **Fill the patch skeletons**, June 11 opening day first. Skeletons scaffolded at `data/patches/2026-06-11.json` … `2026-07-19.json`; copy the shape from `data/patches/2022-12-18.json`. Only manual content step.
-2. **June 10 dress rehearsal:** `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch, then `--send` a test issue to yourself.
+1. **If the CI dress rehearsal hasn't run yet** — run it (Actions → Daily Inference → Run workflow with `date_iso=2026-06-11`, `test_email=<you>`), confirm the teaser delivers and the hosted issue renders. This is the last unproven surface (the real cron path).
+2. **Keep filling patch skeletons** — June 11 done; June 12 (USA + Canada open) next; copy the shape from `data/patches/2026-06-11.json`.
+3. **Before real sends:** Fly redeploy (for `/export` emails) + set `INFERENCE_EXPORT_URL`/`INFERENCE_EXPORT_TOKEN` secrets. R2 token already done.
 
-Everything in the older "Blocking — user-side decisions" list (domain, hosting, endpoint deploy, form wiring, secrets, GA4, Resend, www, smoke test) is **done** — do not redo it; verify against the PICK UP HERE checkpoint first.
+Everything in the older "Blocking — user-side decisions" list (domain, hosting, endpoint deploy, form wiring, secrets, GA4, Resend, www, smoke test) is **done** — do not redo it.
 
 ### Autonomous nice-to-haves (no user input required)
 
@@ -294,6 +326,7 @@ Cross-session durable notes live at `.claude/projects/-home-nicholas-claude-code
 - `api-football-only-stack-locked` — API-Football is the sole live data provider; Sportmonks is contingency-only
 - `the-inference-name-locked` — the final project name
 - `inference-phase2-ready` — Phase 2 spine built 2026-05-19, awaiting domain/hosting; do not rebuild
+- `nicholas-bio` — Nicholas De Leon's bio + contact (nicholas@daylayown.org) for author/contact copy
 
 ## Dev server (for iPhone preview)
 
