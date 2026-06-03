@@ -1,7 +1,7 @@
 # THE INFERENCE — Project Context
 
 > **The first file Claude should read in any new session for this project.**
-> Last updated: 2026-06-02.
+> Last updated: 2026-06-03.
 
 ---
 
@@ -19,7 +19,7 @@ The publication's mood: *Nirvana in 1990 — grunge, raw, here to shake up the i
 
 **Phase 0, 1, and most of Phase 2 done.** As of 2026-05-19, the production spine is in place: a real-data-backed Inference HTML+TXT renders all 8 sections per reader via the daily orchestrator, against API-Football data + a JSON patch layer for editorial seeds. **8 of 8 generators built.** **Daily orchestrator built** (`src/inference/orchestrate/daily.py`) — fetches → patches → runs 8 generators × N readers → renders → saves. **Resend email pipeline built** (HTML + plain-text fallback). **Subscriber SQLite store + FastAPI signup endpoint built.** **GitHub Actions cron workflow** ready (`.github/workflows/daily.yml`). **33 passing smoke tests.** **7 lenses** (Cultural Critic, Pub-Talker, Tactician, Romantic, Historian, The Diaspora, The Beat Reporter) shaped into all 8 generator prompts. Per-issue cost ~$0.16–$0.21 at gpt-5.5 placeholder pricing (~3-4 min wall time).
 
-**Infra is LIVE as of 2026-06-02 night:** landing page at `matchdayinference.com` (Cloudflare Pages), signup endpoint at `api.matchdayinference.com` (Fly, TLS active), public GitHub repo `daylayown/matchday-inference` driving the GH Actions cron. Remaining for launch: Google Analytics (GA4 — needs the user's `G-` ID), `www`→apex redirect, Resend sending-domain verify + last 2 GH secrets, per-day `data/patches/YYYY-MM-DD.json` for the tournament days, the June 10 dress rehearsal. **Full ordered detail in the "⏯️ PICK UP HERE" section below.**
+**The SITE is launch-ready as of 2026-06-03.** Everything needed to share the signup link with friends & family is **live and verified**: landing page (`matchdayinference.com`, Cloudflare Pages), signup endpoint (`api.matchdayinference.com`, Fly), GA4 analytics, Resend email (verified + test send confirmed to inbox), a crypto tip jar, honest landing copy, `www`→apex 301 redirect, and a fixed auto-deploy pipeline (GH Actions). A live signup smoke test passed end-to-end. **The ONLY work left is the daily-issue *content*, which the tournament needs by June 11 — not by the soft launch:** fill the 39 per-day `data/patches/YYYY-MM-DD.json` editorial-seed skeletons (already scaffolded), then run the June 10 dress rehearsal. **Full ordered detail in the "⏯️ PICK UP HERE" section below.**
 
 ## Naming notes
 
@@ -160,47 +160,49 @@ Domain/deploy prep earlier in the day (see memory `inference-phase2-ready`); the
 5. **`scripts/subscribers.py`** (backlog D) — `{list,verify,unsubscribe,export}` over new `SubscriberStore.list_all()`.
 6. **Tests 21 → 33**, all green. Backlog E (gpt-5.5 pricing) and F (run 2 more lenses, ~$0.32 API) left — F costs money.
 
-## ⏯️ PICK UP HERE — Infra LIVE end-to-end; Resend + analytics + patches left (2026-06-02 night)
+## What was built 2026-06-03 (launch-readiness session log)
 
-**The full web stack is live.** Landing page (Cloudflare Pages), signup endpoint (Fly), and `api.` TLS are all up and wired. What remains is email (Resend), analytics (GA4), the `www` redirect, the per-day editorial patches, and the dress rehearsal. **We're close.**
+Took the site from "infra deployed" to "launch-ready + proven." All verified live:
 
-### ✅ DONE this session (verified live)
+1. **GA4** — Measurement ID `G-F8NJVND77X`, gtag.js in `<head>` of `web/index.html`.
+2. **OG / Twitter link-preview tags** — link shares now lead with "MATCHDAY INFERENCE" (iMessage was scraping the post-em-dash `<title>` slice). iMessage caches previews per-URL; bust with a `?v=N` query string when testing.
+3. **Resend email — fully live.** User created the account (it had only ever been a *code-level* decision, which is why it was unfamiliar — no account ever existed). Verified `matchdayinference.com` via Resend's Cloudflare auto-config button (SPF + MX + DKIM; DMARC not added by auto-config and not required). `RESEND_API_KEY` + `FROM_EMAIL="MATCHDAY INFERENCE <matchday@matchdayinference.com>"` set as GH secrets **and** in local `.env`. A live `send_issue()` test landed in the user's inbox.
+4. **Crypto tip jar** — `.tipjar` section in `web/index.html` (above `<footer>`): static QR (`web/tip-qr.svg`, segno-generated) + MetaMask address `0x4a6232e14cFD20B63a30f87a4ED7E89a4D9edC7e`, labeled "USDC / ETH · Base network". Started as a Bitcoin Lightning QR, but MetaMask doesn't support Lightning; a fiat (Ko-fi) option was dropped when Stripe onboarding proved too heavy for a tip jar. See [[tip-jar-crypto]].
+5. **Landing-page honesty pass.** The page advertised the PRE-PIVOT vision. Removed the "a full broadcast" section (3 audio formats + The Gantry live commentary — all unbuilt Phase-4). Rewrote section 02 to the **8 sections the pipeline actually renders** (Your Day, The Editor's Desk, Here & There, Story Behind the Number, Back Story, Where They Played Before, From the Stands, Added Time). Purged event-data claims the API-Football-only stack can't deliver (pass networks, shot maps, PPDA, F3 entries, progressive carries) from the mocks + specimen card. Softened From-the-Stands (no reply-loop promise). Pullquote "in every language" → tournament-length (pipeline is English-only). **Do NOT re-add audio/live/event-data/multi-language claims.**
+6. **Masthead cleanup** — removed the "ZINE / NOT PRESS" + "STAPLED · NOT PRESSED" stamps (they overlapped the INFERENCE wordmark on phones); kept "DRAFT N° 00".
+7. **Cloudflare auto-deploy FIXED.** The native GitHub→Pages integration deployed once at setup then silently stopped (broke when repo history was squashed pre-public). Diagnosed via `npx wrangler pages deployment list`. Replaced with `.github/workflows/deploy-web.yml` — deploys `web/` via `cloudflare/wrangler-action@v3` on every push touching `web/**` (+ `workflow_dispatch`). New GH secrets `CLOUDFLARE_API_TOKEN` (Pages:Edit) + `CLOUDFLARE_ACCOUNT_ID=3680dcc3b4e6918d7160b2fcd2a9bb89`. **Pages project name: `matchday-inference`.** Verified working twice. `wrangler` is installed + OAuth-logged-in locally → manual deploy: `npx wrangler pages deploy web/ --project-name=matchday-inference --branch=master`.
+8. **`www` → apex 301 redirect** — proxied `www` CNAME + Cloudflare "Redirect from WWW to Root" rule. Verified (path + query preserved).
+9. **Live signup smoke test PASSED** — POST to `api.matchdayinference.com/signup` → 200 + slug, row confirmed in Fly SQLite, then hard-deleted (DB back to 0 rows). Full browser→Pages→Fly→SQLite path proven.
+10. Queued autonomous tasks **A** (39 patch skeletons `2026-06-11`…`2026-07-19`, scaffolded) and **B** (stripped dev preview bar from `inference.html.j2`) both DONE.
 
-- **Fly signup endpoint deployed.** App `matchday-inference-signup` (org `nicholas-de-leon`), live at `https://matchday-inference-signup.fly.dev/` AND on the custom domain `https://api.matchdayinference.com/` — both return `/health` → `{"status":"ok"}`; `/export` correctly returns `401` without the Bearer token. Image 55 MB, `auto_stop_machines` scales to zero when idle. **Payment method added (2026-06-02 night)** — single machine for now (fine for a signup endpoint); can re-enable HA with `fly scale count 2` if ever wanted.
-- **Fly volume** `inference_data` (`vol_v3g9p1e3ognez9o4`), 1GB, iad, encrypted, mounted `/data` for `subscribers.sqlite`.
-- **Fly secrets set:** `INFERENCE_EXPORT_TOKEN` (32-byte hex) + `INFERENCE_ALLOWED_ORIGINS=https://matchdayinference.com`. Token is NOT in any committed file (Dockerfile bakes CLAUDE.md into the image). Retrieve: `fly ssh console -C 'printenv INFERENCE_EXPORT_TOKEN' -a matchday-inference-signup`. Must equal the GH Actions secret of the same name (it does — set both this session).
-- **`api.matchdayinference.com` TLS cert** — Issued & active (Let's Encrypt, via Fly). DNS records added in Cloudflare (`A api → 66.241.124.175`, `AAAA api → 2a09:8280:1::11e:b5ac:0`). `fly certs check api.matchdayinference.com` → verified.
-- **GitHub repo PUBLIC:** `https://github.com/daylayown/matchday-inference` (`gh` authed as `daylayown`, default branch `master`). `git init` + first push done here; `.gitignore` extended to exclude `data/*.sqlite`. Personal info (email + `/home/nicholas` paths) scrubbed from CLAUDE.md and **history squashed to one clean root commit before going public** — email verified absent from all remote history. This repo runs the GH Actions cron and feeds Cloudflare Pages.
-- **GH Actions secrets — 4 of 6 set** (`gh secret set`): `OPENAI_API_KEY` + `API_FOOTBALL_KEY` (from `.env`), `INFERENCE_EXPORT_TOKEN`, `INFERENCE_EXPORT_URL=https://api.matchdayinference.com/export`.
-- **Cloudflare Pages live.** Project connected to the repo (build cmd none, output dir `web/`). Custom domain `matchdayinference.com` attached and serving — verified HTTP 200, real masthead (`<title>MATCHDAY INFERENCE — The Daily Zine · World Cup 2026</title>`, ~77 KB). Apex is proxied (orange cloud) to Cloudflare IPs.
-- **Landing-page form already wired** to `API_BASE=https://api.matchdayinference.com` → `POST /signup` (payload matches `SignupRequest`), localStorage fallback. No change needed; goes live the moment a real submit hits it. (NOT yet smoke-tested with a real POST — see tomorrow list.)
+All 6 GH Actions secrets + 2 Cloudflare secrets are set. 33 tests still green.
 
-### ⏭️ TOMORROW — ordered remaining work
+## ⏯️ PICK UP HERE — site launch-ready; only daily-issue CONTENT remains (2026-06-03)
 
-1. **Google Analytics 4** (user prefers GA4 — already runs it on other sites; decided against Cloudflare-only). No code yet — **needs the user's `G-XXXXXXXXXX` Measurement ID.** Then insert the standard gtag.js snippet near the top of `<head>` in `web/index.html` (head is lines 3–979; insert right after the `<meta>` tags ~line 5, before `<title>`). No analytics present today (verified). Commit + push → Pages auto-redeploys.
-2. **`www` redirect** (user was mid-setup in Cloudflare). Two parts: (a) DNS → add `CNAME www → matchdayinference.com`, **Proxied (orange cloud)**; (b) Rules → Redirect Rules → built-in template **"Redirect from WWW to Root"** (301, preserve path + query). Do NOT add `www` as a second Pages custom domain (that serves both with no redirect). Verify after: `www.` should 301 → apex.
-3. **Resend** — verify `matchdayinference.com` in Resend, add the SPF/DKIM/DMARC TXT records into Cloudflare DNS. Then set the **last 2 GH secrets**: `RESEND_API_KEY` (user provides) + `FROM_EMAIL=matchday@matchdayinference.com`. Resend free tier = 3,000/mo, 100/day (fine to ~100 subs; upgrade before then).
-4. **Live signup smoke test** — POST a throwaway entry to `https://api.matchdayinference.com/signup`, confirm it lands in the Fly SQLite (`fly ssh console -C '...select email,slug from subscribers...' -a matchday-inference-signup`), then delete it. Confirms the full browser→Pages→Fly→SQLite path.
-5. **Per-day editorial patches** `data/patches/2026-06-11.json` … `2026-07-19.json` — the only manual content step. Template: `data/patches/2022-12-18.json`; scaffold each with `scripts/new_patch.py <date>`. (See queued task A — batch-generate all skeletons first.)
-6. **June 10 dress rehearsal** — `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch + a test Resend send.
+**The site is done and live.** You can **soft-launch tomorrow (share the signup link with friends & family) right now** — nothing blocks it. Signup, GA4 analytics, Resend email, the crypto tip jar, the `www`→apex redirect, and push-to-deploy (GH Actions) are all live and verified. The live signup smoke test passed end-to-end.
 
-### Two autonomous tasks still queued (no user input; offered repeatedly, deferred)
+**The only work left is the daily-issue CONTENT, needed by June 11 (tournament kickoff), NOT by the soft launch:**
 
-- **(A)** Batch-generate ~40 patch skeletons `2026-06-11`…`2026-07-19` via `scripts/new_patch.py` (turns step 5 into fill-in-the-blanks).
-- **(B)** Strip the leftover "Sample · v3 · GRUNGE EDITION" dev preview bar from `inference.html.j2` (~lines 1155–1161) so it never renders into real emails.
+1. **Fill the 39 patch skeletons** `data/patches/2026-06-11.json` … `2026-07-19.json` — the editorial seeds (`here_there_thread`, `story_behind_number`, `back_story`, `where_played_before`, `from_the_stands`, `anomalies`, `day_context`) for each matchday. Skeletons are already scaffolded (via `scripts/new_patch.py`); the filled template to copy from is `data/patches/2022-12-18.json`. This is the **only manual content step**. Rest days in the range can have their skeleton file deleted. **You do NOT need all 39 to soft-launch — prioritize the June 11 opening day first; the rest can trickle in before each matchday.**
+2. **June 10 dress rehearsal** — `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch, then `--send` a real test issue to yourself to confirm the whole pipeline fires end-to-end on a live-like day. (Email send is already proven; this proves it on a full generated issue.)
+
+### To deploy any landing-page change
+Just `git push` anything touching `web/**` — the `deploy-web.yml` GH Actions workflow auto-deploys to Cloudflare Pages. For an immediate manual deploy: `npx wrangler pages deploy web/ --project-name=matchday-inference --branch=master`.
+
+### Optional polish (non-blocking)
+- **DMARC** TXT record (`_dmarc` = `v=DMARC1; p=none;`) — only if mail ever lands in spam (test send landed in inbox, so not urgent).
+- **Disconnect the dead native Cloudflare Git integration** in the Pages dashboard (tidiness — GH Actions is the real deploy path now).
+- **Backlog E:** update the gpt-5.5 price placeholder in `src/inference/content/api.py` if OpenAI published official numbers.
+- **Backlog F:** render Cultural Critic + The Beat Reporter at full 8 sections (~$0.32, ~6 min) for complete cross-lens samples (only 5 of 7 lenses have full cached output).
 
 ## Next session — first actions
 
-Phase 0 + 1 + most of Phase 2 done. Spine is built; awaiting external setup. Priority order:
+All infra/setup is DONE and the site is launch-ready (see "⏯️ PICK UP HERE" above for the authoritative state). **Only two things remain, both content, both for June 11 — not for the soft launch:**
 
-### Blocking — user-side decisions
+1. **Fill the patch skeletons**, June 11 opening day first. Skeletons scaffolded at `data/patches/2026-06-11.json` … `2026-07-19.json`; copy the shape from `data/patches/2022-12-18.json`. Only manual content step.
+2. **June 10 dress rehearsal:** `scripts/run_day.py 2026-06-10 --issue 00` against a preview patch, then `--send` a test issue to yourself.
 
-1. **Domain + hosting.** Pick a domain, point DNS at the host, verify the sender domain in Resend.
-2. **Deploy the signup endpoint** to the chosen host. `pip install -e '.[web]'`; `uvicorn inference.subscribers.api:app`. The SQLite file at `data/subscribers.sqlite` needs persistent storage on the host. Fly.io has a free volume that fits.
-3. **Wire `web/index.html` signup form** to the deployed `/signup` URL. Currently the form persists to `localStorage` — `web/index.html` near the bottom has the JS to change. The signup endpoint expects: `{email, display_name, teams, players?, lens, length?, wildcard?, location?}`.
-4. **Add `OPENAI_API_KEY`, `API_FOOTBALL_KEY`, `RESEND_API_KEY`, `FROM_EMAIL` to GitHub repo secrets.** GH Actions workflow is already written — these unblock its daily cron.
-5. **Populate `data/patches/2026-06-11.json`** through `data/patches/2026-07-19.json`. Each one needs the editorial seeds (here_there_thread, story_behind_number, back_story, where_played_before, from_the_stands, anomalies) for that matchday. This is the only manual content step. The 2022 example at `data/patches/2022-12-18.json` is the template.
-6. **June 10 dress rehearsal.** Run `scripts/run_day.py 2026-06-10 --issue 00` against a dress-rehearsal patch (preview content) + verify end-to-end Resend send to a test address list.
+Everything in the older "Blocking — user-side decisions" list (domain, hosting, endpoint deploy, form wiring, secrets, GA4, Resend, www, smoke test) is **done** — do not redo it; verify against the PICK UP HERE checkpoint first.
 
 ### Autonomous nice-to-haves (no user input required)
 
