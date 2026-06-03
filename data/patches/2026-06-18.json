@@ -1,0 +1,97 @@
+{
+  "date": "2026-06-18",
+  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "fixtures": {},
+  "day_context": {
+    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
+    "tournament_summary": "TODO: where the tournament stands this morning",
+    "context_notes": [
+      "TODO: bullet of standings/storyline context"
+    ]
+  },
+  "editorial_seeds": {
+    "here_there_thread": {
+      "topic": "TODO: the thread tying two places/teams together",
+      "framing": "TODO: a sentence framing why the thread matters today",
+      "facts": [
+        {
+          "label": "TODO: year/place tag",
+          "fact": "TODO: the fact"
+        }
+      ]
+    },
+    "story_behind_number": {
+      "number": "TODO: the headline number (e.g. '1966')",
+      "surface_stat": "TODO: the stat as it appears on the surface",
+      "historical_anchor": "TODO: what the number really points back to",
+      "quick_facts": [
+        {
+          "k": "TODO: label",
+          "v": "TODO: value"
+        }
+      ],
+      "supporting_context": [
+        "TODO: a supporting sentence"
+      ]
+    },
+    "back_story": {
+      "teams": [
+        "TODO: Team A",
+        "TODO: Team B"
+      ],
+      "focus_meeting": {
+        "year": "TODO: YYYY",
+        "score": "TODO: e.g. '4 — 3'",
+        "host": "TODO: host nation",
+        "round": "TODO: e.g. 'Round of 16'",
+        "venue": "TODO: stadium, city",
+        "context_line": "TODO: host · round · venue",
+        "goals": [
+          {
+            "scorer": "TODO: name",
+            "minute": "TODO: e.g. \"41'\"",
+            "note": null
+          }
+        ],
+        "narrative_beats": [
+          "TODO: a beat of the story"
+        ]
+      },
+      "ledger": "TODO: the head-to-head ledger before today"
+    },
+    "where_played_before": {
+      "venue": {
+        "name": "TODO: stadium name",
+        "city": "TODO: city, country",
+        "capacity": 0,
+        "opened": 0,
+        "world_cups": []
+      },
+      "historical_matches": [
+        {
+          "year": "TODO: YYYY",
+          "body": "TODO: what happened here"
+        }
+      ],
+      "closer_hint": "TODO: a closing line about the venue"
+    },
+    "from_the_stands": {
+      "asker_name": "TODO: reader first name",
+      "asker_city": "TODO: reader city",
+      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
+      "question": "TODO: the reader's question",
+      "factual_brief": {
+        "facts": [
+          "TODO: a fact that answers the question"
+        ],
+        "note": "TODO: what the brief shows vs. what the question assumes"
+      }
+    },
+    "anomalies": [
+      {
+        "tag": "TODO: short tag",
+        "seed": "TODO: the odd/notable thing"
+      }
+    ]
+  }
+}
