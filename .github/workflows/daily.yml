@@ -21,6 +21,10 @@ on:
         description: 'Issue N° to stamp (e.g. 01).'
         required: false
         default: '01'
+      test_email:
+        description: 'DRESS REHEARSAL: if set, send ONE issue to this address only (a built-in Mexico/Diaspora test reader). Real subscribers are NOT touched.'
+        required: false
+        type: string
 
 jobs:
   run-day:
@@ -34,7 +38,10 @@ jobs:
           today=$(date -u +%Y-%m-%d)
           start="2026-06-10"  # one day early for the dress rehearsal
           end="2026-07-19"
-          if [[ "$today" > "$end" || "$today" < "$start" ]]; then
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Manual dispatch — bypassing tournament-window guard (dress rehearsal)."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          elif [[ "$today" > "$end" || "$today" < "$start" ]]; then
             echo "Today $today is outside tournament window ($start..$end). Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
@@ -90,11 +97,25 @@ jobs:
         env:
           INFERENCE_EXPORT_URL:   ${{ secrets.INFERENCE_EXPORT_URL }}
           INFERENCE_EXPORT_TOKEN: ${{ secrets.INFERENCE_EXPORT_TOKEN }}
+          TEST_EMAIL:             ${{ github.event.inputs.test_email }}
         run: |
-          # Pull the live list from the Fly endpoint into data/readers.json.
-          # If the export secrets aren't set yet, fall back to the committed
-          # sample so the run still completes (useful pre-launch / dress rehearsal).
-          if [[ -n "$INFERENCE_EXPORT_URL" && -n "$INFERENCE_EXPORT_TOKEN" ]]; then
+          if [[ -n "$TEST_EMAIL" ]]; then
+            # DRESS REHEARSAL: one built-in test reader → the given address only.
+            # Real subscribers are never queried. Email comes via env (not string
+            # interpolation) to avoid script injection.
+            echo "Dress rehearsal — single test reader → $TEST_EMAIL"
+            python - <<'PY'
+          import json, os
+          json.dump({"readers": [{
+              "slug": "rehearsal-mx", "display_name": "Sofía",
+              "teams": ["Mexico"], "players": [], "lens": "The Diaspora",
+              "length": "Standard",
+              "wildcard": "Third-gen Mexican-American in LA; abuelo took me to my first match.",
+              "location": "Los Angeles, CA", "email": os.environ["TEST_EMAIL"],
+          }]}, open("data/readers.json", "w"))
+          PY
+          elif [[ -n "$INFERENCE_EXPORT_URL" && -n "$INFERENCE_EXPORT_TOKEN" ]]; then
+            # Pull the live list from the Fly endpoint into data/readers.json.
             echo "Fetching subscribers from $INFERENCE_EXPORT_URL"
             curl -sf -H "Authorization: Bearer $INFERENCE_EXPORT_TOKEN" \
               "$INFERENCE_EXPORT_URL" -o data/readers.json
