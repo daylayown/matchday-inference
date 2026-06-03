@@ -1,0 +1,18 @@
+MATCHDAY INFERENCE
+N° {{ issue_number }} — {{ date_human }}
+========================================
+
+Good morning{% if reader_name %}, {{ reader_name }}{% endif %} — your issue is stapled and waiting.
+
+{{ headline }}{% if headline_note %} — {{ headline_note }}{% endif %}
+{% if teaser_line %}
+{{ teaser_line }}
+{% endif %}
+Open your issue:
+{{ issue_url }}
+
+Eight sections, written overnight for {% if reader_summary %}{{ reader_summary }}{% else %}you{% endif %}.
+
+--
+MATCHDAY INFERENCE · {{ year }} · Made in Tucson, AZ
+{% if unsubscribe_url %}Unsubscribe: {{ unsubscribe_url }}{% endif %}

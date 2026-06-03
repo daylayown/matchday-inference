@@ -53,14 +53,19 @@ def test_send_results_sends_and_skips(tmp_path):
     store = FakeStore({"ada": "ada@example.com"})
 
     sent_calls: list[dict] = []
+    published: list[Path] = []
 
     def fake_send(*, to, subject, html, text=None):
         sent_calls.append({"to": to, "subject": subject, "html": html, "text": text})
         return SendResult(success=True, message_id="msg_1", to=to)
 
+    def fake_publish(*, html_path):
+        published.append(html_path)
+        return "https://issues.example.test/tok123.html"
+
     outcomes = send_results(
         results, readers, date_iso="2026-06-11", issue_number="01",
-        store=store, send_fn=fake_send,
+        store=store, send_fn=fake_send, publish_fn=fake_publish,
     )
 
     by_slug = {o.reader_slug: o for o in outcomes}
@@ -70,13 +75,17 @@ def test_send_results_sends_and_skips(tmp_path):
     assert by_slug["cy"].sent is False
     assert by_slug["cy"].skipped_reason == "render failed"
 
-    # Exactly one real send, to the reader with an email, carrying html + text.
+    # Only the issue with an email is published, and exactly one teaser is sent.
+    assert published == [html]
     assert len(sent_calls) == 1
     call = sent_calls[0]
     assert call["to"] == "ada@example.com"
-    assert call["html"] == "<h1>hi</h1>"
-    assert call["text"] == "hi"
     assert "01" in call["subject"]
+    # The email is the teaser (links to the hosted issue), NOT the raw issue HTML.
+    assert "https://issues.example.test/tok123.html" in call["html"]
+    assert call["html"] != "<h1>hi</h1>"
+    assert "Open your issue" in call["html"]
+    assert call["text"] and "https://issues.example.test/tok123.html" in call["text"]
     # Caller-supplied store is not closed by send_results (owns_store is False).
     assert store.closed is False
 
@@ -93,6 +102,7 @@ def test_send_results_handles_failed_send(tmp_path):
     outcomes = send_results(
         results, [_reader("ada")], date_iso="2026-06-11", issue_number="01",
         store=store, send_fn=failing_send,
+        publish_fn=lambda *, html_path: "https://issues.example.test/x.html",
     )
     assert outcomes[0].sent is False
     assert outcomes[0].skipped_reason == "RESEND_API_KEY not set"

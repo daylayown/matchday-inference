@@ -1,0 +1,103 @@
+{#- Email-safe teaser. Tables + inline styles + hex colors + web-safe fonts only.
+    No CSS custom properties, no @font-face, no pseudo-elements — none survive in
+    Gmail/Outlook. The full grunge issue lives at {{ issue_url }}. -#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="x-apple-disable-message-reformatting" />
+<title>MATCHDAY INFERENCE — N° {{ issue_number }}</title>
+</head>
+<body style="margin:0; padding:0; background:#E0D4B0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+
+<!-- preheader (hidden) -->
+<div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
+  {{ headline }} — your N° {{ issue_number }} is stapled and waiting.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E0D4B0;">
+  <tr>
+    <td align="center" style="padding:28px 16px;">
+
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background:#F1E8D0; border:3px solid #0B0A0E;">
+
+        <!-- dateline strip -->
+        <tr>
+          <td style="background:#0B0A0E; padding:10px 22px; font-family:'Courier New',Courier,monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#F1E8D0;">
+            Zine N° {{ issue_number }}&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:#FF2E6E;">{{ date_compact }}</span>&nbsp;&nbsp;·&nbsp;&nbsp;Stapled at first light
+          </td>
+        </tr>
+
+        <!-- masthead -->
+        <tr>
+          <td align="center" style="padding:34px 22px 6px 22px;">
+            <div style="font-family:'Arial Black','Arial Narrow',Impact,sans-serif; font-weight:900; font-size:20px; letter-spacing:3px; text-transform:uppercase; color:#0B0A0E; line-height:1;">MATCHDAY</div>
+            <div style="font-family:'Arial Black',Impact,sans-serif; font-weight:900; font-size:58px; letter-spacing:1px; text-transform:uppercase; color:#0B0A0E; line-height:0.95;">INFERENCE</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:0 22px 22px 22px;">
+            <div style="font-family:Georgia,'Times New Roman',serif; font-style:italic; font-size:15px; color:#5C5450;">built every morning, for you specifically</div>
+          </td>
+        </tr>
+
+        <!-- rule -->
+        <tr><td style="padding:0 22px;"><div style="border-top:2px solid #0B0A0E; font-size:0; line-height:0;">&nbsp;</div></td></tr>
+
+        <!-- hook -->
+        <tr>
+          <td style="padding:26px 30px 4px 30px;">
+            <div style="font-family:'Courier New',Courier,monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#C71956;">Good morning{% if reader_name %}, {{ reader_name }}{% endif %} — your issue is stapled</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 30px 0 30px;">
+            <div style="font-family:Georgia,'Times New Roman',serif; font-size:32px; line-height:1.12; color:#0B0A0E;">{{ headline }}</div>
+            {% if headline_note %}<div style="font-family:Georgia,serif; font-style:italic; font-size:16px; color:#1E33C4; padding-top:6px;">{{ headline_note }}</div>{% endif %}
+          </td>
+        </tr>
+        {% if teaser_line %}
+        <tr>
+          <td style="padding:16px 30px 0 30px;">
+            <div style="font-family:Helvetica,Arial,sans-serif; font-size:16px; line-height:1.55; color:#1F1B26;">{{ teaser_line }}</div>
+          </td>
+        </tr>
+        {% endif %}
+
+        <!-- button -->
+        <tr>
+          <td style="padding:28px 30px 6px 30px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" bgcolor="#FF2E6E" style="background:#FF2E6E; border:2px solid #0B0A0E;">
+                  <a href="{{ issue_url }}" style="display:inline-block; padding:15px 30px; font-family:'Arial Black',Impact,sans-serif; font-weight:900; font-size:17px; letter-spacing:1.5px; text-transform:uppercase; color:#0B0A0E; text-decoration:none;">Open your issue&nbsp;&rarr;</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:6px 30px 30px 30px;">
+            <div style="font-family:'Courier New',Courier,monospace; font-size:11px; color:#5C5450;">Eight sections, written overnight for {% if reader_summary %}{{ reader_summary }}{% else %}you{% endif %}.</div>
+          </td>
+        </tr>
+
+        <!-- footer -->
+        <tr>
+          <td style="background:#E0D4B0; border-top:2px solid #0B0A0E; padding:18px 30px;">
+            <div style="font-family:'Courier New',Courier,monospace; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#5C5450; line-height:1.6;">
+              MATCHDAY INFERENCE&nbsp;·&nbsp;{{ year }}&nbsp;·&nbsp;Made in Tucson, AZ<br/>
+              {% if issue_url %}<a href="{{ issue_url }}" style="color:#1E33C4;">View in browser</a>{% endif %}{% if unsubscribe_url %}&nbsp;·&nbsp;<a href="{{ unsubscribe_url }}" style="color:#5C5450;">Unsubscribe</a>{% endif %}
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

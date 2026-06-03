@@ -79,6 +79,11 @@ class ReaderResult:
     elapsed_seconds: float = 0.0
     error: str | None = None
     txt_error: str | None = None
+    # Carried to the email teaser (the email links to the web issue, not the HTML).
+    editor_headline: str | None = None
+    editor_headline_note: str | None = None
+    editor_teaser_line: str | None = None
+    reader_summary: str | None = None
 
     @property
     def total_cost_usd(self) -> float:
@@ -201,6 +206,13 @@ def _run_for_reader(
         )
         result.runs.append(editor_run)
         editor_facts = editor_run.facts
+        if editor_facts:
+            result.editor_headline = editor_facts.get("headline")
+            result.editor_headline_note = editor_facts.get("headline_note")
+            paragraphs = editor_facts.get("paragraphs") or []
+            if paragraphs:
+                result.editor_teaser_line = _teaser_snippet(paragraphs[0])
+        result.reader_summary = _reader_summary(reader)
 
         # 3) Editorial-seeded sections. If the patch doesn't supply a seed for a
         # section, we omit it cleanly — no hallucinated heritage.
@@ -435,6 +447,26 @@ def _human_date(date_iso: str) -> str:
               "July", "August", "September", "October", "November", "December"]
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     return f"{days[dt.weekday()]} {dt.day} {months[dt.month - 1]} {dt.year}"
+
+
+def _teaser_snippet(text: str, limit: int = 200) -> str:
+    """First ~`limit` chars of the editor's opening paragraph for the email
+    teaser — trimmed at a word boundary, with an ellipsis if cut."""
+    text = " ".join((text or "").split())
+    if len(text) <= limit:
+        return text
+    cut = text[:limit].rsplit(" ", 1)[0].rstrip(",;:—-")
+    return f"{cut}…"
+
+
+def _reader_summary(reader: ReaderProfile) -> str | None:
+    """e.g. 'Mexico · The Diaspora lens' for the teaser footer line."""
+    parts: list[str] = []
+    if reader.teams:
+        parts.append(", ".join(reader.teams))
+    if reader.lens:
+        parts.append(f"{reader.lens} lens")
+    return " · ".join(parts) or None
 
 
 def _prev_date(date_iso: str) -> str:

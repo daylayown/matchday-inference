@@ -84,6 +84,53 @@ def render_inference_txt(
     )
 
 
+def render_teaser_email(
+    *,
+    issue_number: str,
+    date_human: str,
+    date_compact: str,
+    headline: str,
+    issue_url: str,
+    headline_note: str | None = None,
+    teaser_line: str | None = None,
+    reader_name: str | None = None,
+    reader_summary: str | None = None,
+    unsubscribe_url: str | None = None,
+    year: str | int = 2026,
+) -> str:
+    """Render the email-safe teaser HTML — the 'envelope' linking to the full
+    web issue at `issue_url`. Deliberately plain (tables + inline styles) so it
+    survives Gmail/Outlook; the grunge aesthetic lives on the web issue."""
+    return _render("teaser.email.html.j2", autoescape=True,
+        issue_number=issue_number, date_human=date_human, date_compact=date_compact,
+        headline=headline, headline_note=headline_note, teaser_line=teaser_line,
+        issue_url=issue_url, reader_name=reader_name, reader_summary=reader_summary,
+        unsubscribe_url=unsubscribe_url, year=year,
+    )
+
+
+def render_teaser_text(
+    *,
+    issue_number: str,
+    date_human: str,
+    headline: str,
+    issue_url: str,
+    headline_note: str | None = None,
+    teaser_line: str | None = None,
+    reader_name: str | None = None,
+    reader_summary: str | None = None,
+    unsubscribe_url: str | None = None,
+    year: str | int = 2026,
+) -> str:
+    """Plain-text fallback for the teaser email."""
+    return _render("teaser.email.txt.j2", autoescape=False,
+        issue_number=issue_number, date_human=date_human,
+        headline=headline, headline_note=headline_note, teaser_line=teaser_line,
+        issue_url=issue_url, reader_name=reader_name, reader_summary=reader_summary,
+        unsubscribe_url=unsubscribe_url, year=year,
+    )
+
+
 def _render(template_name: str, *, autoescape: bool, **context: Any) -> str:
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
