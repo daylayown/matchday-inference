@@ -533,53 +533,7 @@ section {
 .zine-card .mock .blue { color: var(--blue); font-weight: 700; }
 .zine-card .mock .dim { color: var(--ink-muted); }
 
-/* ─── Formats list (zine TOC, ink) ─── */
-
-.formats-bg { background: var(--ink); color: var(--paper); border-top: 6px solid var(--ink); position: relative; overflow: hidden; }
-.formats-bg::before {
-  content: ""; position: absolute; inset: 0;
-  background-image: radial-gradient(circle, rgba(255,46,110,0.18) 1.5px, transparent 2px);
-  background-size: 12px 12px;
-  mix-blend-mode: screen; pointer-events: none;
-}
-.formats-bg .section-head { border-bottom-color: var(--paper); }
-.formats-bg .section-head .kicker { color: var(--pink); }
-.formats-bg .section-head .kicker .num { background: var(--paper); color: var(--ink); }
-.formats-bg .section-head h2 { color: var(--paper); }
-.formats-bg .section-head h2 em { color: var(--pink); }
-.formats-bg .section-head .dek { color: rgba(241,232,208,0.75); }
-
-.formats-list { display: flex; flex-direction: column; gap: 0; border-top: 2.5px solid var(--paper); position: relative; z-index: 2; }
-.format-row {
-  display: grid; grid-template-columns: 64px 1fr; gap: 20px;
-  padding: 28px 0; border-bottom: 2px dashed rgba(241,232,208,0.4);
-  align-items: baseline;
-  transition: background 0.2s ease, padding-left 0.2s ease;
-  position: relative;
-}
-@media (min-width: 900px) {
-  .format-row { grid-template-columns: 80px 1.4fr 2fr 100px; gap: 36px; padding: 38px 0; align-items: center; }
-}
-.format-row:hover { background: rgba(255,46,110,0.08); padding-left: 14px; }
-.format-row .idx { font-family: var(--font-display); font-size: 46px; color: var(--pink); line-height: 1; }
-.format-row .name {
-  font-family: var(--font-display); font-size: clamp(28px, 3.4vw, 42px);
-  line-height: 0.9; letter-spacing: 0.005em; text-transform: uppercase;
-}
-.format-row .ref {
-  display: block; margin-top: 6px;
-  font-family: var(--font-hand); font-weight: 700;
-  font-size: 18px; text-transform: none; letter-spacing: 0;
-  color: var(--pink); line-height: 1.2;
-  transform: rotate(-1deg); display: inline-block;
-}
-.format-row .desc { font-size: 15px; line-height: 1.55; color: rgba(241,232,208,0.88); font-weight: 500; }
-.format-row .kind {
-  font-family: var(--font-stencil); font-weight: 400;
-  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: rgba(241,232,208,0.65); justify-self: end; text-align: right;
-  white-space: nowrap;
-}
+/* (Formats-list CSS removed — the audio/live "broadcast" section it styled was cut as out-of-scope.) */
 
 /* ─── Sample / specimen ─── */
 
@@ -1058,7 +1012,7 @@ footer {
     <div class="pitch-right">
       <p class="lede">Matchday programmes are nothing new. The fanzine at the turnstile, the stat-stuffed booklet your dad bought at the kiosk, the team sheet on cheap newsprint — fans have been buying personalised football publications for <mark>over a hundred years</mark>.</p>
       <p>The catch: the audience was always <span class="xed">everyone</span> <span class="ins">all of us</span> in the stadium. Identical programme. Identical reader. The mass-printed kind of personal.</p>
-      <div class="pullquote">"<span class="riso r-trip" data-text="A matchday programme assembled for exactly one reader,">A matchday programme assembled for exactly one reader,</span> every morning, in every language — has <span class="hl">never been possible</span>."</div>
+      <div class="pullquote">"<span class="riso r-trip" data-text="A matchday programme assembled for exactly one reader,">A matchday programme assembled for exactly one reader,</span> every morning, for the length of a whole World Cup — has <span class="hl">never been possible</span>."</div>
       <p>MATCHDAY INFERENCE is what happens when you keep the spine of an honest matchday zine — team sheets, stat pages, manager's notes, the centre spread — and replace the printing press with an AI desk that never sleeps. Same form factor. Different scale. One reader at a time, every morning, for thirty-five mornings.</p>
     </div>
   </div>
@@ -1070,7 +1024,7 @@ footer {
   <div class="wrap">
     <div class="section-head reveal">
       <div class="kicker"><span class="num">02</span> Inside today's zine</div>
-      <h2>Six pages.<br/>Same shape every morning. <em>Different inside.</em></h2>
+      <h2>Eight sections.<br/>Same shape every morning. <em>Different inside.</em></h2>
       <p class="dek">The structure of a real matchday programme, lifted whole. The contents inside, different for every reader.</p>
     </div>
 
@@ -1078,124 +1032,105 @@ footer {
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">i</span>
-        <h3>Team Sheet</h3>
-        <p>Your teams' day, in detail. Stat lines for the players you follow. Group position. Knockout fate. What's next on the calendar.</p>
+        <h3>Your Day</h3>
+        <p>Your teams' matchday, in full. The result, the stat lines for the players you follow, where it leaves them in the group, and what's next.</p>
         <div class="mock">
           <span class="pink">ARG</span> <strong>2 — 0</strong> <span class="pink">IRN</span><br/>
-          MESSI · <span class="blue">90'</span> · 1A · <span class="dim">4 KP</span><br/>
-          POSS · <span class="blue">64%</span> · F3 ENTRIES <span class="blue">38</span><br/>
-          GROUP — <span class="pink">ARG 3, KSA 3, IRN 0, MEX 0</span>
+          MESSI · <span class="blue">90'</span> · 1A · 3 SH · <span class="dim">8.2</span><br/>
+          POSSESSION · <span class="blue">64%</span><br/>
+          GROUP C — <span class="pink">ARG 3 · KSA 3 · IRN 0</span>
         </div>
       </article>
 
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">ii</span>
-        <h3>Stats Page</h3>
-        <p>Tournament-wide leaderboards. Top scorers, assists, clean sheets, pass %, progressive carries. Updated daily.</p>
-        <div class="mock">
-          TOP SCORERS · MD <span class="pink">4</span><br/>
-          MBAPPÉ · FRA · <span class="blue">2G</span><br/>
-          VINICIUS · BRA · <span class="blue">2G</span><br/>
-          KANE · ENG · <span class="blue">1G 1A</span><br/>
-          ÁLVAREZ · ARG · <span class="blue">1G</span>
+        <h3>The Editor's Desk</h3>
+        <p>The day's tournament arc, narrated through your chosen lens. Where the World Cup turned and why it matters. No takes. No predictions.</p>
+        <div class="mock" style="line-height: 1.35;">
+          THE ROMANTIC · MD <span class="pink">4</span><br/>
+          <span class="dim">"Argentina didn't dazzle.</span><br/>
+          <span class="dim">They endured — and enduring</span><br/>
+          <span class="dim">is its own kind of story."</span><br/>
+          — the editor
         </div>
       </article>
 
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">iii</span>
-        <h3>Centre Spread</h3>
-        <p>A daily visualisation built for your tactical lens. Shot map, pass network, build-up progression, pressing zones.</p>
-        <div class="mock" style="line-height: 1.3;">
-          <span class="dim">[ shot map · ARG vs IRN ]</span><br/>
-          <span class="dim">·  ·</span> <span class="pink">●</span> <span class="dim">·  ·</span><br/>
-          <span class="dim">·</span> <span class="pink">●●</span> <span class="dim">·   ·   ·</span><br/>
-          <span class="dim">·</span> <span class="pink">●</span> <span class="dim">·  ·  </span> <span class="blue">○</span><br/>
-          <span class="dim">xG </span><span class="pink">2.1</span><span class="dim"> vs </span><span class="blue">0.4</span>
+        <h3>Here &amp; There</h3>
+        <p>The thread between where you are and where the football is. Your city, your roots, today's match — drawn together for your lens.</p>
+        <div class="mock" style="line-height: 1.35;">
+          HERE — <span class="pink">Lagos</span>, 4:00pm<br/>
+          THERE — <span class="blue">Lusail</span>, kickoff<br/>
+          <span class="dim">A kitchen an ocean away,</span><br/>
+          <span class="dim">a final on the little TV.</span>
         </div>
       </article>
 
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">iv</span>
-        <h3>Manager's Notes</h3>
-        <p>One short, stat-grounded tactical observation per day, written for your chosen lens. No takes. No predictions.</p>
-        <div class="mock">
-          POSSESSION LENS · ARG–IRN<br/>
-          PPDA <span class="pink">8.2</span> vs <span class="blue">14.1</span><br/>
-          BUILD-UP <span class="pink">73%</span> LEFT HALF<br/>
-          <span class="dim">→ pressed twice as hard.</span>
+        <h3>Story Behind the Number</h3>
+        <p>One number from today, cracked open. The record it brushed, the history it echoes, the context the broadcast skipped past.</p>
+        <div class="mock" style="line-height: 1.35;">
+          THE NUMBER · <span class="pink">3</span><br/>
+          <span class="dim">Mbappé's hat-trick — first</span><br/>
+          <span class="dim">in a final since Hurst, 1966.</span><br/>
+          <span class="blue">56</span> <span class="dim">years between them.</span>
         </div>
       </article>
 
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">v</span>
-        <h3>From the Stands</h3>
-        <p>Reply to your Inference with a question. The best get picked, answered, and printed in tomorrow's edition.</p>
-        <div class="mock">
-          Q · <span class="dim">"Why did Germany lose midfield?"</span><br/>
-          A · GER PPDA <span class="pink">17.3</span> · WORST<br/>
-          &nbsp;&nbsp;of MD3. JAP <span class="blue">+8</span> recoveries<br/>
-          &nbsp;&nbsp;<span class="dim">in opp. half.</span>
+        <h3>Back Story</h3>
+        <p>The history between today's two sides. The last time they met, what happened, and what's still unsettled between them.</p>
+        <div class="mock" style="line-height: 1.35;">
+          <span class="pink">ARG</span> × <span class="pink">FRA</span><br/>
+          <span class="dim">Last met — 2018, Round of 16.</span><br/>
+          <span class="dim">France won 4—3. A 19-year-old</span><br/>
+          <span class="dim">Mbappé announced himself.</span>
         </div>
       </article>
 
       <article class="zine-card">
         <span class="tape"></span>
         <span class="num-badge">vi</span>
-        <h3>Added Time</h3>
-        <p>The unexpected bit at the end, still part of the match. Three statistical anomalies — the things that shouldn't have happened.</p>
-        <div class="mock">
-          · ITALY · <span class="pink">0</span> SHOTS ON TARGET<br/>
-          · MBAPPÉ SUBBED · <span class="pink">18'</span><br/>
-          · BRAZIL · <span class="blue">92%</span> PASS · OPP. HALF
+        <h3>Where They Played Before</h3>
+        <p>The ground today's match is staged on. Its first World Cup, what it was built for, and what it becomes once the lights go down.</p>
+        <div class="mock" style="line-height: 1.35;">
+          <span class="pink">LUSAIL STADIUM</span><br/>
+          <span class="dim">Capacity 88,966.</span><br/>
+          <span class="dim">Its first World Cup final —</span><br/>
+          <span class="dim">built for one night like this.</span>
         </div>
       </article>
-    </div>
-  </div>
-</section>
 
-<!-- ─── FORMATS ─── -->
-<section class="formats-bg">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker"><span class="num">03</span> Also Inside</div>
-      <h2>And, if you want it — <em>a full broadcast.</em></h2>
-      <p class="dek">Today's Inference is the spine. Five more formats sit alongside it, each generated for one reader, ready before the kettle's boiled.</p>
-    </div>
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">vii</span>
+        <h3>From the Stands</h3>
+        <p>The questions a fan actually asks — answered with real tournament data, sourced and shown, not spouted from a hot-take desk.</p>
+        <div class="mock" style="line-height: 1.35;">
+          Q · <span class="dim">"Why did Germany fade late?"</span><br/>
+          A · <span class="dim">three subs by the 60th,</span><br/>
+          &nbsp;&nbsp;<span class="dim">possession slid</span> <span class="pink">58</span><span class="dim">→</span><span class="blue">44%</span><span class="dim">.</span><br/>
+          &nbsp;&nbsp;<span class="dim">legs gone, not nerve.</span>
+        </div>
+      </article>
 
-    <div class="formats-list">
-      <article class="format-row">
-        <div class="idx">i</div>
-        <div class="name">The Touchline<span class="ref">your daily audio companion</span></div>
-        <div class="desc">A five-minute spoken edition of today's Inference — TEAM SHEET, STATS PAGE, MANAGER'S NOTES, narrated. Drops with the email at first light.</div>
-        <div class="kind">Audio · Daily</div>
-      </article>
-      <article class="format-row">
-        <div class="idx">ii</div>
-        <div class="name">Walkout<span class="ref">pre-match podcast</span></div>
-        <div class="desc">Before every match your team plays: a three-minute rundown of form, lineups, opposition tendencies, and what's at stake.</div>
-        <div class="kind">Audio · Per Match</div>
-      </article>
-      <article class="format-row">
-        <div class="idx">iii</div>
-        <div class="name">Full-Time<span class="ref">post-match podcast</span></div>
-        <div class="desc">After every match your team plays: a five-minute review with the stat line, key moments, and what just moved in the group or bracket.</div>
-        <div class="kind">Audio · Per Match</div>
-      </article>
-      <article class="format-row">
-        <div class="idx">iv</div>
-        <div class="name">The Gantry<span class="ref">live in-match commentary</span></div>
-        <div class="desc">A real-time text thread for matches involving your teams — event-data-grounded commentary as the match unfolds. Read on your phone like a live blog.</div>
-        <div class="kind">Live · Per Match</div>
-      </article>
-      <article class="format-row">
-        <div class="idx">v</div>
-        <div class="name">The Mixed Zone<span class="ref">reader Q&amp;A</span></div>
-        <div class="desc">Submit a question via reply. The best ones get answered, sourced from real tournament data, and printed in tomorrow's FROM THE STANDS.</div>
-        <div class="kind">Interactive</div>
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">viii</span>
+        <h3>Added Time</h3>
+        <p>The bit at the end that shouldn't have happened. Three statistical oddities from the day, pulled for the stat-heads among you.</p>
+        <div class="mock">
+          · ITALY · <span class="pink">0</span> SHOTS ON TARGET<br/>
+          · SUB AT <span class="pink">18'</span> · EARLIEST OF MD<br/>
+          · KSA · MORE <span class="blue">xG</span>, LOST 2—0
+        </div>
       </article>
     </div>
   </div>
@@ -1213,7 +1148,7 @@ footer {
 
     <div class="specimen-wrap">
       <div class="specimen-left">
-        <p>Every section of every Inference is generated against real event data — match logs, lineups, pass networks, shot maps. The AI's job is editorial: <em>choose the angles that matter for you, write them tight, resist the temptation to commentate.</em></p>
+        <p>Every section of every Inference is generated against real match data — results, lineups, player stat lines, tournament standings. The AI's job is editorial: <em>choose the angles that matter for you, write them tight, resist the temptation to commentate.</em></p>
         <p>The output is short, dense, mostly numbers, and built around a clear voice: a beat reporter at a wire desk who has never written a take in their life.</p>
         <p>If a stat would be cut from a wire piece for being florid — <strong>it isn't here</strong>.</p>
         <p style="font-family: var(--font-hand); font-weight: 700; font-size: 22px; color: var(--pink-deep); transform: rotate(-1deg); display: inline-block; margin: 12px 0;">see the full sample on inference-sample-v3.html ↗</p>
@@ -1226,12 +1161,12 @@ footer {
         <h4>Argentina</h4>
         <div class="specimen-row"><span class="k">Result</span><span class="v">W <strong>2 — 0</strong> vs Iran</span></div>
         <div class="specimen-row"><span class="k">Possession</span><span class="v"><strong>64%</strong></span></div>
-        <div class="specimen-row"><span class="k">F3 Entries</span><span class="v">38 (IRN 9)</span></div>
-        <div class="specimen-row"><span class="k">xG</span><span class="v">2.1 — 0.4</span></div>
-        <div class="specimen-row"><span class="k">PPDA</span><span class="v">8.2 — 14.1</span></div>
+        <div class="specimen-row"><span class="k">Shots (on T)</span><span class="v">21 / 8 — IRN 5 / 2</span></div>
+        <div class="specimen-row"><span class="k">Pass acc.</span><span class="v">87% — 79%</span></div>
+        <div class="specimen-row"><span class="k">Messi</span><span class="v">90' · 1A · 3 sh · 8.2</span></div>
         <div class="specimen-row"><span class="k">Group</span><span class="v">ARG 3, KSA 3, IRN 0, MEX 0</span></div>
         <div class="specimen-row"><span class="k">Next</span><span class="v">vs Mexico, Wed 18 Jun</span></div>
-        <div class="specimen-note">Most progressive carries by any midfielder in MD4. Group lead held on goal difference.</div>
+        <div class="specimen-note">First clean sheet of the tournament. Group lead held on goal difference.</div>
       </aside>
     </div>
   </div>
