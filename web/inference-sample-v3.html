@@ -1,0 +1,1593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>INFERENCE N° 04 — GRUNGE EDITION · v3</title>
+<meta name="description" content="The Matchday Zine, World Cup 2026. Inference N° 04, photocopier-fifth-generation edition." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,400..900;1,9..40,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --paper: #F1E8D0;
+  --paper-deep: #E0D4B0;
+  --paper-light: #F8F2E0;
+  --paper-dingy: #DFD3AE;
+  --ink: #0B0A0E;
+  --ink-soft: #1F1B26;
+  --ink-muted: #5C5450;
+  --pink: #FF2E6E;
+  --pink-deep: #C71956;
+  --blue: #1E33C4;
+  --blue-deep: #131F8E;
+  --highlighter: #FFE94A;
+  --highlighter-pink: #FFA8C8;
+  --tape: rgba(255, 46, 110, 0.45);
+  --tape-blue: rgba(30, 51, 196, 0.4);
+  --tape-cream: rgba(241, 232, 208, 0.45);
+  --tape-yellow: rgba(255, 233, 74, 0.65);
+
+  --font-display: "Anton", "Impact", sans-serif;
+  --font-eccentric: "Yeseva One", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-stencil: "Allerta Stencil", "Anton", sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --max: 1240px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── HEAVY paper-fiber + grain overlay (fifth-gen photocopy) ─── */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 13% 18%, rgba(11,10,14,0.16) 1.2px, transparent 1.6px),
+    radial-gradient(circle at 73% 82%, rgba(11,10,14,0.10) 1px, transparent 1.5px),
+    radial-gradient(circle at 47% 50%, rgba(11,10,14,0.07) 0.8px, transparent 1.2px);
+  background-size: 5px 5px, 8px 8px, 11px 11px;
+  mix-blend-mode: multiply;
+}
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0.16 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+
+/* ─── Type helpers ─── */
+
+.mono { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+.label { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; font-size: 10px; color: var(--ink-muted); }
+.stencil { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.03em; text-transform: uppercase; }
+.hand { font-family: var(--font-hand); font-weight: 600; line-height: 1.0; color: var(--ink); }
+
+/* ─── Riso offsets — single, double, triple ─── */
+.riso { position: relative; display: inline-block; }
+.riso::before {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  color: var(--pink);
+  transform: translate(-10px, 10px);
+  mix-blend-mode: multiply;
+  z-index: -1;
+  pointer-events: none;
+}
+.riso.r-blue::before { color: var(--blue); transform: translate(10px, -8px); }
+.riso.r-trip::after {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  color: var(--blue);
+  transform: translate(14px, -12px);
+  mix-blend-mode: multiply;
+  z-index: -2;
+  pointer-events: none;
+}
+.riso.r-tilt::before { transform: translate(-12px, 14px) rotate(-1.5deg); }
+.riso.r-broken::before { transform: translate(-7px, 11px) skewX(-3deg); }
+
+/* ─── Highlighter (deliberately wonky behind text) ─── */
+.hl, .hl-p {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+.hl::before, .hl-p::before {
+  content: "";
+  position: absolute;
+  left: -4px; right: -4px;
+  top: 12%; bottom: 4%;
+  background: var(--highlighter);
+  z-index: -1;
+  transform: skew(-3deg) rotate(-0.8deg);
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+.hl-p::before { background: var(--highlighter-pink); transform: skew(2deg) rotate(0.6deg); }
+
+/* ─── Strikethrough (hand-drawn looking) ─── */
+.xed {
+  position: relative;
+  text-decoration: none;
+  color: var(--ink-muted);
+}
+.xed::after {
+  content: "";
+  position: absolute;
+  left: -3px; right: -3px;
+  top: 52%;
+  height: 3px;
+  background: var(--ink);
+  transform: rotate(-1.2deg);
+  border-radius: 8px;
+}
+
+/* ─── Marker-pen circle (SVG decoration) ─── */
+.circled { position: relative; display: inline-block; padding: 6px 14px 6px 12px; z-index: 0; }
+.circled::after {
+  content: "";
+  position: absolute;
+  inset: -4px -4px -4px -2px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100' preserveAspectRatio='none'><path d='M30 12 Q 8 18, 8 50 Q 8 88, 50 92 Q 150 100, 200 88 Q 234 78, 232 48 Q 230 14, 180 8 Q 90 -2, 30 12 Z' fill='none' stroke='%23FF2E6E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+  pointer-events: none;
+  transform: rotate(-1.5deg);
+}
+.circled.blue::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100' preserveAspectRatio='none'><path d='M30 12 Q 8 18, 8 50 Q 8 88, 50 92 Q 150 100, 200 88 Q 234 78, 232 48 Q 230 14, 180 8 Q 90 -2, 30 12 Z' fill='none' stroke='%231E33C4' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+.circled.ink::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100' preserveAspectRatio='none'><path d='M30 12 Q 8 18, 8 50 Q 8 88, 50 92 Q 150 100, 200 88 Q 234 78, 232 48 Q 230 14, 180 8 Q 90 -2, 30 12 Z' fill='none' stroke='%230B0A0E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+/* ─── Hand-drawn arrow ─── */
+.hand-arrow {
+  display: inline-block;
+  width: 110px; height: 60px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 60'><path d='M 6 32 Q 55 6, 100 30 M 88 20 L 100 30 L 88 40' fill='none' stroke='%230B0A0E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center;
+  background-size: contain;
+}
+.hand-arrow.pink { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 60'><path d='M 6 32 Q 55 6, 100 30 M 88 20 L 100 30 L 88 40' fill='none' stroke='%23FF2E6E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
+
+/* ─── Hand-note (margin scribble) ─── */
+.hand-note {
+  font-family: var(--font-hand);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+  display: inline-block;
+  position: relative;
+}
+.hand-note.pink { color: var(--pink-deep); }
+.hand-note.blue { color: var(--blue-deep); }
+
+/* ─── Tape ─── */
+.tape { position: absolute; width: 120px; height: 28px; background: var(--tape); pointer-events: none; z-index: 4; box-shadow: 0 5px 10px rgba(11,10,14,0.10); }
+.tape::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(255,255,255,0.18) 50%, transparent 50%); background-size: 12px 100%; opacity: 0.5; }
+.tape::after { content: ""; position: absolute; top: 0; bottom: 0; left: -3px; width: 6px; background: inherit; opacity: 0.7; transform: rotate(-3deg); }
+.tape.tape-blue { background: var(--tape-blue); }
+.tape.tape-cream { background: var(--tape-cream); }
+.tape.tape-yellow { background: var(--tape-yellow); }
+.tape.torn { clip-path: polygon(0% 30%, 4% 0%, 8% 40%, 14% 10%, 22% 50%, 32% 14%, 44% 50%, 56% 22%, 68% 50%, 80% 18%, 92% 50%, 100% 26%, 100% 100%, 0% 100%); }
+
+/* ─── Stamps ─── */
+.stamp { display: inline-block; font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.22em; font-size: 11px; color: var(--pink); border: 2.5px solid var(--pink); padding: 7px 13px 6px; transform: rotate(-2.2deg); background: var(--paper); white-space: nowrap; box-shadow: 1.5px 1.5px 0 0 rgba(199, 25, 86, 0.18); }
+.stamp.rough { transform: rotate(-6deg); border-style: dashed; border-width: 2px; }
+.stamp.rough-r { transform: rotate(7deg); border-style: dashed; border-width: 2px; }
+.stamp.blue { color: var(--blue); border-color: var(--blue); }
+.stamp.ink { color: var(--ink); border-color: var(--ink); background: var(--paper); }
+.stamp.cream { color: var(--paper); border-color: var(--paper); background: var(--ink); }
+.stamp.stencil { font-family: var(--font-stencil); letter-spacing: 0.18em; padding: 10px 14px 8px; font-size: 14px; }
+
+/* ─── Torn paper edges ─── */
+.torn-top { clip-path: polygon(0% 18px, 3% 4px, 7% 14px, 12% 0px, 18% 12px, 24% 2px, 31% 16px, 38% 4px, 46% 14px, 54% 0px, 62% 12px, 70% 2px, 78% 16px, 86% 4px, 93% 14px, 100% 0px, 100% 100%, 0% 100%); padding-top: 36px; }
+.torn-bot { clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18px), 96% calc(100% - 4px), 90% calc(100% - 14px), 83% calc(100% - 0px), 76% calc(100% - 12px), 68% calc(100% - 2px), 60% calc(100% - 16px), 52% calc(100% - 4px), 44% calc(100% - 14px), 36% calc(100% - 0px), 28% calc(100% - 12px), 20% calc(100% - 2px), 12% calc(100% - 16px), 6% calc(100% - 4px), 0% calc(100% - 14px)); padding-bottom: 36px; }
+
+/* ─── Floating decoration positioner ─── */
+.float {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+.float.pe { pointer-events: auto; }
+
+/* ──────────────────────────────────────────────
+   Issue strip / utility bar
+   ────────────────────────────────────────────── */
+
+.issue-bar {
+  background: var(--ink); color: var(--paper);
+  padding: 8px var(--gutter);
+  font-family: var(--font-mono); font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; font-size: 10px;
+  display: flex; gap: 16px; align-items: center; justify-content: center;
+  flex-wrap: wrap; position: relative; z-index: 6;
+}
+.issue-bar a { color: var(--pink); text-decoration: none; }
+.issue-bar a:hover { text-decoration: underline; }
+.issue-bar .dot { color: var(--pink); }
+
+/* ──────────────────────────────────────────────
+   Masthead
+   ────────────────────────────────────────────── */
+
+.issue-mast { position: relative; z-index: 2; padding: 22px var(--gutter) 0; }
+.issue-mast-top {
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: center; gap: 24px;
+  padding-bottom: 14px;
+}
+.issue-mast-top .l { justify-self: start; }
+.issue-mast-top .c { justify-self: center; text-align: center; }
+.issue-mast-top .r { justify-self: end; text-align: right; }
+.issue-mast-top span { color: var(--ink-soft); }
+.issue-mast-top .pink { color: var(--pink-deep); }
+
+.issue-strip {
+  border-top: 8px solid var(--ink); border-bottom: 2px solid var(--ink);
+  padding: 9px 0; display: flex; overflow: hidden; white-space: nowrap;
+  background: var(--paper-light);
+}
+.issue-strip .scroll {
+  display: inline-flex; gap: 32px;
+  animation: marquee 38s linear infinite;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.16em; font-size: 14px; text-transform: uppercase;
+}
+.issue-strip .scroll span { display: inline-flex; align-items: center; gap: 32px; }
+.issue-strip .scroll .star { color: var(--pink); }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.issue-title {
+  text-align: center; padding: 26px 0 22px; position: relative;
+}
+.issue-title .number {
+  font-family: var(--font-hand);
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  letter-spacing: 0; color: var(--pink-deep);
+  margin-bottom: 4px; display: block;
+  transform: rotate(-2deg);
+}
+.issue-title .word {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(62px, 14vw, 184px); line-height: 0.85;
+  letter-spacing: 0.005em; text-transform: uppercase;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+.issue-title .word::before { transform: translate(-12px, 14px) rotate(-1.5deg); }
+.issue-title .word::after { transform: translate(14px, -12px); color: var(--blue); }
+.issue-title .tape-l { left: 14%; top: 6px; transform: rotate(-9deg); width: 130px; }
+.issue-title .tape-r { right: 12%; top: 18px; transform: rotate(6deg); width: 110px; }
+.issue-title .draft-stamp { position: absolute; top: 14%; right: 24%; transform: rotate(13deg); }
+.issue-title .zine-stamp { position: absolute; bottom: 16%; left: 26%; transform: rotate(-9deg); }
+
+.issue-tag {
+  text-align: center; padding: 12px 0 16px;
+  border-top: 2px solid var(--ink); border-bottom: 8px solid var(--ink);
+  font-family: var(--font-mono); font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px;
+  color: var(--ink-soft);
+}
+.issue-tag em { font-family: var(--font-hand); font-style: normal; font-weight: 700; font-size: 21px; letter-spacing: 0; text-transform: none; color: var(--pink-deep); transform: rotate(-1deg); display: inline-block; }
+.issue-tag .deco { color: var(--pink); margin: 0 10px; }
+
+/* ──────────────────────────────────────────────
+   Reader card
+   ────────────────────────────────────────────── */
+
+.reader-card {
+  max-width: var(--max);
+  margin: 22px auto 0;
+  padding: 22px var(--gutter);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: center;
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+  background: var(--paper-deep);
+  position: relative; z-index: 2;
+}
+@media (min-width: 800px) {
+  .reader-card { grid-template-columns: auto 1fr auto; gap: 36px; }
+}
+.reader-card .stamp { align-self: flex-start; }
+.reader-card .reader-name {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+.reader-card .reader-name em { font-family: var(--font-hand); font-style: normal; font-weight: 700; color: var(--pink-deep); font-size: 1.05em; vertical-align: -0.05em; }
+.reader-card .reader-meta {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  font-family: var(--font-mono); font-weight: 700;
+  letter-spacing: 0.16em; font-size: 11px;
+  text-transform: uppercase; color: var(--ink-soft);
+}
+.reader-card .reader-meta span strong { color: var(--pink-deep); font-weight: 700; }
+
+/* ──────────────────────────────────────────────
+   PAGES
+   ────────────────────────────────────────────── */
+
+main { position: relative; z-index: 2; }
+
+.page {
+  position: relative;
+  padding: clamp(50px, 9vw, 120px) var(--gutter);
+  border-bottom: 5px solid var(--ink);
+}
+.page-wrap { max-width: var(--max); margin: 0 auto; position: relative; }
+
+.page-mark {
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.18em; font-size: 14px;
+  text-transform: uppercase;
+  display: flex; gap: 14px; align-items: baseline;
+  margin-bottom: 28px;
+}
+.page-mark .num { color: var(--pink-deep); }
+.page-mark .name { color: var(--ink); }
+.page-mark .rule { flex: 1; height: 0; border-top: 2px solid var(--ink); border-top-style: dashed; }
+.page-mark .right { color: var(--ink-muted); }
+
+/* ─── PAGE 01 — COVER ─── */
+
+.cover { background: var(--paper); padding-bottom: clamp(60px, 11vw, 140px); position: relative; }
+
+.cover .pre-line {
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.18em; font-size: 14px;
+  text-transform: uppercase; color: var(--ink);
+  margin-bottom: 30px;
+  display: flex; gap: 14px; align-items: baseline;
+}
+.cover .pre-line .pink { color: var(--pink-deep); }
+.cover .pre-line .rule { flex: 1; height: 0; border-top: 2px dashed var(--ink); }
+
+.cover-headline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(190px, 40vw, 600px);
+  line-height: 0.78;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  transform: rotate(-1.2deg);
+}
+.cover-headline .riso { display: block; }
+.cover-headline .riso::before { transform: translate(-16px, 16px); }
+.cover-headline .riso::after { transform: translate(20px, -14px) rotate(0.6deg); }
+
+.cover-context {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 40px;
+  border-top: 4px solid var(--ink);
+  padding-top: 26px;
+  position: relative;
+}
+@media (min-width: 760px) { .cover-context { grid-template-columns: 1.4fr 1fr; gap: 56px; } }
+
+.cover-context .lede {
+  font-family: var(--font-eccentric);
+  font-size: clamp(22px, 2.9vw, 36px);
+  line-height: 1.18;
+  color: var(--ink);
+  margin: 0;
+}
+.cover-context .lede em { color: var(--pink-deep); font-style: normal; }
+.cover-context .side {
+  font-family: var(--font-body); font-size: 15px;
+  color: var(--ink-soft); line-height: 1.55; font-weight: 500;
+  border-left: 4px solid var(--ink); padding-left: 18px;
+}
+.cover-context .side .label { display: block; margin-bottom: 10px; color: var(--pink-deep); font-family: var(--font-stencil); letter-spacing: 0.18em; font-size: 12px; }
+.cover-context .side strong { color: var(--ink); }
+
+.cover-strip {
+  margin-top: 40px; padding: 14px 0;
+  border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+  display: flex; gap: 26px; justify-content: space-between;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.18em; font-size: 13px;
+  text-transform: uppercase; color: var(--ink-soft); flex-wrap: wrap;
+}
+.cover-strip span.pink { color: var(--pink-deep); }
+
+.cover .float-stapled { top: 6%; right: 5%; transform: rotate(11deg); }
+.cover .float-hand-1 { top: 38%; right: 4%; transform: rotate(-6deg); font-size: clamp(24px, 3vw, 36px); color: var(--pink-deep); }
+.cover .float-arrow { bottom: 24%; left: -2%; transform: rotate(-22deg); }
+
+/* ─── PAGE 02 — EDITOR (INK) ─── */
+
+.editor { background: var(--ink); color: var(--paper); border-bottom-color: var(--ink); position: relative; }
+.editor::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,46,110,0.18) 1.5px, transparent 2px); background-size: 12px 12px; mix-blend-mode: screen; pointer-events: none; }
+.editor .page-mark .num { color: var(--pink); }
+.editor .page-mark .name { color: var(--paper); }
+.editor .page-mark .rule { border-top-color: rgba(241,232,208,0.5); border-top-style: dashed; }
+.editor .page-mark .right { color: rgba(241,232,208,0.6); }
+
+.editor-grid {
+  display: grid; grid-template-columns: 1fr; gap: 40px;
+}
+@media (min-width: 880px) { .editor-grid { grid-template-columns: 1.7fr 1fr; gap: 64px; align-items: start; } }
+
+.editor-title {
+  font-family: var(--font-display);
+  font-size: clamp(54px, 8vw, 132px);
+  line-height: 0.88;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0 0 28px;
+  position: relative;
+}
+.editor-title em { font-family: var(--font-hand); font-weight: 700; font-style: normal; color: var(--pink); font-size: 0.75em; vertical-align: -0.05em; display: inline-block; transform: rotate(-3deg); margin-left: 6px; }
+.editor-title .note { position: absolute; top: -8px; right: 6%; font-family: var(--font-hand); font-weight: 700; font-size: 22px; color: var(--pink); text-transform: none; letter-spacing: 0; transform: rotate(-7deg); }
+
+.editor-prose p {
+  font-family: var(--font-body); font-size: 18px; line-height: 1.62;
+  color: rgba(241,232,208,0.9); font-weight: 500;
+  margin: 0 0 1.1em;
+}
+.editor-prose p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 4.4em;
+  float: left; line-height: 0.86;
+  padding: 0.05em 0.1em 0 0;
+  color: var(--pink);
+}
+.editor-prose .xed { color: rgba(241,232,208,0.45); }
+.editor-prose .xed::after { background: var(--pink); }
+.editor-prose .ins { color: var(--paper); font-family: var(--font-hand); font-weight: 700; font-style: normal; font-size: 1.05em; }
+.editor-prose .hl::before { mix-blend-mode: screen; opacity: 0.7; }
+
+.editor-prose .three-things {
+  margin: 1.6em 0;
+  font-family: var(--font-body); font-size: 17px;
+  display: grid; grid-template-columns: 1fr; gap: 18px;
+}
+.editor-prose .three-things .item {
+  display: grid; grid-template-columns: auto 1fr; gap: 16px;
+  padding-top: 14px; border-top: 2px dashed rgba(241,232,208,0.3);
+}
+.editor-prose .three-things .item .n {
+  font-family: var(--font-stencil); font-size: 28px;
+  color: var(--pink); line-height: 1;
+}
+.editor-prose .three-things .item .body { color: rgba(241,232,208,0.88); line-height: 1.55; }
+.editor-prose .three-things .item .body strong { color: var(--paper); }
+.editor-prose .three-things .item .body .pink { color: var(--pink); font-weight: 700; }
+.editor-prose .sig {
+  margin-top: 24px; padding-top: 12px;
+  border-top: 2px dashed rgba(241,232,208,0.3);
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: 22px; color: rgba(241,232,208,0.85);
+  transform: rotate(-1deg);
+  display: inline-block;
+}
+
+.editor-side {
+  background: rgba(241,232,208,0.05);
+  border: 2.5px solid rgba(241,232,208,0.45);
+  padding: 26px;
+  position: relative;
+  transform: rotate(1.4deg);
+}
+.editor-side .tape { top: -14px; left: 26px; background: var(--tape-yellow); transform: rotate(-8deg); width: 130px; }
+.editor-side .label { color: var(--pink); margin-bottom: 14px; display: block; }
+.editor-side .pull {
+  font-family: var(--font-eccentric);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.05;
+  color: var(--paper);
+  margin: 0;
+}
+.editor-side .pull mark { background: var(--pink); color: var(--paper); padding: 2px 8px 0; }
+.editor-side .attrib { margin-top: 14px; font-family: var(--font-hand); font-weight: 700; font-size: 18px; color: rgba(241,232,208,0.75); transform: rotate(-1deg); display: inline-block; }
+
+.editor .float-x { top: 8%; right: 3%; transform: rotate(-12deg); }
+
+/* ─── PAGE 03 — YOUR DAY ─── */
+
+.your-day { background: var(--paper); position: relative; }
+.your-day-team-mark {
+  font-family: var(--font-display);
+  font-size: clamp(58px, 9.5vw, 138px);
+  line-height: 0.86;
+  letter-spacing: 0.003em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  transform: rotate(-0.5deg);
+  display: inline-block;
+}
+.your-day-result-line {
+  font-family: var(--font-hand);
+  font-weight: 700;
+  font-size: clamp(26px, 3.2vw, 38px);
+  color: var(--pink-deep);
+  margin: 0 0 30px;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
+
+.score-poster {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  align-items: center;
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+  padding: 32px 0;
+  margin: 0 0 30px;
+  position: relative;
+  transform: rotate(0.4deg);
+}
+.score-poster .team {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6vw, 86px);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.score-poster .team.home { text-align: right; }
+.score-poster .team.away { text-align: left; color: var(--ink-muted); }
+.score-poster .res {
+  font-family: var(--font-display);
+  font-size: clamp(68px, 13vw, 200px);
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.012em;
+  position: relative;
+  padding: 0 12px;
+}
+.score-poster .res::before { content: ""; position: absolute; inset: -6px -2px; background: var(--pink); z-index: -1; transform: translate(12px, 12px) rotate(-1deg); }
+.score-poster .res::after { content: ""; position: absolute; inset: -6px -2px; background: var(--blue); z-index: -2; transform: translate(-10px, -8px) rotate(1.5deg); opacity: 0.7; mix-blend-mode: multiply; }
+
+.your-day-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  margin-top: 20px;
+  position: relative;
+}
+@media (min-width: 880px) {
+  .your-day-body { grid-template-columns: 1.4fr 1fr; gap: 56px; }
+}
+
+.lineup {
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  padding: 26px 26px 24px;
+  position: relative;
+  box-shadow: 10px 10px 0 0 var(--ink);
+  transform: rotate(-1.5deg);
+}
+.lineup .tape { top: -14px; left: 26px; transform: rotate(-6deg); width: 150px; }
+.lineup .tape-2 { top: -10px; right: 20px; transform: rotate(9deg); background: var(--tape-blue); width: 90px; left: auto; }
+.lineup h4 {
+  font-family: var(--font-display);
+  font-size: 32px; line-height: 0.92;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+.lineup .sub { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.16em; font-size: 12px; color: var(--pink-deep); text-transform: uppercase; margin-bottom: 16px; }
+.lineup ol {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 0;
+}
+.lineup ol li {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  gap: 14px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1.5px dashed var(--ink-muted);
+}
+.lineup ol li:last-child { border-bottom: none; }
+.lineup ol li .num { font-family: var(--font-stencil); font-weight: 400; font-size: 16px; color: var(--pink-deep); }
+.lineup ol li .name {
+  font-family: var(--font-display);
+  font-size: 22px; line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+.lineup ol li .pos {
+  font-family: var(--font-mono); font-weight: 700;
+  font-size: 10px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--ink-muted);
+}
+.lineup ol li.captain .name::after { content: " ©"; color: var(--pink-deep); font-family: var(--font-mono); font-weight: 700; font-size: 11px; vertical-align: 0.5em; margin-left: 4px; }
+.lineup ol li.starred { background: var(--highlighter); margin: 0 -4px; padding-left: 4px; padding-right: 4px; }
+
+.lineup-side-note {
+  position: absolute;
+  right: -8%; top: 22%;
+  font-family: var(--font-hand);
+  font-weight: 700;
+  font-size: clamp(22px, 2.5vw, 32px);
+  color: var(--pink-deep);
+  line-height: 1;
+  transform: rotate(8deg);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.stat-posters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.stat-poster {
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  padding: 18px 18px 20px;
+  position: relative;
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+.stat-poster:nth-child(1) { transform: rotate(-1.2deg); }
+.stat-poster:nth-child(2) { transform: rotate(1.8deg); box-shadow: 6px 6px 0 0 var(--pink); }
+.stat-poster:nth-child(3) { transform: rotate(0.8deg); }
+.stat-poster:nth-child(4) { transform: rotate(-2deg); box-shadow: 6px 6px 0 0 var(--blue); }
+.stat-poster .big-num {
+  font-family: var(--font-display);
+  font-size: clamp(54px, 7vw, 92px);
+  line-height: 0.95;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  margin-bottom: 4px;
+}
+.stat-poster:nth-child(2) .big-num { color: var(--pink-deep); }
+.stat-poster:nth-child(4) .big-num { color: var(--blue-deep); }
+.stat-poster .stat-lbl { font-family: var(--font-stencil); font-weight: 400; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); }
+.stat-poster .stat-note { font-family: var(--font-hand); font-weight: 600; font-size: 16px; color: var(--ink); line-height: 1.15; margin-top: 8px; }
+
+.recap-block {
+  margin-top: 38px;
+  border-top: 4px solid var(--ink);
+  padding-top: 26px;
+}
+.recap-block h5 { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.18em; font-size: 14px; text-transform: uppercase; color: var(--pink-deep); margin: 0 0 14px; }
+.recap-block p { font-family: var(--font-body); font-size: 17px; line-height: 1.6; color: var(--ink); margin: 0 0 1em; font-weight: 500; }
+.recap-block p strong { color: var(--ink); }
+
+.brazil-rest {
+  margin-top: 36px;
+  padding: 26px 28px;
+  background: var(--paper-deep);
+  border: 3px solid var(--ink);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: baseline;
+  position: relative;
+  transform: rotate(0.6deg);
+}
+@media (min-width: 760px) { .brazil-rest { grid-template-columns: auto 1fr auto; gap: 36px; } }
+.brazil-rest .stamp { align-self: start; }
+.brazil-rest h5 {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.4vw, 54px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  margin: 0;
+}
+.brazil-rest .desc { font-family: var(--font-body); font-size: 15px; line-height: 1.5; color: var(--ink); font-weight: 500; }
+.brazil-rest .next-line { font-family: var(--font-mono); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; color: var(--pink-deep); text-transform: uppercase; white-space: nowrap; }
+
+.your-day .float-arrow-1 { top: 14%; right: 1%; transform: rotate(28deg); }
+
+/* ─── PAGE 04 — HERE & THERE ─── */
+
+.here-there { background: var(--paper); position: relative; }
+
+.ht-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 900px) { .ht-grid { grid-template-columns: 1.4fr 1fr; gap: 64px; } }
+
+.ht-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(88px, 15vw, 252px);
+  line-height: 0.84;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ink);
+  position: relative;
+}
+.ht-name span { display: block; }
+.ht-name span:first-child { color: var(--pink-deep); transform: rotate(-1.5deg); transform-origin: left center; }
+.ht-name span:last-child { transform: rotate(0.8deg) translateX(8%); transform-origin: left center; }
+.ht-name .riso::before { transform: translate(-12px, 14px); color: var(--pink); }
+.ht-name .riso::after { transform: translate(14px, -10px) rotate(1deg); color: var(--blue); }
+
+.ht-side .lede {
+  font-family: var(--font-eccentric);
+  font-size: clamp(24px, 2.8vw, 34px);
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 24px;
+}
+.ht-side ul {
+  margin: 0 0 22px; padding: 0; list-style: none;
+  border-top: 3px solid var(--ink);
+}
+.ht-side ul li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1.5px dashed var(--ink-muted);
+  font-family: var(--font-body); font-size: 15px;
+  font-weight: 500; color: var(--ink); line-height: 1.4;
+}
+.ht-side ul li .k { font-family: var(--font-stencil); font-weight: 400; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pink-deep); align-self: baseline; }
+.ht-side ul li strong { color: var(--ink); }
+.ht-side .closer {
+  font-family: var(--font-display); font-size: 28px;
+  text-transform: uppercase; line-height: 1; margin: 0;
+}
+.ht-side .closer em { font-family: var(--font-hand); font-style: normal; font-weight: 700; color: var(--pink-deep); font-size: 0.95em; vertical-align: -0.05em; margin-left: 8px; }
+
+.here-there .float-stamp-1 { top: 4%; left: 1%; transform: rotate(-15deg); }
+.here-there .float-arrow-2 { top: 36%; left: 41%; transform: rotate(8deg); width: 80px; height: 50px; }
+.here-there .float-hand-2 { top: 64%; left: 36%; transform: rotate(-4deg); font-size: 22px; color: var(--pink-deep); }
+
+/* ─── PAGE 05 — STORY BEHIND THE NUMBER (PINK) ─── */
+
+.story-num { background: var(--pink); color: var(--ink); border-bottom-color: var(--ink); position: relative; overflow: hidden; }
+.story-num.torn-top { border-top: 5px solid var(--ink); }
+.story-num::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(11,10,14,0.18) 1.4px, transparent 1.8px); background-size: 9px 9px; pointer-events: none; mix-blend-mode: multiply; }
+.story-num .page-mark .num { color: var(--paper); }
+.story-num .page-mark .name { color: var(--ink); }
+.story-num .page-mark .rule { border-top-color: var(--ink); }
+.story-num .page-mark .right { color: rgba(11,10,14,0.75); }
+
+.sn-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+@media (min-width: 900px) { .sn-grid { grid-template-columns: 1.1fr 1fr; gap: 64px; } }
+
+.sn-number {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(220px, 42vw, 580px);
+  line-height: 0.82;
+  letter-spacing: -0.028em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ink);
+  position: relative;
+  transform: rotate(-2.5deg);
+}
+.sn-number .riso::before { transform: translate(-18px, 18px) rotate(2deg); color: var(--paper); mix-blend-mode: screen; }
+.sn-number .riso::after { transform: translate(20px, -16px) rotate(-1deg); color: var(--blue); mix-blend-mode: multiply; opacity: 0.6; }
+
+.sn-side {
+  border-left: 5px solid var(--ink);
+  padding-left: 24px;
+  transform: rotate(0.4deg);
+}
+.sn-side .label { color: var(--ink); font-weight: 700; margin-bottom: 14px; display: block; font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.16em; }
+.sn-side h3 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.6vw, 56px);
+  line-height: 0.94;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+}
+.sn-side h3 em { font-family: var(--font-hand); font-style: normal; font-weight: 700; color: var(--paper); font-size: 1em; vertical-align: -0.06em; }
+.sn-side p {
+  font-family: var(--font-body); font-size: 17px; line-height: 1.62;
+  color: var(--ink); font-weight: 500;
+  margin: 0 0 1em;
+}
+.sn-side .quick {
+  margin-top: 22px; padding-top: 14px;
+  border-top: 3px solid var(--ink);
+  display: grid; grid-template-columns: 1fr auto; gap: 8px;
+  font-family: var(--font-mono); font-weight: 700;
+  font-size: 12px; letter-spacing: 0.06em;
+}
+.sn-side .quick .k { text-transform: uppercase; letter-spacing: 0.14em; font-size: 10px; font-family: var(--font-stencil); font-weight: 400; }
+
+.story-num .float-stencil { top: 4%; right: 3%; transform: rotate(11deg); }
+.story-num .float-hand-3 { bottom: 8%; right: 4%; font-family: var(--font-hand); font-weight: 700; font-size: clamp(28px, 3.5vw, 44px); color: var(--paper); transform: rotate(-6deg); line-height: 0.95; }
+
+/* ─── PAGE 06 — BACK STORY ─── */
+
+.back-story { background: var(--paper-deep); position: relative; }
+
+.bs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+@media (min-width: 900px) { .bs-grid { grid-template-columns: 1fr 1.4fr; gap: 56px; } }
+
+.bs-year-stack {
+  display: flex; flex-direction: column;
+  align-items: flex-start;
+}
+.bs-year {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(150px, 28vw, 380px);
+  line-height: 0.86;
+  letter-spacing: -0.018em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ink);
+  transform: rotate(-2deg);
+}
+.bs-year .riso::before { transform: translate(-14px, 16px) rotate(0.8deg); color: var(--pink); }
+.bs-year .riso::after { transform: translate(16px, -12px); color: var(--blue); opacity: 0.65; }
+.bs-score {
+  font-family: var(--font-display);
+  font-size: clamp(58px, 9vw, 124px);
+  line-height: 1; margin: 0; padding-top: 16px;
+  color: var(--pink-deep);
+  transform: rotate(1deg);
+}
+.bs-when {
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 32px);
+  color: var(--ink); margin: 14px 0 0;
+  transform: rotate(-1deg);
+}
+
+.bs-prose .label { color: var(--pink-deep); margin-bottom: 14px; display: block; font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.16em; }
+.bs-prose .head {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.8vw, 48px);
+  line-height: 0.96;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+.bs-prose .head em { font-family: var(--font-hand); font-weight: 700; font-style: normal; color: var(--pink-deep); font-size: 0.9em; vertical-align: -0.04em; }
+.bs-prose .goals-strip {
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  padding: 14px 18px;
+  font-family: var(--font-mono); font-weight: 700;
+  font-size: 14px; letter-spacing: 0.04em;
+  color: var(--ink); margin: 0 0 22px;
+  display: flex; flex-wrap: wrap; gap: 18px;
+  transform: rotate(-0.4deg);
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+.bs-prose .goals-strip .pink { color: var(--pink-deep); }
+.bs-prose .goals-strip .xed { color: var(--ink-muted); }
+.bs-prose p { font-family: var(--font-body); font-size: 17px; line-height: 1.6; margin: 0 0 1em; color: var(--ink); font-weight: 500; }
+.bs-prose p strong { color: var(--ink); }
+.bs-prose .closer {
+  font-family: var(--font-eccentric);
+  font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.2; margin: 22px 0 0;
+  color: var(--pink-deep);
+  border-top: 3px solid var(--ink); padding-top: 18px;
+}
+.bs-prose .closer em { font-family: var(--font-hand); font-weight: 700; font-style: normal; }
+
+.back-story .float-stamp-2 { top: 3%; right: 4%; transform: rotate(8deg); }
+.back-story .float-hand-4 { bottom: 8%; left: 6%; font-size: clamp(24px, 2.8vw, 36px); color: var(--pink-deep); transform: rotate(-4deg); font-family: var(--font-hand); font-weight: 700; line-height: 0.95; }
+
+/* ─── PAGE 07 — WHERE THEY PLAYED BEFORE ─── */
+
+.venue { background: var(--paper); position: relative; }
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+@media (min-width: 900px) { .venue-grid { grid-template-columns: 1.2fr 1fr; gap: 64px; } }
+
+.venue-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(115px, 23vw, 340px);
+  line-height: 0.86;
+  letter-spacing: -0.018em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ink);
+  transform: rotate(-1.5deg);
+}
+.venue-name .riso::before { transform: translate(-12px, 14px) rotate(0.6deg); color: var(--blue); }
+.venue-name .riso::after { transform: translate(14px, -10px); color: var(--pink); opacity: 0.6; }
+.venue-meta {
+  margin-top: 18px;
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 14px; letter-spacing: 0.16em;
+  color: var(--ink); text-transform: uppercase;
+}
+.venue-meta strong { color: var(--blue); }
+
+.venue-side .label { color: var(--blue); margin-bottom: 16px; display: block; font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.16em; }
+.venue-side h3 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 0.96;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+}
+
+.history-list { margin: 0; padding: 0; list-style: none; }
+.history-list li {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-top: 3px solid var(--ink);
+  align-items: baseline;
+}
+.history-list li:last-child { border-bottom: 3px solid var(--ink); }
+.history-list li .year {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.4vw, 54px);
+  line-height: 1; color: var(--blue);
+  letter-spacing: -0.005em;
+}
+.history-list li .body { font-family: var(--font-body); font-size: 16px; line-height: 1.42; color: var(--ink); font-weight: 500; }
+.history-list li .body strong { color: var(--ink); }
+.history-list li .body em { font-family: var(--font-hand); font-weight: 700; font-style: normal; color: var(--pink-deep); font-size: 1.2em; vertical-align: -0.04em; }
+.history-list li .body .sub { display: block; font-family: var(--font-mono); font-weight: 700; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-muted); margin-top: 4px; }
+
+.venue-closer {
+  margin-top: 28px;
+  font-family: var(--font-eccentric);
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.2;
+  color: var(--ink);
+}
+.venue-closer .pink { color: var(--pink-deep); }
+
+.venue .float-arrow-3 { top: 28%; left: 36%; transform: rotate(-18deg); }
+
+/* ─── PAGE 08 — MIXED ZONE ─── */
+
+.mixed { background: var(--paper); position: relative; }
+
+.qa-card {
+  position: relative;
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  padding: 30px 32px 30px;
+  box-shadow: 12px 12px 0 0 var(--blue);
+  max-width: 880px;
+  margin: 0 auto;
+  transform: rotate(-1deg);
+}
+.qa-card .tape { top: -14px; left: 28px; transform: rotate(-5deg); width: 140px; }
+.qa-card .tape-2 { top: -10px; right: 26px; transform: rotate(6deg); background: var(--tape-yellow); width: 90px; left: auto; }
+.qa-card .reader-tag { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.16em; font-size: 12px; text-transform: uppercase; color: var(--pink-deep); margin-bottom: 14px; }
+
+.qa-q, .qa-a { display: grid; grid-template-columns: 50px 1fr; gap: 18px; align-items: baseline; padding: 16px 0; }
+.qa-q { border-bottom: 2.5px solid var(--ink); }
+.qa-q .marker, .qa-a .marker {
+  font-family: var(--font-display); font-size: 50px;
+  line-height: 0.9; color: var(--pink-deep);
+}
+.qa-a .marker { color: var(--blue); }
+.qa-q .body {
+  font-family: var(--font-eccentric);
+  font-size: clamp(20px, 2.4vw, 28px); line-height: 1.25; color: var(--ink);
+}
+.qa-a .body {
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6; color: var(--ink); font-weight: 500;
+}
+.qa-a .body strong { color: var(--ink); }
+.qa-a .body .pink { color: var(--pink-deep); font-weight: 700; }
+.qa-a .body .blue { color: var(--blue); font-weight: 700; }
+
+.qa-cta {
+  margin-top: 24px; padding-top: 16px;
+  border-top: 2.5px solid var(--ink);
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.16em; font-size: 13px; text-transform: uppercase; color: var(--ink);
+  display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap;
+}
+.qa-cta .pink { color: var(--pink-deep); }
+
+.mixed .float-hand-5 { top: 20%; right: 4%; font-family: var(--font-hand); font-weight: 700; font-size: clamp(24px, 2.8vw, 38px); color: var(--pink-deep); transform: rotate(8deg); line-height: 0.95; }
+
+/* ─── PAGE 09 — TICKER ─── */
+
+.ticker-page { background: var(--ink); color: var(--paper); border-bottom-color: var(--ink); position: relative; }
+.ticker-page .page-mark .num { color: var(--pink); }
+.ticker-page .page-mark .name { color: var(--paper); }
+.ticker-page .page-mark .rule { border-top-color: rgba(241,232,208,0.5); border-top-style: dashed; }
+.ticker-page .page-mark .right { color: rgba(241,232,208,0.6); }
+
+.ticker-section { margin-bottom: 40px; }
+.ticker-section h3 {
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.2em; font-size: 14px;
+  color: var(--pink); text-transform: uppercase;
+  margin: 0 0 14px;
+  display: flex; gap: 14px; align-items: baseline;
+}
+.ticker-section h3 .rule { flex: 1; height: 0; border-top: 2px dashed rgba(241,232,208,0.4); }
+
+.ticker-scores {
+  display: grid; grid-template-columns: 1fr; gap: 0;
+}
+@media (min-width: 700px) { .ticker-scores { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .ticker-scores { grid-template-columns: repeat(4, 1fr); } }
+
+.ticker-score {
+  padding: 14px 16px;
+  border-bottom: 1.5px dashed rgba(241,232,208,0.3);
+  border-right: 1.5px dashed rgba(241,232,208,0.3);
+  font-family: var(--font-display);
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  gap: 10px; align-items: center;
+  text-transform: uppercase;
+  font-size: 18px; letter-spacing: 0.005em;
+}
+.ticker-score:last-child { border-right: none; }
+@media (max-width: 999px) { .ticker-score:nth-child(2n) { border-right: none; } }
+@media (max-width: 699px) { .ticker-score { border-right: none; } }
+.ticker-score .home { text-align: right; }
+.ticker-score .away { text-align: left; color: rgba(241,232,208,0.7); }
+.ticker-score .res {
+  font-family: var(--font-display);
+  font-size: 22px; letter-spacing: 0.005em;
+  background: var(--paper); color: var(--ink);
+  padding: 4px 10px 2px; text-align: center; min-width: 60px;
+}
+.ticker-score.your .res { background: var(--pink); color: var(--paper); }
+.ticker-score.your { transform: rotate(-0.8deg); }
+
+.standings-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 700px) { .standings-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .standings-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.standing {
+  background: rgba(241,232,208,0.05);
+  border: 2px solid rgba(241,232,208,0.45);
+  padding: 16px 18px;
+  font-family: var(--font-mono); font-weight: 700;
+  font-size: 12px; letter-spacing: 0.04em;
+}
+.standing:nth-child(odd) { transform: rotate(-0.6deg); }
+.standing:nth-child(even) { transform: rotate(0.6deg); }
+.standing .grp-name {
+  display: flex; gap: 12px; justify-content: space-between;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.18em; font-size: 12px;
+  color: var(--pink); text-transform: uppercase;
+  margin-bottom: 10px; padding-bottom: 8px;
+  border-bottom: 1.5px dashed rgba(241,232,208,0.4);
+}
+.standing .row { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 5px 0; }
+.standing .row.your { color: var(--pink); }
+
+/* ─── Footer ─── */
+
+.issue-footer {
+  position: relative; z-index: 2;
+  padding: 60px var(--gutter);
+  background: var(--ink); color: var(--paper);
+  border-top: 8px solid var(--ink);
+}
+.issue-footer .strip {
+  border-top: 2px solid var(--paper); border-bottom: 2px solid var(--paper);
+  padding: 10px 0; margin-bottom: 28px;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 13px; text-align: center; color: rgba(241,232,208,0.9);
+}
+.issue-footer .strip .star { color: var(--pink); margin: 0 14px; }
+
+.tomorrow {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 28px;
+  align-items: end;
+}
+@media (min-width: 900px) { .tomorrow { grid-template-columns: 1.4fr 1fr; gap: 48px; } }
+
+.tomorrow .next-up h3 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0; color: var(--paper); line-height: 1;
+}
+.tomorrow .next-up h3 em { font-family: var(--font-hand); font-weight: 700; font-style: normal; color: var(--pink); font-size: 1em; vertical-align: -0.05em; }
+.tomorrow .next-up p { margin: 12px 0 0; color: rgba(241,232,208,0.78); font-family: var(--font-body); font-size: 17px; line-height: 1.5; font-weight: 500; }
+
+.tomorrow .nav-block { display: flex; flex-direction: column; gap: 8px; font-family: var(--font-stencil); font-weight: 400; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; }
+.tomorrow .nav-block a { color: var(--pink); text-decoration: none; padding: 4px 0; border-bottom: 1.5px dashed rgba(241,232,208,0.25); }
+.tomorrow .nav-block a:hover { color: var(--paper); border-bottom-color: var(--pink); }
+
+.colophon-line { margin-top: 40px; font-family: var(--font-hand); font-weight: 700; font-size: 19px; color: rgba(241,232,208,0.7); max-width: 60ch; line-height: 1.35; transform: rotate(-0.6deg); display: inline-block; }
+</style>
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="issue-bar">
+  <span>Sample · v3 · GRUNGE EDITION</span><span class="dot">·</span>
+  <span>Viewing as <a href="#">Marcus</a></span><span class="dot">·</span>
+  <span>← <a href="index.html">Landing</a></span><span class="dot">·</span>
+  <span>Compare: <a href="inference-sample.html">v1</a> · <a href="inference-sample-v2.html">v2</a></span><span class="dot">·</span>
+  <span>Inference N° 04</span>
+</div>
+
+<!-- Masthead -->
+<header class="issue-mast">
+  <div class="issue-mast-top">
+    <div class="l mono"><span>Inference N°</span> <span class="pink">04</span></div>
+    <div class="c mono"><span>Sun</span> · <span class="pink">14.06.26</span> · <span>Matchday Four</span></div>
+    <div class="r mono"><span>Vol I</span> · <span class="pink">9 pages</span></div>
+  </div>
+
+  <div class="issue-strip">
+    <div class="scroll">
+      <span>★ TWELVE MATCHES IN <span class="star">✦</span> ARGENTINA TOP D <span class="star">✦</span> MBAPPÉ 2G IN 2 <span class="star">✦</span> ITALY 0 SoT FIRST SINCE 1934 <span class="star">✦</span> USA–MEX DRAW DRAWS SUPER BOWL NUMBERS <span class="star">✦</span> AZTECA WEDNESDAY <span class="star">✦</span> STAPLED AT FIRST LIGHT <span class="star">✦</span></span>
+      <span>★ TWELVE MATCHES IN <span class="star">✦</span> ARGENTINA TOP D <span class="star">✦</span> MBAPPÉ 2G IN 2 <span class="star">✦</span> ITALY 0 SoT FIRST SINCE 1934 <span class="star">✦</span> USA–MEX DRAW DRAWS SUPER BOWL NUMBERS <span class="star">✦</span> AZTECA WEDNESDAY <span class="star">✦</span> STAPLED AT FIRST LIGHT <span class="star">✦</span></span>
+    </div>
+  </div>
+
+  <div class="issue-title">
+    <span class="tape tape-l torn"></span>
+    <span class="number">— hand-stapled · 14 June 2026 —</span>
+    <span class="word riso r-trip" data-text="INFERENCE">INFERENCE</span>
+    <span class="tape tape-r torn"></span>
+    <span class="stamp rough draft-stamp">DRAFT N° 04</span>
+    <span class="stamp rough-r blue zine-stamp">ZINE / NOT PRESS</span>
+  </div>
+
+  <div class="issue-tag">
+    Stapled overnight <span class="deco">✦</span> <em>for Marcus, who follows Argentina &amp; Brazil</em> <span class="deco">✦</span> Possession Lens
+  </div>
+</header>
+
+<!-- Reader card -->
+<div class="reader-card">
+  <span class="stamp stencil rough">FOR ONE READER ONLY</span>
+  <div>
+    <div class="reader-name">Good morning, <em>Marcus</em>.</div>
+    <div class="reader-meta">
+      <span><strong>FOLLOWING ·</strong> ARG · BRA · MBAPPÉ</span>
+      <span><strong>LENS ·</strong> POSSESSION &amp; BUILD-UP</span>
+      <span><strong>READ IN ·</strong> ENGLISH</span>
+    </div>
+  </div>
+  <span class="stamp rough-r blue">N° 04 / 35</span>
+</div>
+
+<main>
+
+<!-- PAGE 01 — COVER -->
+<section class="page cover">
+  <div class="page-wrap">
+    <div class="pre-line"><span class="pink">PAGE 01</span><span>—</span><span>The Cover</span><span class="rule"></span><span>The number of the day</span></div>
+
+    <h1 class="cover-headline"><span class="riso r-trip" data-text="ELEVEN">ELEVEN</span></h1>
+
+    <span class="float float-stapled stamp rough">STAPLED · NOT PRESSED</span>
+    <span class="float float-hand-1 hand-note">the streak that wouldn't quit ↘</span>
+    <span class="float float-arrow hand-arrow pink"></span>
+
+    <div class="cover-context">
+      <p class="lede">Argentina have not lost a <em>World Cup match</em> since the 2022 final whistle in Lusail. <span class="hl">Eleven matches, three years.</span> The longest active streak by any nation entering this tournament — and it kept going last night against Iran.</p>
+      <div class="side">
+        <span class="label">The receipt</span>
+        <p>Group D · MD3 · <strong>W 2 — 0 vs Iran</strong></p>
+        <p>Streak began: <strong>Dec 2022, Doha</strong>, after the trophy lift.</p>
+        <p>Next match in the streak: <strong>Wed, <span class="hl-p">Estadio Azteca</span></strong>, vs Mexico.</p>
+        <p>Mexico vs Argentina at any World Cup: <strong>played 4, won 0</strong>.</p>
+      </div>
+    </div>
+
+    <div class="cover-strip">
+      <span>★ Today's main thread</span>
+      <span>The streak goes to <span class="pink">Mexico City</span></span>
+      <span>Wednesday <span class="pink">18.06</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 02 — EDITOR -->
+<section class="page editor">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 02</span><span class="name">— The Editor's Desk</span><span class="rule"></span><span class="right">Tournament arc</span></div>
+
+    <h2 class="editor-title">Twelve matches <em>in.</em><span class="note">~ and counting</span></h2>
+
+    <span class="float float-x stamp rough cream">UNEDITED</span>
+
+    <div class="editor-grid">
+      <div class="editor-prose">
+        <p>Twelve matches into the tournament and the shape of the bracket is starting to suggest itself. Argentina sit top of D, Mexico bottom. Brazil draw, then rest. France and Belgium look like quarterfinal contenders already. Italy, despite themselves, hold their group on goal difference.</p>
+        <p>Form, in MD1, has held. <span class="xed">Six</span> <span class="ins">Eight</span> of the last twelve World Cups have featured an upset in the first round of group matches. <span class="hl">Not this one</span> — twelve favourites, twelve favourite wins. The chaos, if it comes, is being saved.</p>
+
+        <div class="three-things">
+          <div class="item"><span class="n">i.</span><span class="body"><strong>Mbappé's calendar.</strong> Two goals in two games. Tournament xG <span class="pink circled">1.4</span> against an expectation of 1.2 — sustainable, just. Watch France's MD8 once knockouts begin.</span></div>
+          <div class="item"><span class="n">ii.</span><span class="body"><strong>The host derby.</strong> USA–Mexico drew, and drew larger TV numbers than Super Bowl LIX. <span class="hl">Co-hosting works</span>, when it works.</span></div>
+          <div class="item"><span class="n">iii.</span><span class="body"><strong>The 0–SoT match.</strong> Italy went ninety minutes without a single shot on target. The number on the back page is older than your grandfather. <em style="font-family: var(--font-hand); font-style: normal; font-weight: 700; color: var(--pink);">we talk about it on page 05</em>.</span></div>
+        </div>
+
+        <p class="sig">— from the Inference desk, 06:14 ET ↯</p>
+      </div>
+
+      <aside class="editor-side">
+        <span class="tape"></span>
+        <span class="label mono">Pulled from the wire</span>
+        <p class="pull">"You let the <mark>ball do the work</mark>, the rest is geometry."</p>
+        <p class="attrib">— Scaloni, post-match, Saturday</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 03 — YOUR DAY -->
+<section class="page your-day">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 03</span><span class="name">— Your Day</span><span class="rule"></span><span class="right">Argentina · Brazil</span></div>
+
+    <h2 class="your-day-team-mark">Argentina</h2>
+    <p class="your-day-result-line">Won 2–0. Top of Group D. Eleven straight.</p>
+
+    <div class="score-poster">
+      <div class="team home">Argentina</div>
+      <div class="res">2 — 0</div>
+      <div class="team away">Iran</div>
+    </div>
+
+    <span class="float float-arrow-1 hand-arrow"></span>
+
+    <div class="your-day-body">
+      <div class="lineup">
+        <span class="tape"></span>
+        <span class="tape tape-2"></span>
+        <h4>Starting XI</h4>
+        <div class="sub">4 – 3 – 3 · Saturday 13 June · Mercedes-Benz Stadium</div>
+        <ol>
+          <li><span class="num">23</span><span class="name">E. Martínez</span><span class="pos">GK</span></li>
+          <li><span class="num">26</span><span class="name">Molina</span><span class="pos">RB</span></li>
+          <li><span class="num">25</span><span class="name">Lisandro M.</span><span class="pos">CB</span></li>
+          <li><span class="num">19</span><span class="name">Otamendi</span><span class="pos">CB</span></li>
+          <li><span class="num">3</span><span class="name">Tagliafico</span><span class="pos">LB</span></li>
+          <li><span class="num">5</span><span class="name">Paredes</span><span class="pos">CDM</span></li>
+          <li class="starred"><span class="num">20</span><span class="name">Mac Allister</span><span class="pos">CM</span></li>
+          <li><span class="num">7</span><span class="name">De Paul</span><span class="pos">CM</span></li>
+          <li><span class="num">11</span><span class="name">Di María</span><span class="pos">LW</span></li>
+          <li class="captain"><span class="num">10</span><span class="name">Messi</span><span class="pos">ST</span></li>
+          <li><span class="num">9</span><span class="name">Álvarez</span><span class="pos">RW</span></li>
+        </ol>
+        <span class="lineup-side-note">Mac wins MotM →</span>
+      </div>
+
+      <div>
+        <div class="stat-posters">
+          <div class="stat-poster">
+            <div class="big-num">64</div>
+            <div class="stat-lbl">% Possession</div>
+            <div class="stat-note">Highest of any team in MD3.</div>
+          </div>
+          <div class="stat-poster">
+            <div class="big-num">2.1</div>
+            <div class="stat-lbl">xG</div>
+            <div class="stat-note">Against Iran's 0.4. Not close.</div>
+          </div>
+          <div class="stat-poster">
+            <div class="big-num">38</div>
+            <div class="stat-lbl">F3 Entries</div>
+            <div class="stat-note">Iran managed nine.</div>
+          </div>
+          <div class="stat-poster">
+            <div class="big-num">11</div>
+            <div class="stat-lbl">Unbeaten Streak</div>
+            <div class="stat-note">Since the 2022 final ✓</div>
+          </div>
+        </div>
+
+        <div class="recap-block">
+          <h5>How it went</h5>
+          <p>Argentina arrived in Atlanta as the World Cup holders, in their final tournament with the spine that won Lusail. Iran sat deep, and Argentina took the air out of the first half — possession in the high sixties by minute thirty, no urgency, no risk. Messi opened it from a Mac Allister cut-back on forty-seven. <strong>Álvarez sealed it on seventy-three</strong> from a Di María corner. Iran finished without a shot in Argentina's box.</p>
+          <p>A controlled, slightly dull match — exactly the shape Scaloni wanted. The defending champions keep doing the thing they do.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brazil-rest">
+      <span class="stamp ink rough-r">Rest day</span>
+      <h5>Brazil</h5>
+      <p class="desc">Drew 1–1 vs Switzerland on Thursday (Vinicius 38' / Embolo 71'). Group F is wide open — three teams on one point. Brazil's MD2 is Cameroon, Tuesday 16 June at BMO Field. A win clinches knockouts.</p>
+      <span class="next-line">↦ Tue 16.06 · BMO · vs Cameroon</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 04 — HERE & THERE -->
+<section class="page here-there">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 04</span><span class="name">— Here &amp; There</span><span class="rule"></span><span class="right">The thread between today's teams</span></div>
+
+    <span class="float float-stamp-1 stamp rough">THE THREAD</span>
+
+    <div class="ht-grid">
+      <h2 class="ht-name">
+        <span class="riso r-trip" data-text="Tata">Tata</span>
+        <span>Martino</span>
+      </h2>
+      <div class="ht-side">
+        <p class="lede">The thread that ties Argentina to Wednesday's opponent.</p>
+        <ul>
+          <li><span class="k">Born</span><span>Rosario, Argentina · 1962</span></li>
+          <li><span class="k">Played</span><span>Newell's Old Boys — the club that produced both <strong>Messi</strong> and Bielsa.</span></li>
+          <li><span class="k">Argentina</span><span><strong>2014 – 2016</strong> · runner-up at two Copas back-to-back, lost both finals to Chile on penalties.</span></li>
+          <li><span class="k">Mexico</span><span><strong>2019 – 2022</strong> · took El Tri to the 2022 round-of-16, then a quiet exit.</span></li>
+          <li><span class="k">Now</span><span>Watching this from somewhere quieter. He doesn't do many interviews anymore.</span></li>
+        </ul>
+        <p class="closer">Scaloni was his <em>assistant.</em></p>
+      </div>
+    </div>
+
+    <span class="float float-arrow-2 hand-arrow pink"></span>
+    <span class="float float-hand-2 hand-note pink">the thread is shorter than it looks</span>
+  </div>
+</section>
+
+<!-- PAGE 05 — STORY BEHIND THE NUMBER -->
+<section class="page story-num torn-top torn-bot">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 05</span><span class="name">— Story Behind the Number</span><span class="rule"></span><span class="right">One stat, at scale</span></div>
+
+    <span class="float float-stencil stamp stencil ink">FROM THE BIN</span>
+
+    <div class="sn-grid">
+      <h2 class="sn-number"><span class="riso r-trip" data-text="1934">1934</span></h2>
+      <div class="sn-side">
+        <span class="label mono">Italy · 0 shots on target · vs Norway</span>
+        <h3>The last time it happened, Italy <em>won the tournament.</em></h3>
+        <p>Italy played ninety minutes against Norway in their tournament opener and did not register a single shot on target. The last time this happened to Italy at a World Cup was 1934 — when Vittorio Pozzo's squad, in a country and competition both styled by Mussolini, lifted the trophy on home soil.</p>
+        <p>The number is older than the modern game. Older than the <span class="xed">back-pass rule, the squad number, the substitution,</span> yellow card, lengthy VAR consultation. It is older than the sport's professionalisation in much of the world.</p>
+        <p>What it almost certainly does not mean: a 2026 redux of '34. What it might mean: Italy's transition from Spalletti to Gattuso has lost something specific in translation, and Norway noticed.</p>
+        <div class="quick"><span class="k">Italy</span><span>0 SoT · 6 shots total</span></div>
+        <div class="quick"><span class="k">Norway</span><span>1 — 0 · Haaland 67'</span></div>
+        <div class="quick"><span class="k">Group</span><span>NOR 3 · ITA 0 · bottom</span></div>
+      </div>
+    </div>
+
+    <span class="float float-hand-3">probably not '34<br/>again. probably.</span>
+  </div>
+</section>
+
+<!-- PAGE 06 — BACK STORY -->
+<section class="page back-story">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 06</span><span class="name">— Back Story</span><span class="rule"></span><span class="right">Last time these two met</span></div>
+
+    <span class="float float-stamp-2 stamp rough-r blue">VHS · 2010</span>
+
+    <div class="bs-grid">
+      <div class="bs-year-stack">
+        <h2 class="bs-year"><span class="riso r-trip" data-text="2010">2010</span></h2>
+        <p class="bs-score">3 — 1</p>
+        <p class="bs-when">South Africa · Round of 16 · Soccer City, Jo'burg</p>
+      </div>
+      <div class="bs-prose">
+        <span class="label mono">Argentina vs Mexico, the last World Cup chapter</span>
+        <h3>Tévez <em>(offside)</em>. Higuaín. Tévez. <em>Hernández.</em></h3>
+        <div class="goals-strip">
+          <span><span class="pink">Tévez</span> 26' <span class="xed">(onside)</span></span>
+          <span><span class="pink">Higuaín</span> 33'</span>
+          <span><span class="pink">Tévez</span> 52'</span>
+          <span>Hernández 71'</span>
+        </div>
+        <p>The Maradona team, in their second tournament under their manager: Messi twenty-two, Higuaín twenty-two, Tévez at the peak of his frenzied insistence on existing, Mascherano the spine, Maradona himself patrolling the technical area in a navy suit. Mexico — Vela, Giovani dos Santos, Márquez, Salcido, the Aguirre generation — were not far from their ceiling either.</p>
+        <p>The match turned in five minutes: <strong>Tévez headed in offside from a Messi corner, the linesman missed it</strong>, Higuaín added a second on a defensive miscue six minutes later. Mexico knew. The cameras caught Aguirre arguing with the fourth official like a man whose tournament was already past.</p>
+        <p>Argentina were eliminated in the next round by Germany, 4–0. The Maradona era ended in Cape Town. Mexico's Hernández scored their only goal that match — his international career was beginning.</p>
+        <p class="closer">Mexico have <em>not beaten Argentina</em> at a World Cup. Played four, won zero. Wednesday, chapter five.</p>
+      </div>
+    </div>
+
+    <span class="float float-hand-4">linesman: where was<br/>your eye, my friend</span>
+  </div>
+</section>
+
+<!-- PAGE 07 — WHERE THEY PLAYED BEFORE -->
+<section class="page venue">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 07</span><span class="name">— Where They Played Before</span><span class="rule"></span><span class="right">Wednesday's venue</span></div>
+
+    <div class="venue-grid">
+      <div>
+        <h2 class="venue-name"><span class="riso r-trip r-broken" data-text="Azteca">Azteca</span></h2>
+        <p class="venue-meta">Estadio Azteca · <strong>Mexico City</strong> · 87,000 · opened 1966</p>
+      </div>
+      <div class="venue-side">
+        <span class="label mono">Three World Cups · 1970 · 1986 · 2026</span>
+        <h3>What's happened here.</h3>
+        <ul class="history-list">
+          <li>
+            <span class="year">1970</span>
+            <div class="body">
+              Brazil 4 — 1 Italy. <em>The Final.</em> Pelé scored, hung up his international boots and walked off the Azteca turf for the last time.
+              <span class="sub">Goal of the tournament: Carlos Alberto's. The pass before it has its own folklore.</span>
+            </div>
+          </li>
+          <li>
+            <span class="year">1986</span>
+            <div class="body">
+              Argentina 2 — 1 England. <em>The Quarterfinal.</em> Maradona scored the goal that should not count, and four minutes later the one widely called the greatest ever scored.
+              <span class="sub">"Hand of God," then sixty yards through five Englishmen.</span>
+            </div>
+          </li>
+          <li>
+            <span class="year">1986</span>
+            <div class="body">
+              Argentina 3 — 2 West Germany. <em>The Final.</em> Maradona lifted the trophy at the Azteca, in front of a crowd as loud as anything ever recorded at a football match.
+              <span class="sub">He was twenty-five.</span>
+            </div>
+          </li>
+        </ul>
+        <p class="venue-closer">Wednesday, Argentina come back. <span class="pink">Messi has never played here.</span></p>
+      </div>
+    </div>
+
+    <span class="float float-arrow-3 hand-arrow pink"></span>
+  </div>
+</section>
+
+<!-- PAGE 08 — MIXED ZONE -->
+<section class="page mixed">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 08</span><span class="name">— Mixed Zone</span><span class="rule"></span><span class="right">A reader's question</span></div>
+
+    <article class="qa-card">
+      <span class="tape"></span>
+      <span class="tape tape-2"></span>
+      <div class="reader-tag">From the Mixed Zone · Sat 13 Jun · Reader: Sofia, Madrid</div>
+
+      <div class="qa-q">
+        <span class="marker">Q</span>
+        <div class="body">"Why did Germany lose midfield to Japan in MD3? They had more possession and more passes."</div>
+      </div>
+
+      <div class="qa-a">
+        <span class="marker">A</span>
+        <div class="body">
+          They didn't lose midfield. They <strong>bypassed</strong> it. Germany's pressing intensity was the worst of any MD3 match. Their average first-pass length was <span class="pink">22 metres</span>, longest in the tournament so far — slow, vertical, and over the top of the midfield phase, not through it.
+          <br/><br/>
+          Japan didn't need to win midfield in possession terms; they needed to win second balls. Which they did, <strong>19 to 11</strong>. The xG split (Japan 1.8, Germany 1.2) is the consequence of being on the receiving end of those long balls, not the cause of a possession dispute.
+        </div>
+      </div>
+
+      <div class="qa-cta">
+        <span>↦</span>
+        <span>Have a question? Reply to any Inference. The best ones get printed here.</span>
+        <span class="pink">Tomorrow's Q: chosen from your inbox</span>
+      </div>
+    </article>
+
+    <span class="float float-hand-5">keep them<br/>coming →</span>
+  </div>
+</section>
+
+<!-- PAGE 09 — TICKER -->
+<section class="page ticker-page">
+  <div class="page-wrap">
+    <div class="page-mark"><span class="num">PAGE 09</span><span class="name">— The Ticker</span><span class="rule"></span><span class="right">All scores · all standings</span></div>
+
+    <div class="ticker-section">
+      <h3>Yesterday — Saturday 13 June<span class="rule"></span></h3>
+      <div class="ticker-scores">
+        <div class="ticker-score your"><span class="home">Argentina</span><span class="res">2 — 0</span><span class="away">Iran</span></div>
+        <div class="ticker-score"><span class="home">France</span><span class="res">3 — 1</span><span class="away">Australia</span></div>
+        <div class="ticker-score"><span class="home">USA</span><span class="res">1 — 1</span><span class="away">Mexico</span></div>
+        <div class="ticker-score"><span class="home">Belgium</span><span class="res">2 — 1</span><span class="away">Netherlands</span></div>
+      </div>
+    </div>
+
+    <div class="ticker-section">
+      <h3>Group standings — through MD3<span class="rule"></span></h3>
+      <div class="standings-grid">
+        <div class="standing">
+          <div class="grp-name"><span>Group D</span><span>your team</span></div>
+          <div class="row your"><span>1. Argentina</span><span>3 · +2</span></div>
+          <div class="row"><span>2. Saudi Arabia</span><span>3 · +1</span></div>
+          <div class="row"><span>3. Iran</span><span>0 · −2</span></div>
+          <div class="row"><span>4. Mexico</span><span>0 · −1</span></div>
+        </div>
+        <div class="standing">
+          <div class="grp-name"><span>Group F</span><span>your team</span></div>
+          <div class="row your"><span>1. Brazil</span><span>1 · 0</span></div>
+          <div class="row"><span>2. Switzerland</span><span>1 · 0</span></div>
+          <div class="row"><span>3. Serbia</span><span>1 · 0</span></div>
+          <div class="row"><span>4. Cameroon</span><span>0 · 0</span></div>
+        </div>
+        <div class="standing">
+          <div class="grp-name"><span>Group B</span><span></span></div>
+          <div class="row"><span>1. France</span><span>6 · +5</span></div>
+          <div class="row"><span>2. Belgium</span><span>3 · +1</span></div>
+          <div class="row"><span>3. Netherlands</span><span>3 · 0</span></div>
+          <div class="row"><span>4. Australia</span><span>0 · −6</span></div>
+        </div>
+        <div class="standing">
+          <div class="grp-name"><span>Group A</span><span>hosts</span></div>
+          <div class="row"><span>1. USA</span><span>4 · +2</span></div>
+          <div class="row"><span>2. Mexico</span><span>4 · +1</span></div>
+          <div class="row"><span>3. Italy</span><span>1 · −1</span></div>
+          <div class="row"><span>4. Norway</span><span>3 · −2</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="issue-footer">
+  <div class="strip">
+    END OF INFERENCE N° 04 <span class="star">✦</span> Stapled at first light <span class="star">✦</span> Marcus · Possession lens <span class="star">✦</span> Sun 14 June 2026 <span class="star">✦</span>
+  </div>
+
+  <div class="tomorrow">
+    <div class="next-up">
+      <h3>Tomorrow — <em>Inference N° 05</em></h3>
+      <p>Matchday Five. Sunday's slate: Spain–Croatia, Portugal–Ghana, Argentina rest, Brazil rest. Your Inference arrives at first light.</p>
+    </div>
+    <nav class="nav-block">
+      <a href="#">★ Submit to Mixed Zone</a>
+      <a href="#">★ Change my teams</a>
+      <a href="#">★ Switch bundle</a>
+      <a href="#">★ Unsubscribe (boo)</a>
+    </nav>
+  </div>
+
+  <p class="colophon-line">INFERENCE N° 04 was assembled overnight 13–14 June 2026 by an AI desk that does not sleep. Set in Anton, Yeseva One, Allerta Stencil, Caveat, DM Sans, Space Mono. No emojis were harmed.</p>
+</footer>
+
+</body>
+</html>

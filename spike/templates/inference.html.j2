@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>THE INFERENCE — for {{ reader.display_name }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,400..900;1,9..40,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F1E8D0;
+  --paper-deep: #E0D4B0;
+  --paper-light: #F8F2E0;
+  --ink: #0B0A0E;
+  --ink-soft: #1F1B26;
+  --ink-muted: #5C5450;
+  --pink: #FF2E6E;
+  --blue: #1E33C4;
+  --highlighter: #FFE94A;
+  --font-display: "Anton", "Impact", sans-serif;
+  --font-eccentric: "Yeseva One", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-stencil: "Allerta Stencil", "Anton", sans-serif;
+  --font-hand: "Caveat", cursive;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 13% 18%, rgba(11,10,14,0.14) 1.2px, transparent 1.6px),
+    radial-gradient(circle at 73% 82%, rgba(11,10,14,0.08) 1px, transparent 1.5px);
+  background-size: 5px 5px, 9px 9px;
+  mix-blend-mode: multiply;
+}
+::selection { background: var(--ink); color: var(--paper); }
+
+.wrap { max-width: 740px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 56px); position: relative; z-index: 2; }
+
+.label, .mono { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; font-size: 10px; color: var(--ink-muted); }
+.stencil { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; }
+.hand { font-family: var(--font-hand); font-weight: 600; line-height: 1.0; }
+.hl { background: linear-gradient(transparent 55%, var(--highlighter) 55%); padding: 0 2px; }
+.hl-p { background: linear-gradient(transparent 55%, rgba(255,46,110,0.32) 55%); padding: 0 2px; }
+.pink { color: var(--pink); }
+.blue { color: var(--blue); }
+em { font-style: italic; color: var(--ink-soft); }
+strong { font-weight: 700; }
+hr.rule { border: 0; border-top: 2px solid var(--ink); margin: 28px 0; }
+
+/* MASTHEAD */
+.masthead { border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); padding: 18px 0; margin-bottom: 36px; display: flex; flex-direction: column; gap: 4px; }
+.masthead .wordmark { font-family: var(--font-display); font-size: clamp(48px, 9vw, 84px); line-height: 0.9; letter-spacing: -0.01em; text-transform: uppercase; }
+.masthead .meta { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 6px; }
+.masthead .for { font-family: var(--font-hand); font-size: 28px; color: var(--pink); line-height: 1; margin-top: 14px; }
+
+/* SECTION HEAD */
+.section { margin: 56px 0; position: relative; }
+.section-mark { display: flex; align-items: baseline; gap: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); margin-bottom: 20px; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; }
+.section-mark .num { color: var(--pink); font-weight: 700; }
+.section-mark .rule { flex: 1; height: 1px; background: var(--ink-muted); align-self: center; }
+
+.headline { font-family: var(--font-eccentric); font-size: clamp(34px, 6vw, 58px); line-height: 1.02; letter-spacing: -0.01em; margin: 0 0 12px; }
+.headline-display { font-family: var(--font-display); font-size: clamp(52px, 10vw, 96px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; margin: 0 0 12px; }
+.dek { font-family: var(--font-body); font-style: italic; font-size: 18px; color: var(--ink-soft); margin: 0 0 24px; line-height: 1.4; }
+
+.prose p { margin: 0 0 16px; }
+.prose p:last-child { margin-bottom: 0; }
+
+.pull {
+  border-left: 4px solid var(--pink);
+  background: var(--paper-light);
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-family: var(--font-eccentric);
+  font-size: 22px;
+  line-height: 1.25;
+  position: relative;
+}
+.pull .attrib { display: block; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--ink-muted); margin-top: 10px; font-style: normal; }
+
+/* MATCH BRIEF score line */
+.score-line { font-family: var(--font-mono); font-weight: 700; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; padding: 10px 14px; background: var(--ink); color: var(--paper); display: inline-block; margin-bottom: 18px; }
+
+/* HERE & THERE thread list */
+.thread-list { list-style: none; padding: 0; margin: 0 0 18px; border-top: 1px solid var(--ink); }
+.thread-list li { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--ink-muted); align-items: baseline; }
+.thread-list .k { font-family: var(--font-mono); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--pink); }
+.thread-list .v { font-size: 16px; line-height: 1.45; }
+.thread-closer { font-family: var(--font-eccentric); font-size: 20px; line-height: 1.3; color: var(--ink-soft); margin: 18px 0 0; }
+
+/* TAGS / READER BAR */
+.reader-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tag { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; padding: 4px 10px; border: 1px solid var(--ink); background: var(--paper-light); }
+.tag.lens { background: var(--pink); color: var(--paper); border-color: var(--pink); }
+.tag.wild { background: var(--highlighter); border-color: var(--ink); max-width: 100%; white-space: normal; }
+
+/* COLOPHON */
+.colophon { border-top: 4px double var(--ink); margin-top: 64px; padding-top: 24px; font-family: var(--font-mono); font-size: 11px; line-height: 1.6; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted); }
+.colophon strong { color: var(--ink); }
+.colophon .thesis { font-family: var(--font-eccentric); font-size: 22px; line-height: 1.25; text-transform: none; letter-spacing: 0; color: var(--ink); margin-bottom: 12px; }
+
+.wildcard-flag { display: inline-block; font-family: var(--font-hand); font-size: 18px; color: var(--pink); margin-left: 8px; transform: rotate(-2deg); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="wordmark">The Inference</div>
+  <div class="meta">
+    <span>Issue N° 12 · {{ match_day.issue_label }}</span>
+    <span>{{ match_day.tournament }}</span>
+  </div>
+  <div class="for">— for {{ reader.display_name }}</div>
+  <div class="reader-bar">
+    {% for team in reader.teams %}<span class="tag">{{ team }}</span>{% endfor %}
+    {% for player in reader.players %}<span class="tag">{{ player }}</span>{% endfor %}
+    <span class="tag lens">{{ reader.lens }}</span>
+    <span class="tag">{{ reader.length }}</span>
+    <span class="tag wild">★ {{ reader.wildcard }}</span>
+  </div>
+</header>
+
+<!-- EDITOR'S COLUMN -->
+<section class="section">
+  <div class="section-mark">
+    <span class="num">§ 01</span>
+    <span>Editor's Column</span>
+    <span class="rule"></span>
+    <span>{{ reader.lens }} · {{ reader.display_name }}</span>
+  </div>
+  <h2 class="headline">{{ sections.editor.headline }}</h2>
+  <p class="dek">{{ sections.editor.dek }}{% if sections.editor.wildcard_used %}<span class="wildcard-flag">★ wildcard</span>{% endif %}</p>
+  <div class="prose">
+    {% for p in sections.editor.paragraphs %}<p>{{ p }}</p>{% endfor %}
+  </div>
+  {% if sections.editor.pull_quote %}
+  <div class="pull">
+    "{{ sections.editor.pull_quote.text }}"
+    <span class="attrib">{{ sections.editor.pull_quote.attribution }}</span>
+  </div>
+  {% endif %}
+</section>
+
+<!-- MATCH BRIEF -->
+<section class="section">
+  <div class="section-mark">
+    <span class="num">§ 02</span>
+    <span>Match Brief</span>
+    <span class="rule"></span>
+    <span>Yesterday · for your team sheet</span>
+  </div>
+  <div class="score-line">{{ sections.match_brief.score_line }}</div>
+  <h2 class="headline-display">{{ sections.match_brief.headline }}</h2>
+  {% if sections.match_brief.wildcard_used %}<p><span class="wildcard-flag">★ wildcard used here</span></p>{% endif %}
+  <div class="prose">
+    {% for p in sections.match_brief.paragraphs %}<p>{{ p }}</p>{% endfor %}
+  </div>
+  {% if sections.match_brief.pull_quote %}
+  <div class="pull">
+    "{{ sections.match_brief.pull_quote.text }}"
+    <span class="attrib">{{ sections.match_brief.pull_quote.attribution }}</span>
+  </div>
+  {% endif %}
+</section>
+
+<!-- HERE & THERE -->
+<section class="section">
+  <div class="section-mark">
+    <span class="num">§ 03</span>
+    <span>Here &amp; There</span>
+    <span class="rule"></span>
+    <span>The thread between your teams</span>
+  </div>
+  <h2 class="headline-display">{{ sections.here_and_there.headline }}</h2>
+  <p class="dek">{{ sections.here_and_there.dek }}{% if sections.here_and_there.wildcard_used %}<span class="wildcard-flag">★ wildcard</span>{% endif %}</p>
+  <ul class="thread-list">
+    {% for f in sections.here_and_there.thread_facts %}
+    <li><span class="k">{{ f.label }}</span><span class="v">{{ f.fact }}</span></li>
+    {% endfor %}
+  </ul>
+  <p class="thread-closer">{{ sections.here_and_there.closer }}</p>
+</section>
+
+<footer class="colophon">
+  <p class="thesis">A daily zine, made for one reader, by one person and an LLM. Doing what a newsroom of one hundred could not.</p>
+  <p>The Inference · Issue N° 12 · for <strong>{{ reader.display_name }}</strong> · {{ match_day.issue_date }}<br>
+  Lens: <strong>{{ reader.lens }}</strong> · Length: <strong>{{ reader.length }}</strong> · Teams: <strong>{{ reader.teams | join(', ') }}</strong><br>
+  Generated by GPT against the day's match data. No journalists were employed in the making of this issue.</p>
+</footer>
+
+</div>
+</body>
+</html>

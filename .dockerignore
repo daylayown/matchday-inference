@@ -1,0 +1,16 @@
+# Keep the signup-endpoint image small: ship only the package source.
+.venv/
+output/
+data/
+spike/
+tests/
+web/
+.github/
+*.md
+!CLAUDE.md
+.env
+.git/
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/

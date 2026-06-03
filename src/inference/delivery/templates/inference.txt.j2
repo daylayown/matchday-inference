@@ -1,0 +1,192 @@
+================================================================
+  MATCHDAY INFERENCE — N° {{ issue.number_str }}
+  {{ issue.date_human }} · for {{ reader.display_name }} · {{ reader.lens }} lens
+================================================================
+
+FOLLOWING: {{ reader.teams_short|join(' · ') }}
+LENS: {{ reader.lens|upper }}
+READ IN: {{ reader.language_label|upper }}
+
+{% if editor %}
+================================================================
+  PAGE 02 — THE EDITOR'S DESK · Tournament arc
+================================================================
+
+{{ editor.headline }}{% if editor.headline_note %} ({{ editor.headline_note }}){% endif %}
+
+{% for p in editor.paragraphs %}
+{{ p }}
+
+{% endfor %}
+{% if editor.three_things %}
+{% for item in editor.three_things %}
+  {{ ['i.', 'ii.', 'iii.', 'iv.'][loop.index0] }} {{ item.lead }} {{ item.body }}
+{% endfor %}
+
+{% endif %}
+{{ editor.sig }}
+
+{% if editor.pull_quote %}
+  ---
+  PULLED FROM THE WIRE:
+  "{{ editor.pull_quote.text if editor.pull_quote is mapping else editor.pull_quote }}"
+  {% if editor.pull_quote is mapping and editor.pull_quote.attribution %}— {{ editor.pull_quote.attribution }}{% endif %}
+{% endif %}
+{% endif %}
+
+{% for ts in team_sheets %}
+================================================================
+  PAGE 03{% if team_sheets|length > 1 %}.{{ loop.index }}{% endif %} — YOUR DAY · {{ ts.facts.team }}
+================================================================
+
+{{ ts.facts.team }} — {{ ts.facts.result_line }}
+
+  {{ ts.facts.score_poster.home }} {{ ts.facts.score_poster.home_score }} — {{ ts.facts.score_poster.away_score }} {{ ts.facts.score_poster.away }}
+  {% if ts.facts.score_poster.result_tag %}{{ ts.facts.score_poster.result_tag }}{% endif %}
+
+{{ ts.facts.match_meta.formation }} · {{ ts.facts.match_meta.date_human }} · {{ ts.facts.match_meta.venue }}
+
+STARTING XI:
+{% for p in ts.starting_xi %}
+  {{ "%2s"|format(p.number or '') }} {{ p.name }}{% if p.position %} ({{ p.position }}){% endif %}
+{% endfor %}
+
+STAT POSTERS:
+{% for poster in ts.facts.stat_posters %}
+  • {{ poster.big_num }} {{ poster.label }} — {{ poster.note }}
+{% endfor %}
+
+HOW IT WENT:
+{% for para in ts.facts.recap_paragraphs %}
+{{ para }}
+
+{% endfor %}
+{% if ts.facts.pull_quote %}
+  "{{ ts.facts.pull_quote.text if ts.facts.pull_quote is mapping else ts.facts.pull_quote }}"
+{% endif %}
+
+{% endfor %}
+
+{% if here_there %}
+================================================================
+  PAGE 04 — HERE & THERE · The thread between today's teams
+================================================================
+
+{{ here_there.headline }}
+
+{{ here_there.dek }}
+
+{% for f in here_there.thread_facts %}
+  • {{ f.label }}: {{ f.fact|striptags }}
+{% endfor %}
+
+{% if here_there.closer %}{{ here_there.closer|striptags }}{% endif %}
+{% endif %}
+
+{% if story_behind_number %}
+================================================================
+  PAGE 05 — STORY BEHIND THE NUMBER · One stat, at scale
+================================================================
+
+{{ story_behind_number.number }}
+
+{{ story_behind_number.label }}
+{{ story_behind_number.headline|striptags }}
+
+{% for p in story_behind_number.paragraphs %}
+{{ p|striptags }}
+
+{% endfor %}
+{% for qf in story_behind_number.quick_facts %}
+  {{ qf.k }}: {{ qf.v }}
+{% endfor %}
+{% endif %}
+
+{% if back_story %}
+================================================================
+  PAGE 06 — BACK STORY · Last time these two met
+================================================================
+
+{{ back_story.year }} — {{ back_story.score }}
+{{ back_story.context_line }}
+
+{{ back_story.label }}
+{{ back_story.headline|striptags }}
+
+{% if back_story.goals_strip %}
+GOALS:
+{% for g in back_story.goals_strip %}
+  • {{ g.scorer }} {{ g.minute }}{% if g.note %} {{ g.note }}{% endif %}
+{% endfor %}
+{% endif %}
+
+{% for p in back_story.paragraphs %}
+{{ p|striptags }}
+
+{% endfor %}
+{% if back_story.closer %}
+{{ back_story.closer|striptags }}
+{% endif %}
+{% endif %}
+
+{% if where_played_before %}
+================================================================
+  PAGE 07 — WHERE THEY PLAYED BEFORE · The venue's history
+================================================================
+
+{{ where_played_before.venue_display }}
+{{ where_played_before.venue_meta|striptags }}
+
+{{ where_played_before.world_cups_label }}
+{{ where_played_before.heading }}
+
+{% for hm in where_played_before.historical_matches %}
+  {{ hm.year }} — {{ hm.body|striptags }}
+  {% if hm.sub %}{{ hm.sub|striptags }}{% endif %}
+
+{% endfor %}
+{% if where_played_before.closer %}
+{{ where_played_before.closer|striptags }}
+{% endif %}
+{% endif %}
+
+{% if from_the_stands %}
+================================================================
+  PAGE 08 — FROM THE STANDS · A reader's question
+================================================================
+
+{{ from_the_stands.section_label }}
+
+Q: "{{ from_the_stands.question }}"
+
+A: {{ from_the_stands.answer_html|striptags }}
+
+{{ from_the_stands.cta_line }}
+{% if from_the_stands.cta_tease %}{{ from_the_stands.cta_tease }}{% endif %}
+{% endif %}
+
+{% if added_time %}
+================================================================
+  PAGE 09 — ADDED TIME · The unexpected stuff
+================================================================
+
+{% if added_time.dek %}{{ added_time.dek|striptags }}
+
+{% endif %}
+{% for n in added_time.notes %}
+  ★ {{ n.kicker|striptags }} {{ n.body|striptags }}
+
+{% endfor %}
+{% if added_time.closer %}
+{{ added_time.closer|striptags }}
+{% endif %}
+{% endif %}
+
+================================================================
+  END OF MATCHDAY INFERENCE N° {{ issue.number_str }}
+  Stapled at first light · {{ reader.display_name }} · {{ reader.lens }} lens
+================================================================
+
+MATCHDAY INFERENCE N° {{ issue.number_str }} was assembled overnight by an AI desk
+that does not sleep. Set in Anton, Yeseva One, Allerta Stencil, Caveat,
+DM Sans, Space Mono. No emojis were harmed.

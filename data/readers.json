@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "marcus",
+    "display_name": "Marcus",
+    "teams": ["Argentina", "France", "Morocco"],
+    "players": ["Lionel Messi", "Kylian Mbappé", "Achraf Hakimi"],
+    "lens": "Cultural Critic",
+    "length": "Standard",
+    "wildcard": "I'm a chef. Food metaphors and kitchen-language when they actually fit — don't force it.",
+    "location": "Brooklyn, NY"
+  }
+]

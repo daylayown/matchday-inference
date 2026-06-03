@@ -1,0 +1,112 @@
+name: Daily Inference
+
+# Cron runs at 06:30 UTC = 02:30 ET (during tournament window).
+# GitHub Actions cron is best-effort; can drift up to 10 minutes. That's
+# acceptable for a "first-light" issue.
+#
+# Schedule guards: GH cron runs every day on the default branch, but the
+# tournament window is June 11 – July 19 2026. The first step short-circuits
+# outside that window so we don't burn API credits on empty fetches.
+
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+    inputs:
+      date_iso:
+        description: 'ISO date to run for (defaults to today UTC).'
+        required: false
+        type: string
+      issue_number:
+        description: 'Issue N° to stamp (e.g. 01).'
+        required: false
+        default: '01'
+
+jobs:
+  run-day:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Tournament-window guard
+        id: window
+        run: |
+          today=$(date -u +%Y-%m-%d)
+          start="2026-06-10"  # one day early for the dress rehearsal
+          end="2026-07-19"
+          if [[ "$today" > "$end" || "$today" < "$start" ]]; then
+            echo "Today $today is outside tournament window ($start..$end). Skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.window.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.window.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        if: steps.window.outputs.skip != 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Resolve date + issue number
+        if: steps.window.outputs.skip != 'true'
+        id: vars
+        run: |
+          date_iso="${{ github.event.inputs.date_iso }}"
+          issue_number="${{ github.event.inputs.issue_number }}"
+          if [[ -z "$date_iso" ]]; then
+            date_iso=$(date -u +%Y-%m-%d)
+          fi
+          if [[ -z "$issue_number" ]]; then
+            # Day-of-tournament. June 11 is N° 01.
+            issue_number=$(( ($(date -d "$date_iso" +%s) - $(date -d "2026-06-10" +%s)) / 86400 ))
+            issue_number=$(printf "%02d" "$issue_number")
+          fi
+          echo "date_iso=$date_iso"           >> "$GITHUB_OUTPUT"
+          echo "issue_number=$issue_number"   >> "$GITHUB_OUTPUT"
+
+      - name: Fetch live subscriber list
+        if: steps.window.outputs.skip != 'true'
+        env:
+          INFERENCE_EXPORT_URL:   ${{ secrets.INFERENCE_EXPORT_URL }}
+          INFERENCE_EXPORT_TOKEN: ${{ secrets.INFERENCE_EXPORT_TOKEN }}
+        run: |
+          # Pull the live list from the Fly endpoint into data/readers.json.
+          # If the export secrets aren't set yet, fall back to the committed
+          # sample so the run still completes (useful pre-launch / dress rehearsal).
+          if [[ -n "$INFERENCE_EXPORT_URL" && -n "$INFERENCE_EXPORT_TOKEN" ]]; then
+            echo "Fetching subscribers from $INFERENCE_EXPORT_URL"
+            curl -sf -H "Authorization: Bearer $INFERENCE_EXPORT_TOKEN" \
+              "$INFERENCE_EXPORT_URL" -o data/readers.json
+            echo "Subscriber count: $(python -c 'import json,sys; print(len(json.load(open("data/readers.json"))["readers"]))')"
+          else
+            echo "INFERENCE_EXPORT_URL/TOKEN not set — using committed data/readers.json sample."
+          fi
+
+      - name: Run orchestrator
+        if: steps.window.outputs.skip != 'true'
+        env:
+          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          API_FOOTBALL_KEY:  ${{ secrets.API_FOOTBALL_KEY }}
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          FROM_EMAIL:        ${{ secrets.FROM_EMAIL }}
+        run: |
+          python scripts/run_day.py "${{ steps.vars.outputs.date_iso }}" \
+            --issue "${{ steps.vars.outputs.issue_number }}"
+
+      - name: Upload artifacts (rendered HTML)
+        if: steps.window.outputs.skip != 'true' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inference-${{ steps.vars.outputs.date_iso }}
+          path: output/inferences/
+          retention-days: 30

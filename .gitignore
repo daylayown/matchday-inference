@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.local
+*.env
+
+# Live subscriber DB (lives on the Fly volume, never committed)
+data/subscribers.sqlite
+data/*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Spike output (regenerable)
+spike/output/
+
+# Pipeline output (rendered Inferences, cached API responses, logs)
+output/
+
+# Node
+node_modules/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

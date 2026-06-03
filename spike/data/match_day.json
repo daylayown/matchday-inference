@@ -1,0 +1,111 @@
+{
+  "issue_date": "2022-12-11",
+  "issue_label": "Sunday · Quarterfinal aftermath · Doha",
+  "tournament": "2022 FIFA World Cup, Qatar",
+  "tournament_stage": "Quarterfinals → Semifinals",
+  "context_note": "All four quarterfinals are now played. Two days off before the semis (Tue/Wed). Argentina vs Croatia and France vs Morocco set as the SF pairings.",
+  "yesterday_matches": [
+    {
+      "home": "Morocco",
+      "away": "Portugal",
+      "score": "1-0",
+      "venue": "Al Thumama Stadium, Doha",
+      "headline": "Morocco become first African nation in a World Cup semifinal",
+      "scorers": [
+        {"player": "Youssef En-Nesyri", "minute": "42'", "team": "Morocco", "note": "headed in over a stranded Diogo Costa, who came for a ball he had no business attacking"}
+      ],
+      "lineups": {
+        "Morocco": "Bono · Hakimi, Aguerd, Saïss (off 57'), Mazraoui · Amrabat, Ounahi, Amallah (off 65') · Ziyech, En-Nesyri (off 82'), Boufal",
+        "Portugal": "Diogo Costa · Diogo Dalot, Rúben Dias, Pepe, Raphaël Guerreiro · Rúben Neves, Bernardo Silva, William Carvalho · Bruno Fernandes, Gonçalo Ramos (off 51', for Ronaldo), João Félix"
+      },
+      "key_facts": [
+        "Cristiano Ronaldo entered as a 51st-minute substitute in what would prove to be his final World Cup appearance.",
+        "Walid Regragui took over as Morocco's manager in late August 2022, three months before the tournament began.",
+        "Morocco have not conceded a goal from open play in this tournament. The only goal scored against them was an own-goal vs Canada.",
+        "Crowd was visibly majority-Moroccan; Doha's Moroccan diaspora and travelling support filled the stadium."
+      ],
+      "stats": {
+        "possession": "Portugal 65% / Morocco 35%",
+        "shots": "Portugal 14 / Morocco 5",
+        "shots_on_target": "Portugal 3 / Morocco 1",
+        "expected_goals": "Portugal 1.6 / Morocco 0.4"
+      },
+      "narrative_threads": [
+        "Africa's first-ever WC semifinalist — historic.",
+        "Probable Ronaldo international farewell — he wept on the way back to the tunnel.",
+        "Morocco's defensive structure (Saïss carried off injured; Aguerd held it together) absorbed enormous pressure."
+      ]
+    },
+    {
+      "home": "England",
+      "away": "France",
+      "score": "1-2",
+      "venue": "Al Bayt Stadium, Al Khor",
+      "headline": "Kane misses the equaliser from the spot; France advance to the semis",
+      "scorers": [
+        {"player": "Aurélien Tchouaméni", "minute": "17'", "team": "France", "note": "low driven shot from outside the box, deflected slightly off Maguire"},
+        {"player": "Harry Kane", "minute": "54'", "team": "England", "note": "penalty, Tchouaméni foul on Saka"},
+        {"player": "Olivier Giroud", "minute": "78'", "team": "France", "note": "header from a Griezmann cross"}
+      ],
+      "key_moments": [
+        "England missed a second penalty in the 84th minute — Kane skied it over the bar after Mason Mount was fouled by Théo Hernandez.",
+        "Saka was a constant menace down the right but ran into a determined Théo Hernandez performance.",
+        "Mbappé was quiet by his standards — no goals, no assists — but his runs pulled England's back line out of shape repeatedly."
+      ],
+      "stats": {
+        "possession": "England 54% / France 46%",
+        "shots": "England 16 / France 8",
+        "shots_on_target": "England 8 / France 5",
+        "expected_goals": "England 2.5 / France 1.5"
+      },
+      "narrative_threads": [
+        "Bellingham vs Tchouaméni was the midfield battle of the tournament — both 19, both magnificent.",
+        "Kane's missed penalty: his first competitive miss for England since 2018. Visibly distraught.",
+        "Southgate's England eliminated at the QFs again. Pattern."
+      ]
+    }
+  ],
+  "two_days_ago_matches": [
+    {
+      "home": "Croatia",
+      "away": "Brazil",
+      "score": "1-1 (4-2 pens)",
+      "venue": "Education City Stadium, Al Rayyan",
+      "headline": "Croatia knock out the favourites again — Brazil out on penalties",
+      "scorers": [
+        {"player": "Neymar", "minute": "105+1'", "team": "Brazil"},
+        {"player": "Bruno Petković", "minute": "117'", "team": "Croatia"}
+      ],
+      "narrative_threads": [
+        "Croatia knock out a tournament favourite on penalties for the third tournament in a row.",
+        "Tite resigns immediately after; his post-match presser is one paragraph long.",
+        "Neymar matched Pelé's all-time Brazil scoring record (77 goals) with his goal."
+      ]
+    },
+    {
+      "home": "Netherlands",
+      "away": "Argentina",
+      "score": "2-2 (3-4 pens)",
+      "venue": "Lusail Iconic Stadium",
+      "headline": "Messi-Van Gaal feud explodes; Argentina survive a chaotic finish",
+      "scorers": [
+        {"player": "Nahuel Molina", "minute": "35'", "team": "Argentina", "note": "Messi assist, one of the great World Cup through-balls"},
+        {"player": "Lionel Messi", "minute": "73'", "team": "Argentina", "note": "penalty"},
+        {"player": "Wout Weghorst", "minute": "83'", "team": "Netherlands"},
+        {"player": "Wout Weghorst", "minute": "90+11'", "team": "Netherlands", "note": "free-kick routine — clipped through the wall by Koopmeiners"}
+      ],
+      "narrative_threads": [
+        "Eleven minutes of injury time, eighteen yellow cards (a World Cup record), and a brawl at the final whistle.",
+        "Messi confronts Van Gaal post-match (the 'qué mirás, bobo' moment that lives on Twitter forever).",
+        "Emiliano Martínez saves two of the four Dutch penalties; Argentina through."
+      ]
+    }
+  ],
+  "today_fixtures": [
+    {"note": "Off day. No matches. Semis begin Tuesday."}
+  ],
+  "upcoming": [
+    {"date": "2022-12-13", "match": "Argentina vs Croatia", "stage": "SF1", "venue": "Lusail"},
+    {"date": "2022-12-14", "match": "France vs Morocco", "stage": "SF2", "venue": "Al Bayt"}
+  ]
+}

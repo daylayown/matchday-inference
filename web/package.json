@@ -1,0 +1,12 @@
+{
+  "name": "inference-web",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local dev server for THE INFERENCE prototypes (landing + sample issues).",
+  "scripts": {
+    "dev": "serve . -l 3001"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

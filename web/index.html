@@ -1,0 +1,1693 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MATCHDAY INFERENCE — The Daily Zine · World Cup 2026</title>
+<meta name="description" content="A daily matchday zine for the 2026 World Cup. Hand-stapled overnight. Built for you specifically." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,400..900;1,9..40,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --paper: #F1E8D0;
+  --paper-deep: #E0D4B0;
+  --paper-light: #F8F2E0;
+  --paper-dingy: #DFD3AE;
+  --ink: #0B0A0E;
+  --ink-soft: #1F1B26;
+  --ink-muted: #5C5450;
+  --pink: #FF2E6E;
+  --pink-deep: #C71956;
+  --blue: #1E33C4;
+  --blue-deep: #131F8E;
+  --highlighter: #FFE94A;
+  --highlighter-pink: #FFA8C8;
+  --tape: rgba(255, 46, 110, 0.45);
+  --tape-blue: rgba(30, 51, 196, 0.4);
+  --tape-cream: rgba(241, 232, 208, 0.45);
+  --tape-yellow: rgba(255, 233, 74, 0.65);
+
+  --font-display: "Anton", "Impact", sans-serif;
+  --font-eccentric: "Yeseva One", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-stencil: "Allerta Stencil", "Anton", sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --max: 1260px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Heavy photocopy grain + dot pattern */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 13% 18%, rgba(11,10,14,0.16) 1.2px, transparent 1.6px),
+    radial-gradient(circle at 73% 82%, rgba(11,10,14,0.10) 1px, transparent 1.5px),
+    radial-gradient(circle at 47% 50%, rgba(11,10,14,0.07) 0.8px, transparent 1.2px);
+  background-size: 5px 5px, 8px 8px, 11px 11px;
+  mix-blend-mode: multiply;
+}
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0.16 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+
+/* ─── Type helpers ─── */
+
+.mono { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+.label { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; font-size: 10px; color: var(--ink-muted); }
+.stencil { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.03em; text-transform: uppercase; }
+.hand { font-family: var(--font-hand); font-weight: 600; line-height: 1.0; color: var(--ink); }
+
+/* Riso offsets — single, double, triple */
+.riso { position: relative; display: inline-block; }
+.riso::before {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  color: var(--pink);
+  transform: translate(-10px, 10px);
+  mix-blend-mode: multiply;
+  z-index: -1;
+  pointer-events: none;
+}
+.riso.r-blue::before { color: var(--blue); transform: translate(10px, -8px); }
+.riso.r-trip::after {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  color: var(--blue);
+  transform: translate(14px, -12px);
+  mix-blend-mode: multiply;
+  z-index: -2;
+  pointer-events: none;
+}
+.riso.r-tilt::before { transform: translate(-12px, 14px) rotate(-1.5deg); }
+.riso.r-broken::before { transform: translate(-7px, 11px) skewX(-3deg); }
+
+/* Highlighter */
+.hl, .hl-p { position: relative; display: inline-block; z-index: 0; }
+.hl::before, .hl-p::before {
+  content: "";
+  position: absolute;
+  left: -4px; right: -4px;
+  top: 12%; bottom: 4%;
+  background: var(--highlighter);
+  z-index: -1;
+  transform: skew(-3deg) rotate(-0.8deg);
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+.hl-p::before { background: var(--highlighter-pink); transform: skew(2deg) rotate(0.6deg); }
+
+/* Strikethrough */
+.xed { position: relative; text-decoration: none; color: var(--ink-muted); }
+.xed::after {
+  content: "";
+  position: absolute;
+  left: -3px; right: -3px;
+  top: 52%;
+  height: 3px;
+  background: var(--ink);
+  transform: rotate(-1.2deg);
+  border-radius: 8px;
+}
+
+/* Hand-drawn marker circle */
+.circled { position: relative; display: inline-block; padding: 6px 14px 6px 12px; z-index: 0; }
+.circled::after {
+  content: "";
+  position: absolute;
+  inset: -4px -4px -4px -2px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100' preserveAspectRatio='none'><path d='M30 12 Q 8 18, 8 50 Q 8 88, 50 92 Q 150 100, 200 88 Q 234 78, 232 48 Q 230 14, 180 8 Q 90 -2, 30 12 Z' fill='none' stroke='%23FF2E6E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+  pointer-events: none;
+  transform: rotate(-1.5deg);
+}
+.circled.blue::after { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100' preserveAspectRatio='none'><path d='M30 12 Q 8 18, 8 50 Q 8 88, 50 92 Q 150 100, 200 88 Q 234 78, 232 48 Q 230 14, 180 8 Q 90 -2, 30 12 Z' fill='none' stroke='%231E33C4' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
+
+/* Hand-drawn arrow */
+.hand-arrow {
+  display: inline-block;
+  width: 110px; height: 60px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 60'><path d='M 6 32 Q 55 6, 100 30 M 88 20 L 100 30 L 88 40' fill='none' stroke='%230B0A0E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center;
+  background-size: contain;
+}
+.hand-arrow.pink { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 60'><path d='M 6 32 Q 55 6, 100 30 M 88 20 L 100 30 L 88 40' fill='none' stroke='%23FF2E6E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"); }
+
+/* Hand-note (margin scribble) */
+.hand-note {
+  font-family: var(--font-hand);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+  display: inline-block;
+  position: relative;
+}
+.hand-note.pink { color: var(--pink-deep); }
+.hand-note.blue { color: var(--blue-deep); }
+
+/* Tape */
+.tape { position: absolute; width: 120px; height: 28px; background: var(--tape); pointer-events: none; z-index: 4; box-shadow: 0 5px 10px rgba(11,10,14,0.10); }
+.tape::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(255,255,255,0.18) 50%, transparent 50%); background-size: 12px 100%; opacity: 0.5; }
+.tape.tape-blue { background: var(--tape-blue); }
+.tape.tape-cream { background: var(--tape-cream); }
+.tape.tape-yellow { background: var(--tape-yellow); }
+.tape.torn { clip-path: polygon(0% 30%, 4% 0%, 8% 40%, 14% 10%, 22% 50%, 32% 14%, 44% 50%, 56% 22%, 68% 50%, 80% 18%, 92% 50%, 100% 26%, 100% 100%, 0% 100%); }
+
+/* Stamps */
+.stamp { display: inline-block; font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.22em; font-size: 11px; color: var(--pink); border: 2.5px solid var(--pink); padding: 7px 13px 6px; transform: rotate(-2.2deg); background: var(--paper); white-space: nowrap; box-shadow: 1.5px 1.5px 0 0 rgba(199, 25, 86, 0.18); }
+.stamp.rough { transform: rotate(-6deg); border-style: dashed; border-width: 2px; }
+.stamp.rough-r { transform: rotate(7deg); border-style: dashed; border-width: 2px; }
+.stamp.blue { color: var(--blue); border-color: var(--blue); }
+.stamp.ink { color: var(--ink); border-color: var(--ink); background: var(--paper); }
+.stamp.cream { color: var(--paper); border-color: var(--paper); background: var(--ink); }
+.stamp.stencil { font-family: var(--font-stencil); letter-spacing: 0.18em; padding: 10px 14px 8px; font-size: 14px; }
+
+/* Floating positioner */
+.float { position: absolute; z-index: 5; pointer-events: none; }
+
+/* Reveal animation */
+.reveal { opacity: 0; transform: translateY(10px); animation: rise 0.85s 0.05s cubic-bezier(.2,.7,.2,1) forwards; }
+.reveal.d1 { animation-delay: 0.18s; }
+.reveal.d2 { animation-delay: 0.34s; }
+.reveal.d3 { animation-delay: 0.5s; }
+.reveal.d4 { animation-delay: 0.66s; }
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+/* ─── Masthead ─── */
+
+.masthead { position: relative; z-index: 2; padding: 22px var(--gutter) 0; }
+.masthead-top {
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: center; gap: 24px;
+  padding-bottom: 14px;
+}
+.masthead-top .l { justify-self: start; }
+.masthead-top .c { justify-self: center; text-align: center; }
+.masthead-top .r { justify-self: end; text-align: right; }
+.masthead-top span { color: var(--ink-soft); }
+.masthead-top .pink { color: var(--pink-deep); }
+
+.masthead-strip {
+  border-top: 8px solid var(--ink); border-bottom: 2px solid var(--ink);
+  padding: 9px 0; display: flex; overflow: hidden; white-space: nowrap;
+  background: var(--paper-light);
+}
+.masthead-strip .scroll {
+  display: inline-flex; gap: 32px;
+  animation: marquee 38s linear infinite;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.16em; font-size: 14px; text-transform: uppercase;
+}
+.masthead-strip .scroll span { display: inline-flex; align-items: center; gap: 32px; }
+.masthead-strip .scroll .star { color: var(--pink); }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.masthead-title {
+  text-align: center; padding: 30px 0 28px; position: relative;
+}
+.masthead-title .word {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(82px, 17vw, 232px); line-height: 0.85;
+  letter-spacing: 0.005em; text-transform: uppercase;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+.masthead-title .word::before { transform: translate(-14px, 16px) rotate(-1.2deg); }
+.masthead-title .word::after { transform: translate(16px, -14px); color: var(--blue); }
+.masthead-title .tape-l { left: 16%; top: 6px; transform: rotate(-9deg); width: 130px; }
+.masthead-title .tape-r { right: 14%; top: 18px; transform: rotate(6deg); width: 110px; }
+.masthead-title .draft-stamp { position: absolute; top: 14%; right: 22%; transform: rotate(13deg); z-index: 5; }
+.masthead-title .zine-stamp { position: absolute; bottom: 14%; left: 22%; transform: rotate(-9deg); z-index: 5; }
+
+.masthead-tag {
+  text-align: center; padding: 12px 0 16px;
+  border-top: 2px solid var(--ink); border-bottom: 8px solid var(--ink);
+  font-family: var(--font-mono); font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px;
+  color: var(--ink-soft);
+}
+.masthead-tag em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  font-size: 21px; letter-spacing: 0; text-transform: none;
+  color: var(--pink-deep); transform: rotate(-1deg); display: inline-block;
+}
+.masthead-tag .deco { color: var(--pink); margin: 0 10px; }
+
+/* ─── Generic section ─── */
+
+main { position: relative; z-index: 2; }
+section {
+  padding: clamp(56px, 9vw, 110px) var(--gutter);
+  position: relative;
+}
+.wrap { max-width: var(--max); margin: 0 auto; position: relative; }
+
+.section-head {
+  display: grid; grid-template-columns: 1fr; gap: 6px;
+  padding-bottom: 36px; margin-bottom: 36px;
+  border-bottom: 3px solid var(--ink);
+}
+.section-head .kicker {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 13px; letter-spacing: 0.22em;
+  color: var(--pink-deep); text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.section-head .kicker .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--ink); color: var(--paper);
+  width: 38px; height: 38px;
+  font-family: var(--font-display); font-size: 22px;
+  line-height: 1; padding-top: 4px;
+  transform: rotate(-3deg);
+}
+.section-head h2 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(46px, 7.5vw, 100px);
+  line-height: 0.88;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-head h2 em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  font-size: 0.85em; color: var(--pink-deep);
+  vertical-align: -0.05em; display: inline-block;
+  transform: rotate(-2deg);
+}
+.section-head .dek {
+  font-family: var(--font-body); font-size: clamp(16px, 1.6vw, 19px);
+  color: var(--ink-soft); margin-top: 20px;
+  max-width: 60ch; line-height: 1.5;
+  font-weight: 500;
+}
+
+/* ─── Hero ─── */
+
+.hero { padding-top: clamp(56px, 9vw, 110px); padding-bottom: clamp(42px, 6vw, 76px); position: relative; }
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 44px;
+  align-items: end; max-width: var(--max); margin: 0 auto; position: relative;
+}
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1.6fr 1fr; gap: 64px; }
+}
+.hero-headline {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(58px, 9.5vw, 144px);
+  line-height: 0.88;
+  letter-spacing: 0.003em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hero-headline em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  font-size: 0.85em; color: var(--pink-deep);
+  vertical-align: -0.04em; margin: 0 0.06em;
+  display: inline-block; transform: rotate(-3deg);
+}
+.hero-headline em.blue { color: var(--blue); transform: rotate(2deg); }
+.hero-headline .riso { display: inline-block; }
+
+.hero-side {
+  position: relative;
+  border-left: 6px solid var(--ink);
+  padding-left: 22px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.hero-side .stamp { align-self: flex-start; margin-bottom: 4px; }
+.hero-side p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--ink-soft); font-weight: 500; }
+.hero-side p strong { color: var(--ink); }
+.hero-side .hand-line {
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: 22px; color: var(--pink-deep);
+  line-height: 1.1; transform: rotate(-1.5deg);
+  display: inline-block;
+}
+
+.cta {
+  appearance: none;
+  display: inline-flex; align-items: center; gap: 14px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  padding: 22px 28px 20px;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+  position: relative;
+}
+.cta::after { content: ""; position: absolute; inset: 0; background: var(--pink); z-index: -1; transform: translate(8px, 8px); transition: transform 0.2s ease; }
+.cta:hover { transform: translate(2px, 2px); }
+.cta:hover::after { transform: translate(0, 0); }
+.cta:focus-visible { outline: 3px solid var(--pink); outline-offset: 4px; }
+
+.hero .float-arrow-hero { bottom: 6%; left: -2%; transform: rotate(-22deg); }
+.hero .float-stapled { top: -2%; right: 4%; transform: rotate(11deg); }
+
+/* ─── Pitch / Idea ─── */
+
+.pitch-bg { background: var(--paper-deep); border-top: 5px solid var(--ink); border-bottom: 5px solid var(--ink); position: relative; }
+.pitch-bg::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,46,110,0.12) 1.5px, transparent 2px);
+  background-size: 16px 16px;
+  pointer-events: none;
+}
+
+.pitch-grid {
+  display: grid; grid-template-columns: 1fr; gap: 36px;
+  max-width: var(--max); margin: 0 auto; position: relative;
+}
+@media (min-width: 900px) {
+  .pitch-grid { grid-template-columns: 1fr 2fr; gap: 80px; }
+}
+.pitch-left h3 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(34px, 4.8vw, 58px);
+  line-height: 0.9; text-transform: uppercase;
+  margin: 16px 0 0;
+}
+.pitch-left h3 em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  color: var(--pink-deep); font-size: 0.85em;
+  vertical-align: -0.05em; display: inline-block; transform: rotate(-2deg);
+}
+.pitch-left .label { color: var(--pink-deep); font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.18em; }
+
+.pitch-right p {
+  font-family: var(--font-body); font-size: 18px; line-height: 1.65;
+  margin: 0 0 1.2em; color: var(--ink); font-weight: 500;
+}
+.pitch-right p .xed { color: var(--ink-muted); }
+.pitch-right p .ins { color: var(--ink); font-family: var(--font-hand); font-weight: 700; font-size: 1.1em; }
+
+.pitch-right .lede {
+  font-family: var(--font-eccentric); font-size: clamp(22px, 2.8vw, 32px);
+  line-height: 1.18; color: var(--ink); margin: 0 0 28px;
+}
+.pitch-right .lede mark { background: var(--pink); color: var(--paper); padding: 2px 8px 0; }
+
+.pitch-right .pullquote {
+  border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink);
+  padding: 32px 0; margin: 36px 0;
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(28px, 4vw, 50px);
+  line-height: 0.96;
+  text-transform: uppercase;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  position: relative;
+}
+.pitch-right .pullquote .riso::before { transform: translate(-10px, 12px); color: var(--pink); }
+.pitch-right .pullquote .riso::after { transform: translate(12px, -10px); color: var(--blue); opacity: 0.7; }
+
+.pitch-bg .float-hand { top: 30%; right: -2%; transform: rotate(-6deg); font-size: clamp(22px, 2.8vw, 32px); color: var(--pink-deep); line-height: 0.95; }
+
+/* ─── Inside today's Inference ─── */
+
+.inside { background: var(--paper); border-top: 5px solid var(--ink); border-bottom: 5px solid var(--ink); position: relative; }
+
+.section-grid {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 28px;
+}
+@media (min-width: 760px) { .section-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; } }
+@media (min-width: 1100px) { .section-grid { grid-template-columns: repeat(3, 1fr); gap: 36px; } }
+
+.zine-card {
+  position: relative;
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  padding: 30px 26px 28px;
+  display: flex; flex-direction: column; gap: 12px;
+  box-shadow: 10px 10px 0 0 var(--ink);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.zine-card:nth-child(1) { transform: rotate(-1.8deg); }
+.zine-card:nth-child(2) { transform: rotate(1.4deg); }
+.zine-card:nth-child(3) { transform: rotate(-0.9deg); }
+.zine-card:nth-child(4) { transform: rotate(2.1deg); }
+.zine-card:nth-child(5) { transform: rotate(-1.3deg); }
+.zine-card:nth-child(6) { transform: rotate(0.7deg); }
+.zine-card:hover { transform: rotate(0) translate(2px, 2px); box-shadow: 6px 6px 0 0 var(--pink); }
+.zine-card .tape { top: -12px; left: 24px; }
+.zine-card:nth-child(2) .tape { left: auto; right: 18px; transform: rotate(9deg); }
+.zine-card:nth-child(3) .tape { left: 50%; transform: translateX(-50%) rotate(-3deg); background: var(--tape-yellow); }
+.zine-card:nth-child(4) .tape { left: auto; right: 18px; transform: rotate(-7deg); }
+.zine-card:nth-child(5) .tape { background: var(--tape-blue); transform: rotate(4deg); }
+.zine-card:nth-child(6) .tape { transform: rotate(8deg); background: var(--tape-cream); }
+
+.zine-card .num-badge {
+  position: absolute;
+  top: -22px; right: -22px;
+  width: 64px; height: 64px;
+  background: var(--pink);
+  color: var(--paper);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 30px;
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  transform: rotate(-8deg);
+  z-index: 3;
+  padding-top: 4px;
+}
+.zine-card:nth-child(2) .num-badge { background: var(--blue); transform: rotate(8deg); }
+.zine-card:nth-child(4) .num-badge { background: var(--blue); transform: rotate(-12deg); }
+.zine-card:nth-child(6) .num-badge { background: var(--ink); color: var(--pink); transform: rotate(11deg); }
+
+.zine-card h3 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 32px; line-height: 0.9;
+  letter-spacing: 0.005em; text-transform: uppercase;
+  margin: 8px 0 4px;
+}
+.zine-card p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-soft); font-weight: 500; }
+.zine-card .mock {
+  margin-top: 14px;
+  padding: 14px 14px 12px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  font-family: var(--font-mono); font-size: 11px;
+  line-height: 1.7; letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.zine-card .mock .pink { color: var(--pink-deep); font-weight: 700; }
+.zine-card .mock .blue { color: var(--blue); font-weight: 700; }
+.zine-card .mock .dim { color: var(--ink-muted); }
+
+/* ─── Formats list (zine TOC, ink) ─── */
+
+.formats-bg { background: var(--ink); color: var(--paper); border-top: 6px solid var(--ink); position: relative; overflow: hidden; }
+.formats-bg::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,46,110,0.18) 1.5px, transparent 2px);
+  background-size: 12px 12px;
+  mix-blend-mode: screen; pointer-events: none;
+}
+.formats-bg .section-head { border-bottom-color: var(--paper); }
+.formats-bg .section-head .kicker { color: var(--pink); }
+.formats-bg .section-head .kicker .num { background: var(--paper); color: var(--ink); }
+.formats-bg .section-head h2 { color: var(--paper); }
+.formats-bg .section-head h2 em { color: var(--pink); }
+.formats-bg .section-head .dek { color: rgba(241,232,208,0.75); }
+
+.formats-list { display: flex; flex-direction: column; gap: 0; border-top: 2.5px solid var(--paper); position: relative; z-index: 2; }
+.format-row {
+  display: grid; grid-template-columns: 64px 1fr; gap: 20px;
+  padding: 28px 0; border-bottom: 2px dashed rgba(241,232,208,0.4);
+  align-items: baseline;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .format-row { grid-template-columns: 80px 1.4fr 2fr 100px; gap: 36px; padding: 38px 0; align-items: center; }
+}
+.format-row:hover { background: rgba(255,46,110,0.08); padding-left: 14px; }
+.format-row .idx { font-family: var(--font-display); font-size: 46px; color: var(--pink); line-height: 1; }
+.format-row .name {
+  font-family: var(--font-display); font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 0.9; letter-spacing: 0.005em; text-transform: uppercase;
+}
+.format-row .ref {
+  display: block; margin-top: 6px;
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: 18px; text-transform: none; letter-spacing: 0;
+  color: var(--pink); line-height: 1.2;
+  transform: rotate(-1deg); display: inline-block;
+}
+.format-row .desc { font-size: 15px; line-height: 1.55; color: rgba(241,232,208,0.88); font-weight: 500; }
+.format-row .kind {
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(241,232,208,0.65); justify-self: end; text-align: right;
+  white-space: nowrap;
+}
+
+/* ─── Sample / specimen ─── */
+
+.specimen-bg { background: var(--paper-deep); border-top: 5px solid var(--ink); border-bottom: 5px solid var(--ink); position: relative; }
+
+.specimen-wrap {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 40px;
+}
+@media (min-width: 900px) { .specimen-wrap { grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; } }
+
+.specimen-left .stamp { margin-bottom: 24px; }
+.specimen-left p { font-size: 17px; line-height: 1.6; color: var(--ink); margin: 0 0 1.1em; font-weight: 500; }
+.specimen-left p em { font-family: var(--font-hand); font-style: normal; font-weight: 700; color: var(--pink-deep); font-size: 1.15em; }
+
+.specimen-card {
+  position: relative;
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  padding: 36px 32px 36px;
+  transform: rotate(-1.5deg);
+  box-shadow: 14px 14px 0 0 var(--pink);
+}
+.specimen-card .tape { top: -14px; left: 24px; transform: rotate(-6deg); width: 140px; }
+.specimen-card .tape-2 { top: -10px; right: 28px; left: auto; transform: rotate(8deg); background: var(--tape-blue); width: 100px; }
+.specimen-card .label { color: var(--pink-deep); font-family: var(--font-stencil); font-size: 12px; letter-spacing: 0.18em; }
+.specimen-card .when { font-family: var(--font-mono); font-weight: 700; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin: 4px 0 12px; }
+.specimen-card h4 {
+  font-family: var(--font-display); font-size: 44px;
+  line-height: 0.9; letter-spacing: 0.005em;
+  text-transform: uppercase; margin: 0 0 18px;
+}
+.specimen-row {
+  display: grid; grid-template-columns: 1fr auto; gap: 12px;
+  padding: 11px 0;
+  border-top: 1.5px solid var(--ink);
+  font-family: var(--font-mono); font-weight: 400;
+  font-size: 13px; letter-spacing: 0.02em;
+}
+.specimen-row:last-of-type { border-bottom: 1.5px solid var(--ink); }
+.specimen-row .k { color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.14em; font-size: 10px; font-weight: 700; align-self: center; font-family: var(--font-stencil); }
+.specimen-row .v { text-align: right; font-weight: 700; }
+.specimen-row .v strong { color: var(--pink-deep); }
+.specimen-note {
+  margin-top: 18px; padding-top: 14px;
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: 19px; line-height: 1.25;
+  color: var(--ink); transform: rotate(-0.8deg); display: inline-block;
+}
+
+.specimen-bg .float-stamp { top: 4%; right: 4%; transform: rotate(11deg); }
+
+/* ─── Signup (pink) ─── */
+
+.signup-bg { background: var(--pink); color: var(--paper); border-top: 8px solid var(--ink); border-bottom: 8px solid var(--ink); position: relative; overflow: hidden; }
+.signup-bg::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(11,10,14,0.18) 1.2px, transparent 1.8px);
+  background-size: 8px 8px;
+  pointer-events: none; mix-blend-mode: multiply;
+}
+.signup-bg .section-head { border-bottom-color: var(--ink); }
+.signup-bg .section-head .kicker { color: var(--ink); }
+.signup-bg .section-head .kicker .num { background: var(--ink); color: var(--pink); }
+.signup-bg .section-head h2 { color: var(--ink); }
+.signup-bg .section-head h2 em { color: var(--paper); }
+.signup-bg .section-head .dek { color: rgba(11,10,14,0.85); font-weight: 600; }
+
+.form-shell { max-width: 900px; margin: 0 auto; position: relative; }
+
+.steps-indicator {
+  display: flex; gap: 0;
+  margin-bottom: 48px;
+  border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+}
+.step-pip {
+  flex: 1;
+  padding: 14px 18px;
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(11,10,14,0.5);
+  border-right: 1.5px solid var(--ink);
+  display: flex; gap: 12px; align-items: center;
+}
+.step-pip:last-child { border-right: none; }
+.step-pip .n { font-family: var(--font-display); font-size: 22px; line-height: 1; color: var(--ink); }
+.step-pip.active { color: var(--ink); background: var(--paper); }
+.step-pip.done { color: var(--ink); }
+.step-pip.done .n::after { content: " ✓"; }
+
+.step { display: none; animation: slidein 0.35s ease both; }
+.step.active { display: block; }
+@keyframes slidein {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step h3 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(38px, 5.6vw, 76px);
+  line-height: 0.88; letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.step h3 em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  color: var(--paper); font-size: 0.85em;
+  vertical-align: -0.05em; display: inline-block; transform: rotate(-2deg);
+}
+.step .step-dek {
+  font-family: var(--font-body); font-size: 17px;
+  color: var(--ink); margin: 0 0 32px; font-weight: 600;
+  max-width: 56ch; line-height: 1.4;
+}
+.step-kicker {
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.22em;
+  color: var(--ink); margin-bottom: 18px;
+  display: inline-block; background: var(--paper); padding: 6px 10px;
+  transform: rotate(-1.5deg);
+}
+
+/* Team search */
+.team-search {
+  display: block; width: 100%;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 28px; letter-spacing: 0.005em;
+  text-transform: uppercase;
+  padding: 18px 22px;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+.team-search::placeholder { color: var(--ink-muted); text-transform: none; font-family: var(--font-hand); font-weight: 600; font-size: 22px; letter-spacing: 0; }
+.team-search:focus { box-shadow: 6px 6px 0 0 var(--blue); }
+
+.selected-teams { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; min-height: 40px; }
+.team-chip {
+  background: var(--ink); color: var(--paper);
+  font-family: var(--font-display); letter-spacing: 0.01em;
+  text-transform: uppercase; font-size: 15px;
+  padding: 8px 8px 6px 14px;
+  display: inline-flex; align-items: center; gap: 12px;
+  cursor: default;
+  transform: rotate(-1deg);
+}
+.team-chip:nth-child(even) { transform: rotate(1.2deg); }
+.team-chip button {
+  background: var(--pink); border: none; color: var(--paper);
+  width: 22px; height: 22px;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0;
+  font-family: var(--font-mono); font-size: 12px; line-height: 1; font-weight: 700;
+  transition: background 0.15s ease;
+}
+.team-chip button:hover { background: var(--paper); color: var(--ink); }
+
+.team-results {
+  margin-top: 18px; max-height: 280px; overflow-y: auto;
+  background: var(--paper); border: 2.5px solid var(--ink);
+}
+.team-result {
+  display: grid; grid-template-columns: 60px 1fr auto; gap: 18px;
+  padding: 12px 16px;
+  border-bottom: 1.5px dashed var(--ink);
+  align-items: center;
+  cursor: pointer;
+  background: var(--paper);
+  width: 100%;
+  border-left: none; border-right: none; border-top: none;
+  color: var(--ink); text-align: left;
+  transition: background 0.15s ease;
+}
+.team-result:last-child { border-bottom: none; }
+.team-result:hover { background: var(--pink); color: var(--paper); }
+.team-result:disabled { opacity: 0.35; cursor: not-allowed; background: var(--paper); color: var(--ink); }
+.team-result .code { font-family: var(--font-mono); font-weight: 700; font-size: 13px; letter-spacing: 0.14em; color: var(--pink-deep); }
+.team-result:hover .code { color: var(--paper); }
+.team-result .name { font-family: var(--font-display); font-size: 26px; line-height: 0.9; text-transform: uppercase; }
+.team-result .conf { font-family: var(--font-stencil); font-weight: 400; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-muted); }
+.team-result:hover .conf { color: var(--paper); }
+
+/* Lens picker */
+.lens-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin-top: 36px; border-top: 2.5px solid var(--ink); border-bottom: 2.5px solid var(--ink); }
+@media (min-width: 700px) {
+  .lens-grid { grid-template-columns: repeat(2, 1fr); }
+  .lens-option:nth-child(odd) { border-right: 1.5px dashed var(--ink); }
+}
+.lens-option {
+  position: relative;
+  padding: 22px 22px 22px 56px;
+  border-bottom: 1.5px dashed var(--ink);
+  cursor: pointer;
+  display: flex; flex-direction: column; gap: 4px;
+  transition: background 0.15s ease;
+  background: transparent;
+}
+.lens-option:hover { background: var(--paper); }
+.lens-option input { position: absolute; opacity: 0; pointer-events: none; }
+.lens-option .pip {
+  position: absolute;
+  left: 22px; top: 26px;
+  width: 18px; height: 18px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  transition: all 0.2s ease;
+}
+.lens-option .pip::after {
+  content: ""; position: absolute; inset: 3px;
+  background: var(--ink);
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+.lens-option input:checked + .pip::after { transform: scale(1); }
+.lens-option.checked { background: var(--ink); color: var(--paper); }
+.lens-option.checked .pip { background: var(--paper); border-color: var(--paper); }
+.lens-option.checked .pip::after { background: var(--pink); transform: scale(1); }
+.lens-option.checked:hover { background: var(--ink); }
+.lens-option.checked .lens-desc { color: rgba(241,232,208,0.75); }
+.lens-option .lens-name {
+  font-family: var(--font-display);
+  font-size: 22px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.005em;
+}
+.lens-option .lens-desc { font-family: var(--font-body); font-size: 14px; color: var(--ink-soft); line-height: 1.4; font-weight: 500; }
+
+/* Bundle picker */
+.bundle-grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 12px; }
+@media (min-width: 760px) { .bundle-grid { grid-template-columns: repeat(3, 1fr); } }
+.bundle-card {
+  position: relative;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  padding: 28px 22px 26px;
+  cursor: pointer; text-align: left;
+  display: flex; flex-direction: column; gap: 14px;
+  font: inherit; color: var(--ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+.bundle-card:nth-child(1) { transform: rotate(-1.5deg); }
+.bundle-card:nth-child(2) { transform: rotate(1.2deg); }
+.bundle-card:nth-child(3) { transform: rotate(-0.6deg); }
+.bundle-card:hover { transform: rotate(0) translate(-2px, -2px); box-shadow: 8px 8px 0 0 var(--blue); }
+.bundle-card.selected { background: var(--ink); color: var(--paper); transform: rotate(0); box-shadow: 6px 6px 0 0 var(--paper); }
+.bundle-card.selected .bundle-label { color: var(--pink); }
+.bundle-card.selected ul li::before { color: var(--pink); }
+.bundle-card .bundle-label {
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.22em;
+  color: var(--pink-deep); text-transform: uppercase;
+}
+.bundle-card h4 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 28px; line-height: 0.9;
+  letter-spacing: 0.005em; text-transform: uppercase;
+  margin: 0;
+}
+.bundle-card ul {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 7px;
+  font-family: var(--font-mono); font-weight: 400;
+  font-size: 11px; letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.bundle-card ul li::before { content: "→ "; color: var(--pink-deep); font-weight: 700; }
+
+/* Email step */
+.email-wrap { display: flex; flex-direction: column; gap: 8px; max-width: 600px; }
+.email-input {
+  width: 100%;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 32px; letter-spacing: 0.005em;
+  padding: 20px 22px;
+  outline: none; text-transform: lowercase;
+  box-shadow: 6px 6px 0 0 var(--ink);
+  transition: box-shadow 0.2s ease;
+}
+.email-input::placeholder { color: var(--ink-muted); font-family: var(--font-hand); font-weight: 600; }
+.email-input:focus { box-shadow: 6px 6px 0 0 var(--blue); }
+.email-error {
+  font-family: var(--font-stencil); font-weight: 400;
+  font-size: 12px; letter-spacing: 0.18em;
+  color: var(--ink); background: var(--paper);
+  padding: 4px 8px; align-self: flex-start;
+  text-transform: uppercase; min-height: 22px;
+}
+
+.language-row {
+  display: flex; align-items: center; gap: 18px;
+  margin-top: 32px; padding-top: 26px;
+  border-top: 2.5px solid var(--ink);
+  flex-wrap: wrap;
+}
+.language-row .label { color: var(--ink); font-family: var(--font-stencil); font-size: 12px; letter-spacing: 0.18em; }
+.language-row select {
+  appearance: none;
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--font-display); font-size: 18px;
+  letter-spacing: 0.01em; text-transform: uppercase;
+  padding: 10px 42px 10px 16px;
+  outline: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%230B0A0E' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+
+/* Step nav */
+.step-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 52px; padding-top: 28px;
+  border-top: 2.5px solid var(--ink);
+  gap: 12px; flex-wrap: wrap;
+}
+.btn {
+  appearance: none;
+  font-family: var(--font-display);
+  font-size: 20px; letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 18px 24px 16px;
+  border: 2.5px solid var(--ink);
+  background: var(--paper); color: var(--ink);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+.btn::after {
+  content: ""; position: absolute; inset: 0;
+  background: var(--ink); z-index: -1;
+  transform: translate(5px, 5px);
+}
+.btn:hover:not(:disabled) { transform: translate(2px, 2px); }
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary::after { background: var(--paper); }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.btn:disabled::after { display: none; }
+
+/* Confirmation */
+.confirm { display: none; }
+.confirm.active { display: block; }
+.confirm .stamp { font-size: 13px; padding: 12px 16px 10px; margin-bottom: 28px; background: var(--paper); color: var(--ink); border-color: var(--ink); transform: rotate(-4deg); }
+.confirm h2 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(58px, 9vw, 138px);
+  line-height: 0.86; text-transform: uppercase;
+  margin: 0 0 20px; color: var(--ink);
+  letter-spacing: 0.005em;
+}
+.confirm h2 em {
+  font-family: var(--font-hand); font-style: normal; font-weight: 700;
+  color: var(--paper); font-size: 0.85em;
+  vertical-align: -0.07em; display: inline-block; transform: rotate(-3deg);
+}
+.confirm .lede {
+  font-family: var(--font-eccentric);
+  font-size: 22px; color: var(--ink);
+  max-width: 56ch; line-height: 1.35; margin: 0 0 36px;
+}
+
+.summary {
+  margin-top: 36px;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  padding: 32px;
+  position: relative;
+  box-shadow: 10px 10px 0 0 var(--ink);
+  transform: rotate(-0.8deg);
+}
+.summary .tape { top: -14px; left: 28px; transform: rotate(-6deg); width: 140px; background: var(--tape-blue); }
+.summary .tape-2 { top: -10px; right: 28px; left: auto; transform: rotate(8deg); background: var(--tape-yellow); width: 90px; }
+.summary h4 { font-family: var(--font-stencil); font-weight: 400; font-size: 13px; letter-spacing: 0.22em; color: var(--pink-deep); margin: 0 0 18px; text-transform: uppercase; }
+.summary-row { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 14px 0; border-bottom: 1.5px dashed var(--ink); align-items: baseline; }
+.summary-row:last-of-type { border-bottom: none; }
+.summary-row .k { font-family: var(--font-stencil); font-weight: 400; font-size: 11px; letter-spacing: 0.18em; color: var(--ink-muted); text-transform: uppercase; }
+.summary-row .v { font-family: var(--font-display); font-weight: 400; font-size: 22px; line-height: 1.1; color: var(--ink); text-transform: uppercase; letter-spacing: 0.005em; }
+.summary-row .v.small { font-family: var(--font-mono); font-size: 14px; font-weight: 400; letter-spacing: 0.04em; text-transform: lowercase; }
+
+.summary-actions { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+.confirm-footer { margin-top: 40px; font-family: var(--font-stencil); font-weight: 400; font-size: 12px; letter-spacing: 0.18em; color: var(--ink); text-transform: uppercase; background: var(--paper); padding: 8px 12px; align-self: flex-start; display: inline-block; transform: rotate(-1deg); }
+
+/* ─── Footer ─── */
+
+footer {
+  position: relative; z-index: 2;
+  padding: 60px var(--gutter);
+  border-top: 8px solid var(--ink);
+  background: var(--paper-deep);
+}
+.footer-strip {
+  border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+  padding: 10px 0; margin-bottom: 32px;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 13px; text-align: center; color: var(--ink-soft);
+}
+.footer-strip .star { color: var(--pink); margin: 0 14px; }
+
+.footer-wrap { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 28px; align-items: end; }
+@media (min-width: 760px) { .footer-wrap { grid-template-columns: 2fr 1fr 1fr; } }
+.footer-wrap .colophon p { margin: 0; font-family: var(--font-hand); font-weight: 700; font-size: 19px; color: var(--ink); line-height: 1.35; max-width: 52ch; transform: rotate(-0.8deg); display: inline-block; }
+.footer-wrap nav { display: flex; flex-direction: column; gap: 10px; }
+.footer-wrap nav a { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; font-size: 13px; color: var(--ink); text-decoration: none; transition: color 0.15s ease; }
+.footer-wrap nav a:hover { color: var(--pink-deep); }
+</style>
+</head>
+<body>
+
+<!-- ─── MASTHEAD ─── -->
+<header class="masthead">
+  <div class="masthead-top reveal">
+    <div class="l mono"><span>Zine N°</span> <span class="pink">00</span> · pre-launch</div>
+    <div class="c mono"><span>Fri</span> · <span class="pink">15.05.26</span> · <span>Daily 11 Jun – 19 Jul</span></div>
+    <div class="r mono"><span>Vol I</span> · <span class="pink">Stapled at home</span></div>
+  </div>
+
+  <div class="masthead-strip reveal d1">
+    <div class="scroll">
+      <span>★ THIRTY-FIVE EDITIONS <span class="star">✦</span> ONE READER <span class="star">✦</span> NO TAKES <span class="star">✦</span> NO PUNDITS <span class="star">✦</span> BUILT OVERNIGHT <span class="star">✦</span> STAPLED AT FIRST LIGHT <span class="star">✦</span> EVERY MORNING UNTIL THE FINAL ✦</span>
+      <span>★ THIRTY-FIVE EDITIONS <span class="star">✦</span> ONE READER <span class="star">✦</span> NO TAKES <span class="star">✦</span> NO PUNDITS <span class="star">✦</span> BUILT OVERNIGHT <span class="star">✦</span> STAPLED AT FIRST LIGHT <span class="star">✦</span> EVERY MORNING UNTIL THE FINAL ✦</span>
+    </div>
+  </div>
+
+  <div class="masthead-title reveal d2">
+    <span class="tape tape-l torn"></span>
+    <span class="word riso r-trip" data-text="INFERENCE">INFERENCE</span>
+    <span class="tape tape-r torn"></span>
+    <span class="stamp rough draft-stamp">DRAFT N° 00</span>
+    <span class="stamp rough-r blue zine-stamp">ZINE / NOT PRESS</span>
+  </div>
+
+  <div class="masthead-tag reveal d3">
+    The matchday zine <span class="deco">✦</span> <em>built every morning, for you specifically</em> <span class="deco">✦</span> World Cup 2026
+  </div>
+</header>
+
+<main>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-grid">
+    <h1 class="hero-headline reveal d2">
+      One tournament.<br/>
+      <em>Forty-eight</em> teams.<br/>
+      <span class="riso r-trip" data-text="One Inference.">One Inference.</span> <em class="blue">Yours.</em>
+    </h1>
+    <aside class="hero-side reveal d3">
+      <span class="stamp rough">EXTRA <span style="color: var(--ink);">·</span> NEW FOR 2026</span>
+      <p>Every morning of the World Cup, you wake up to an Inference <strong>assembled overnight</strong>. Your teams. Your players. Your tactical lens. Stapled in code, delivered before kickoff.</p>
+      <p class="hand-line">first whistle 11 June · final 19 July</p>
+      <a class="cta" href="#signup">Build Your Inference →</a>
+    </aside>
+  </div>
+  <span class="float float-stapled stamp rough-r blue">STAPLED · NOT PRESSED</span>
+  <span class="float float-arrow-hero hand-arrow pink"></span>
+</section>
+
+<!-- ─── THE IDEA ─── -->
+<section class="pitch-bg">
+  <div class="wrap pitch-grid">
+    <div class="pitch-left">
+      <span class="label">Nº 01 — The Idea</span>
+      <h3>A programme of <em>one.</em></h3>
+    </div>
+    <div class="pitch-right">
+      <p class="lede">Matchday programmes are nothing new. The fanzine at the turnstile, the stat-stuffed booklet your dad bought at the kiosk, the team sheet on cheap newsprint — fans have been buying personalised football publications for <mark>over a hundred years</mark>.</p>
+      <p>The catch: the audience was always <span class="xed">everyone</span> <span class="ins">all of us</span> in the stadium. Identical programme. Identical reader. The mass-printed kind of personal.</p>
+      <div class="pullquote">"<span class="riso r-trip" data-text="A matchday programme assembled for exactly one reader,">A matchday programme assembled for exactly one reader,</span> every morning, in every language — has <span class="hl">never been possible</span>."</div>
+      <p>MATCHDAY INFERENCE is what happens when you keep the spine of an honest matchday zine — team sheets, stat pages, manager's notes, the centre spread — and replace the printing press with an AI desk that never sleeps. Same form factor. Different scale. One reader at a time, every morning, for thirty-five mornings.</p>
+    </div>
+  </div>
+  <span class="float float-hand hand-note pink">until now ↘</span>
+</section>
+
+<!-- ─── INSIDE TODAY'S INFERENCE ─── -->
+<section class="inside">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker"><span class="num">02</span> Inside today's zine</div>
+      <h2>Six pages.<br/>Same shape every morning. <em>Different inside.</em></h2>
+      <p class="dek">The structure of a real matchday programme, lifted whole. The contents inside, different for every reader.</p>
+    </div>
+
+    <div class="section-grid">
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">i</span>
+        <h3>Team Sheet</h3>
+        <p>Your teams' day, in detail. Stat lines for the players you follow. Group position. Knockout fate. What's next on the calendar.</p>
+        <div class="mock">
+          <span class="pink">ARG</span> <strong>2 — 0</strong> <span class="pink">IRN</span><br/>
+          MESSI · <span class="blue">90'</span> · 1A · <span class="dim">4 KP</span><br/>
+          POSS · <span class="blue">64%</span> · F3 ENTRIES <span class="blue">38</span><br/>
+          GROUP — <span class="pink">ARG 3, KSA 3, IRN 0, MEX 0</span>
+        </div>
+      </article>
+
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">ii</span>
+        <h3>Stats Page</h3>
+        <p>Tournament-wide leaderboards. Top scorers, assists, clean sheets, pass %, progressive carries. Updated daily.</p>
+        <div class="mock">
+          TOP SCORERS · MD <span class="pink">4</span><br/>
+          MBAPPÉ · FRA · <span class="blue">2G</span><br/>
+          VINICIUS · BRA · <span class="blue">2G</span><br/>
+          KANE · ENG · <span class="blue">1G 1A</span><br/>
+          ÁLVAREZ · ARG · <span class="blue">1G</span>
+        </div>
+      </article>
+
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">iii</span>
+        <h3>Centre Spread</h3>
+        <p>A daily visualisation built for your tactical lens. Shot map, pass network, build-up progression, pressing zones.</p>
+        <div class="mock" style="line-height: 1.3;">
+          <span class="dim">[ shot map · ARG vs IRN ]</span><br/>
+          <span class="dim">·  ·</span> <span class="pink">●</span> <span class="dim">·  ·</span><br/>
+          <span class="dim">·</span> <span class="pink">●●</span> <span class="dim">·   ·   ·</span><br/>
+          <span class="dim">·</span> <span class="pink">●</span> <span class="dim">·  ·  </span> <span class="blue">○</span><br/>
+          <span class="dim">xG </span><span class="pink">2.1</span><span class="dim"> vs </span><span class="blue">0.4</span>
+        </div>
+      </article>
+
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">iv</span>
+        <h3>Manager's Notes</h3>
+        <p>One short, stat-grounded tactical observation per day, written for your chosen lens. No takes. No predictions.</p>
+        <div class="mock">
+          POSSESSION LENS · ARG–IRN<br/>
+          PPDA <span class="pink">8.2</span> vs <span class="blue">14.1</span><br/>
+          BUILD-UP <span class="pink">73%</span> LEFT HALF<br/>
+          <span class="dim">→ pressed twice as hard.</span>
+        </div>
+      </article>
+
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">v</span>
+        <h3>From the Stands</h3>
+        <p>Reply to your Inference with a question. The best get picked, answered, and printed in tomorrow's edition.</p>
+        <div class="mock">
+          Q · <span class="dim">"Why did Germany lose midfield?"</span><br/>
+          A · GER PPDA <span class="pink">17.3</span> · WORST<br/>
+          &nbsp;&nbsp;of MD3. JAP <span class="blue">+8</span> recoveries<br/>
+          &nbsp;&nbsp;<span class="dim">in opp. half.</span>
+        </div>
+      </article>
+
+      <article class="zine-card">
+        <span class="tape"></span>
+        <span class="num-badge">vi</span>
+        <h3>Added Time</h3>
+        <p>The unexpected bit at the end, still part of the match. Three statistical anomalies — the things that shouldn't have happened.</p>
+        <div class="mock">
+          · ITALY · <span class="pink">0</span> SHOTS ON TARGET<br/>
+          · MBAPPÉ SUBBED · <span class="pink">18'</span><br/>
+          · BRAZIL · <span class="blue">92%</span> PASS · OPP. HALF
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FORMATS ─── -->
+<section class="formats-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker"><span class="num">03</span> Also Inside</div>
+      <h2>And, if you want it — <em>a full broadcast.</em></h2>
+      <p class="dek">Today's Inference is the spine. Five more formats sit alongside it, each generated for one reader, ready before the kettle's boiled.</p>
+    </div>
+
+    <div class="formats-list">
+      <article class="format-row">
+        <div class="idx">i</div>
+        <div class="name">The Touchline<span class="ref">your daily audio companion</span></div>
+        <div class="desc">A five-minute spoken edition of today's Inference — TEAM SHEET, STATS PAGE, MANAGER'S NOTES, narrated. Drops with the email at first light.</div>
+        <div class="kind">Audio · Daily</div>
+      </article>
+      <article class="format-row">
+        <div class="idx">ii</div>
+        <div class="name">Walkout<span class="ref">pre-match podcast</span></div>
+        <div class="desc">Before every match your team plays: a three-minute rundown of form, lineups, opposition tendencies, and what's at stake.</div>
+        <div class="kind">Audio · Per Match</div>
+      </article>
+      <article class="format-row">
+        <div class="idx">iii</div>
+        <div class="name">Full-Time<span class="ref">post-match podcast</span></div>
+        <div class="desc">After every match your team plays: a five-minute review with the stat line, key moments, and what just moved in the group or bracket.</div>
+        <div class="kind">Audio · Per Match</div>
+      </article>
+      <article class="format-row">
+        <div class="idx">iv</div>
+        <div class="name">The Gantry<span class="ref">live in-match commentary</span></div>
+        <div class="desc">A real-time text thread for matches involving your teams — event-data-grounded commentary as the match unfolds. Read on your phone like a live blog.</div>
+        <div class="kind">Live · Per Match</div>
+      </article>
+      <article class="format-row">
+        <div class="idx">v</div>
+        <div class="name">The Mixed Zone<span class="ref">reader Q&amp;A</span></div>
+        <div class="desc">Submit a question via reply. The best ones get answered, sourced from real tournament data, and printed in tomorrow's FROM THE STANDS.</div>
+        <div class="kind">Interactive</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SAMPLE ─── -->
+<section class="specimen-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker"><span class="num">04</span> Rip This Out</div>
+      <h2>A page, <em>in your hands.</em></h2>
+      <p class="dek">Below: how a TEAM SHEET reads for a subscriber who follows Argentina. Generated overnight, delivered at first light.</p>
+    </div>
+    <span class="float float-stamp stamp rough">SPECIMEN N° 04</span>
+
+    <div class="specimen-wrap">
+      <div class="specimen-left">
+        <p>Every section of every Inference is generated against real event data — match logs, lineups, pass networks, shot maps. The AI's job is editorial: <em>choose the angles that matter for you, write them tight, resist the temptation to commentate.</em></p>
+        <p>The output is short, dense, mostly numbers, and built around a clear voice: a beat reporter at a wire desk who has never written a take in their life.</p>
+        <p>If a stat would be cut from a wire piece for being florid — <strong>it isn't here</strong>.</p>
+        <p style="font-family: var(--font-hand); font-weight: 700; font-size: 22px; color: var(--pink-deep); transform: rotate(-1deg); display: inline-block; margin: 12px 0;">see the full sample on inference-sample-v3.html ↗</p>
+      </div>
+      <aside class="specimen-card">
+        <span class="tape"></span>
+        <span class="tape tape-2"></span>
+        <span class="label">Team Sheet</span>
+        <div class="when">Inference Nº 04 · Sat 14 Jun 2026</div>
+        <h4>Argentina</h4>
+        <div class="specimen-row"><span class="k">Result</span><span class="v">W <strong>2 — 0</strong> vs Iran</span></div>
+        <div class="specimen-row"><span class="k">Possession</span><span class="v"><strong>64%</strong></span></div>
+        <div class="specimen-row"><span class="k">F3 Entries</span><span class="v">38 (IRN 9)</span></div>
+        <div class="specimen-row"><span class="k">xG</span><span class="v">2.1 — 0.4</span></div>
+        <div class="specimen-row"><span class="k">PPDA</span><span class="v">8.2 — 14.1</span></div>
+        <div class="specimen-row"><span class="k">Group</span><span class="v">ARG 3, KSA 3, IRN 0, MEX 0</span></div>
+        <div class="specimen-row"><span class="k">Next</span><span class="v">vs Mexico, Wed 18 Jun</span></div>
+        <div class="specimen-note">Most progressive carries by any midfielder in MD4. Group lead held on goal difference.</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SIGNUP ─── -->
+<section class="signup-bg" id="signup">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker"><span class="num">05</span> Join The Kop</div>
+      <h2>Build your <em>Inference.</em></h2>
+      <p class="dek">Three steps. Two minutes. No payment, no catch — MATCHDAY INFERENCE is free for the duration of the 2026 World Cup.</p>
+    </div>
+
+    <div class="form-shell">
+      <div class="steps-indicator">
+        <div class="step-pip active" data-pip="1"><span class="n">01</span> Teams &amp; Voice</div>
+        <div class="step-pip" data-pip="2"><span class="n">02</span> Your Reading</div>
+        <div class="step-pip" data-pip="3"><span class="n">03</span> Name &amp; Email</div>
+      </div>
+
+      <!-- STEP 1 -->
+      <div class="step active" data-step="1">
+        <span class="step-kicker">Step 01 / 03</span>
+        <h3>Which teams, and in <em>whose voice?</em></h3>
+        <p class="step-dek">Pick up to three teams you'll be following — and the voice you want your Inference written in. The voice is the whole personality of your issue.</p>
+
+        <input type="text" class="team-search" id="teamSearch" placeholder="Search the 48-team field — England, Argentina, Senegal…" autocomplete="off" />
+        <div class="selected-teams" id="selectedTeams" aria-live="polite"></div>
+        <div class="team-results" id="teamResults" style="display:none;"></div>
+
+        <div style="margin-top: 44px;">
+          <span class="label" style="color: var(--ink); font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.18em;">Your voice — pick one</span>
+        </div>
+        <div class="lens-grid" id="lensGrid"></div>
+
+        <div class="step-nav">
+          <span></span>
+          <button class="btn btn-primary" data-next="2" id="step1Next" disabled>Continue →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="step" data-step="2">
+        <span class="step-kicker">Step 02 / 03</span>
+        <h3>How do you <em>read?</em></h3>
+        <p class="step-dek">Pick your length. The next two are optional — but a city and a wildcard are what turn a generic issue into <em>yours.</em></p>
+
+        <div style="margin-top: 8px;">
+          <span class="label" style="color: var(--ink); font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.18em;">Reading length — pick one</span>
+        </div>
+        <div class="lens-grid" id="lengthGrid"></div>
+
+        <div style="margin-top: 38px;">
+          <span class="label" style="color: var(--ink); font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.18em;">Your city <span style="opacity:.55;">— optional</span></span>
+        </div>
+        <input type="text" class="email-input" id="locationInput" placeholder="Lagos · Toronto · Guadalajara…" autocomplete="off" style="margin-top: 12px;" />
+        <p style="font-family: var(--font-hand); font-weight:700; font-size:18px; color: var(--ink-muted); margin-top:10px; transform: rotate(-0.6deg); display:inline-block;">if you pick The Diaspora voice, this is where it writes home from.</p>
+
+        <div style="margin-top: 30px;">
+          <span class="label" style="color: var(--ink); font-family: var(--font-stencil); font-size: 13px; letter-spacing: 0.18em;">Wildcard <span style="opacity:.55;">— optional</span></span>
+        </div>
+        <textarea id="wildcardInput" class="email-input" rows="3" placeholder="I'm a chef. I cried at the 2014 final. My nan's from Naples." style="margin-top: 12px; resize: vertical; min-height: 68px; width: 100%; font-family: var(--font-sans);"></textarea>
+        <p style="font-family: var(--font-hand); font-weight:700; font-size:18px; color: var(--ink-muted); margin-top:10px; transform: rotate(-0.6deg); display:inline-block;">one detail about you the machine threads into the writing.</p>
+
+        <div class="step-nav">
+          <button class="btn" data-back="1">← Back</button>
+          <button class="btn btn-primary" data-next="3" id="step2Next">Continue →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="step" data-step="3">
+        <span class="step-kicker">Step 03 / 03</span>
+        <h3>Who are you, and where shall we <em>deliver?</em></h3>
+        <p class="step-dek">Your Inference arrives at first light, daily, June 11 – July 19. Reply any time to send a question to THE MIXED ZONE.</p>
+
+        <div class="email-wrap">
+          <input type="text" class="email-input" id="nameInput" placeholder="your name — or what we should call you" autocomplete="name" />
+          <span class="email-error" id="nameError"></span>
+        </div>
+
+        <div class="email-wrap" style="margin-top: 18px;">
+          <input type="email" class="email-input" id="emailInput" placeholder="your@inbox" autocomplete="email" />
+          <span class="email-error" id="emailError"></span>
+        </div>
+
+        <p style="font-family: var(--font-hand); font-weight: 700; font-size: 21px; color: var(--ink); margin-top: 28px; max-width: 50ch; line-height: 1.3; transform: rotate(-1deg); display: inline-block;">
+          we won't sell your address. we won't email you between tournaments. we will, gently, ask you to tell a friend.
+        </p>
+
+        <div class="step-nav">
+          <button class="btn" data-back="2">← Back</button>
+          <button class="btn btn-primary" id="submitBtn">Issue Inference N° 01 →</button>
+        </div>
+      </div>
+
+      <!-- CONFIRMATION -->
+      <div class="confirm" id="confirmation">
+        <span class="stamp rough">CONFIRMED · ISSUED · STAPLED</span>
+        <h2>Welcome to <em>MATCHDAY INFERENCE.</em></h2>
+        <p class="lede">Your Inference N° 01 will be assembled overnight on 10 June 2026 and delivered before kickoff. Until then: the practice runs.</p>
+
+        <div class="summary" id="summary">
+          <span class="tape"></span>
+          <span class="tape tape-2"></span>
+          <h4>Your Subscription · Reader Card</h4>
+        </div>
+
+        <div class="summary-actions">
+          <button class="btn" id="editChoices">← Edit Choices</button>
+          <button class="btn" id="resetBtn">Reset Demo</button>
+        </div>
+
+        <p class="confirm-footer" id="confirmFooter">You're on the list · First Inference assembles overnight 10 June 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-strip">
+    MATCHDAY INFERENCE <span class="star">✦</span> 2026 <span class="star">✦</span> Issue N° 00 <span class="star">✦</span> Stapled at home <span class="star">✦</span> Sibling of Deep Dugout <span class="star">✦</span> Made with care
+  </div>
+  <div class="footer-wrap">
+    <div class="colophon">
+      <p>MATCHDAY INFERENCE is set in Anton, Yeseva One, Allerta Stencil, Caveat, DM Sans &amp; Space Mono. Printed daily at first light, 11 June – 19 July 2026. A sibling of Deep Dugout. Not affiliated with FIFA, the FA, or any sane authority.</p>
+    </div>
+    <nav>
+      <a href="inference-sample-v3.html">★ Sample Edition</a>
+      <a href="#">About</a>
+      <a href="#">Colophon</a>
+    </nav>
+    <nav>
+      <a href="#">Privacy</a>
+      <a href="#">Mixed Zone</a>
+      <a href="#">Press</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// ─── Data ───
+
+const TEAMS = [
+  { name: "Argentina",    code: "ARG", conf: "CONMEBOL" },
+  { name: "Australia",    code: "AUS", conf: "AFC" },
+  { name: "Belgium",      code: "BEL", conf: "UEFA" },
+  { name: "Brazil",       code: "BRA", conf: "CONMEBOL" },
+  { name: "Cameroon",     code: "CMR", conf: "CAF" },
+  { name: "Canada",       code: "CAN", conf: "CONCACAF · Host" },
+  { name: "Chile",        code: "CHI", conf: "CONMEBOL" },
+  { name: "Colombia",     code: "COL", conf: "CONMEBOL" },
+  { name: "Costa Rica",   code: "CRC", conf: "CONCACAF" },
+  { name: "Croatia",      code: "CRO", conf: "UEFA" },
+  { name: "Czech Republic", code: "CZE", conf: "UEFA" },
+  { name: "Denmark",      code: "DEN", conf: "UEFA" },
+  { name: "Ecuador",      code: "ECU", conf: "CONMEBOL" },
+  { name: "Egypt",        code: "EGY", conf: "CAF" },
+  { name: "England",      code: "ENG", conf: "UEFA" },
+  { name: "France",       code: "FRA", conf: "UEFA" },
+  { name: "Germany",      code: "GER", conf: "UEFA" },
+  { name: "Ghana",        code: "GHA", conf: "CAF" },
+  { name: "Iran",         code: "IRN", conf: "AFC" },
+  { name: "Ivory Coast",  code: "CIV", conf: "CAF" },
+  { name: "Italy",        code: "ITA", conf: "UEFA" },
+  { name: "Jamaica",      code: "JAM", conf: "CONCACAF" },
+  { name: "Japan",        code: "JPN", conf: "AFC" },
+  { name: "Mexico",       code: "MEX", conf: "CONCACAF · Host" },
+  { name: "Morocco",      code: "MAR", conf: "CAF" },
+  { name: "Netherlands",  code: "NED", conf: "UEFA" },
+  { name: "New Zealand",  code: "NZL", conf: "OFC" },
+  { name: "Nigeria",      code: "NGA", conf: "CAF" },
+  { name: "Norway",       code: "NOR", conf: "UEFA" },
+  { name: "Paraguay",     code: "PAR", conf: "CONMEBOL" },
+  { name: "Peru",         code: "PER", conf: "CONMEBOL" },
+  { name: "Poland",       code: "POL", conf: "UEFA" },
+  { name: "Portugal",     code: "POR", conf: "UEFA" },
+  { name: "Qatar",        code: "QAT", conf: "AFC" },
+  { name: "Saudi Arabia", code: "KSA", conf: "AFC" },
+  { name: "Senegal",      code: "SEN", conf: "CAF" },
+  { name: "Serbia",       code: "SRB", conf: "UEFA" },
+  { name: "South Africa", code: "RSA", conf: "CAF" },
+  { name: "South Korea",  code: "KOR", conf: "AFC" },
+  { name: "Spain",        code: "ESP", conf: "UEFA" },
+  { name: "Sweden",       code: "SWE", conf: "UEFA" },
+  { name: "Switzerland",  code: "SUI", conf: "UEFA" },
+  { name: "Tunisia",      code: "TUN", conf: "CAF" },
+  { name: "Turkey",       code: "TUR", conf: "UEFA" },
+  { name: "Ukraine",      code: "UKR", conf: "UEFA" },
+  { name: "United States", code: "USA", conf: "CONCACAF · Host" },
+  { name: "Uruguay",      code: "URU", conf: "CONMEBOL" },
+  { name: "Wales",        code: "WAL", conf: "UEFA" },
+];
+
+// Base URL of the live signup endpoint (Fly.io). Pre-deploy this 404s and the
+// form falls back to localStorage so testing still works — see submit handler.
+const API_BASE = "https://api.matchdayinference.com";
+
+// The 7 voices. `id` MUST match the backend Lens enum exactly (data/models.py).
+const LENSES = [
+  { id: "Cultural Critic",   name: "The Cultural Critic", desc: "Football as culture — music, politics, art, the meaning under the match." },
+  { id: "Pub-Talker",        name: "The Pub-Talker",      desc: "Loud, funny, certain. The mate who's seen every game and has the take." },
+  { id: "Tactician",         name: "The Tactician",       desc: "Shape, space, pressing triggers. How the match was actually won." },
+  { id: "Romantic",          name: "The Romantic",        desc: "Beauty and heartbreak. Football as feeling, written like it matters." },
+  { id: "Historian",         name: "The Historian",       desc: "Every match in the long arc — echoes, rivalries, the ghosts of tournaments past." },
+  { id: "The Diaspora",      name: "The Diaspora",        desc: "Home from afar — the match through where you're from and where you are now." },
+  { id: "The Beat Reporter", name: "The Beat Reporter",   desc: "On the ground and sourced. Team news, pressers, what the camp is saying." },
+];
+
+// Reading length. `id` MUST match the backend Length enum exactly.
+const LENGTHS = [
+  { id: "Sprint",    name: "Sprint",    desc: "The essentials. A two-minute read with your coffee." },
+  { id: "Standard",  name: "Standard",  desc: "The full matchday issue — eight sections, the whole zine." },
+  { id: "Long-read", name: "Long-read", desc: "Everything, expanded. For the obsessives." },
+];
+
+const state = { teams: [], lens: null, length: "Standard", location: "", wildcard: "", name: "", email: "" };
+const MAX_TEAMS = 3;
+
+// ─── Lens ───
+
+const lensGrid = document.getElementById("lensGrid");
+lensGrid.innerHTML = LENSES.map(l => `
+  <label class="lens-option" data-lens="${l.id}">
+    <input type="radio" name="lens" value="${l.id}" />
+    <span class="pip"></span>
+    <span class="lens-name">${l.name}</span>
+    <span class="lens-desc">${l.desc}</span>
+  </label>
+`).join("");
+lensGrid.addEventListener("change", (e) => {
+  if (e.target.name === "lens") {
+    state.lens = e.target.value;
+    lensGrid.querySelectorAll(".lens-option").forEach(opt => {
+      opt.classList.toggle("checked", opt.dataset.lens === e.target.value);
+    });
+    refreshStep1Gate();
+  }
+});
+
+// ─── Reading length ───
+
+const lengthGrid = document.getElementById("lengthGrid");
+lengthGrid.innerHTML = LENGTHS.map(l => `
+  <label class="lens-option" data-length="${l.id}">
+    <input type="radio" name="length" value="${l.id}" ${l.id === state.length ? "checked" : ""} />
+    <span class="pip"></span>
+    <span class="lens-name">${l.name}</span>
+    <span class="lens-desc">${l.desc}</span>
+  </label>
+`).join("");
+lengthGrid.querySelectorAll(".lens-option").forEach(opt => opt.classList.toggle("checked", opt.dataset.length === state.length));
+lengthGrid.addEventListener("change", (e) => {
+  if (e.target.name === "length") {
+    state.length = e.target.value;
+    lengthGrid.querySelectorAll(".lens-option").forEach(opt => opt.classList.toggle("checked", opt.dataset.length === e.target.value));
+  }
+});
+
+// ─── City + wildcard (both optional) ───
+
+document.getElementById("locationInput").addEventListener("input", e => { state.location = e.target.value; });
+document.getElementById("wildcardInput").addEventListener("input", e => { state.wildcard = e.target.value; });
+
+// ─── Team search ───
+
+const teamSearch = document.getElementById("teamSearch");
+const teamResults = document.getElementById("teamResults");
+const selectedTeams = document.getElementById("selectedTeams");
+
+function renderTeamResults(q) {
+  const query = q.trim().toLowerCase();
+  if (!query) { teamResults.innerHTML = ""; teamResults.style.display = "none"; return; }
+  const matches = TEAMS.filter(t =>
+    t.name.toLowerCase().includes(query) ||
+    t.code.toLowerCase().includes(query)
+  ).slice(0, 8);
+  if (!matches.length) {
+    teamResults.innerHTML = `<div style="padding:18px 16px; font-family: var(--font-hand); font-weight: 700; font-size: 19px;">no team matches "${query}".</div>`;
+    teamResults.style.display = "block";
+    return;
+  }
+  teamResults.innerHTML = matches.map(t => {
+    const picked = state.teams.includes(t.code);
+    const atMax = state.teams.length >= MAX_TEAMS;
+    return `
+      <button type="button" class="team-result" data-code="${t.code}" ${picked || atMax ? "disabled" : ""}>
+        <span class="code">${t.code}</span>
+        <span class="name">${t.name}</span>
+        <span class="conf">${t.conf}</span>
+      </button>
+    `;
+  }).join("");
+  teamResults.style.display = "block";
+}
+
+function renderSelected() {
+  selectedTeams.innerHTML = state.teams.map(code => {
+    const t = TEAMS.find(x => x.code === code);
+    return `<span class="team-chip">${t.name} <button type="button" data-remove="${code}" aria-label="Remove ${t.name}">×</button></span>`;
+  }).join("");
+}
+
+teamSearch.addEventListener("input", e => renderTeamResults(e.target.value));
+teamResults.addEventListener("click", e => {
+  const btn = e.target.closest(".team-result");
+  if (!btn || btn.disabled) return;
+  if (state.teams.length >= MAX_TEAMS) return;
+  state.teams.push(btn.dataset.code);
+  renderSelected();
+  teamSearch.value = "";
+  renderTeamResults("");
+  refreshStep1Gate();
+});
+selectedTeams.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-remove]");
+  if (!btn) return;
+  state.teams = state.teams.filter(c => c !== btn.dataset.remove);
+  renderSelected();
+  renderTeamResults(teamSearch.value);
+  refreshStep1Gate();
+});
+
+// ─── Step nav ───
+
+function refreshStep1Gate() { document.getElementById("step1Next").disabled = !(state.teams.length >= 1 && state.lens); }
+// Step 2 has no gate — length defaults to Standard, city/wildcard are optional.
+
+function goToStep(n) {
+  document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+  document.querySelector(`.step[data-step="${n}"]`).classList.add("active");
+  document.querySelectorAll(".step-pip").forEach(p => {
+    const i = parseInt(p.dataset.pip, 10);
+    p.classList.toggle("active", i === n);
+    p.classList.toggle("done", i < n);
+  });
+  document.getElementById("signup").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.querySelectorAll("[data-next]").forEach(btn => btn.addEventListener("click", () => goToStep(parseInt(btn.dataset.next, 10))));
+document.querySelectorAll("[data-back]").forEach(btn => btn.addEventListener("click", () => goToStep(parseInt(btn.dataset.back, 10))));
+
+// ─── Submit ───
+
+const nameInput = document.getElementById("nameInput");
+const nameError = document.getElementById("nameError");
+const emailInput = document.getElementById("emailInput");
+const emailError = document.getElementById("emailError");
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.addEventListener("click", async () => {
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  nameError.textContent = "";
+  emailError.textContent = "";
+  if (!name) { nameError.textContent = "what should we call you?"; nameInput.focus(); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailError.textContent = "that's not an email address.";
+    emailInput.focus();
+    return;
+  }
+
+  state.name = name;
+  state.email = email;
+
+  const payload = {
+    email,
+    display_name: name,
+    teams: state.teams.map(c => TEAMS.find(t => t.code === c)?.name).filter(Boolean),
+    lens: state.lens,
+    length: state.length,
+    location: state.location.trim() || null,
+    wildcard: state.wildcard.trim() || null,
+  };
+
+  const original = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Issuing…";
+
+  try {
+    const res = await fetch(`${API_BASE}/signup`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (res.status === 409) {
+      emailError.textContent = "you're already on the list — see you at first light.";
+      submitBtn.disabled = false;
+      submitBtn.textContent = original;
+      return;
+    }
+    if (!res.ok) throw new Error(`signup failed: ${res.status}`);
+    console.log("MATCHDAY INFERENCE · subscriber created →", await res.json());
+  } catch (err) {
+    // Endpoint not deployed yet (or offline): keep the page working so the
+    // signup flow can be demoed locally. Remove this fallback once api. is live
+    // if you'd rather hard-fail on an unreachable endpoint.
+    console.warn("MATCHDAY INFERENCE · signup endpoint unreachable, saved locally only →", err);
+    localStorage.setItem("inference.subscriber", JSON.stringify({ ...payload, _savedLocally: true }));
+  }
+
+  submitBtn.disabled = false;
+  submitBtn.textContent = original;
+  renderConfirmation();
+});
+
+function renderConfirmation() {
+  const teamNames = state.teams.map(c => TEAMS.find(t => t.code === c)?.name).filter(Boolean).join(", ");
+  const lensName = LENSES.find(l => l.id === state.lens)?.name || "—";
+  const lengthName = LENGTHS.find(l => l.id === state.length)?.name || "Standard";
+
+  const rows = [
+    `<div class="summary-row"><span class="k">Reader</span><span class="v">${state.name}</span></div>`,
+    `<div class="summary-row"><span class="k">Inbox</span><span class="v small">${state.email}</span></div>`,
+    `<div class="summary-row"><span class="k">Teams</span><span class="v">${teamNames}</span></div>`,
+    `<div class="summary-row"><span class="k">Voice</span><span class="v">${lensName}</span></div>`,
+    `<div class="summary-row"><span class="k">Length</span><span class="v">${lengthName}</span></div>`,
+  ];
+  if (state.location.trim()) rows.push(`<div class="summary-row"><span class="k">City</span><span class="v">${state.location.trim()}</span></div>`);
+  if (state.wildcard.trim()) rows.push(`<div class="summary-row"><span class="k">Wildcard</span><span class="v small">${state.wildcard.trim()}</span></div>`);
+
+  document.getElementById("summary").innerHTML = `
+    <span class="tape"></span>
+    <span class="tape tape-2"></span>
+    <h4>Your Subscription · Reader Card</h4>
+    ${rows.join("")}
+  `;
+
+  document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+  document.querySelector(".steps-indicator").style.display = "none";
+  document.getElementById("confirmation").classList.add("active");
+  document.getElementById("signup").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.getElementById("editChoices").addEventListener("click", () => {
+  document.getElementById("confirmation").classList.remove("active");
+  document.querySelector(".steps-indicator").style.display = "";
+  goToStep(1);
+});
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  localStorage.removeItem("inference.subscriber");
+  Object.assign(state, { teams: [], lens: null, length: "Standard", location: "", wildcard: "", name: "", email: "" });
+  nameInput.value = "";
+  emailInput.value = "";
+  teamSearch.value = "";
+  document.getElementById("locationInput").value = "";
+  document.getElementById("wildcardInput").value = "";
+  document.querySelectorAll('input[name="lens"]').forEach(i => i.checked = false);
+  document.querySelectorAll("#lensGrid .lens-option").forEach(o => o.classList.remove("checked"));
+  document.querySelectorAll('input[name="length"]').forEach(i => { i.checked = (i.value === "Standard"); });
+  lengthGrid.querySelectorAll(".lens-option").forEach(o => o.classList.toggle("checked", o.dataset.length === "Standard"));
+  renderSelected();
+  renderTeamResults("");
+  refreshStep1Gate();
+  document.getElementById("confirmation").classList.remove("active");
+  document.querySelector(".steps-indicator").style.display = "";
+  goToStep(1);
+});
+
+(function hydrate() {
+  const saved = localStorage.getItem("inference.subscriber");
+  if (!saved) return;
+  try {
+    const data = JSON.parse(saved);
+    console.log("MATCHDAY INFERENCE · prior subscriber loaded from localStorage →", data);
+  } catch (e) {}
+})();
+
+document.querySelector('.cta[href="#signup"]').addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("signup").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+</script>
+</body>
+</html>

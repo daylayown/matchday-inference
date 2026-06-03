@@ -1,0 +1,111 @@
+{
+  "date": "2022-12-18",
+  "note": "Editorial seeds + context for THE INFERENCE N° 04 — the 2022 final.",
+  "day_context": {
+    "today_label": "The morning after the Final",
+    "tournament_summary": "The 2022 World Cup ends in Lusail with Argentina lifting their third trophy (1978, 1986, 2022). Messi finishes as the only player to score in every round of a single World Cup. Mbappé becomes the second man ever to score a hat-trick in a World Cup final (Geoff Hurst, 1966) and still loses.",
+    "context_notes": [
+      "Argentina's first WC title since 1986 (Maradona).",
+      "Messi played his 26th WC match — the most ever.",
+      "Mbappé's 8 goals topped the Golden Boot.",
+      "First WC final to go 3-3 in extra time since West Germany–Hungary 1954.",
+      "Lusail Stadium, opened 2021, hosted the final in its inaugural tournament."
+    ]
+  },
+  "editorial_seeds": {
+    "here_there_thread": {
+      "topic": "Argentina vs France at the World Cup — four meetings, two epochs",
+      "framing": "Yesterday's final was the fourth time Argentina and France have met at a World Cup. The thread that ties the four reads almost as a generational transfer: the South Americans winning the first three until 2018, when Mbappé arrived and France took the result back.",
+      "facts": [
+        { "label": "1930 — Montevideo, Group I", "fact": "Argentina 1–0 France in the inaugural World Cup. Luis Monti scored. The match ended early after the referee blew the whistle six minutes prematurely; the players were called back from the dressing rooms to finish." },
+        { "label": "1978 — Buenos Aires, Group A", "fact": "Argentina 2–1 France at El Monumental. The hosts went on to win their first World Cup; France went home in the group stage." },
+        { "label": "2018 — Kazan, Round of 16", "fact": "France 4–3 Argentina. Mbappé scored two and announced himself to the world at 19. Argentina, with Messi 30 and Sampaoli on the bench, went home; France won the tournament." },
+        { "label": "2022 — Lusail, The Final", "fact": "Argentina 3–3 France, 4–2 on penalties. Messi vs Mbappé in the contest most footballing imaginations had been waiting four years to see. Messi won the trophy he had been missing his whole career." },
+        { "label": "Goals across the four matches", "fact": "Argentina 6, France 8. The shootout doesn't count toward that ledger — by goals from open play, France lead the rivalry. By trophies lifted at the end of it, Argentina lead 2–1." },
+        { "label": "The two through-lines", "fact": "Messi played in three of the four (2010 onwards). Mbappé in the last two — and scored a hat-trick yesterday despite losing." }
+      ]
+    },
+    "story_behind_number": {
+      "number": "1966",
+      "surface_stat": "Mbappé · hat-trick in a World Cup final · lost",
+      "historical_anchor": "The last time someone scored three in a World Cup final was Geoff Hurst at Wembley in 1966. Hurst's England won. Mbappé did not.",
+      "quick_facts": [
+        { "k": "Mbappé", "v": "3 goals · 80', 81', 118' (pen.)" },
+        { "k": "Hurst, 1966", "v": "3 goals · England 4–2 W. Germany (AET)" },
+        { "k": "Result", "v": "Argentina won 4–2 on pens" }
+      ],
+      "supporting_context": [
+        "Mbappé is 23. Hurst was 24 when he did it.",
+        "It took 56 years and 11 World Cups for the feat to be repeated.",
+        "Argentina led 2-0 with 10 minutes left. Mbappé scored twice in 97 seconds to force extra time, then once more in extra time."
+      ]
+    },
+    "back_story": {
+      "teams": ["Argentina", "France"],
+      "focus_meeting": {
+        "year": "2018",
+        "score": "4 — 3",
+        "host": "Russia",
+        "round": "Round of 16",
+        "venue": "Kazan Arena, Kazan",
+        "context_line": "Russia · Round of 16 · Kazan Arena, Kazan",
+        "goals": [
+          { "scorer": "Di María", "minute": "41'", "note": "(stunner)" },
+          { "scorer": "Mercado", "minute": "48'", "note": "(deflected)" },
+          { "scorer": "Pavard", "minute": "57'", "note": "(volley of the tournament)" },
+          { "scorer": "Mbappé", "minute": "64'", "note": null },
+          { "scorer": "Mbappé", "minute": "68'", "note": null },
+          { "scorer": "Agüero", "minute": "90+3'", "note": "(consolation)" }
+        ],
+        "narrative_beats": [
+          "France 4–3 Argentina. Mbappé scored two and announced himself to the world at 19.",
+          "Argentina led 2-1 at the hour mark; Mbappé's two-in-four turned the match.",
+          "Sampaoli's last match in charge. Messi was 30 and looked tired by full-time.",
+          "France went on to win the tournament."
+        ]
+      },
+      "ledger": "Argentina–France at the World Cup, before yesterday: ARG 2 wins (1930, 1978), FRA 1 win (2018). Goals across the three meetings: ARG 4, FRA 5."
+    },
+    "where_played_before": {
+      "venue": {
+        "name": "Lusail Iconic Stadium",
+        "city": "Lusail, Qatar",
+        "capacity": 88966,
+        "opened": 2021,
+        "world_cups": [2022]
+      },
+      "historical_matches": [
+        { "year": "2022", "body": "Argentina 2 — 0 Saudi Arabia. Group C, MD1. The biggest upset of the group stage; Argentina lost their opening match of the tournament they would go on to win." },
+        { "year": "2022", "body": "Argentina 2 — 1 Mexico. Group C, MD2. Messi's goal in the 64th minute rescued Argentina's tournament after the Saudi Arabia loss." },
+        { "year": "2022", "body": "Argentina 3 — 0 Croatia. Semifinal. Messi assisted and scored; Álvarez ran half the pitch for the third. Argentina booked the final." },
+        { "year": "2022", "body": "Argentina 3 — 3 France, 4 — 2 on penalties. The Final. Messi vs Mbappé in the contest most footballing imaginations had been waiting four years to see. Argentina's third star." }
+      ],
+      "closer_hint": "Lusail hosted four of Argentina's seven 2022 matches, including their only loss and their three biggest wins."
+    },
+    "from_the_stands": {
+      "asker_name": "Mateo",
+      "asker_city": "Rosario",
+      "asker_day": "Sun 18 Dec",
+      "question": "Why did Deschamps take Giroud and Dembélé off at half-time? France looked dead until he made the changes.",
+      "factual_brief": {
+        "facts": [
+          "France started 4-2-3-1 with Giroud as the lone striker, Dembélé and Mbappé wide, Griezmann at 10.",
+          "By half-time France had 1 shot (none on target) and Argentina led 2-0 — Messi pen 23', Di María 36'.",
+          "Deschamps brought on Thuram and Kolo Muani at the break, taking off Dembélé and Giroud.",
+          "France's pressing structure changed: Thuram and Muani pressed Argentina's centre-backs higher, restricting the build-up.",
+          "France did not register a shot on target until the 71st minute, but the second-half balance shifted: Argentina had 3 shots, France 7.",
+          "Mbappé scored twice in 97 seconds (80', 81') to force extra time. Both came from the new attacking pressure: a Kolo Muani drawn penalty, then a Mbappé volley off a Thuram lay-off."
+        ],
+        "note": "The question implies the changes saved France. The brief shows they shifted the second-half xG balance, then created the two goals that forced extra time."
+      }
+    },
+    "anomalies": [
+      { "tag": "Mbappé hat-trick", "seed": "Mbappé scored a hat-trick in a World Cup final and his team lost. The last hat-trick in a final was Geoff Hurst's in 1966; Hurst's England won. 56 years between the two." },
+      { "tag": "Messi penalty kings", "seed": "Emiliano Martínez saved Coman's penalty in the shootout, then Tchouaméni put his over the bar. Argentina did not miss any of their four. Martínez is the second goalkeeper ever to win the Golden Glove of two tournaments." },
+      { "tag": "Di María", "seed": "Di María scored Argentina's second goal — his third in a major tournament final (Copa 2021, Finalissima 2022, World Cup 2022). He didn't start France-friendly matches for Argentina ever again." },
+      { "tag": "Lusail attendance", "seed": "Attendance at the final was 88,966. The stadium opened in 2021 and hosted the final in its inaugural tournament. The capacity matches the seat-count precisely — no over-sell." },
+      { "tag": "Marciniak", "seed": "Polish referee Szymon Marciniak handled the final. He gave Argentina a penalty in the 23rd minute and France a penalty in the 118th. Two penalties in a final happened previously in 2006." },
+      { "tag": "Messi minutes", "seed": "Messi played his 26th and final World Cup match — the most ever. He passed Lothar Matthäus's 25. He has now played 2,314 World Cup minutes; no one else has crossed 2,200." }
+    ]
+  }
+}
