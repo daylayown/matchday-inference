@@ -128,6 +128,12 @@ def run_for_date(
     fixtures = day_fixtures_raw.get("response", [])
     fixtures_by_team = _index_fixtures_by_team(fixtures)
 
+    # The previous day's fixtures feed the EDITOR's recap (`yesterday_matches`).
+    # Empty on opening day; finished matches only are surfaced as results.
+    prev_fixtures = api.fixtures(
+        league=WC_LEAGUE_ID, season=season, date=_prev_date(date_iso)
+    ).get("response", [])
+
     results: list[ReaderResult] = []
     for reader in readers:
         result = _run_for_reader(
@@ -136,6 +142,7 @@ def run_for_date(
             issue_number=issue_number,
             fixtures=fixtures,
             fixtures_by_team=fixtures_by_team,
+            prev_fixtures=prev_fixtures,
             patch=patch,
             api=api,
             content=content,
@@ -158,6 +165,7 @@ def _run_for_reader(
     api: APIFootballClient,
     content: ContentClient,
     output_dir: Path,
+    prev_fixtures: list[dict[str, Any]] | None = None,
 ) -> ReaderResult:
     result = ReaderResult(reader_slug=reader.slug, date_iso=date_iso)
     t0 = time.monotonic()
@@ -185,7 +193,7 @@ def _run_for_reader(
 
         # 2) Universal sections — EDITOR uses the day context (universal across readers
         # but lens-shaped per reader). Build the day_context once.
-        day_context = _build_day_context(date_iso, fixtures, patch)
+        day_context = _build_day_context(date_iso, fixtures, patch, prev_fixtures)
         editor_facts = None
         editor_run = _run_generator(
             "EDITOR",
@@ -349,38 +357,67 @@ def _build_match_from_api(
     return extract_match(patched_entry, lineups, events, statistics)
 
 
+# API-Football status.short values that mean the match is over and the
+# scoreline is real. Anything else (NS, TBD, PST, 1H, HT, …) has no result yet.
+_FINISHED_STATUSES = {"FT", "AET", "PEN", "WO", "AWD"}
+
+
+def _fixture_status(fx: dict[str, Any]) -> str:
+    return ((fx.get("fixture") or {}).get("status") or {}).get("short") or "NS"
+
+
 def _build_day_context(
     date_iso: str,
     fixtures: list[dict[str, Any]],
     patch: dict[str, Any],
+    prev_fixtures: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Universal day-context payload for the EDITOR generator.
 
-    The patch can override any field — `today_label`, `context_notes`,
-    `tournament_summary`. Otherwise we synthesise from the raw fixtures list.
+    Fixtures are bucketed by *match status*, not by date: finished matches
+    (with a real scoreline) become `yesterday_matches` — the recap — while
+    not-yet-played matches become `today_matches` — previews carrying NO score.
+    `prev_fixtures` (the previous calendar day) feeds the recap so a
+    mid-tournament morning has yesterday's results to reflect on; on opening day
+    it is empty. The patch can override any field (`today_label`,
+    `tournament_summary`, `context_notes`).
     """
     overrides = day_context_overrides(patch)
-    yesterday_matches = []
-    for fx in fixtures:
+
+    yesterday_matches: list[dict[str, Any]] = []
+    today_matches: list[dict[str, Any]] = []
+    for fx in [*(prev_fixtures or []), *fixtures]:
         teams = fx.get("teams") or {}
-        goals = fx.get("goals") or {}
         league = fx.get("league") or {}
         venue = (fx.get("fixture") or {}).get("venue") or {}
-        yesterday_matches.append({
-            "home": (teams.get("home") or {}).get("name"),
-            "away": (teams.get("away") or {}).get("name"),
-            "score_regulation": f"{goals.get('home')}-{goals.get('away')}",
-            "result_tag": None,
-            "round": league.get("round"),
-            "venue": venue.get("name"),
-            "key_moments": [],
-        })
+        home = (teams.get("home") or {}).get("name")
+        away = (teams.get("away") or {}).get("name")
+        if _fixture_status(fx) in _FINISHED_STATUSES:
+            goals = fx.get("goals") or {}
+            yesterday_matches.append({
+                "home": home,
+                "away": away,
+                "score_regulation": f"{goals.get('home')}-{goals.get('away')}",
+                "result_tag": None,
+                "round": league.get("round"),
+                "venue": venue.get("name"),
+                "key_moments": [],
+            })
+        else:
+            today_matches.append({
+                "home": home,
+                "away": away,
+                "round": league.get("round"),
+                "venue": venue.get("name"),
+                "kickoff_status": "upcoming — not yet played",
+            })
 
     base = {
         "tournament": "FIFA World Cup 2026",
         "today_label": f"Matchday {date_iso}",
         "today_date_iso": date_iso,
         "yesterday_matches": yesterday_matches,
+        "today_matches": today_matches,
         "tournament_summary": "",
         "context_notes": [],
     }
@@ -398,6 +435,14 @@ def _human_date(date_iso: str) -> str:
               "July", "August", "September", "October", "November", "December"]
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     return f"{days[dt.weekday()]} {dt.day} {months[dt.month - 1]} {dt.year}"
+
+
+def _prev_date(date_iso: str) -> str:
+    """e.g. '2026-06-11' → '2026-06-10'."""
+    from datetime import date, timedelta
+
+    y, m, d = (int(p) for p in date_iso.split("-"))
+    return (date(y, m, d) - timedelta(days=1)).isoformat()
 
 
 def _compact_date(date_iso: str) -> str:

@@ -60,12 +60,20 @@ Lock into ONE register from sentence one.
 - **wildcard** — default behavior is **DO NOT USE.** Only use if a stranger reading would think "good line" without knowing the wildcard prompted it. Set `wildcard_used: false` when in doubt.
 - **location** — If non-null, the reader's city. The Diaspora lens MUST anchor on it directly. Other lenses can use it for color, optional. NEVER invent a location if `location` is null — write around the absence.
 
+## Recap vs. preview (read this before writing)
+
+`day_context` carries two separate match lists. They are NOT the same and must never be conflated:
+
+- **`yesterday_matches`** — matches that have FINISHED. They have a real `score_regulation`. These are the only matches you may recap, cite a result for, or describe as having happened.
+- **`today_matches`** — matches UPCOMING today that have NOT kicked off. They carry NO score (`kickoff_status: "upcoming — not yet played"`). You may PREVIEW them — who plays whom, the venue, what's at stake — but you must **NEVER state, imply, or invent a score, result, draw, goal, or "point" for them.** Writing "Mexico's 0–0" or "after one point from the opener" about a `today_matches` fixture is a factual error.
+- If `yesterday_matches` is empty (e.g. opening day), there is nothing to recap — lean on `tournament_summary`, `context_notes`, and previewing `today_matches`. Do not manufacture a recap.
+
 ## Factual discipline (non-negotiable)
 
 - Only state facts present in `day_context`, or facts well-established about prior World Cups by year.
 - Do NOT invent quotes, statistics, or events.
-- Do NOT misremember match timing — if `day_context` says a match was "yesterday," don't write "the night before."
-- If you cite a stat, it must come from `day_context`.
+- Do NOT misremember match timing — if `day_context` says a match was "yesterday," don't write "the night before." A `today_matches` fixture has not been played; write about it in anticipation, never in the past tense.
+- If you cite a stat or scoreline, it must come from a FINISHED match in `yesterday_matches`.
 
 ## The Three Things
 
