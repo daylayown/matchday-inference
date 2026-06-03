@@ -1,0 +1,230 @@
+/* ─────────────────────────────────────────────────────────────
+   MATCHDAY INFERENCE — shared styles for static subpages
+   (about / colophon / privacy / mixed-zone / press)
+   Mirrors the grunge tokens + photocopy grain of index.html.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --paper: #F1E8D0;
+  --paper-deep: #E0D4B0;
+  --paper-light: #F8F2E0;
+  --paper-dingy: #DFD3AE;
+  --ink: #0B0A0E;
+  --ink-soft: #1F1B26;
+  --ink-muted: #5C5450;
+  --pink: #FF2E6E;
+  --pink-deep: #C71956;
+  --blue: #1E33C4;
+  --blue-deep: #131F8E;
+  --highlighter: #FFE94A;
+  --highlighter-pink: #FFA8C8;
+
+  --font-display: "Anton", "Impact", sans-serif;
+  --font-eccentric: "Yeseva One", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-stencil: "Allerta Stencil", "Anton", sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --max: 920px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Heavy photocopy grain + dot pattern (identical to front page) */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 13% 18%, rgba(11,10,14,0.16) 1.2px, transparent 1.6px),
+    radial-gradient(circle at 73% 82%, rgba(11,10,14,0.10) 1px, transparent 1.5px),
+    radial-gradient(circle at 47% 50%, rgba(11,10,14,0.07) 0.8px, transparent 1.2px);
+  background-size: 5px 5px, 8px 8px, 11px 11px;
+  mix-blend-mode: multiply;
+}
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0.16 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+a { color: inherit; }
+
+/* ─── Type helpers ─── */
+.mono { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+.label { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; font-size: 10px; color: var(--ink-muted); }
+.stencil { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.03em; text-transform: uppercase; }
+.hand { font-family: var(--font-hand); font-weight: 600; line-height: 1.0; color: var(--ink); }
+
+/* Riso offset on the page title */
+.riso { position: relative; display: inline-block; }
+.riso::before {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  color: var(--pink);
+  transform: translate(-8px, 8px);
+  mix-blend-mode: multiply;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ─── Compact masthead ─── */
+.page-head {
+  position: relative; z-index: 2;
+  padding: 0 var(--gutter);
+  border-bottom: 8px solid var(--ink);
+  background: var(--paper-deep);
+}
+.page-top {
+  max-width: var(--max); margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 14px 0;
+  border-bottom: 2px solid var(--ink);
+}
+.page-top a { text-decoration: none; }
+.page-top a:hover { color: var(--pink-deep); }
+.page-top .pink { color: var(--pink); }
+
+.page-title {
+  max-width: var(--max); margin: 0 auto;
+  padding: 38px 0 30px;
+}
+.page-title .label { display: block; margin-bottom: 14px; }
+.page-title h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  font-size: clamp(54px, 13vw, 124px);
+  margin: 0;
+  color: var(--ink);
+}
+.page-title .page-sub {
+  font-family: var(--font-hand); font-weight: 700;
+  font-size: clamp(20px, 3vw, 27px);
+  color: var(--ink-soft);
+  margin: 16px 0 0;
+  transform: rotate(-0.7deg);
+  display: inline-block;
+}
+
+/* ─── Prose body ─── */
+main {
+  position: relative; z-index: 2;
+  max-width: var(--max); margin: 0 auto;
+  padding: 52px var(--gutter) 80px;
+}
+main .label { display: block; margin: 44px 0 8px; }
+main h2 {
+  font-family: var(--font-eccentric);
+  font-weight: 400;
+  font-size: clamp(26px, 4.5vw, 38px);
+  line-height: 1.08;
+  margin: 8px 0 18px;
+  color: var(--ink);
+}
+main h2 em { font-style: italic; color: var(--pink-deep); }
+main h3 {
+  font-family: var(--font-body); font-weight: 800;
+  font-size: 19px; letter-spacing: -0.01em;
+  margin: 30px 0 8px;
+}
+main p { margin: 0 0 18px; max-width: 64ch; }
+main a:not(.btn) { color: var(--blue-deep); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+main a:not(.btn):hover { color: var(--pink-deep); }
+main strong { font-weight: 800; }
+main em { font-style: italic; }
+main mark { background: var(--highlighter); padding: 0 4px; }
+main .lede {
+  font-family: var(--font-eccentric);
+  font-size: clamp(20px, 3vw, 25px);
+  line-height: 1.4;
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+main ul, main ol { max-width: 64ch; padding-left: 1.3em; margin: 0 0 18px; }
+main li { margin: 0 0 10px; }
+main li::marker { color: var(--pink); }
+
+/* Pull quote / callout */
+.callout {
+  border-left: 5px solid var(--pink);
+  background: var(--paper-light);
+  padding: 20px 24px;
+  margin: 28px 0;
+  font-family: var(--font-eccentric);
+  font-size: clamp(19px, 2.6vw, 23px);
+  line-height: 1.35;
+}
+
+/* Definition rows (privacy) */
+.rows { border-top: 2px solid var(--ink); margin: 22px 0; max-width: 64ch; }
+.rows .row { border-bottom: 1px solid rgba(11,10,14,0.22); padding: 16px 0; }
+.rows .row .k { font-family: var(--font-mono); font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pink-deep); margin: 0 0 4px; }
+.rows .row .v { margin: 0; max-width: none; }
+
+/* Big contact button (mixed zone) */
+.btn-mail {
+  display: inline-block;
+  font-family: var(--font-display); text-transform: uppercase;
+  letter-spacing: 0.02em; font-size: clamp(22px, 4vw, 34px);
+  background: var(--ink); color: var(--paper);
+  padding: 14px 26px; text-decoration: none;
+  border: 3px solid var(--ink);
+  transform: rotate(-1deg);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+.btn-mail:hover { background: var(--pink); transform: rotate(0deg) scale(1.02); color: var(--paper); }
+
+.stamp {
+  display: inline-block;
+  font-family: var(--font-stencil); text-transform: uppercase;
+  letter-spacing: 0.12em; font-size: 12px;
+  color: var(--pink-deep);
+  border: 2px solid var(--pink-deep);
+  padding: 5px 11px;
+  transform: rotate(-2deg);
+}
+
+/* ─── Footer (shared with index.html) ─── */
+footer {
+  position: relative; z-index: 2;
+  padding: 56px var(--gutter);
+  border-top: 8px solid var(--ink);
+  background: var(--paper-deep);
+}
+.footer-strip {
+  border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+  padding: 10px 0; margin-bottom: 30px;
+  font-family: var(--font-stencil); font-weight: 400;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 12px; text-align: center; color: var(--ink-soft);
+}
+.footer-strip .star { color: var(--pink); margin: 0 12px; }
+.footer-wrap { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 26px; align-items: end; }
+@media (min-width: 760px) { .footer-wrap { grid-template-columns: 2fr 1fr 1fr; } }
+.footer-wrap .colophon p { margin: 0; font-family: var(--font-hand); font-weight: 700; font-size: 18px; color: var(--ink); line-height: 1.35; max-width: 52ch; transform: rotate(-0.8deg); display: inline-block; }
+.footer-wrap nav { display: flex; flex-direction: column; gap: 10px; }
+.footer-wrap nav a { font-family: var(--font-stencil); font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; font-size: 13px; color: var(--ink); text-decoration: none; transition: color 0.15s ease; }
+.footer-wrap nav a:hover { color: var(--pink-deep); }
