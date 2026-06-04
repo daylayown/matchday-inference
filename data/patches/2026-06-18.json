@@ -1,97 +1,44 @@
 {
   "date": "2026-06-18",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "PARTIAL SEED — only the Back Story (+ video) is filled, to demonstrate the historical-clip embed on a real rematch day: Mexico vs Korea Republic (Estadio Akron, Guadalajara), a rematch of their 2018 group-stage meeting. Remaining sections (here_there_thread, story_behind_number, where_played_before, from_the_stands, anomalies) are TODO for the full content sweep; day_context is intentionally light.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Group stage · round two",
+    "tournament_summary": "A week in, Group A turns on a rematch: Mexico and Korea Republic, who last met in the 2018 group stage in Russia, renew it at Estadio Akron in Guadalajara.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Mexico vs Korea Republic at Estadio Akron, Guadalajara — a rematch of their 2018 World Cup group-stage meeting (Mexico won 2–1).",
+      "Both are in Group A alongside South Africa and Czechia."
     ]
   },
   "editorial_seeds": {
-    "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
-      "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
-      ]
-    },
-    "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
-      "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
-      ],
-      "supporting_context": [
-        "TODO: a supporting sentence"
-      ]
-    },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Mexico", "Korea Republic"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2018",
+        "score": "2 — 1",
+        "host": "Russia",
+        "round": "Group F · Matchday 2",
+        "venue": "Rostov Arena, Rostov-on-Don",
+        "context_line": "Russia · Group F · Rostov Arena",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Vela", "minute": "26'", "note": "(penalty, won and converted)" },
+          { "scorer": "Hernández", "minute": "66'", "note": "(Chicharito's 50th for Mexico, slid in by Lozano)" },
+          { "scorer": "Son", "minute": "90+3'", "note": "(a stoppage-time rocket — Korea's consolation)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Mexico beat Korea Republic 2–1 in Rostov — Carlos Vela from the spot, then Chicharito's 50th international goal, threaded through by Hirving Lozano.",
+          "Son Heung-min answered with a long-range stoppage-time strike, but it was already too late.",
+          "The win, on the back of Mexico's shock defeat of holders Germany, put El Tri on the brink of the last 16.",
+          "Days later Korea repaid the group: they beat Germany 2–0 and knocked the champions out — and Mexican fans carried Korean supporters on their shoulders, hailing them as 'hermanos'."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
-    "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
-      "factual_brief": {
-        "facts": [
-          "TODO: a fact that answers the question"
-        ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+      "ledger": "Mexico and Korea Republic last met at the 2018 World Cup — a 2–1 Mexico win in the Russian group stage that, days later, became the night Korea sent Germany home and Mexico called them brothers. They are drawn together again in Group A, and meet today at the Akron.",
+      "video": {
+        "youtube_id": "UOSg165xRTw",
+        "title": "Korea Republic v Mexico — the 2018 group-stage meeting",
+        "caption": "Vela's penalty, Chicharito's 50th, and Son's stoppage-time rocket in Rostov. Days later Korea knocked out Germany — and Mexico called them hermanos. The match the page above is about.",
+        "source": "FIFA · official"
       }
-    },
-    "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
-    ]
+    }
   }
 }

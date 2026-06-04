@@ -1,97 +1,68 @@
 {
   "date": "2026-06-12",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 2 — the other two hosts debut: USA vs Paraguay (SoFi, Los Angeles) and Canada vs Bosnia & Herzegovina (BMO Field, Toronto). A forward-looking day by necessity — first-time matchups, brand-new venues — so the angle is arrivals and long roads back, not heritage. back_story + where_played_before deliberately omitted (no shared WC history; new stadiums).",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 2 — the hosts arrive",
+    "tournament_summary": "A day after Mexico opened the show, the other two host nations walk on. Canada take the field at BMO Field in Toronto against Bosnia & Herzegovina; that night the United States open against Paraguay at SoFi Stadium in Los Angeles. By the end of the evening all three hosts of the first 48-team World Cup have played. It is also a day of long-delayed returns: Paraguay are back for the first time since 2010, and the United States are back after missing 2018 entirely.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "All three host nations have now played: Mexico opened on the 11th; the USA and Canada both debut today.",
+      "USA vs Paraguay at SoFi Stadium (Los Angeles); Canada vs Bosnia & Herzegovina at BMO Field (Toronto).",
+      "Paraguay's first World Cup since 2010 — the same tournament South Africa last appeared at. Two 16-year absences, ending on consecutive nights.",
+      "The United States failed to qualify for 2018 (the 'Couva' loss in Trinidad); this is their first World Cup back, and their first on home soil since 1994.",
+      "Group D: USA, Paraguay, Australia, Türkiye. Group B: Canada, Bosnia & Herzegovina, Qatar, Switzerland."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The long roads back — a 48-team field reopens the door",
+      "framing": "The expanded World Cup is, among other things, a homecoming. The wider field has pulled in nations that spent years waiting to return — and two of the longest absences end tonight, a continent apart. The thread is the wait, and the door swinging back open.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Paraguay — 16 years away", "fact": "Paraguay last played a World Cup in 2010, where they reached the quarter-finals for the first time before losing 1–0 to Spain. They missed 2014, 2018 and 2022. Tonight in Los Angeles is their first World Cup match in sixteen years." },
+        { "label": "United States — back from Couva", "fact": "On 10 October 2017 the USA lost 2–1 to Trinidad & Tobago in Couva and failed to qualify for 2018 — their first absence since 1986. 2026 is the answer to that night: back at the tournament, and hosting it." },
+        { "label": "Canada — building on 2022", "fact": "Canada ended a 36-year exile in 2022 (their only prior appearance was 1986) and scored their first World Cup goal through Alphonso Davies. Today they play a World Cup match on home soil for the first time ever." },
+        { "label": "Bosnia & Herzegovina — a second chapter", "fact": "Bosnia's only previous World Cup was 2014, where Vedad Ibišević scored their first finals goal. They return now for their second." },
+        { "label": "The same 2010 doorway", "fact": "South Africa (June 11) and Paraguay (June 12) were both last seen at the 2010 World Cup — hosts and quarter-finalists respectively. The bigger 2026 field brings both back within twenty-four hours of each other." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "16",
+      "surface_stat": "Paraguay · 16 years away",
+      "historical_anchor": "Sixteen years separate Paraguay's last World Cup match — a 2010 quarter-final against Spain — from tonight's opener in Los Angeles. It is the exact gap South Africa carried into the opener twenty-four hours earlier, and both teams were last seen at the same tournament: South Africa 2010.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "2010", "v": "Quarter-final — Spain 1–0 Paraguay" },
+        { "k": "Best run", "v": "2010 QF — Paraguay's deepest ever" },
+        { "k": "Gap", "v": "16 years (2010 → 2026)" },
+        { "k": "Group D", "v": "USA, Paraguay, Australia, Türkiye" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Paraguay's 2010 run was built on a miserly defence: they conceded once in the group, then knocked out Japan on penalties in the Round of 16 before David Villa settled the quarter-final for Spain.",
+        "Their absence spanned three straight World Cups — 2014, 2018, 2022 — a whole generation of Paraguayan players who never reached the finals.",
+        "South Africa carried the identical 16-year gap into the opener on June 11. The two longest returns of the tournament's first weekend both trace to the 2010 World Cup."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Jordan",
+      "asker_city": "Los Angeles",
+      "asker_day": "Fri 12 Jun",
+      "question": "Real talk — after Couva and a quiet 2022, is this USMNT actually a threat, or are we just hosting the party?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The USA's nadir was Couva: a 2–1 loss to Trinidad & Tobago in October 2017 that kept them out of the 2018 World Cup entirely — their first absence since 1986.",
+          "They returned in 2022, escaped the group, and lost 3–1 to the Netherlands in the Round of 16 — respectable, not spectacular.",
+          "As co-hosts in 2026 they qualified automatically, with home crowds in all three group games, and the young core that broke through in 2022 is now four years older.",
+          "Home advantage is real but not magic: host nations have won the World Cup six times, but none since France in 1998."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question assumes the USA are makeweights. The brief shows a team that has climbed from missing a World Cup entirely to hosting one — with the most favourable conditions it has ever had, and the lowest bar being simply not to waste them."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Two hosts, one night", "seed": "The United States and Canada both play their opening match on 12 June — two host nations debuting on the same day, in two different countries (Los Angeles and Toronto)." },
+      { "tag": "Canada, finally at home", "seed": "Canada's only previous World Cup was 1986, played in Mexico. Today is the first World Cup match Canada has ever played on Canadian soil." },
+      { "tag": "USA's home return", "seed": "This is the first World Cup match on US soil since 1994 — but where 1994 was a novelty, the USA return as a co-host expected to compete." },
+      { "tag": "The 2010 club", "seed": "Both South Africa (June 11) and Paraguay (June 12) are playing their first World Cup match since 2010, the last tournament either reached. The expanded field reopened the door for both within a day." },
+      { "tag": "SoFi's first", "seed": "SoFi Stadium, opened in 2020, hosts its first World Cup match tonight — one of several brand-new North American venues with no World Cup history until 2026." },
+      { "tag": "Bosnia's second act", "seed": "Bosnia & Herzegovina are at only their second World Cup; their first, in 2014, produced their maiden finals goal through Vedad Ibišević against Argentina." }
     ]
   }
 }
