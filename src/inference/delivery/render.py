@@ -131,6 +131,39 @@ def render_teaser_text(
     )
 
 
+def render_welcome_email(
+    *,
+    reader_name: str | None = None,
+    reader_summary: str | None = None,
+    first_issue_human: str = "Thursday 11 June 2026",
+    unsubscribe_url: str | None = None,
+    year: str | int = 2026,
+) -> str:
+    """Render the one-time signup confirmation email (HTML). Email-safe tables +
+    inline styles, like the teaser — the grunge aesthetic lives on the web."""
+    return _render("welcome.email.html.j2", autoescape=True,
+        reader_name=reader_name, reader_summary=reader_summary,
+        first_issue_human=first_issue_human, unsubscribe_url=unsubscribe_url,
+        year=year,
+    )
+
+
+def render_welcome_text(
+    *,
+    reader_name: str | None = None,
+    reader_summary: str | None = None,
+    first_issue_human: str = "Thursday 11 June 2026",
+    unsubscribe_url: str | None = None,
+    year: str | int = 2026,
+) -> str:
+    """Plain-text fallback for the welcome email."""
+    return _render("welcome.email.txt.j2", autoescape=False,
+        reader_name=reader_name, reader_summary=reader_summary,
+        first_issue_human=first_issue_human, unsubscribe_url=unsubscribe_url,
+        year=year,
+    )
+
+
 def _render(template_name: str, *, autoescape: bool, **context: Any) -> str:
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),

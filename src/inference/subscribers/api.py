@@ -20,11 +20,13 @@ import os
 import sqlite3
 from typing import Any, Literal
 
-from fastapi import FastAPI, Header, HTTPException
+from fastapi import BackgroundTasks, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr, Field
 
 from ..data.models import Length, Lens, ReaderProfile
+from ..delivery.email import send_issue
+from ..delivery.render import render_welcome_email, render_welcome_text
 from .store import SubscriberStore
 
 app = FastAPI(title="THE INFERENCE — signup")
@@ -67,13 +69,47 @@ def get_store() -> SubscriberStore:
     return SubscriberStore()
 
 
+def _reader_summary(profile: ReaderProfile) -> str:
+    """Short, human phrase echoing the reader's picks back at them, e.g.
+    'Spain & Portugal, through the lens of the Historian'."""
+    teams = list(profile.teams)
+    if len(teams) == 1:
+        teams_label = teams[0]
+    elif len(teams) == 2:
+        teams_label = f"{teams[0]} & {teams[1]}"
+    else:
+        teams_label = ", ".join(teams[:-1]) + f" & {teams[-1]}"
+    return f"{teams_label}, through the lens of the {profile.lens}"
+
+
+def _send_welcome_email(email: str, profile: ReaderProfile) -> None:
+    """Fire the one-time confirmation email. Best-effort: never raises, so a
+    mail failure can't break signup (the row is already committed)."""
+    try:
+        summary = _reader_summary(profile)
+        result = send_issue(
+            to=email,
+            subject="You're in — MATCHDAY INFERENCE",
+            html=render_welcome_email(
+                reader_name=profile.display_name, reader_summary=summary
+            ),
+            text=render_welcome_text(
+                reader_name=profile.display_name, reader_summary=summary
+            ),
+        )
+        if not result.success:
+            print(f"welcome email FAILED for {email}: {result.error}")
+    except Exception as exc:  # pragma: no cover — defensive; never break signup
+        print(f"welcome email errored for {email}: {type(exc).__name__}: {exc}")
+
+
 @app.get("/health")
 def health() -> dict[str, Any]:
     return {"status": "ok"}
 
 
 @app.post("/signup", response_model=SignupResponse)
-def signup(req: SignupRequest) -> SignupResponse:
+def signup(req: SignupRequest, background_tasks: BackgroundTasks) -> SignupResponse:
     store = get_store()
     slug = req.slug or SubscriberStore.generate_slug(req.display_name)
     profile = ReaderProfile(
@@ -87,7 +123,11 @@ def signup(req: SignupRequest) -> SignupResponse:
         location=req.location,
     )
     try:
+        # Single opt-in: create() marks the row active immediately, so the
+        # reader is in /export and will receive issues without a confirm step.
         store.create(email=req.email, profile=profile)
+        # Confirmation email sent after the response (best-effort, non-blocking).
+        background_tasks.add_task(_send_welcome_email, req.email, profile)
         return SignupResponse(status="created", slug=slug)
     except sqlite3.IntegrityError as exc:
         if "subscribers.email" in str(exc):

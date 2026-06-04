@@ -2,7 +2,9 @@
 
 One file, stdlib `sqlite3`. Persist enough to run the daily orchestrator
 against the real list of readers, plus an email address for delivery and a
-verified-at timestamp for double-opt-in.
+verified-at timestamp. Single opt-in: `create()` sets verified_at by default,
+so a signup is active immediately. The column still exists (and `verify()`
+still works) so a double-opt-in flow can be layered on later.
 
 Schema:
   subscribers(
@@ -116,21 +118,30 @@ class SubscriberStore:
 
     # ─── writes ────────────────────────────────────────────────────────────
 
-    def create(self, *, email: str, profile: ReaderProfile) -> ReaderProfile:
+    def create(
+        self, *, email: str, profile: ReaderProfile, verified: bool = True
+    ) -> ReaderProfile:
         """Insert a new subscriber. Slug must be unique; email must be unique.
+
+        `verified` defaults to True — this is a single-opt-in publication, so a
+        signup is active immediately (it shows up in `list_active`/`/export` and
+        will receive issues). Pass `verified=False` to insert a pending row for
+        a future double-opt-in flow.
 
         Raises sqlite3.IntegrityError on conflict.
         """
+        now = _now_iso()
         self._conn.execute(
             "INSERT INTO subscribers "
-            "(slug, email, display_name, profile_json, created_at) "
-            "VALUES (?, ?, ?, ?, ?)",
+            "(slug, email, display_name, profile_json, created_at, verified_at) "
+            "VALUES (?, ?, ?, ?, ?, ?)",
             (
                 profile.slug,
                 email.lower().strip(),
                 profile.display_name,
                 profile.model_dump_json(),
-                _now_iso(),
+                now,
+                now if verified else None,
             ),
         )
         return profile
