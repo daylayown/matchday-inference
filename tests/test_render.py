@@ -66,3 +66,37 @@ def test_render_welcome_text_personalized():
     assert "You're in." in out
     assert "Nicholas" in out
     assert "Made in Tucson, AZ" in out
+
+
+_BACK_STORY = {
+    "year": "2010",
+    "score": "1–1",
+    "context_line": "South Africa · opening match · Soccer City",
+    "label": "BACK STORY",
+    "headline": "The first World Cup match on African soil",
+    "paragraphs": ["A thunderbolt, then an equaliser."],
+}
+
+
+def test_render_back_story_video_embed():
+    bs = {**_BACK_STORY, "video": {
+        "youtube_id": "YrzfY3T_ItQ",
+        "title": "Tshabalala v Mexico",
+        "caption": "the goal that opened 2010",
+        "source": "FIFA · official",
+    }}
+    out = render_inference(reader=_READER, issue=_ISSUE, team_sheets=[], back_story=bs)
+    # The clip the page is about is embedded, with the grunge facade + fallback link.
+    assert "YrzfY3T_ItQ" in out
+    assert "bs-video-frame" in out
+    assert "Roll the tape" in out
+    assert "youtube.com/watch?v=YrzfY3T_ItQ" in out  # graceful no-JS fallback
+
+
+def test_render_back_story_without_video_has_no_embed():
+    out = render_inference(reader=_READER, issue=_ISSUE, team_sheets=[], back_story=_BACK_STORY)
+    # The CSS class name is always present in <style>; assert the figure itself
+    # (and its script) did not render.
+    assert "Roll the tape" not in out
+    assert "data-yt=" not in out
+    assert "youtube" not in out

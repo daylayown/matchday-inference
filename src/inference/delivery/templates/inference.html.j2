@@ -840,6 +840,61 @@ main { position: relative; z-index: 2; }
 
 .back-story { background: var(--paper-deep); position: relative; }
 
+/* ── Back Story video: the historical clip the page is about, embedded.
+   A grunge "roll the tape" facade over the YouTube thumbnail; clicking swaps
+   in the real player (inline script in the section). The grayscale/scanline
+   filter is isolated to the ::before image layer so the pink/yellow chrome
+   on top keeps its colour. ── */
+.bs-video { margin: 34px 0 0; grid-column: 1 / -1; }
+.bs-video-frame {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 16 / 9; width: 100%; overflow: hidden; text-decoration: none;
+  background: var(--ink);
+  border: 3px solid var(--ink);
+  box-shadow: 7px 7px 0 0 var(--ink);
+  transform: rotate(-0.6deg);
+}
+.bs-video-frame::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background: var(--bsthumb) center / cover no-repeat;
+  filter: grayscale(1) contrast(1.15) brightness(0.92);
+}
+.bs-video-frame::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(11,10,14,0) 0 2px, rgba(11,10,14,0.16) 2px 3px);
+}
+.bs-video-play {
+  position: relative; z-index: 2;
+  width: 86px; height: 86px; border-radius: 50%;
+  background: var(--pink); border: 3px solid var(--ink); color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; padding-left: 6px;
+  box-shadow: 4px 4px 0 0 var(--ink); transform: rotate(2deg);
+}
+.bs-video-tape {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  background: var(--highlighter); color: var(--ink);
+  font-family: var(--font-mono); font-weight: 700; font-size: 10px;
+  letter-spacing: 0.16em; text-transform: uppercase; padding: 4px 8px;
+  border: 2px solid var(--ink); transform: rotate(-3deg);
+}
+.bs-video-stencil {
+  position: absolute; bottom: 12px; right: 14px; z-index: 2;
+  font-family: var(--font-stencil); color: var(--paper);
+  font-size: 17px; letter-spacing: 0.18em; text-transform: uppercase;
+  text-shadow: 2px 2px 0 var(--ink);
+}
+.bs-video figcaption {
+  font-family: var(--font-mono); font-size: 12px; line-height: 1.55;
+  color: var(--ink-muted); margin-top: 12px; max-width: 62ch;
+  transform: rotate(-0.3deg);
+}
+.bs-video figcaption .bs-video-cap { color: var(--ink-soft); }
+.bs-video-iframe {
+  width: 100%; aspect-ratio: 16 / 9; border: 3px solid var(--ink);
+  box-shadow: 7px 7px 0 0 var(--ink); transform: rotate(-0.6deg); display: block;
+}
+
 .bs-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1395,6 +1450,32 @@ main { position: relative; z-index: 2; }
         {% if back_story.closer %}<p class="closer">{{ back_story.closer|safe }}</p>{% endif %}
       </div>
     </div>
+
+    {% if back_story.video %}
+    <figure class="bs-video">
+      <a class="bs-video-frame" href="https://www.youtube.com/watch?v={{ back_story.video.youtube_id }}"
+         data-yt="{{ back_story.video.youtube_id }}"
+         style="--bsthumb:url('https://img.youtube.com/vi/{{ back_story.video.youtube_id }}/hqdefault.jpg')">
+        <span class="bs-video-tape">{{ back_story.video.source|default('Tape') }}</span>
+        <span class="bs-video-play">&#9654;</span>
+        <span class="bs-video-stencil">Roll the tape</span>
+      </a>
+      <figcaption>{{ back_story.video.title }}{% if back_story.video.caption %} — <span class="bs-video-cap">{{ back_story.video.caption }}</span>{% endif %}</figcaption>
+    </figure>
+    <script>
+      document.querySelectorAll('.bs-video-frame').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          var f = document.createElement('iframe');
+          f.className = 'bs-video-iframe';
+          f.src = 'https://www.youtube-nocookie.com/embed/' + el.getAttribute('data-yt') + '?autoplay=1&rel=0';
+          f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+          f.setAttribute('allowfullscreen', '');
+          el.replaceWith(f);
+        });
+      });
+    </script>
+    {% endif %}
 
     {% if back_story.float_note %}<span class="float float-hand-4">{{ back_story.float_note|safe }}</span>{% endif %}
   </div>

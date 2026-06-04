@@ -245,6 +245,12 @@ def _run_for_reader(
             )
             result.runs.append(run)
             back_story_facts = run.facts
+            # Carry the editorial video (a YouTube id for the historical clip the
+            # Back Story is about) straight from the patch to the template — never
+            # through the LLM, which would invent the id. Renders as a grunge
+            # "roll the tape" embed on the web issue.
+            if back_story_facts is not None and isinstance(bs_seed, dict) and bs_seed.get("video"):
+                back_story_facts["video"] = bs_seed["video"]
 
         venue_seed = editorial_seed(patch, "where_played_before")
         venue_facts = None

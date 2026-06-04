@@ -127,6 +127,11 @@ GOALS:
 {% if back_story.closer %}
 {{ back_story.closer|striptags }}
 {% endif %}
+{% if back_story.video %}
+[ ROLL THE TAPE ] {{ back_story.video.title }}
+  {{ back_story.video.caption }}
+  https://www.youtube.com/watch?v={{ back_story.video.youtube_id }}
+{% endif %}
 {% endif %}
 
 {% if where_played_before %}
