@@ -1,97 +1,95 @@
 {
   "date": "2026-06-14",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 4 — a five-match Sunday across Groups E and F. The spine is Curaçao: a Caribbean island of ~156,000 people making its World Cup debut against Germany in Houston — the smallest nation ever to qualify. It is also a Dutch day: Curaçao is a constituent country of the Kingdom of the Netherlands, its squad built from the Dutch-Caribbean diaspora and coached by 78-year-old Dick Advocaat (the oldest coach in World Cup history), and the Netherlands themselves play Japan the same day. Other fixtures: Netherlands vs Japan (a 2010 rematch — the back story), Ivory Coast vs Ecuador (Group E), Sweden vs Tunisia (Group F). where_played_before omitted — NRG Houston, AT&T Dallas, Lincoln Financial Philadelphia and Estadio BBVA Monterrey are all hosting World Cup football for the first time. All facts web-verified 2026-06-11.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 4 — the smallest nation walks on",
+    "tournament_summary": "Sunday brings five matches, and the smallest country ever to reach a World Cup. Curaçao — a Caribbean island of roughly 156,000 people, a constituent country of the Kingdom of the Netherlands — make their debut against four-time champions Germany in Houston. It is a very Dutch afternoon: Curaçao's squad is built almost entirely from the diaspora in the Netherlands and led by 78-year-old Dick Advocaat, and the Netherlands themselves open against Japan in Dallas, a rematch of their 2010 group meeting. Ivory Coast face Ecuador in Philadelphia (Group E); Sweden meet Tunisia in Monterrey (Group F).",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Curaçao (pop. ~156,000) become the smallest nation ever to qualify for a World Cup, beating Iceland's 2018 record (~350,000); their opponents Germany have a population of about 83 million.",
+      "Curaçao are coached by Dick Advocaat, 78 — the oldest manager in World Cup history, at his third World Cup with a third different nation (Netherlands 1994, South Korea 2006).",
+      "Netherlands vs Japan is a rematch of their 2010 group-stage meeting, won 1–0 by the Dutch on their run to the final.",
+      "Germany arrive off back-to-back group-stage exits (2018, 2022) — their 2022 tournament began with a 2–1 loss to Japan, who open this year against the Netherlands.",
+      "Also today: Ivory Coast vs Ecuador (Group E, Philadelphia); Sweden vs Tunisia (Group F, Monterrey)."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Willemstad and Amsterdam — one football family, two teams on the same day",
+      "framing": "Curaçao do not arrive at the World Cup alone; they arrive trailing a Dutch thread that runs through the whole squad. The island is part of the Kingdom of the Netherlands, its team is built from the diaspora in Dutch cities, and its coach is one of the most travelled Dutchmen in the game. Today both ends of that thread are on the pitch: Curaçao against Germany, the Netherlands against Japan.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Willemstad — the smallest ever", "fact": "Curaçao, population around 156,000, become the smallest nation ever to reach a World Cup — smaller than the Iceland side (about 350,000) that held the record after 2018. They qualified unbeaten, sealing it with a 0–0 draw away to Jamaica." },
+        { "label": "The diaspora team", "fact": "Curaçao's squad is drawn overwhelmingly from the Dutch-Caribbean diaspora: tens of thousands of Curaçao-born residents live in the Netherlands, and many players were born and raised in Dutch cities before choosing the island of their heritage." },
+        { "label": "The oldest man in the dugout", "fact": "Curaçao are led by Dick Advocaat, 78 — the oldest coach in World Cup history. It is his third World Cup with a third different country, after the Netherlands in 1994 and South Korea in 2006." },
+        { "label": "Amsterdam — the other half", "fact": "The Netherlands play the same day, against Japan in Dallas. The Dutch reached the final the last time these two met, at the 2010 World Cup — the senior partner of the kingdom opening its own campaign hours from its smallest member." },
+        { "label": "One whistle apart", "fact": "It is the first time a World Cup has staged a team from the Kingdom of the Netherlands and the Netherlands proper on the same day — Curaçao at 96 years into the tournament's history, the Dutch at their eleventh finals." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "156,000",
+      "surface_stat": "Curaçao · the smallest nation ever to qualify",
+      "historical_anchor": "Roughly 156,000 people live on Curaçao — fewer than fill some of the cities this World Cup is played in. It is the smallest population of any nation ever to reach the finals, and today they line up against Germany, a country of about 83 million.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "Curaçao", "v": "pop. ~156,000 · land 171 sq mi" },
+        { "k": "Germany", "v": "pop. ~83,000,000 · 4-time champions" },
+        { "k": "Old record", "v": "Iceland 2018 (~350,000)" },
+        { "k": "Qualifying", "v": "Unbeaten — 7 wins in 10, sealed 0–0 at Jamaica" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The previous 'smallest nation' record belonged to Iceland, whose roughly 350,000 people reached the 2018 World Cup; Curaçao are less than half that size.",
+        "The gap to today's opponent is the widest population mismatch the World Cup has seen: Germany's 83 million is more than five hundred Curaçaos.",
+        "Size has not meant fragility — Curaçao went through CONCACAF qualifying unbeaten, winning seven of ten matches and conceding sparingly, and clinched their place with a composed goalless draw in Kingston."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Netherlands", "Japan"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2010",
+        "score": "1 — 0",
+        "host": "South Africa",
+        "round": "Group E · Matchday 2",
+        "venue": "Moses Mabhida Stadium, Durban",
+        "context_line": "South Africa · group stage · Moses Mabhida Stadium, Durban",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Sneijder", "minute": "53'", "note": "(a low drive from the edge of the box, helped in off goalkeeper Eiji Kawashima after a Van Persie lay-off)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Netherlands 1–0 Japan — a tight, frustrating afternoon broken by one moment of Wesley Sneijder quality early in the second half.",
+          "Japan defended deep and made the Dutch work; it took a half-cleared ball and Sneijder's instant strike to settle it.",
+          "It was a stepping stone on the Netherlands' march to the 2010 final, where they lost to Spain in extra time.",
+          "Japan recovered to reach the Round of 16 that year — and would go much further in spirit by 2022, beating Germany and Spain in the group stage."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Netherlands and Japan met once at a World Cup — the Dutch 1–0 win in the 2010 group stage, on their way to the final. Today is the second meeting, and Japan arrive a transformed side: in 2022 they beat both Germany and Spain to win their group before going out to Croatia on penalties.",
+      "video": {
+        "youtube_id": "laLb71u6jW4",
+        "title": "Netherlands 1–0 Japan — 2010 World Cup highlights",
+        "caption": "Sneijder's second-half strike in Durban, the only goal of the last World Cup meeting between these two — sixteen years before today's rematch in Dallas.",
+        "source": "archive · 2010 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Kenji",
+      "asker_city": "Osaka",
+      "asker_day": "Sun 14 Jun",
+      "question": "We beat Germany AND Spain in 2022 and topped the group — so are Japan an actual dark horse now, or was that just one wild week in Qatar?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "At Qatar 2022 Japan beat Germany 2–1 and Spain 2–1 — both with late comebacks — to win Group E ahead of two former world champions.",
+          "They went out in the Round of 16 to Croatia on penalties, the same stage they have now failed to clear at four of their last five World Cups.",
+          "Much of the squad plays in Europe's top leagues, several of them in Germany — including the scorers who beat Germany in 2022.",
+          "Their opener today is against the Netherlands, the only side to beat them at a World Cup since 2010 (1–0, that year's group stage)."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question frames 2022 as a fluke. The brief shows the wins were real and repeatable in quality — but also that the same ceiling keeps reappearing: Japan have beaten elite teams in the group, then stalled in the first knockout round. The dark-horse case rests on finally breaking that round, not on the group-stage scalps they have already proven they can take."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "156,000 vs 83 million", "seed": "Curaçao (population ~156,000) open against Germany (~83 million) — the widest population mismatch in World Cup history. Curaçao are the smallest nation ever to qualify, undercutting Iceland's 2018 record by more than half." },
+      { "tag": "The 78-year-old in the dugout", "seed": "Curaçao's coach Dick Advocaat is 78 — the oldest manager in World Cup history, surpassing Otto Rehhagel (71, Greece, 2010). It is his third World Cup with a third nation: the Netherlands in 1994, South Korea in 2006, Curaçao now." },
+      { "tag": "The 2022 ghosts, same day", "seed": "Germany's 2022 World Cup began with a shock 2–1 loss to Japan. In 2026 both sides open on the same day in different groups — Germany against debutants Curaçao, Japan against the Netherlands." },
+      { "tag": "A team from the diaspora", "seed": "Curaçao's squad is built largely from players born or raised in the Netherlands who chose the island of their heritage — a World Cup team assembled across an ocean from the country it represents." },
+      { "tag": "Germany, twice burned", "seed": "Germany, four-time champions, have exited at the group stage at each of the last two World Cups (2018 and 2022) — the first time in their history they have gone out that early back-to-back. Their 2026 campaign opens against a team playing its first World Cup match ever." },
+      { "tag": "First-ever, finally competitive", "seed": "Sweden and Tunisia have met four times since 1976, all friendlies; today in Monterrey is their first competitive meeting and their first at any major tournament." }
     ]
   }
 }

@@ -1,97 +1,97 @@
 {
   "date": "2026-06-13",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 3 — the first full group day after the host openers. Marquee: Brazil vs Morocco at MetLife (the final venue), a rematch of their 1998 group meeting. The day's spine is the 1998 reunion: Brazil, Morocco and Scotland shared Group A at France '98 and are together again in Group C now, joined by Haiti (back after 52 years). Haiti vs Scotland completes the Group C double-header; Qatar vs Switzerland (Group B) and Australia vs Türkiye (Group D) round out the day. where_played_before deliberately omitted — every June 13 venue (MetLife, Levi's, Gillette, BC Place) is hosting World Cup football for the first time; the final-venue angle for MetLife lives in anomalies instead. All facts web-verified 2026-06-11.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 3 — the 1998 group, reconvened",
+    "tournament_summary": "With all three hosts now underway, the tournament settles into its first full group day. The headline is in New Jersey: Brazil open against Morocco at MetLife Stadium, the ground that will host the final on 19 July. It is also a reunion — Brazil, Morocco and Scotland were all drawn together in Group A at France 1998, and twenty-eight years later all three are back in the same group, Group C, now joined by Haiti, who return to the World Cup for the first time since 1974. Haiti play Scotland the same night in Foxborough. Qatar vs Switzerland (Group B) and Australia vs Türkiye (Group D) fill out the card.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Group C reunites three-quarters of France 1998's Group A: Brazil, Morocco and Scotland, now with Haiti added.",
+      "Brazil vs Morocco is played at MetLife Stadium — the venue that hosts the World Cup final on 19 July 2026.",
+      "Haiti are at their second World Cup and first since 1974 — a 52-year gap, joint fourth-longest in tournament history.",
+      "Scotland are back after 28 years (last appearance: France 1998), their longest-ever absence.",
+      "Also today: Qatar vs Switzerland at Levi's Stadium (Santa Clara), Australia vs Türkiye at BC Place (Vancouver)."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Group A, France 1998 — back together as Group C, 2026",
+      "framing": "Some draws feel like the bracket remembering something. Three of the four teams in this year's Group C — Brazil, Morocco and Scotland — were drawn into the same group at France 1998, and twenty-eight years on the hat has put them together again. The thread is that reunion: same three nations, a generation apart, two of today's matches reopening it.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "1998 — Group A, France", "fact": "Brazil, Norway, Morocco and Scotland shared Group A at France 1998. Brazil beat Scotland 2–1 in the tournament's opening match and Morocco 3–0; Morocco then thrashed Scotland 3–0 in the final round." },
+        { "label": "1998 — the cruel exit", "fact": "Morocco won their last group game 3–0 and still went home: Norway's stoppage-time turnaround to beat Brazil 2–1 pushed the Scandinavians through on points and left Morocco fourth-place heartbreak by the finest margins." },
+        { "label": "2026 — Group C reconvened", "fact": "The 2026 draw put Brazil, Morocco and Scotland back in one group — Group C — and added Haiti. Today reopens two of those old fixtures at once: Brazil vs Morocco, and Scotland (vs Haiti) back on the same matchday." },
+        { "label": "Scotland's 28-year wait", "fact": "Scotland have not played a World Cup match since that 1998 group — the longest absence in their history — and they return to find the same two heavyweights, Brazil and Morocco, waiting in their group again." },
+        { "label": "How far Morocco travelled", "fact": "The Morocco that lost 3–0 to Brazil in 1998 is not the Morocco of now: they reached the semi-finals in 2022, the first African nation ever to do so, and beat Brazil 2–1 in Tangier the following spring." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "52",
+      "surface_stat": "Haiti · 52 years away",
+      "historical_anchor": "Fifty-two years separate Haiti's only previous World Cup — West Germany 1974 — from tonight's match against Scotland in Foxborough. It is the joint fourth-longest gap between appearances in the tournament's history, and the longest of any team at this World Cup.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1974", "v": "Haiti's only prior World Cup (West Germany)" },
+        { "k": "2026", "v": "Second appearance — first in 52 years" },
+        { "k": "Gap", "v": "52 years — joint 4th-longest ever" },
+        { "k": "Group C", "v": "Brazil, Morocco, Scotland, Haiti" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The only longer waits between World Cups belong to Wales (64 years, 1958→2022), Egypt and Norway (56 years each). Haiti's 52 years ties the fourth-longest gap in the competition's history.",
+        "Haiti's 1974 side is remembered for one shining moment: Emmanuel Sanon scoring against Italy to briefly end Dino Zoff's 1,143-minute international shut-out, before Italy recovered to win 3–1.",
+        "They qualified this time by topping their Concacaf third-round group ahead of Costa Rica and Honduras, under French coach Sébastien Migné — much of the squad assembled from the diaspora, having never played a senior match in Haiti."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Brazil", "Morocco"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1998",
+        "score": "3 — 0",
+        "host": "France",
+        "round": "Group A · Matchday 2",
+        "venue": "Stade de la Beaujoire, Nantes",
+        "context_line": "France · group stage · Stade de la Beaujoire, Nantes",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Ronaldo", "minute": "9'", "note": "(his first goal of the 1998 World Cup, the tournament he would carry to the final)" },
+          { "scorer": "Rivaldo", "minute": "45'", "note": null },
+          { "scorer": "Bebeto", "minute": "50'", "note": null }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Brazil 3–0 Morocco — the reigning champions, with Ronaldo and Rivaldo in full flight, sealed top spot in Group A after just two games.",
+          "It was a quiet night for Morocco, but the goals masked how good they were that summer: they would win their next game 3–0 and still go out.",
+          "What lingers is the distance travelled since. The Morocco that lost here would, a generation later, become the first African nation to reach a World Cup semi-final.",
+          "And in March 2023, fresh from that semi-final run, Morocco beat Brazil 2–1 in Tangier — their first win over the five-time champions in any meeting."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Brazil and Morocco have met once at a World Cup — Brazil's 3–0 win in the 1998 group stage. Since then the gap has narrowed sharply: Morocco's 2–1 victory over Brazil in a March 2023 friendly in Tangier was the first time the two had ever met with Morocco coming out on top. Today is their second World Cup meeting, and Morocco arrive as 2022 semi-finalists.",
+      "video": {
+        "youtube_id": "-89vhdWMgvI",
+        "title": "Brazil 3–0 Morocco — France 1998, Group A",
+        "caption": "The last time these two met at a World Cup: Ronaldo, Rivaldo and Bebeto in Nantes. The match the page above is about — twenty-eight years before tonight's rematch.",
+        "source": "archive · 1998 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Callum",
+      "asker_city": "Glasgow",
+      "asker_day": "Sat 13 Jun",
+      "question": "Drawn with Brazil and Morocco again, just like '98 — be honest, do Scotland have any chance of finally getting out of the group, or are we here to make up the numbers?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Scotland have appeared at eight previous World Cups and have never advanced beyond the group stage — the most appearances of any nation without reaching the knockout rounds.",
+          "Their last appearance was France 1998, the same tournament that produced this group's other two heavyweights; they lost the opener 2–1 to Brazil and the decider 3–0 to Morocco.",
+          "The expanded 48-team format helps: eight of the best third-placed teams now advance, so a third-place finish can be enough to reach the Round of 32 — a route that did not exist in 1998.",
+          "Steve Clarke's side qualified by beating Denmark 4–2 in their final group game, and carry a Premier League spine in Andy Robertson and Scott McTominay."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question assumes the same dead end as 1998. The brief shows the maths has changed: the ceiling Scotland kept hitting was a 16-team knockout that took only the top two — the 2026 format gives a third-placed team a genuine way through, which is the real difference between this group and the last one."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The 1998 reunion", "seed": "Brazil, Morocco and Scotland were all drawn into Group A at France 1998; the 2026 draw put all three back together in Group C. Today reopens two of those 1998 fixtures on a single matchday." },
+      { "tag": "Playing at the final's house", "seed": "Brazil vs Morocco is staged at MetLife Stadium in East Rutherford — the same ground that will host the World Cup final on 19 July. Most teams hope to reach the final venue; these two start there." },
+      { "tag": "Haiti's 52 years", "seed": "Haiti return to the World Cup for the first time since 1974 — a 52-year gap, the joint fourth-longest in the tournament's history and the longest of anyone at this World Cup." },
+      { "tag": "Eliminated while winning 3–0", "seed": "In 1998 Morocco beat Scotland 3–0 in their final group game and were still knocked out, undone by Norway's stoppage-time win over Brazil the same night. Both teams are back in the same group in 2026." },
+      { "tag": "Eight tries, no knockouts", "seed": "Scotland have played at eight World Cups and never once reached the knockout stage — the most appearances by any nation without advancing. The 48-team format's third-place route is the best chance they have ever had to change that." },
+      { "tag": "The win that flipped the script", "seed": "Morocco lost 3–0 to Brazil at the 1998 World Cup; in March 2023, as freshly minted semi-finalists, they beat Brazil 2–1 in Tangier — their first victory over the five-time champions in any meeting." }
     ]
   }
 }
