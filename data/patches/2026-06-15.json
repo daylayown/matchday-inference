@@ -1,97 +1,95 @@
 {
   "date": "2026-06-15",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 5 — Group H opens in full and Group G begins. Marquee: Spain (reigning European champions, 2010 world champions) vs Cape Verde, an archipelago of roughly half a million making its first-ever World Cup, at Mercedes-Benz Stadium, Atlanta. The same evening Saudi Arabia vs Uruguay reprise their 2018 group meeting at Hard Rock Stadium, Miami. Belgium vs Egypt opens Group G at Lumen Field, Seattle; Sweden vs Tunisia plays overnight at Estadio BBVA, Monterrey. The day's spine: the islands arrive — Cape Verde is the third-smallest nation ever to reach a World Cup (behind Iceland and Curaçao, who debuted yesterday), the team built largely from its diaspora; and Group H quietly pairs the smallest country ever to WIN the World Cup (Uruguay) with one of the smallest ever to REACH one. Fixtures, venues and the 2018 Suárez goal (23', Rostov) verified against API-Football (league 1); history web-verified 2026-06-13. where_played_before omitted — every June 15 venue is hosting World Cup football for the first time.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 5 — Group H opens, and the islands arrive",
+    "tournament_summary": "Group H begins in full today. Spain — reigning European champions and 2010 world champions — open in Atlanta against Cape Verde, ten volcanic islands off the coast of Senegal, population roughly half a million, playing the first World Cup match in their history. The same evening in Miami, Saudi Arabia and Uruguay meet again, eight years after Luis Suárez's goal knocked the Saudis out in Russia. Belgium open Group G against Egypt at Lumen Field in Seattle, and Sweden vs Tunisia plays overnight in Monterrey.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Group H opens fully today: Spain vs Cape Verde at Mercedes-Benz Stadium (Atlanta) and Saudi Arabia vs Uruguay at Hard Rock Stadium (Miami).",
+      "Cape Verde, population around half a million, make their first-ever World Cup appearance — the third-smallest nation ever to reach the finals, after Iceland and Curaçao (who debuted yesterday).",
+      "Spain arrive as reigning European champions (Euro 2024) and 2010 world champions, among the tournament favourites.",
+      "Saudi Arabia vs Uruguay is a rematch of their 2018 group meeting in Russia (Uruguay won 1-0, Suárez).",
+      "Also today: Belgium vs Egypt (Group G) at Lumen Field, Seattle; Sweden vs Tunisia overnight at Estadio BBVA, Monterrey."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Cape Verde and its diaspora — the islands that emptied outward",
+      "framing": "Cape Verde's first World Cup is really being watched in two places at once: in the ten islands off Senegal, and wherever Cape Verdeans landed. By most counts more Cape Verdeans live abroad than at home, and the team walking out in Atlanta is built from that scattering. The thread runs from Praia to the coastlines the diaspora settled.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Praia, Cape Verde", "fact": "An archipelago of ten volcanic islands off the West African coast, independent from Portugal only since 1975, with roughly half a million residents — today the smallest of them all has a team at the World Cup for the first time." },
+        { "label": "More abroad than at home", "fact": "By most estimates the Cape Verdean diaspora outnumbers the islands' own population. Drought and scarcity drove generations to emigrate, and remittances and return migration have shaped national life for over a century — emigration is part of what it means to be Cape Verdean." },
+        { "label": "New England, USA", "fact": "The largest Cape Verdean community in the United States sits in southeastern Massachusetts and Rhode Island — New Bedford, Brockton, Pawtucket — a link that dates to the 19th-century whaling and packet-ship trade that ran between the islands and the American coast." },
+        { "label": "Lisbon · Rotterdam · Paris", "fact": "Portugal and the Netherlands hold the biggest European communities, with France close behind; several of the players in Atlanta were born or raised in those cities rather than on the islands." },
+        { "label": "A team from the scattering", "fact": "Like Curaçao a day earlier, Cape Verde's squad leans heavily on players born in the diaspora — Portugal, the Netherlands, France — the recurring story of the 48-team field: nations whose footballers grew up everywhere but home." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "2",
+      "surface_stat": "Uruguay · 2 stars",
+      "historical_anchor": "The two stars above the Uruguay crest are World Cups won — 1930 and 1950 — by a country of roughly 3.4 million people, by far the smallest nation ever to lift the trophy. Today they open Group H, a group that also contains Cape Verde, one of the smallest nations ever to reach the tournament at all.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1930", "v": "First World Cup — Uruguay host it and win it" },
+        { "k": "1950", "v": "The Maracanazo — Uruguay silence Brazil in Rio" },
+        { "k": "Population", "v": "~3.4M — smallest nation ever to win the World Cup" },
+        { "k": "Group H", "v": "Spain, Cape Verde, Saudi Arabia, Uruguay" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Uruguay won the very first World Cup, on home soil in 1930, then returned in 1950 to beat hosts Brazil in the deciding match at the Maracanã — the 'Maracanazo' — in front of a crowd estimated near 200,000.",
+        "No nation remotely Uruguay's size has won it since; the modern game's economics make a repeat almost unimaginable, which is exactly why the two stars still mean so much there.",
+        "The number sets up the day's quiet rhyme: Group H holds both the smallest country ever to win a World Cup and, in Cape Verde, one of the smallest ever just to qualify for one."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Saudi Arabia", "Uruguay"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2018",
+        "score": "0 — 1",
+        "host": "Russia",
+        "round": "Group A · Matchday 2",
+        "venue": "Rostov Arena, Rostov-on-Don",
+        "context_line": "Russia · group stage · Rostov Arena, Rostov-on-Don",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Luis Suárez", "minute": "23'", "note": "(Uruguay; on Suárez's 100th cap, bundled in after the Saudi keeper misjudged a corner — the goal that sent Uruguay and hosts Russia into the last 16)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Saudi Arabia 0–1 Uruguay — a single scrappy Suárez goal, tapped in after goalkeeper Mohammed Al-Owais flapped at a corner, settled a cagey game in Rostov.",
+          "It came on Suárez's 100th appearance for Uruguay, and made him the first Uruguayan ever to score at three different World Cups — 2010, 2014 and 2018.",
+          "The win put Uruguay and hosts Russia through with a game to spare; Saudi Arabia, already beaten 5–0 by Russia in the opener, were out.",
+          "Eight years on the framing has flipped: Saudi Arabia are the side that stunned Argentina in 2022, and the two reconvene in Miami with a knockout place — not an early exit — on the line."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Saudi Arabia and Uruguay have met once at a World Cup — Uruguay's 1–0 win in the 2018 group stage, decided by Suárez's goal on his 100th cap. Today in Miami is their second World Cup meeting. The Saudi side arrives with more credit than it carried in 2018: their 2–1 win over Argentina in the 2022 opener remains one of the great World Cup upsets.",
+      "video": {
+        "youtube_id": "ZxEMQTAGYzI",
+        "title": "Uruguay v Saudi Arabia | 2018 FIFA World Cup | Match Highlights",
+        "caption": "The last time these two met at a World Cup: Suárez's 23rd-minute goal in Rostov, on his 100th cap. The match the page above is about — eight years before tonight's rematch in Miami.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Nuno",
+      "asker_city": "Brockton, Massachusetts",
+      "asker_day": "Mon 15 Jun",
+      "question": "Half my family is from São Vicente and we're all here in Brockton — first time in our lives we've had a team in the World Cup. Be honest with me: do the Blue Sharks have any real chance against Spain, or is just being there the whole story?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Cape Verde qualified by topping CAF Group D ahead of Cameroon — the African nation with the most World Cup appearances — losing only once in the campaign and sealing it with a 3–0 win over Eswatini in October 2025.",
+          "It is the islands' first World Cup. Spain arrive as reigning European champions and 2010 world champions, and start as heavy favourites both in this match and in the group.",
+          "The 48-team format takes the top two from each group plus the eight best third-placed teams — so a debutant can reach the Round of 32 without ever having to beat one of the seeds.",
+          "Much of the Cape Verde squad was born or raised in the diaspora — Portugal, the Netherlands, France — a pattern shared with several of this tournament's smaller nations."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question offers two endings: beat Spain, or just enjoy the trip. The brief points at a third the old 32-team format never allowed — Cape Verde's realistic target isn't Spain, it's the third-place qualification line, and a side that topped a group with Cameroon in it has every right to chase it."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The smallest who won, the smallest who came", "seed": "Group H pairs Uruguay — at roughly 3.4 million people, the smallest nation ever to win a World Cup — with Cape Verde, around half a million, one of the smallest ever to reach one. Both are in action today." },
+      { "tag": "Two of the three smallest, back to back", "seed": "Cape Verde are the third-smallest nation ever to qualify for a World Cup, behind only Iceland and Curaçao — and Curaçao made their own debut just yesterday. Two of the three smallest entrants in the tournament's history, opening on consecutive days." },
+      { "tag": "A team from the diaspora", "seed": "By most estimates more Cape Verdeans live abroad than on the islands, and the squad is built largely from players born in Portugal, the Netherlands and France — the same diaspora pattern as Curaçao and Morocco." },
+      { "tag": "Suárez's ghost", "seed": "The last time Saudi Arabia met Uruguay at a World Cup, Luis Suárez's goal — on his 100th cap — knocked them out in 2018. They reconvene in Miami eight years on, Saudi Arabia now the side that beat Argentina in 2022." },
+      { "tag": "Chasing a second star", "seed": "Spain won their only World Cup in 2010 and arrive as reigning European champions; a second title would put a second star on a shirt that has carried just one for sixteen years." },
+      { "tag": "Topped a group with Cameroon in it", "seed": "Cape Verde reached their first World Cup by winning a qualifying group that included Cameroon, the African nation with the most World Cup appearances — and lost only once in the entire campaign." }
     ]
   }
 }

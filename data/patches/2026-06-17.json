@@ -1,97 +1,96 @@
 {
   "date": "2026-06-17",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 7 — a stacked card. Marquee: England vs Croatia at AT&T Stadium (Dallas), a rematch of the 2018 World Cup semi-final Croatia won 2–1 in extra time on their way to a first final. The day's spine is that rivalry — Croatia the tormentor (the 2007 brolly night, the 2018 semi) and the victim (England's 2018 Nations League and 2021 Euro wins) — and Luka Modrić, 40, still standing for his fifth World Cup. Also today: Argentina (holders) vs Algeria, Portugal vs DR Congo, Austria vs Jordan (Jordan's debut), Ghana vs Panama. where_played_before omitted — AT&T Stadium is a first-time World Cup venue. All facts web-verified + clip oembed-verified 2026-06-15.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 7 — the semi-final, eight years on",
+    "tournament_summary": "The biggest fixture of the day is in Dallas: England vs Croatia at AT&T Stadium, eight years after Croatia beat them in the 2018 World Cup semi-final and went on to a first final. It is the latest chapter of a rivalry that has swung both ways — Croatia knocking England out of Euro 2008, England answering with wins in 2018 and 2021 — and it may be the last World Cup of Luka Modrić, who at 40 has been named in Croatia's squad for a fifth tournament. The card is deep around it: Argentina, the reigning champions, face Algeria; Portugal play DR Congo in Houston; Austria meet a debutant Jordan; and Ghana take on Panama in Toronto.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "England vs Croatia at AT&T Stadium, Dallas — a rematch of the 2018 World Cup semi-final, which Croatia won 2–1 after extra time.",
+      "Luka Modrić, 40, has been named in Croatia's squad for his fifth World Cup; he plays club football for AC Milan.",
+      "The rivalry has swung both ways: Croatia ended England's Euro 2008 hopes in 2007; England beat Croatia in the 2018 Nations League and at Euro 2020 (June 2021).",
+      "Argentina, the reigning World Cup champions, face Algeria at Arrowhead Stadium, Kansas City.",
+      "Jordan are at their first-ever World Cup, facing Austria at Levi's Stadium; Portugal play DR Congo in Houston and Ghana meet Panama in Toronto."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "England and Croatia — a rivalry that keeps changing who's the hammer and who's the nail",
+      "framing": "Most rivalries settle into a shape: one side usually wins. England and Croatia never have. The thread is the swing — the same two nations handing each other their best nights and worst ones across two decades, so that by the time they meet again in Dallas, neither can be sure which role they're playing.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "2007 — the brolly", "fact": "Needing only a draw at Wembley to reach Euro 2008, England lost 3–2 to Croatia and went out. Manager Steve McClaren watched the rain under an umbrella — 'the wally with the brolly' — and was sacked the next day." },
+        { "label": "2018 — the semi-final", "fact": "At the 2018 World Cup, Croatia came from a goal down to beat England 2–1 after extra time in Moscow and reach their first-ever World Cup final, ending England's deepest run since 1990 and the 'It's Coming Home' summer." },
+        { "label": "2018 — the reply", "fact": "Months later, in the Nations League at Wembley, England beat Croatia 2–1 with late goals from Lingard and Kane — a result that relegated Croatia from the top tier and turned the screw back the other way." },
+        { "label": "2021 — Wembley again", "fact": "At Euro 2020 (played in 2021), England opened with a 1–0 win over Croatia at Wembley, Raheem Sterling scoring just before the hour — England's first-ever opening win at a European Championship." },
+        { "label": "The ledger of scars", "fact": "Croatia hold the biggest single wound (the 2018 semi); England hold the two most recent competitive results (2018 Nations League, 2021 Euro). Dallas is the rubber match neither rivalry quite has a favourite for." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "40",
+      "surface_stat": "Luka Modrić · 40 years old",
+      "historical_anchor": "Luka Modrić, born in September 1985, is 40 years old at this World Cup — and named in Croatia's squad for a fifth time. The midfielder who ran England ragged in the 2018 semi-final is back on the same fixture, a generation of football later, still the team's heartbeat.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1985", "v": "Modrić born (September)" },
+        { "k": "2026", "v": "His fifth World Cup, aged 40" },
+        { "k": "2018", "v": "Carried Croatia to the final; won the Golden Ball" },
+        { "k": "Club", "v": "AC Milan" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Modrić won the 2018 World Cup's Golden Ball as the tournament's best player, dragging Croatia through three straight knockout games — including the England semi — that all went to extra time.",
+        "Croatia's 'golden generation' was supposed to be a one-tournament thing; instead it reached the 2018 final and the 2022 semi-finals, and its captain is still here for 2026.",
+        "Facing England again is the neat symmetry: the opponent he beat in the defining match of his international career, met once more in what is most likely his last World Cup."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["England", "Croatia"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2018",
+        "score": "1 — 2",
+        "host": "Russia",
+        "round": "Semi-final (a.e.t.)",
+        "venue": "Luzhniki Stadium, Moscow",
+        "context_line": "Russia · semi-final · Luzhniki Stadium, Moscow",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Kieran Trippier", "minute": "5'", "note": "(England · a curled free-kick, and for a while it really was coming home)" },
+          { "scorer": "Ivan Perišić", "minute": "68'", "note": "(Croatia · a boot raised above Kyle Walker to volley the equaliser)" },
+          { "scorer": "Mario Mandžukić", "minute": "109'", "note": "(Croatia · the extra-time winner, pouncing as Stones and Walker let the ball bounce)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "England 1–2 Croatia, after extra time — the 2018 World Cup semi-final. Trippier's early free-kick had Wembley dreaming from Moscow; it lasted just past the hour.",
+          "Perišić equalised with a high, athletic volley, and the longer it went the more it became Croatia's game — their third successive knockout to run to extra time, and they kept finding more.",
+          "Mandžukić settled it in the 109th minute, and Croatia reached the first World Cup final in their history, where they lost 4–2 to France.",
+          "For England it was the end of the deepest run since 1990 — the closest Gareth Southgate's side had come, and the night 'It's Coming Home' went quiet."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "England and Croatia have met once at a World Cup, and Croatia won the one that mattered most: the 2018 semi-final, 2–1 after extra time, the match that put them in a first final and ended England's best tournament in a generation. England have had the better of the meetings since — the 2018 Nations League, the 2021 Euro opener — but never on this stage. Today is the rematch, in Dallas.",
+      "video": {
+        "youtube_id": "gi_2GELMwfY",
+        "title": "Croatia v England — 2018 FIFA World Cup, semi-final",
+        "caption": "Trippier's free-kick, Perišić's volley, Mandžukić's extra-time winner — the night Croatia reached their first final and England's 2018 summer ended. The match the page above is about.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Tom",
+      "asker_city": "Leeds",
+      "asker_day": "Wed 17 Jun",
+      "question": "I've not been right since Moscow 2018. Be straight with me — is this England finally good enough to put that semi-final to bed, or are we walking back into the same Croatia nightmare?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "England have actually beaten Croatia in both competitive meetings since 2018 — the Nations League that autumn and the Euro 2020 opener in 2021 — so the recent record favours England, just not on a World Cup stage.",
+          "The 2018 Croatia that beat them was extraordinary: three straight extra-time knockouts and a run to the final, powered by a midfield that has slowly aged out — only Modrić, now 40, remains from that spine.",
+          "England have reached a World Cup semi (2018) and a Euro final (2021) under Southgate-era continuity, and arrive as a heavier favourite than they were in Moscow.",
+          "Knockout football is gone for now — this is a group match — so a result here settles pride and seeding, not a place in a final; the 'nightmare' framing is about ghosts, not stakes."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question treats Croatia as a recurring nightmare. The brief shows the opposite has been true lately — England have won the last two — and that the team which actually haunted them has largely retired, save its 40-year-old captain. The fear is real; the evidence for it is eight years old."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The semi-final, again", "seed": "England and Croatia met in the 2018 World Cup semi-final; Croatia won 2–1 in extra time and reached their first final. Eight years later they're drawn together again, this time in Dallas." },
+      { "tag": "Still here at 40", "seed": "Luka Modrić, 40, has been named in Croatia's squad for a fifth World Cup — the Golden Ball winner of 2018 returning to face the very England side he beat in that semi-final." },
+      { "tag": "The brolly night", "seed": "England's modern rivalry with Croatia started in pain: a 3–2 home defeat in 2007 that cost them Euro 2008 and ended with manager Steve McClaren remembered as 'the wally with the brolly'." },
+      { "tag": "A debutant in the field", "seed": "Jordan play their first-ever World Cup match today, against Austria — one of the new nations the 48-team format has carried into the tournament, nicknamed Al-Nashama, 'the Brave Ones'." },
+      { "tag": "Panama's one goal, vs England", "seed": "Ghana's opponents today, Panama, have played one previous World Cup (2018); their first-ever goal in the competition was scored against England, by Felipe Baloy, in a group game that summer." }
     ]
   }
 }

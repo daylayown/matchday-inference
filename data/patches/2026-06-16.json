@@ -1,97 +1,95 @@
 {
   "date": "2026-06-16",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 6. Marquee: France vs Senegal at MetLife Stadium (the final venue) — a rematch loaded with the ghost of 2002, when Senegal beat the defending champions 1–0 in the tournament's opening match. The day's spine is that France↔Senegal axis: a colony and its coloniser, a football-migration story so deep that France's 2002 squad included a Dakar-born midfielder (Patrick Vieira) the night Senegal knocked them out. Also today: Iran vs New Zealand (SoFi, Los Angeles) and Iraq vs Norway (Gillette, Boston) — Norway back after 28 years for Erling Haaland's first World Cup, Iraq back after 40. where_played_before deliberately omitted — MetLife is hosting World Cup football for the first time. All facts web-verified + clip oembed-verified 2026-06-15.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 6 — the ghost of 2002",
+    "tournament_summary": "The headline returns to MetLife Stadium, where the final will be played on 19 July: France vs Senegal, twenty-four years after Senegal beat a France side that were both World Cup and European champions in the opening match of the 2002 tournament. It is a fixture that carries a whole history with it — Senegal was a French colony until 1960, and the football traffic between the two has never stopped. Elsewhere, Iran face New Zealand at SoFi in Los Angeles, and Iraq meet Norway at Gillette Stadium near Boston — Norway at a World Cup for the first time in 28 years, with Erling Haaland making his tournament debut.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "France vs Senegal is played at MetLife Stadium — the ground that hosts the World Cup final on 19 July 2026.",
+      "The two last met at the 2002 World Cup: Senegal won the opening match 1–0, the defining shock of that tournament.",
+      "Senegal was a French colony until independence in 1960; the squads of both nations have been intertwined with the French league for decades.",
+      "Norway are at a World Cup for the first time since France 1998 — a 28-year gap; it is Erling Haaland's first World Cup.",
+      "Iraq return for the first time since Mexico 1986 — a 40-year wait, and only their second appearance ever.",
+      "Also today: Iran vs New Zealand at SoFi Stadium, Los Angeles."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "France and Senegal — a colony, a coloniser, and the players who crossed between them",
+      "framing": "Some rematches are just rematches. This one drags a century with it. Senegal was governed from Paris until 1960, and long after independence the football kept moving north — Senegalese players raised in French academies, French squads built partly on sons of the empire. The thread is that crossing: the night in 2002 when a former colony beat the coloniser was played, in part, by men who had grown up on the same side of the same migration.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "1960 — independence", "fact": "Senegal was a French colony until it gained independence in 1960. Football was one of the channels that stayed open afterwards: generations of Senegalese players have been raised, scouted and made professional in France." },
+        { "label": "2002 — the Dakar-born Frenchman", "fact": "Patrick Vieira, born in Dakar in 1976, moved to France as a boy and played for France — including all three group games of the 2002 World Cup, the campaign Senegal opened by beating his France side 1–0." },
+        { "label": "2002 — Senegal's French spine", "fact": "Senegal's 2002 'Teranga Lions' were built almost entirely on the French league. Papa Bouba Diop, who scored the winner, was at RC Lens; El Hadji Diouf, who made it, was a product of the same system. The team that humbled France had been made, in large part, in France." },
+        { "label": "The colour of a national team", "fact": "Both France's and Senegal's modern squads have been shaped by the same Franco-African football economy — French academies developing African-heritage talent, and Senegal calling on players born or based in Europe. The rematch is two outcomes of one long migration." },
+        { "label": "2002 — the run that followed", "fact": "Senegal did not stop at France. On their World Cup debut they reached the quarter-finals — only the second African nation ever to do so, after Cameroon in 1990 — beating Sweden in extra time before going out to Turkey on a golden goal." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "28",
+      "surface_stat": "Norway · 28 years away",
+      "historical_anchor": "Twenty-eight years separate Norway's last World Cup — France 1998 — from tonight's match against Iraq at Gillette Stadium. Erling Haaland, the man carrying them back, was born in July 2000: he had not yet been born the last time Norway played at a World Cup.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1998", "v": "Norway's last World Cup (France)" },
+        { "k": "2026", "v": "Back after a 28-year absence" },
+        { "k": "Haaland", "v": "Born July 2000 — after Norway's last WC" },
+        { "k": "Qualifying", "v": "Won all 8 matches; Haaland 16 goals" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Norway swept their qualifying group with a perfect record — eight wins from eight, 37 goals scored — with Haaland contributing 16 of them.",
+        "It is the first major international tournament of Haaland's career: for all the club trophies and records, the national team had never carried him to a World Cup or a Euro until now.",
+        "Their opponents tonight, Iraq, are on a wait of their own — a first World Cup since Mexico 1986, sealed through an intercontinental play-off win over Bolivia in Monterrey."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["France", "Senegal"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2002",
+        "score": "0 — 1",
+        "host": "South Korea / Japan",
+        "round": "Group A · Opening match",
+        "venue": "Seoul World Cup Stadium, Seoul",
+        "context_line": "South Korea / Japan · opening match · Seoul World Cup Stadium",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Papa Bouba Diop", "minute": "30'", "note": "(Senegal · the first goal of the entire 2002 World Cup, bundled in after El Hadji Diouf's run and a muddle between Petit and Barthez)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Senegal 1–0 France — the opening match of the 2002 World Cup, and the biggest shock the tournament would produce. France were both reigning world champions and reigning European champions; Senegal were debutants.",
+          "Papa Bouba Diop scored just past the half-hour, then took off his number 19 shirt, laid it on the grass by the corner flag, and the squad danced around it — one of the most copied celebrations in the competition's history.",
+          "Zinedine Zidane, injured, watched the opener from the bench. France never recovered: they drew Uruguay 0–0, lost to Denmark, and went out in the group stage without scoring a single goal.",
+          "They became the first defending champions eliminated in the first round since Brazil in 1966 — and the only holders ever to fail to score while defending the title. Senegal, meanwhile, went all the way to the quarter-finals."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "France and Senegal have met once at a World Cup, and it remains one of the tournament's great upsets: Senegal's 1–0 win in the 2002 opener, the night a former colony beat the reigning world and European champions and sent them spiralling out without a goal. Today is their second meeting — this time at MetLife Stadium, the venue that will stage the final.",
+      "video": {
+        "youtube_id": "dZzRglwHA7g",
+        "title": "France vs Senegal — 2002 FIFA World Cup, opening match",
+        "caption": "The shock that opened the 2002 World Cup: Bouba Diop's goal, the corner-flag dance, and the holders' unravelling. The match the page above is about — twenty-four years before tonight's rematch.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Mamadou",
+      "asker_city": "Marseille",
+      "asker_day": "Tue 16 Jun",
+      "question": "I grew up in Marseille watching France, but my family is from Dakar — in 2002 we beat them and I didn't know which way to cheer. Honest question: are this Senegal good enough to do it to France again, or was 2002 lightning that doesn't strike twice?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The 2002 result was an upset by ranking but not a fluke by run: Senegal backed it up by reaching the quarter-finals on debut, the second African side ever to get that far.",
+          "Senegal have grown into a genuine power since — they won their first Africa Cup of Nations in February 2022 (beating Egypt on penalties), so this is no longer a team punching above an unfamiliar weight.",
+          "France remain among the favourites at every tournament — 2018 winners, 2022 finalists — and arrive far better prepared than the complacent holders Senegal ambushed in Seoul.",
+          "The Franco-Senegalese football world the question describes is real: players and families have moved between Dakar and cities like Marseille for generations, which is exactly why a France–Senegal match can feel like a family argument."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question frames 2002 as lightning. The brief reframes it: Senegal in 2002 were unknowns who then reached a quarter-final, and the Senegal of now are former African champions — so a repeat would be an upset of a strong France, not a freak result against an unsuspecting one. The 'which way to cheer' part isn't confusion; it's the whole point of this fixture."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The shock that opened a World Cup", "seed": "Senegal beat France 1–0 in the opening match of the 2002 World Cup — debutants beating the reigning world and European champions. France went out in the group stage without scoring a goal; Senegal reached the quarter-finals." },
+      { "tag": "Starting at the final's house", "seed": "France vs Senegal is staged at MetLife Stadium in East Rutherford — the ground that hosts the World Cup final on 19 July. Two of the day's heavyweights begin where everyone hopes to end." },
+      { "tag": "The Dakar-born Frenchman", "seed": "Patrick Vieira was born in Dakar and played for France — including the 2002 World Cup, the tournament Senegal opened by knocking his France side out. The migration that links these two teams runs straight through their squads." },
+      { "tag": "Born after the last time", "seed": "Norway are back at a World Cup after 28 years, led by Erling Haaland — who was born in July 2000, after Norway's previous appearance at France 1998. He has reached his first World Cup before ever seeing his country at one." },
+      { "tag": "Zero goals defending a crown", "seed": "France in 2002 became the only defending champions ever to fail to score a single goal while defending the title — three group games, no goals, eliminated. It began with the loss to Senegal." }
     ]
   }
 }

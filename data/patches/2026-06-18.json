@@ -1,44 +1,67 @@
 {
   "date": "2026-06-18",
-  "note": "PARTIAL SEED — only the Back Story (+ video) is filled, to demonstrate the historical-clip embed on a real rematch day: Mexico vs Korea Republic (Estadio Akron, Guadalajara), a rematch of their 2018 group-stage meeting. Remaining sections (here_there_thread, story_behind_number, where_played_before, from_the_stands, anomalies) are TODO for the full content sweep; day_context is intentionally light.",
+  "note": "Matchday 8 — REWRITTEN 2026-06-15 (the earlier partial seed had Mexico vs Korea Republic, which the API does NOT show on this date; discarded). Real fixtures: Uzbekistan vs Colombia (Estadio Azteca), Czechia vs South Africa (Atlanta), Switzerland vs Bosnia & Herzegovina (SoFi), Canada vs Qatar (Vancouver). Spine: Uzbekistan's first-ever World Cup match, staged at the Estadio Azteca — the only ground to host three World Cups (1970, 1986, 2026). The day completes the tournament's debutant arc (Curaçao 6/14, Cape Verde 6/15, Uzbekistan today). back_story + where_played_before deliberately omitted: no pairing today has a prior World Cup meeting (Uzbekistan are debutants; Switzerland–Bosnia have never met at a World Cup), and the Azteca's 1970/86 venue history was already told in the June 11 patch — its gravity rides in story_behind_number instead. All facts web-verified 2026-06-15.",
   "fixtures": {},
   "day_context": {
-    "today_label": "Group stage · round two",
-    "tournament_summary": "A week in, Group A turns on a rematch: Mexico and Korea Republic, who last met in the 2018 group stage in Russia, renew it at Estadio Akron in Guadalajara.",
+    "today_label": "Matchday 8 — a debutant at the cathedral",
+    "tournament_summary": "Uzbekistan play the first World Cup match in their history this morning — and they play it at the Estadio Azteca in Mexico City, the only stadium ever to host three World Cups. Their opponents, Colombia, are back at the tournament after missing 2022, with James Rodríguez almost certainly at his last. It is the third debutant story of the sweep — Curaçao and Cape Verde came before — and the biggest stage any of them have walked onto. Around it: Czechia, back after twenty years, face South Africa in Atlanta; Switzerland meet Bosnia & Herzegovina at SoFi; and co-host Canada take on Qatar, the nation that hosted the last World Cup, in Vancouver.",
     "context_notes": [
-      "Mexico vs Korea Republic at Estadio Akron, Guadalajara — a rematch of their 2018 World Cup group-stage meeting (Mexico won 2–1).",
-      "Both are in Group A alongside South Africa and Czechia."
+      "Uzbekistan vs Colombia at the Estadio Azteca, Mexico City — Uzbekistan's first-ever World Cup match, in the only stadium to host three World Cups (1970, 1986, 2026).",
+      "Uzbekistan are the first Central Asian nation to reach a World Cup; they qualified in June 2025 via AFC qualifying.",
+      "Colombia return after missing 2022 (last appearance: 2018); James Rodríguez, the 2014 Golden Boot winner, is widely expected to be at his final World Cup.",
+      "Czechia are back after a 20-year absence (last appearance 2006), having come through the European play-offs; they face South Africa in Atlanta.",
+      "Also today: Switzerland vs Bosnia & Herzegovina (SoFi, Los Angeles) and Canada vs Qatar (BC Place, Vancouver) — a co-host against the previous host."
     ]
   },
   "editorial_seeds": {
-    "back_story": {
-      "teams": ["Mexico", "Korea Republic"],
-      "focus_meeting": {
-        "year": "2018",
-        "score": "2 — 1",
-        "host": "Russia",
-        "round": "Group F · Matchday 2",
-        "venue": "Rostov Arena, Rostov-on-Don",
-        "context_line": "Russia · Group F · Rostov Arena",
-        "goals": [
-          { "scorer": "Vela", "minute": "26'", "note": "(penalty, won and converted)" },
-          { "scorer": "Hernández", "minute": "66'", "note": "(Chicharito's 50th for Mexico, slid in by Lozano)" },
-          { "scorer": "Son", "minute": "90+3'", "note": "(a stoppage-time rocket — Korea's consolation)" }
+    "here_there_thread": {
+      "topic": "The debutants of 2026 — a 48-team field opening doors that were shut for decades",
+      "framing": "The expanded World Cup is easy to argue about as a number — 48 teams, more matches, diluted or democratic depending on your mood. The thread is what it actually means on the ground: nations that had spent their entire history outside the tournament walking in for the first time. Uzbekistan complete a set this morning that runs across the planet — an island in the Caribbean, an archipelago off West Africa, a kingdom in the Middle East, and now a republic in Central Asia.",
+      "facts": [
+        { "label": "Tashkent — first time", "fact": "Uzbekistan reach the World Cup for the first time since independence in 1991, the first Central Asian nation ever to qualify. Seven campaigns of near-misses ended with qualification in June 2025." },
+        { "label": "Willemstad — first time", "fact": "Curaçao, an island of around 156,000 people, debuted on 14 June as the smallest nation by population ever to reach a World Cup — a Kingdom-of-the-Netherlands football story built on the diaspora." },
+        { "label": "Praia — first time", "fact": "Cape Verde, an Atlantic archipelago off West Africa, debuted on 15 June — another small-nation, diaspora-built side reaching the tournament for the first time." },
+        { "label": "Amman — first time", "fact": "Jordan reached their first World Cup too, nicknamed Al-Nashama ('the Brave Ones'), sealing it in June 2025 — part of the same class of first-timers the 48-team field carried in." },
+        { "label": "Why it matters here", "fact": "Three of these debutants would almost certainly not have qualified under the old 32-team format. Uzbekistan playing their first World Cup match at the Azteca — the tournament's most storied ground — is the expansion's argument made physical: the newest nation in the oldest room." }
+      ]
+    },
+    "story_behind_number": {
+      "number": "3",
+      "surface_stat": "Estadio Azteca · 3 World Cups",
+      "historical_anchor": "Today is the third World Cup the Estadio Azteca has hosted — 1970, 1986 and 2026 — the only stadium on earth that can say so. Uzbekistan's debutants walk out where Pelé's Brazil and Maradona's Argentina each lifted the trophy, into a building that has held more of the World Cup's history than any other.",
+      "quick_facts": [
+        { "k": "1970", "v": "Brazil 4–1 Italy in the final; Carlos Alberto's goal, Pelé's third title" },
+        { "k": "1986", "v": "Maradona's 'Hand of God' and 'Goal of the Century'; Argentina win the final here too" },
+        { "k": "2026", "v": "A third World Cup — no other ground has hosted more than two" },
+        { "k": "Openers", "v": "Also the only stadium to stage three World Cup opening matches" }
+      ],
+      "supporting_context": [
+        "No other venue has hosted more than two World Cups; the Azteca's three span 56 years and three different tournaments on home soil and shared.",
+        "It staged this tournament's opening match too — Mexico vs South Africa on 11 June — making 2026 the third time it has held a World Cup's first game.",
+        "For a debutant nation, the draw is almost theatrical: Uzbekistan's first-ever World Cup minutes are played in the one stadium most freighted with the competition's past."
+      ]
+    },
+    "from_the_stands": {
+      "asker_name": "Jahongir",
+      "asker_city": "Tashkent",
+      "asker_day": "Thu 18 Jun",
+      "question": "We waited our whole history to get here, and the first match is at the Azteca against Colombia. Tell me honestly — can a debutant actually compete in a group like this, or is the real achievement just being in the room?",
+      "factual_brief": {
+        "facts": [
+          "Debutants have done real damage before: Senegal reached the quarter-finals on debut in 2002, and Croatia the semi-finals in 1998 — being new is not the same as being overmatched.",
+          "Uzbekistan qualified by finishing above Qatar and the UAE in AFC qualifying and built around proven names — captain and record scorer Eldor Shomurodov, and 21-year-old Manchester City defender Abdukodir Khusanov.",
+          "The 48-team format also changes the maths: eight of the best third-placed teams advance, so a debutant no longer has to finish top two of its group to survive the first round.",
+          "Colombia are the established side and clear favourites here — back after missing 2022 — but they are a beatable opponent, not a France or a Brazil; the group is hard, not hopeless."
         ],
-        "narrative_beats": [
-          "Mexico beat Korea Republic 2–1 in Rostov — Carlos Vela from the spot, then Chicharito's 50th international goal, threaded through by Hirving Lozano.",
-          "Son Heung-min answered with a long-range stoppage-time strike, but it was already too late.",
-          "The win, on the back of Mexico's shock defeat of holders Germany, put El Tri on the brink of the last 16.",
-          "Days later Korea repaid the group: they beat Germany 2–0 and knocked the champions out — and Mexican fans carried Korean supporters on their shoulders, hailing them as 'hermanos'."
-        ]
-      },
-      "ledger": "Mexico and Korea Republic last met at the 2018 World Cup — a 2–1 Mexico win in the Russian group stage that, days later, became the night Korea sent Germany home and Mexico called them brothers. They are drawn together again in Group A, and meet today at the Akron.",
-      "video": {
-        "youtube_id": "UOSg165xRTw",
-        "title": "Korea Republic v Mexico — the 2018 group-stage meeting",
-        "caption": "Vela's penalty, Chicharito's 50th, and Son's stoppage-time rocket in Rostov. Days later Korea knocked out Germany — and Mexico called them hermanos. The match the page above is about.",
-        "source": "FIFA · official"
+        "note": "The question offers two options — compete, or just be here. The brief adds a third the format now allows: a debutant can lose to the group's favourite and still go through on the third-place route. 'Being in the room' used to be the ceiling; for this Uzbekistan it can be the floor."
       }
-    }
+    },
+    "anomalies": [
+      { "tag": "The newest at the oldest", "seed": "Uzbekistan play the first World Cup match in their history at the Estadio Azteca — the only stadium to host three World Cups (1970, 1986, 2026) and the ground where both Pelé and Maradona lifted the trophy. The newest nation in the most storied room." },
+      { "tag": "First of Central Asia", "seed": "Uzbekistan are the first Central Asian nation ever to reach a World Cup, breaking through in 2025 after seven campaigns of near-misses since independence in 1991." },
+      { "tag": "Host meets former host", "seed": "Canada, a co-host of this World Cup, face Qatar, who hosted the last one — and Canada are still chasing their first-ever World Cup win, winless across 1986 and 2022." },
+      { "tag": "Twenty years out", "seed": "Czechia are back at a World Cup for the first time since 2006 — a 20-year absence ended through back-to-back penalty shootouts in the European play-offs. As Czechoslovakia, they were World Cup runners-up in 1934 and 1962." },
+      { "tag": "Heritage across the halfway line", "seed": "Switzerland's modern sides have leaned on players of Balkan heritage — captain Granit Xhaka, born in Basel to Kosovo-Albanian parents, has a brother, Taulant, who played for Albania. Today they face Bosnia & Herzegovina, the two nations meeting in a competitive match for the first time." }
+    ]
   }
 }
