@@ -1,97 +1,66 @@
 {
   "date": "2026-06-20",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 10 — Brazil vs Haiti at Lincoln Financial Field, Philadelphia. Spine: the 2004 'Match for Peace' (Jogo da Paz) — Brazil's world champions flew to Port-au-Prince during the Brazilian-led UN mission MINUSTAH and turned a friendly into a disarmament drive (a 'guns-for-tickets' gesture; the squad paraded the city atop armoured vehicles). here_there_thread = Port-au-Prince <-> Brazil. story_behind_number = 1,142 (Dino Zoff's then-record unbeaten streak, ended by Haiti's Manno Sanon at the 1974 World Cup, Haiti's ONLY prior appearance — deliberately NOT the 52-year gap, which June 13 used). back_story OMITTED: Brazil and Haiti have never met at a World Cup (the 2004 game was a friendly). where_played_before omitted (no Brazil/Haiti WC heritage at the Linc). Anomalies: Netherlands-Sweden's lone WC meeting (0-0, 1974); Germany-Ivory Coast first-ever WC meeting. Fixtures API-verified; heritage web-verified 2026-06-20. NUMBER FIX from agent: it is 1,142 minutes, not 1,143.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 10 — the champions come to call",
+    "tournament_summary": "Brazil meet Haiti in Philadelphia, and the fixture carries a memory most of the world has forgotten. In 2004, Brazil's world champions flew to Port-au-Prince during a Brazilian-led UN peacekeeping mission and played a 'Match for Peace' tied to a weapons-surrender drive — a million people are said to have lined the streets. Twenty-two years later Haiti are no longer the hosts of a goodwill visit but opponents at a World Cup, back at the tournament for the first time since their lone appearance in 1974. Around the marquee: the Netherlands face Sweden in Houston, Germany meet Ivory Coast in Toronto in a first-ever encounter, and Türkiye take on Paraguay in the Bay Area.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Brazil vs Haiti at Lincoln Financial Field, Philadelphia — the two have never met at a World Cup; their famous meeting was the 2004 'Match for Peace' friendly in Port-au-Prince.",
+      "Haiti's only previous World Cup was 1974 (lost all three: Italy 3-1, Poland 7-0, Argentina 4-1); 2026 is their return.",
+      "Netherlands vs Sweden at NRG Stadium, Houston — they have met once at a World Cup, a 0-0 draw in 1974.",
+      "Germany vs Ivory Coast at BMO Field, Toronto — their first-ever World Cup meeting and only their second meeting of any kind (a 2-2 friendly in 2009).",
+      "Türkiye vs Paraguay at Levi's Stadium, San Francisco Bay Area."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Port-au-Prince and Brazil — the day the world champions came under a blue helmet",
+      "framing": "Long before this World Cup fixture, Brazil and Haiti shared one of football's strangest afternoons: a friendly that doubled as a peace operation. The thread runs from a battered stadium in Port-au-Prince in 2004 to a sold-out NFL ground in Philadelphia in 2026 — same two flags, opposite circumstances.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Port-au-Prince, 18 Aug 2004", "fact": "Brazil's world champions played a 'Match for Peace' (Jogo da Paz) at the Stade Sylvio Cator, during the Brazilian-led UN Stabilisation Mission in Haiti (MINUSTAH) set up earlier that year." },
+        { "label": "Guns for tickets", "fact": "The match was tied to a disarmament drive: some tickets were exchanged for surrendered weapons, letting fans watch the champions while contributing to the gesture." },
+        { "label": "The parade", "fact": "Brazil's squad rode through the city atop UN and Brazilian-Army armoured vehicles to reach the stadium, drawing crowds estimated up to a million; Brazil won the match 6-0, Ronaldinho scoring three." },
+        { "label": "The recognition", "fact": "Brazil's federation received FIFA's Fair Play Award for 2004 for the match's humanitarian impact — presented at the ceremony where Ronaldinho was named World Player of the Year." },
+        { "label": "Now", "fact": "In 2026 the roles invert: Haiti arrive in Philadelphia not as hosts of a goodwill visit but as opponents at a World Cup, on Brazil's side of the draw rather than the receiving end of its charity." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "1,142",
+      "surface_stat": "Dino Zoff · 1,142 minutes unbeaten — ended by Haiti",
+      "historical_anchor": "At the 1974 World Cup — Haiti's only appearance before this one — Italy's goalkeeper Dino Zoff carried a world-record run of 1,142 minutes without conceding for his country. Forty-six seconds into the second half of Haiti's opener, Emmanuel 'Manno' Sanon ran onto a Philippe Vorbé through-ball and beat Zoff. The record was gone. Italy recovered to win 3-1, but the goal outlived the result: a debutant nation's striker ending one of the game's great streaks.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "The streak", "v": "Dino Zoff, 1,142 minutes unbeaten for Italy — a world record at the time" },
+        { "k": "The goal", "v": "Manno Sanon, 46', off a Philippe Vorbé pass — Haiti 1-0 up against the 1970 finalists" },
+        { "k": "15 Jun 1974", "v": "Olympiastadion, Munich; Italy rallied to win 3-1 (Rivera, Benetti, Anastasi)" },
+        { "k": "Haiti, 1974", "v": "Their only prior World Cup; they lost all three but Sanon's goal is the one everyone remembers" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Sanon's strike is one of the enduring images of the 1974 tournament — a player from a debutant island beating the world's best goalkeeper at his peak.",
+        "It is the thread that connects this Haiti to its history: 52 years on (a gap told elsewhere), the number that travels with them is 1,142 — the streak they broke.",
+        "Brazil arrive as five-time champions; Haiti arrive with one immortal goal and the knowledge that World Cups are where their nation has, just once, touched greatness."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Frantz",
+      "asker_city": "Brooklyn",
+      "asker_day": "Sat 20 Jun",
+      "question": "My father grew up on the story of Sanon's goal against Zoff in '74 — it's the reason our family watches football at all. Now we're back, and it's Brazil. What does a 'good day' realistically look like for Haiti against the five-time champions — is there any version of this we walk away from proud?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Haiti's World Cup history is one immortal moment, not a body of results: Sanon's 1974 goal that ended Zoff's 1,142-minute streak, inside a campaign where they lost all three games.",
+          "Brazil are five-time champions and heavy favourites; the two have never met at a World Cup, and their non-WC meetings have been lopsided (a 7-1 Copa América win in 2016, the 6-0 'Match for Peace' in 2004).",
+          "But the 48-team format rewards a single good performance: eight of the best third-placed teams advance, so a debutant-class side can lose to the group's giant and still progress.",
+          "A 'good day' for Haiti is measurable without a win — staying compact, scoring (as Sanon did), and keeping the goal difference survivable for the games against beatable opponents."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question asks whether pride is possible against Brazil. The brief reframes 'a good day': in the old 32-team format only winning your group mattered; now a competitive loss plus a goal can keep Haiti alive on the third-place route. Pride and progress are no longer mutually exclusive."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The match that disarmed a city", "seed": "Brazil and Haiti's most famous meeting wasn't a World Cup game at all: the 2004 'Match for Peace' in Port-au-Prince, played under a Brazilian-led UN mission with tickets swapped for surrendered weapons and the world champions paraded through the streets atop armoured vehicles. Brazil won 6-0; the gesture won FIFA's Fair Play Award." },
+      { "tag": "1,142 and counting", "seed": "Haiti's defining World Cup moment is 52 years old: Manno Sanon's 1974 goal that ended Dino Zoff's record 1,142-minute unbeaten run for Italy. It is the one time a debutant island beat the best goalkeeper alive — and it still travels with them." },
+      { "tag": "The quiet 1974 echo", "seed": "The Netherlands meet Sweden in Houston for only the second time at a World Cup; their first was a 0-0 draw in 1974 — the same tournament, that same summer, where Sanon was breaking Zoff's record a few groups over." },
+      { "tag": "First contact", "seed": "Germany and Ivory Coast meet at a World Cup for the very first time, in Toronto — only the second meeting of any kind between the four-time champions and the Elephants, after a 2-2 friendly in 2009." }
     ]
   }
 }

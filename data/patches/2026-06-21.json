@@ -1,97 +1,96 @@
 {
   "date": "2026-06-21",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 11 — Tunisia vs Japan at Estadio BBVA, Monterrey. Spine: the World Cup rematch of Japan 2-0 Tunisia (2002, Nagai Stadium, Osaka) — the win that topped Group H and sent the co-hosts into their first-ever knockout round. Broader thread: Japan the perennial Asian dark horse (callback to the June 14 Osaka dark-horse question). Back Story = Japan 2-0 Tunisia, 2002 (Morishima 48', Nakata 75') + archive clip (oembed-verified, channel 'World Cup Goals', so source = archive). story_behind_number = 8 (Japan's eighth straight World Cup; first nation to qualify for 2026 after the hosts; four R16s, never a quarter-final) — avoids the Uruguay-'2'/Cape-Verde material June 15 used. Anomalies: Saudi 2-1 Argentina (2022, biggest upset ever) ahead of Spain-Saudi; Belgium-Iran first-ever meeting; Curaçao cross-ref. where_played_before omitted (Estadio BBVA, opened 2015, no Tunisia/Japan WC heritage). 2002 has no API coverage, so the historical match is web-verified across ESPN/UPI/Athlet; 2026 fixtures API-verified. Verified 2026-06-20.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 11 — the dark horse's old proving ground",
+    "tournament_summary": "Tunisia meet Japan in Monterrey, twenty-four years after the only previous time they met at a World Cup — when Japan beat them 2-0 in Osaka to reach a knockout round for the first time in their history. Japan arrive in 2026 as they always seem to: respected, organised, the dark horse everyone tips and no one quite fears, carrying four Round-of-16 exits and no quarter-final. It is the headline of a five-match day that also brings Spain against a Saudi Arabia side that humbled Argentina in 2022, Belgium meeting Iran for the first time, Uruguay against the debutants Cape Verde, and Ecuador against Curaçao.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Tunisia vs Japan at Estadio BBVA, Monterrey — their only prior World Cup meeting was Japan's 2-0 win in 2002.",
+      "That 2002 win topped Group H and took co-hosts Japan into the Round of 16 for the first time.",
+      "Spain vs Saudi Arabia at Mercedes-Benz Stadium, Atlanta — Saudi Arabia beat Argentina 2-1 at the 2022 World Cup, rated the biggest upset in the tournament's history.",
+      "Belgium vs Iran at SoFi Stadium, Los Angeles — a first-ever meeting; Iran have six prior World Cups and have never reached a knockout round.",
+      "Also today: Uruguay vs Cape Verde (Miami) and Ecuador vs Curaçao (Kansas City) — Cape Verde and Curaçao both first-time qualifiers covered earlier in the sweep."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Osaka 2002 and Monterrey 2026 — the dark horse keeps arriving",
+      "framing": "Japan have made every World Cup since 1998 and reached the last 16 four times, yet the label never changes: dark horse, the team you respect and survive. The thread runs from the night they first broke through — against Tunisia, in Osaka — to this rematch, and asks whether the ceiling has finally moved.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Osaka, 14 Jun 2002", "fact": "Hosts Japan beat Tunisia 2-0 at the Nagai Stadium — substitute Hiroaki Morishima scored within three minutes of the restart, Hidetoshi Nakata added the second — to win Group H and reach a World Cup knockout round for the first time." },
+        { "label": "The streak", "fact": "2026 is Japan's eighth consecutive World Cup, an unbroken run since their 1998 debut; they were the first nation after the three co-hosts to qualify for this tournament, sealing it with a 2-0 win over Bahrain in March 2025." },
+        { "label": "The ceiling", "fact": "Japan have reached the Round of 16 four times (2002, 2010, 2018, 2022) and lost there every time — never once a World Cup quarter-final. That gap is what 'dark horse' really means for them." },
+        { "label": "Monterrey, 2026", "fact": "The rematch comes against the same opponent that hosted their first breakthrough — a chance to turn a familiar good start into something Japan have never had." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "8",
+      "surface_stat": "Japan · 8th straight World Cup",
+      "historical_anchor": "This is Japan's eighth consecutive World Cup, every one since their 1998 debut. They were the first team in the world — outside the three host nations — to qualify for the expanded 2026 tournament, booking it with a 2-0 win over Bahrain in Saitama in March 2025. And yet the most telling number sits behind the eight: four Round-of-16 appearances, four exits, and not a single quarter-final. Japan are the model of relentless arrival without the breakthrough.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "8", "v": "Consecutive World Cups since 1998 — an unbroken run" },
+        { "k": "First in", "v": "First nation after the co-hosts to qualify for 2026 (2-0 v Bahrain, Mar 2025; Kamada, Kubo)" },
+        { "k": "4", "v": "Round-of-16 appearances (2002, 2010, 2018, 2022) — lost all four" },
+        { "k": "0", "v": "World Cup quarter-finals — the door Japan have never walked through" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Japan's consistency is its own kind of greatness: nobody from Asia arrives more reliably, and few stage bigger group-stage shocks (they beat Germany and Spain in 2022).",
+        "The unfinished business is precise — the leap from the last 16 to the last eight, attempted four times and never made.",
+        "Facing Tunisia, the team they beat to reach their first knockout round, frames the question the eight can't answer alone: is this the squad that finally moves the ceiling?"
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Tunisia",
+        "Japan"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2002",
+        "score": "0 — 2",
+        "host": "South Korea / Japan",
+        "round": "Group H · Matchday 3",
+        "venue": "Nagai Stadium, Osaka",
+        "context_line": "Japan/Korea · group stage · Nagai Stadium, Osaka",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Hiroaki Morishima", "minute": "48'", "note": "(a half-time substitute, scoring within three minutes of the restart)" },
+          { "scorer": "Hidetoshi Nakata", "minute": "75'", "note": "(the captain's goal that sealed top spot in the group)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Tunisia 0-2 Japan — goalless at the break in front of an anxious home crowd, Japan broke through immediately after it through substitute Morishima.",
+          "Nakata's second settled it and won Group H outright, carrying Japan into the Round of 16 for the first time in their history.",
+          "It was the high point of the co-hosts' summer; they went out to Turkey in the next round, but the breakthrough was real.",
+          "Tunisia went home with a single point — and now, 24 years on, get the rematch in Mexico with the roles less certain."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Tunisia and Japan have met once at a World Cup — Japan's 2-0 win in Osaka on 14 June 2002, the night the co-hosts first reached a knockout round. Monterrey, 24 years later, is the rematch, with Japan now an eight-tournament regular still chasing a first quarter-final and Tunisia chasing a first knockout round of their own.",
+      "video": {
+        "youtube_id": "dhf7LzNVA00",
+        "title": "Tunisia 0–2 Japan — 2002 FIFA World Cup, Group H",
+        "caption": "The only previous time these two met: Morishima and Nakata in Osaka, the day Japan first reached a World Cup knockout round. The match this page is about, 24 years before Monterrey.",
+        "source": "archive · 2002 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Kenji",
+      "asker_city": "Osaka",
+      "asker_day": "Sun 21 Jun",
+      "question": "I was at Nagai in 2002 when we beat Tunisia to reach our first Round of 16. Four last-16s later, we're still 'the dark horse.' Is this finally the squad that turns a good group stage into a quarter-final — or are we forever the team everyone respects and nobody fears?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Japan's record is consistency without the leap: eight straight World Cups, four Round-of-16 appearances (2002, 2010, 2018, 2022), and zero quarter-finals.",
+          "The group-stage pedigree is real and recent — Japan beat both Germany and Spain in the 2022 group before losing the last-16 shootout to Croatia.",
+          "The barrier has been fine margins at the knockout stage, not a lack of quality: three of those four exits were decided by a single goal or a penalty shootout.",
+          "The 2026 squad blends European-based talent (Kubo, Kamada, Mitoma-era wingers) with the deepest qualifying campaign Japan have run — the raw material is there; the history says the last-16 wall is psychological as much as tactical."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question asks whether the ceiling has moved. The brief's honest answer: the talent has cleared giants in the group stage, so the dark-horse label undersells the squad — but until Japan win a knockout tie, the four-exit record, not the eight-tournament streak, is the number that defines them."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The biggest upset, revisited", "seed": "Spain face a Saudi Arabia side that produced what Gracenote rated the greatest shock in World Cup history — beating Argentina 2-1 at the 2022 group stage (Al-Shehri and Al-Dawsari inside five second-half minutes), ending the eventual champions' 36-match unbeaten run." },
+      { "tag": "First meeting, old ceiling", "seed": "Belgium and Iran meet for the first time in any competition, at SoFi. Iran arrive with a peculiar record: six previous World Cups (1978, 1998, 2006, 2014, 2018, 2022) and never once out of the group stage." },
+      { "tag": "The dark horse's old door", "seed": "Japan reopen the fixture that gave them their first World Cup knockout place — the 2-0 win over Tunisia in Osaka in 2002 — still carrying four Round-of-16 exits and no quarter-final across eight straight tournaments." },
+      { "tag": "Debutants on the road", "seed": "Two of the tournament's first-time nations are in action — Cape Verde face Uruguay in Miami, Curaçao face Ecuador in Kansas City — the 48-team field's newcomers now into the meat of their groups." }
     ]
   }
 }

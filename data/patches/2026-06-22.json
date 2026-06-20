@@ -1,97 +1,65 @@
 {
   "date": "2026-06-22",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 12 — Argentina vs Austria at AT&T Stadium, Dallas. Spine: the champions' title defence — Argentina, 2022 winners, chasing something no nation has done since Brazil in 1962: retain the World Cup. story_behind_number = 64 (years since the last successful defence; only Italy 1934/38 and Brazil 1958/62 have ever managed it; 'curse of the holders' — France 2002, Italy 2010, Spain 2014, Germany 2018 all went out in the group as champions). here_there_thread = 'the weight of the crown' — Argentina defending AND France (2018 winners / 2022 runners-up, the team Argentina beat in the Lusail final) also play today. back_story + where_played_before OMITTED: neither Argentina-Austria nor France-Iraq has any prior WC meeting. Anomalies: NZ unbeaten yet eliminated 2010; the Miracle of Cordoba (Austria 3-2 West Germany, 1978, Krankl 87'); Iraq back for a 2nd-ever WC after 40 years, still chasing a first WC win. Messi 2026 participation HEDGED per agent: expected but do not assert lineups. Fixtures API-verified; heritage web-verified 2026-06-20.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 12 — the weight of the crown",
+    "tournament_summary": "Argentina, the reigning champions, walk out in Dallas against Austria carrying the heaviest thing in football: a title to defend. No nation has retained the World Cup since Brazil in 1962 — the holders' curse has claimed France, Italy, Spain and Germany in the years since, each going out in the group stage as champions. On the same day, France — the side Argentina beat in the 2022 final, and themselves the 2018 winners — face Iraq in Philadelphia, two of the last three champions on one matchday, both chasing the unrepeatable. New Zealand and Egypt complete the slate in Vancouver.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Argentina vs Austria at AT&T Stadium, Dallas — their first-ever World Cup meeting; Argentina are the 2022 champions.",
+      "No team has retained the World Cup since Brazil (1958 and 1962); only Italy (1934/38) and Brazil have ever done it.",
+      "France vs Iraq at Lincoln Financial Field, Philadelphia — also a first-ever meeting; France are 2018 champions and 2022 runners-up.",
+      "Iraq are at their second World Cup, ending a 40-year wait since their only prior appearance in 1986; they have never won a World Cup match.",
+      "New Zealand vs Egypt at BC Place, Vancouver — New Zealand went unbeaten yet exited at the 2010 World Cup; Egypt have never gone past a group stage."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Dallas and Philadelphia — two champions, one impossible task",
+      "framing": "On the same matchday, the last two World Cup winners both play: Argentina defending the crown they took in 2022, and France, the team they beat to take it, themselves champions in 2018. The thread is the weight neither can put down — and the long history that says defending it almost never works.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Dallas — the holders", "fact": "Argentina, 2022 champions, begin the part of the tournament where the defence gets real. No nation has retained the World Cup since Brazil in 1962 — a 64-year drought." },
+        { "label": "Philadelphia — the runners-up", "fact": "France, beaten by Argentina in the 2022 final on penalties, are themselves the 2018 champions; two of the last three winners are on the field on the same day." },
+        { "label": "The curse of the holders", "fact": "Recent defending champions have a brutal record: France went out in the 2002 group stage, Italy in 2010, Spain in 2014, Germany in 2018 — all eliminated first-round wearing the crown." },
+        { "label": "Why it threads", "fact": "Argentina's task is the one France failed in 2002 and the one no one has managed in 64 years; France's presence on the same day is the cautionary tale walking around in the next stadium." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "64",
+      "surface_stat": "64 years since a World Cup was successfully defended",
+      "historical_anchor": "Only twice has a nation won the World Cup and kept it: Italy in 1934 and 1938, and Brazil in 1958 and 1962. Since Brazil lifted it in Chile in 1962, no champion has retained the trophy — 64 years and counting. The intervening holders have mostly not just failed to win it again but failed to survive: France (2002), Italy (2010), Spain (2014) and Germany (2018) all fell in the group stage as defending champions. Argentina's defence in 2026 is an attempt to do something not done since before colour television was common.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1934 & 1938", "v": "Italy — the first nation to retain the World Cup" },
+        { "k": "1958 & 1962", "v": "Brazil — the last nation to retain it" },
+        { "k": "64 years", "v": "The drought since 1962 — no champion has defended successfully" },
+        { "k": "The holders' curse", "v": "France '02, Italy '10, Spain '14, Germany '18 — all eliminated in the group as champions" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Retaining the World Cup is statistically the hardest feat in the sport's calendar: two of roughly two dozen champions have done it, and none in three generations.",
+        "The modern version is worse than failure to win twice — it is early elimination, four straight holders going out in the first round.",
+        "Argentina arrive with unusual continuity from their 2022 squad, which is the strongest argument against the curse; history is the strongest argument for it."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Tomás",
+      "asker_city": "Rosario",
+      "asker_day": "Mon 22 Jun",
+      "question": "Be honest with me — is back-to-back actually on, or are we just along for Leo's last ride? Every champion since I was born has crashed out trying to defend it. What makes us different?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The history is genuinely against it: no nation has retained the World Cup since Brazil in 1962, and the four most recent holders (France, Italy, Spain, Germany) all went out in the group stage.",
+          "Argentina's case against the curse is squad continuity — much of the 2022 core remains intact, which most cursed holders lacked.",
+          "Lionel Messi, who turns 39 during the tournament, is widely expected to feature in what he has signalled is his final World Cup, though Argentina's depth (Álvarez, the 2022 midfield) means the side is no longer a one-man story.",
+          "Austria today are a serious opponent, not a gift — a side with real pedigree and the obligation, for Argentina, of treating the title defence one hard game at a time."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question pits hope against the holders' curse. The brief's read: the curse is real and undefeated since 1962, but it has usually punished champions who aged out or broke up — and Argentina's continuity is the one variable that genuinely separates them from France '02 or Germany '18. 'Leo's last ride' and a real defence aren't mutually exclusive."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "64 years and waiting", "seed": "No nation has retained the World Cup since Brazil in 1962. The four most recent defending champions — France 2002, Italy 2010, Spain 2014, Germany 2018 — were all eliminated in the group stage. Argentina's 2026 defence chases a feat not managed in 64 years." },
+      { "tag": "The Miracle of Córdoba", "seed": "Austria's great World Cup day came in 1978: 'Das Wunder von Córdoba', a 3-2 win over reigning champions West Germany with Hans Krankl's 87th-minute winner — Austria's first victory over the Germans in 47 years, even if it came in a dead rubber neither could win the title from." },
+      { "tag": "Unbeaten and out", "seed": "New Zealand, who face Egypt in Vancouver, were the only undefeated team at the 2010 World Cup — three draws, including a 1-1 with reigning champions Italy — and still went home in the group stage, while Italy finished bottom and exited." },
+      { "tag": "Forty years between", "seed": "Iraq, facing France, are at their second-ever World Cup, ending a 40-year wait since their only prior appearance in 1986 — where they lost all three and scored just once. They have still never won a match at the tournament." }
     ]
   }
 }

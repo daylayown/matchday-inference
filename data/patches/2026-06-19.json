@@ -1,97 +1,97 @@
 {
   "date": "2026-06-19",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 9 — Mexico vs South Korea at Estadio Akron, Guadalajara. Spine: the World Cup rematch carrying the 'Gracias, Corea' bond — at Russia 2018 Mexico beat Korea 2-1, but it was Korea's later 2-0 win over defending champions Germany that knocked Germany out and sent Mexico through; Mexican fans mobbed the Korean consul in Mexico City, and the chant 'Coreano, hermano, ya eres mexicano' is still alive in 2026. Back Story = South Korea 1-2 Mexico, 2018 (Rostov), API-verified goals + FIFA clip. story_behind_number = 7 (Mexico's seven straight Round-of-16 exits 1994-2018, the 'quinto partido' curse, broken in 2022) — deliberately NOT a 2018 retelling. Scotland vs Morocco (the 1998 Group A pair, Morocco 3-0 Scotland at Saint-Etienne) rides in anomalies. where_played_before omitted (Akron is a 2010 stadium; Guadalajara's WC heritage belongs to Estadio Jalisco, a different ground). Fixtures + 2018 score/minutes API-verified; heritage web-verified 2026-06-20.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 9 — Coreano, hermano",
+    "tournament_summary": "Mexico meet South Korea in Guadalajara this morning, and it is not a neutral fixture for anyone who remembers 2018. Eight years ago in Russia, Mexico beat Korea 2-1 — and then Korea, already eliminated, knocked the defending champions Germany out, a result that carried Mexico into the knockouts. Mexican fans poured to the Korean embassy in gratitude; the chant 'Coreano, hermano, ya eres mexicano' was born and has never quite died. Now the two meet again, this time on Mexican soil, with the warmth complicated by a home crowd that needs the three points. Elsewhere: the United States face Australia at Lumen Field in Seattle, and Scotland and Morocco — together in Group A at France '98 — reopen an old wound in Boston.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Mexico vs South Korea at Estadio Akron, Guadalajara — their third World Cup meeting; Mexico won the first two (3-1 in 1998, 2-1 in 2018).",
+      "The 2018 backdrop: Korea's 2-0 win over Germany eliminated the holders and helped Mexico advance, sparking the 'Gracias, Corea' celebrations and the 'Coreano, hermano' chant.",
+      "USA vs Australia at Lumen Field, Seattle — a co-host's group game.",
+      "Scotland vs Morocco at Gillette Stadium, Boston — both were in Group A at France '98, where Morocco beat Scotland 3-0 yet both went out on the final night.",
+      "Mexico are playing a home World Cup chasing the 'quinto partido' — the fifth match, the quarter-final, they have never reached."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Mexico City and Seoul — the friendship a single result welded together",
+      "framing": "Most World Cup rivalries are built on grudges. This one is built on gratitude. The thread runs from a stadium in Kazan to an embassy in Mexico City, and it explains why a group-stage rematch in Guadalajara carries more feeling than the table suggests.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Kazan, 27 Jun 2018", "fact": "South Korea, already eliminated, beat defending champions Germany 2-0 with two stoppage-time goals (Kim Young-gwon, then Son Heung-min into an empty net). Germany went out bottom of Group F — and Mexico, who had lost 0-3 to Sweden the same day, advanced anyway." },
+        { "label": "Mexico City, that night", "fact": "Mexican fans streamed to the South Korean Embassy chanting 'Gracias, Corea' and 'Todos somos coreanos', and hoisted the Korean consul general onto their shoulders to toast with tequila." },
+        { "label": "The chant", "fact": "The gratitude crystallised into 'Coreano, hermano, ya eres mexicano' — Korean, brother, you're Mexican now — a chant still sung in 2026, days before this very rematch." },
+        { "label": "The complication", "fact": "On Mexican soil, with a home World Cup and the knockout round at stake, the affection meets arithmetic: this time Korea are the team standing in Mexico's way, not the team saving them." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "7",
+      "surface_stat": "Mexico · 7 straight Round-of-16 exits",
+      "historical_anchor": "Mexico reached the Round of 16 at seven consecutive World Cups — 1994, 1998, 2002, 2006, 2010, 2014, 2018 — and lost at that same first knockout hurdle every single time. The unreached next round has a name in Mexico: el quinto partido, the fifth game, the quarter-final El Tri cannot get to. The streak finally broke in 2022, and not upward: Mexico went out in the group stage for the first time since 1978.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1994-2018", "v": "Seven World Cups, seven Round-of-16 appearances, seven exits there" },
+        { "k": "El quinto partido", "v": "The quarter-final — the 'fifth match' Mexico has never played" },
+        { "k": "2022", "v": "Group-stage exit on the yellow-card tiebreaker, despite beating Saudi Arabia 2-1 — the streak's grim end" },
+        { "k": "2026", "v": "A home World Cup, and the chance to finally turn a knockout place into a quarter-final" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "No nation has been as reliably good-but-not-great at the World Cup: Mexico almost always reaches the last 16, and almost never survives it.",
+        "Reaching the knockout round in Guadalajara is the floor El Tri expects of itself; the quinto partido is the ceiling it keeps hitting.",
+        "Playing the tournament at home raises the stakes on both — the country that named the agony of the fifth game now gets to chase it in its own stadiums."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "South Korea",
+        "Mexico"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2018",
+        "score": "1 — 2",
+        "host": "Russia",
+        "round": "Group F · Matchday 2",
+        "venue": "Rostov Arena, Rostov-on-Don",
+        "context_line": "Russia · group stage · Rostov Arena, Rostov-on-Don",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Carlos Vela", "minute": "26'", "note": "(penalty, won by Hirving Lozano)" },
+          { "scorer": "Javier Hernández", "minute": "66'", "note": "(the chip over Cho Hyun-woo that all but sealed it)" },
+          { "scorer": "Son Heung-min", "minute": "90+3'", "note": "(a thunderous consolation — and a sign of what was coming days later against Germany)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "South Korea 1-2 Mexico in Rostov — Vela's penalty and a Chicharito finish put El Tri in control, and Mexico looked bound for the knockouts on merit.",
+          "Son's stoppage-time strike was only a consolation that day, but it carried into the next match: four days later he scored again to beat Germany.",
+          "That win over the holders is what made this fixture mean something. Korea went home; Mexico, beaten 0-3 by Sweden hours earlier, went through anyway — owing the Koreans a debt.",
+          "The two prior World Cup meetings both went Mexico's way: 3-1 at France '98 in Lyon (a Luis Hernández brace overturning Ha Seok-ju's opener), and this 2-1 in 2018."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Mexico and South Korea have met twice at World Cups and Mexico has won both — 3-1 at France '98 (Lyon, after going a goal down) and 2-1 at Russia 2018 (Rostov). Guadalajara is the rubber match. But the number that matters to fans isn't the head-to-head; it's what Korea did days after that 2018 defeat — beating Germany 2-0 to send Mexico through, and turning an opponent into a 'hermano'.",
+      "video": {
+        "youtube_id": "UOSg165xRTw",
+        "title": "Korea Republic v Mexico — 2018 FIFA World Cup, Group F",
+        "caption": "The last time these two met: Vela, Chicharito and a late Son thunderbolt in Rostov. Days later Korea beat Germany — and Mexico's fans never forgot it.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Ximena",
+      "asker_city": "Guadalajara",
+      "asker_day": "Fri 19 Jun",
+      "question": "I was twelve in 2018 and I cried when Korea beat Germany for us. Today they're in our city, in our way. Honest question: do we still owe them anything — or does 'Coreano, hermano' end the second the whistle blows and it's our quinto partido on the line?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The debt was real: Korea's 2-0 win over Germany on 27 June 2018 eliminated the holders and is a large part of why Mexico advanced despite losing 0-3 to Sweden the same day.",
+          "But Mexico have beaten Korea in both prior World Cup meetings (1998 and 2018) — the affection has never actually cost Mexico a result on the field.",
+          "Mexico's real ghost isn't Korea; it's the Round of 16 — seven straight exits there from 1994 to 2018, then a group-stage exit in 2022. The 'quinto partido' is the unfinished business, not this fixture.",
+          "A home World Cup changes the maths: three points here is about chasing the quarter-final Mexico has never reached, not about settling a debt that was paid in full eight years ago."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question frames it as gratitude versus need. The brief's answer: those were never in conflict — Mexico has always beaten Korea AND loved them for 2018. The thing actually on the line today isn't the friendship; it's the quinto partido."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Coreano, hermano", "seed": "Mexico and South Korea meet for the third time at a World Cup, but the fixture's real charge comes from 2018: Korea's 2-0 win over Germany that summer knocked the holders out and helped Mexico advance, and Mexican fans have sung 'Coreano, hermano, ya eres mexicano' ever since." },
+      { "tag": "The 1998 pair, again", "seed": "Scotland and Morocco shared Group A at France '98 with Brazil. On the final night Morocco beat Scotland 3-0 at Saint-Etienne (a Salaheddine Bassir brace plus Abdeljilil Hadda) — and still went out, edged on the same evening Norway stunned Brazil. Twenty-eight years on they reopen the fixture in Boston." },
+      { "tag": "The fifth game", "seed": "Mexico reached the Round of 16 at seven straight World Cups (1994-2018) and lost there every time. They have never played a 'quinto partido' — a World Cup quarter-final — and now chase it at home." },
+      { "tag": "Host on the road", "seed": "The United States, a tournament co-host, face Australia at Lumen Field in Seattle — the Socceroos a side that has reached the knockout rounds twice (2006, 2022) and fancies the upset." }
     ]
   }
 }
