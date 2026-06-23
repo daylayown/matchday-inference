@@ -1,97 +1,66 @@
 {
   "date": "2026-06-23",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 13 (Group Stage 2) — England vs Ghana at Gillette Stadium, Boston. Spine: the London<->Accra football family — the dense web of Ghanaian-heritage players in English football and the two-way migration (Semenyo & Lamptey chose Ghana; Welbeck & Mainoo chose England; the Ayew dynasty; the Iñaki/Nico Williams Spain split as diaspora color). here_there_thread = London/Accra. back_story OMITTED: England and Ghana have NEVER met at a World Cup (their famous meeting is the 2011 Wembley friendly, 1-1, Gyan 91'). story_behind_number = 1 (Ghana 2010, one kick from being the first African World Cup semi-finalist — Suárez handball on the line, Gyan's last-minute penalty off the bar, lost the shootout). where_played_before omitted. CORRECTION baked in from research: Hudson-Odoi did NOT switch to Ghana — do not state; Semenyo/Lamptey/Jordan Ayew/Iñaki Williams are the confirmed Ghana internationals. Fixtures + round (Group Stage - 2) API-verified; heritage web-verified 2026-06-22.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 13 — the family tree",
+    "tournament_summary": "England meet Ghana in Boston, and the team sheets read like one extended family. English football has been shaped for a generation by players of Ghanaian heritage, and the migration runs both ways: some London-raised players now wear the Black Stars, while Accra's own dynasties have sent sons to the Premier League. The two nations have never actually met at a World Cup — their only notable meeting was a 2011 Wembley friendly — so today is a first, and it carries more shared blood than most rivalries ever do. Around it: Portugal and a 41-year-old Cristiano Ronaldo face the debutants Uzbekistan, the debutants Jordan meet Algeria, and Croatia take on Panama.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "England vs Ghana at Gillette Stadium, Boston — their first-ever World Cup meeting; Ghana's fifth World Cup.",
+      "The diaspora thread: London-born Antoine Semenyo and England-raised Tariq Lamptey play for Ghana, while Danny Welbeck and Kobbie Mainoo (both of Ghanaian descent) chose England.",
+      "Their only prior senior meeting was a 2011 friendly at Wembley, 1-1, Asamoah Gyan equalising in the 91st minute before a heavily Ghanaian crowd.",
+      "Portugal vs Uzbekistan at NRG Stadium, Houston — Ronaldo's expected final World Cup against a nation playing in its first.",
+      "Jordan vs Algeria at Levi's Stadium — Jordan are World Cup debutants in 2026 ('Al-Nashama', the Brave Ones)."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "London and Accra — one football family, two flags",
+      "framing": "Most World Cup match-ups put two nations across a line. This one puts them on the same family tree. The thread runs between London and Accra along the paths players and their parents have walked for decades — and explains why the two squads facing each other today share so much DNA.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "London → Accra", "fact": "Antoine Semenyo, born in London and a January-2026 signing for Manchester City, plays for Ghana; Tariq Lamptey, born in Hillingdon and capped by England's youth sides, switched to the Black Stars in 2022. Two English-raised players now wearing Ghana's colours against the country that developed them." },
+        { "label": "Accra → London", "fact": "Danny Welbeck and Kobbie Mainoo, both of Ghanaian descent, chose England — the mirror image of Semenyo and Lamptey, the same heritage pulling the other way." },
+        { "label": "The dynasty", "fact": "Ghana's royal football family runs three deep: Abedi 'Pele' Ayew, one of Africa's greatest, and his sons André and Jordan Ayew, who have carried the Black Stars across this era — Accra exporting greatness rather than importing it." },
+        { "label": "The split that says it all", "fact": "Brothers Iñaki and Nico Williams, born in Bilbao to Ghanaian parents who crossed the Sahara on foot, chose different flags — Iñaki for Ghana, Nico for Spain. The diaspora's choices, made one household at a time." },
+        { "label": "Why it threads", "fact": "England and Ghana have never met at a World Cup, but they have been quietly sharing players for twenty years. Today the family tree finally has both halves on the same pitch." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "1",
+      "surface_stat": "Ghana 2010 · one kick from history",
+      "historical_anchor": "Ghana have come closer than any African nation to a World Cup semi-final, and the margin was a single kick. In the 2010 quarter-final against Uruguay, with the score 1-1 in the final seconds of extra time, Luis Suárez handballed a certain goal off his own line — sent off, but the deed done. Asamoah Gyan stepped up for the penalty that would have made Ghana the first African side ever to reach the last four, and struck it off the crossbar. Uruguay won the shootout. One kick separated a continent from history.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "2 Jul 2010", "v": "Soccer City, Johannesburg; Ghana 1-1 Uruguay after extra time" },
+        { "k": "The handball", "v": "Luis Suárez palms Dominic Adiyiah's goal-bound header off the line in the last seconds — red card, penalty" },
+        { "k": "The miss", "v": "Asamoah Gyan's penalty hits the bar; Uruguay win the shootout 4-2" },
+        { "k": "What was at stake", "v": "The first African nation in a World Cup semi-final — denied by one kick" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Ghana were the last African team standing in 2010, the host continent's whole hope riding on them.",
+        "No African nation reached a World Cup semi-final until Morocco finally did it in 2022 — twelve years after Ghana came a crossbar's width away.",
+        "It is the heartbreak that defines the Black Stars' World Cup story far more than any single result against England ever could — and the weight they still carry into 2026, their fifth World Cup."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Kwame",
+      "asker_city": "Tottenham",
+      "asker_day": "Tue 23 Jun",
+      "question": "My dad's from Accra, I grew up in north London, and today I genuinely don't know which shirt I'm in — half my family's in Black Stars yellow, the other half painted with St George's crosses. When did England and Ghana start feeling like the same family tree, and is it mad that I want both to somehow win?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The overlap is real and recent: London-raised Antoine Semenyo and Tariq Lamptey play for Ghana, while Danny Welbeck and Kobbie Mainoo, of Ghanaian descent, chose England — the same heritage pulling both ways.",
+          "England and Ghana have never met at a World Cup; their only senior meeting was the 2011 Wembley friendly (1-1, Gyan 91') in front of a vast, carnival Ghanaian crowd inside an England 'home' game.",
+          "Ghana arrive at their fifth World Cup carrying 2010 — the crossbar against Uruguay, one kick from the first African semi-final — a weight England's history simply doesn't have.",
+          "Divided loyalty is the natural state of a diaspora derby: there is no 'correct' shirt when the two squads are built partly from the same families."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question worries that wanting both is mad. The brief's answer: it's the only honest position. This isn't a rivalry of strangers — it's a family reunion that happens to keep score, and the heritage that makes the choice hard is exactly what makes the fixture beautiful."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The same family tree", "seed": "England and Ghana have never met at a World Cup, yet they've shared players for two decades: London-raised Semenyo and Lamptey now wear Ghana, while Welbeck and Mainoo, of Ghanaian descent, wear England. The squad sheets are a diaspora map." },
+      { "tag": "One kick from history", "seed": "Ghana remain the African side that came closest to a World Cup semi-final the hard way — Suárez's handball and Gyan's crossbar penalty in the last seconds of the 2010 quarter-final, one kick from the first African last four, twelve years before Morocco finally got there." },
+      { "tag": "The last dance vs the first", "seed": "At NRG Stadium, Cristiano Ronaldo — 41, in what he has said is his final World Cup, a record sixth — faces Uzbekistan, a nation playing in its first World Cup at all. The longest career in the field against the shortest." },
+      { "tag": "The Brave Ones, still learning", "seed": "Jordan, World Cup debutants nicknamed Al-Nashama ('the Brave Ones'), scored their first-ever World Cup goal through Ali Olwan against Austria on 16 June; today they face Algeria still chasing a first win at the tournament." }
     ]
   }
 }

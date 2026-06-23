@@ -1,97 +1,99 @@
 {
   "date": "2026-06-24",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 14 (Group C deciders, Group Stage 3) — Scotland vs Brazil at Hard Rock Stadium, Miami, with Morocco vs Haiti (Atlanta) the simultaneous other half of the group. Spine: Scotland's eternal near-miss — they have met Brazil four times at World Cups (1974, 1982, 1990, 1998), never won, and hold the Guinness record for most World Cup appearances without ever reaching the knockout round. Group C in 2026 IS the old France '98 Group A (Brazil, Morocco, Scotland) reconvened, with Haiti in for Norway, deciding itself in stereo. back_story = Brazil 4-1 Scotland, 1982 Seville (Narey 18', then Zico/Oscar/Éder/Falcão) + FIFA clip. story_behind_number = 8 (Scotland's eight previous finals, all group exits — 2026 is the ninth try). where_played_before omitted (Hard Rock new venue). CORRECTIONS baked in: Switzerland-Canada & Bosnia-Qatar are GROUP B (not C); Bosnia are not winless (beat Iran 2014) — 'only previous appearance'; 1998 Collins penalty was 38'. Fixtures + rounds API-verified (Scotland-Brazil + Morocco-Haiti both Group Stage - 3); heritage web-verified 2026-06-22.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 14 — the group settles in stereo",
+    "tournament_summary": "Scotland face Brazil in Miami on the final day of Group C, and it is the whole of their World Cup story in one fixture: they have met Brazil four times at World Cups and never beaten them, and they have never, in eight previous tournaments, escaped a group stage at all. The group is the old one — Brazil, Morocco and Scotland shared France '98, and here they are again, Haiti slotted in where Norway once stood. Both deciders kick off at once: Scotland-Brazil in Miami, Morocco-Haiti in Atlanta, the table settling itself in stereo. Elsewhere, Group B closes too, with co-hosts Canada facing Switzerland in Vancouver and Bosnia & Herzegovina meeting Qatar in Seattle.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Scotland vs Brazil at Hard Rock Stadium, Miami — their fifth World Cup meeting; Brazil won three and drew one of the first four (Scotland have never beaten Brazil).",
+      "Morocco vs Haiti at Mercedes-Benz Stadium, Atlanta — the other Group C decider, kicking off simultaneously.",
+      "Group C 2026 (Brazil, Morocco, Scotland, Haiti) is France '98 Group A reconvened, with Haiti replacing Norway; Morocco have since become 2022 semi-finalists.",
+      "Scotland hold the Guinness record for most World Cup appearances without reaching the knockout round — eight finals, out in the group every time; 2026 is the ninth attempt.",
+      "Group B also decides today: Switzerland vs Canada (Vancouver) and Bosnia & Herzegovina vs Qatar (Seattle)."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "France '98 and Group C 2026 — the same group, twenty-eight years on",
+      "framing": "Some draws rhyme. The group Scotland must escape today is, almost exactly, the group that broke their hearts in 1998 — same giants, same near-misses, one nation swapped in. The thread runs from Saint-Étienne and Saint-Denis in 1998 to Miami and Atlanta tonight, two clocks running at once.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "France '98, Group A", "fact": "Brazil, Norway, Scotland and Morocco shared a group. On the final night Norway beat Brazil 2-1 to go through, edging Morocco out by a point; Scotland finished bottom. Three of those four are together again now." },
+        { "label": "2026, Group C", "fact": "Brazil, Morocco and Scotland reconvene, with Haiti in for Norway — the old group reassembled a generation later, on a different continent." },
+        { "label": "How far Morocco travelled", "fact": "The Morocco edged out in 1998 became, in 2022, the first African and first Arab nation to reach a World Cup semi-final — the group's quiet measure of how much time has passed." },
+        { "label": "In stereo", "fact": "Both deciders kick off simultaneously — Scotland-Brazil in Miami, Morocco-Haiti in Atlanta — so no one can play to a known score. The group resolves the way 1998 did: all at once, on the final night." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "8",
+      "surface_stat": "Scotland · 8 World Cups, 0 escapes",
+      "historical_anchor": "Scotland hold a record no nation wants: most World Cup appearances without ever reaching the second round. Eight finals — 1954, 1958, 1974, 1978, 1982, 1986, 1990, 1998 — and eight group-stage exits, several of them cruel beyond reason. Twice they went out without losing the games that mattered, and once needed a three-goal win and got two. 2026 is the ninth attempt to finally break it, and it ends, of all places, against Brazil.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "8", "v": "Previous World Cup finals — Guinness record for most without a knockout-round appearance" },
+        { "k": "1974", "v": "Unbeaten (2-0, 0-0, 1-1) and still out on goal difference — the first nation eliminated from a World Cup without losing a match" },
+        { "k": "1978", "v": "Archie Gemmill's wonder goal in a 3-2 win over the Netherlands — but they needed three and went out anyway" },
+        { "k": "2026", "v": "The ninth attempt, the first finals since 1998 — and Brazil stand in the way again" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Scotland's curse isn't a lack of moments — Gemmill's goal is one of the World Cup's most beloved — it's a lack of survival, the group stage closing on them nine times running.",
+        "Three times they went out on goal difference (1974, 1978, 1982), the margins as thin as the record is long.",
+        "To break it now they would likely need something they have never managed in nine tries: a result against Brazil, on the final night, with everything on it."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Brazil",
+        "Scotland"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1982",
+        "score": "4 — 1",
+        "host": "Spain",
+        "round": "Group 6 · Matchday 2",
+        "venue": "Estadio Benito Villamarín, Seville",
+        "context_line": "Spain · group stage · Estadio Benito Villamarín, Seville",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "David Narey", "minute": "18'", "note": "(a 20-yard drive to put Scotland ahead — his only goal for his country, and famously dismissed as a 'toe-poke' by ITV's Jimmy Hill)" },
+          { "scorer": "Zico", "minute": "33'", "note": "(a free kick that left Alan Rough rooted — Brazil's golden side answering in kind)" },
+          { "scorer": "Oscar", "minute": "48'", "note": "(a header just after the break)" },
+          { "scorer": "Éder", "minute": "64'", "note": null },
+          { "scorer": "Falcão", "minute": "86'", "note": "(the fourth, the lesson complete)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Scotland 1, Brazil 4 — but for fifteen minutes it was Scotland 1, Brazil 0, David Narey lashing the underdogs ahead against the most beloved side of the era.",
+          "Then Zico, Sócrates, Falcão and Éder remembered who they were. Zico's free kick levelled it before half-time, and the second half became a samba masterclass.",
+          "Oscar, Éder and Falcão turned a shock into a 4-1 exhibition — the whole Scotland-Brazil story in eighty-six minutes: they land the first blow and never the last.",
+          "It is the romantic version of the near-miss — not a heartbreak on goal difference but a reminder of the gap, delivered by maybe the greatest team never to win the World Cup."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Scotland and Brazil have met four times at World Cups — a 0-0 draw in 1974, then Brazil wins in 1982 (4-1), 1990 (1-0) and 1998 (2-1, the tournament opener decided by a Tom Boyd own goal). Scotland have never beaten Brazil, at a World Cup or anywhere. Miami is the fifth meeting, and this time the group hangs on it.",
+      "video": {
+        "youtube_id": "A0Hou1tgGqA",
+        "title": "Zico, Brazil Turn It On Against Scotland — 1982 FIFA World Cup",
+        "caption": "The last great Scotland-Brazil tape: Narey stuns them, then Zico, Oscar, Éder and Falcão reply with four in Seville. The match this page is about, before tonight's fifth meeting.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Iain",
+      "asker_city": "Dunblane",
+      "asker_day": "Wed 24 Jun",
+      "question": "Nine finals, never once out of the group, and now it's Brazil again with the lot on it. Honest question, and don't spare me: is there a single World Cup night where Scotland actually got the result they needed when it mattered — or do we just do this to ourselves forever?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The record is real and it is the worst of its kind: eight previous finals, eight group-stage exits, a Guinness record for most appearances without reaching the knockout round.",
+          "But Scotland HAVE won the game they needed and still gone out — 1978, the 3-2 over the Netherlands with Gemmill's wonder goal, when they needed to win by three.",
+          "Three of the exits came on goal difference (1974, 1978, 1982), including 1974 when they went home unbeaten — the cruelty has usually been arithmetic, not defeat.",
+          "They have never beaten Brazil in five attempts, so the night that finally breaks the curse, if it comes, would be the hardest possible one to pick."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question asks whether Scotland ever got the result when it mattered. The honest answer: yes — and it still wasn't enough. The curse has rarely been about losing; it's been about the margins. Which is either unbearable or, tonight, oddly hopeful: the group is there to be escaped, not the opponent to be feared into submission."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The group reconvened", "seed": "Group C in 2026 — Brazil, Morocco, Scotland, Haiti — is France '98 Group A with Haiti in for Norway. It even ends the same way: both deciders at once on the final night, Scotland-Brazil in Miami and Morocco-Haiti in Atlanta, exactly as Norway's late win over Brazil settled it in stereo in 1998." },
+      { "tag": "Eight and counting", "seed": "Scotland have reached eight previous World Cups and never once escaped the group — the Guinness record for it — going out unbeaten in 1974 and on goal difference three times. The ninth try ends against Brazil." },
+      { "tag": "Still nil", "seed": "Canada, a tournament co-host, close Group B against Switzerland still chasing a first-ever World Cup win — winless across 1986 (when they lost all three without scoring) and 2022 (Alphonso Davies finally scored their first World Cup goal, but they lost all three again)." },
+      { "tag": "The host that lost everything", "seed": "Qatar, who hosted the last World Cup and became the first host nation ever to lose all three group games, return as visitors in Seattle to face Bosnia & Herzegovina, themselves back at a World Cup for the first time since 2014." }
     ]
   }
 }

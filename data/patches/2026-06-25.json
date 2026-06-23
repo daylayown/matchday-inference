@@ -1,97 +1,98 @@
 {
   "date": "2026-06-25",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 15 (Group Stage 3 — final round, six games, simultaneous deciders) — Mexico vs Czechia at the Estadio Azteca. Spine: Mexico close their group at home, at the cathedral, on the final group day. back_story = Mexico 3-1 Czechoslovakia, 1962 (Viña del Mar) — Mexico's FIRST-EVER World Cup win after four winless tournaments; Czechia is the recognised successor to Czechoslovakia (which reached the 1962 final). Archive clip (full match, 'Soccer Almanac'). story_behind_number = 3 deliberately NOT about Mexico/Azteca again (used June 18 '3' Azteca and June 19 '7' Mexico): the Netherlands' THREE lost World Cup finals (1974, 1978, 2010), the best side never to win — they play Tunisia today. where_played_before omitted (Azteca's venue heritage already told June 11/18). CORRECTIONS baked in from research: Tunisia-Netherlands have NEVER met at a World Cup (first-ever); South Africa-South Korea did not meet in 2010; Ecuador-Germany's only prior meeting was 2006 (Germany 3-0); Japan-Sweden never met at a WC. 1962 goal minutes are Wikipedia-sourced (scorers/order/penalty solid). Fixtures + round (all Group Stage - 3) API-verified; heritage web-verified 2026-06-22.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 15 — the table stops lying",
+    "tournament_summary": "It is the final day of the group, six games and the two halves of each group kicking off at once, so no one gets to play the scoreboard. Mexico settle theirs at home — Czechia at the Estadio Azteca, the only ground to have opened three World Cups, the team Mexico beat in 1962 for their first-ever World Cup win returning as the opponent that can send them through or out. Around it the heavyweights close out too: Germany face Ecuador in New Jersey, the Netherlands meet Tunisia in Kansas City, Japan take on Sweden in Dallas, and South Korea play South Africa in Monterrey.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Mexico vs Czechia at the Estadio Azteca, Mexico City — Czechia is the recognised successor to Czechoslovakia, whom Mexico beat 3-1 in 1962 for their first World Cup win.",
+      "All six fixtures are the group stage's final round (matchday 3), the two games in each group kicking off simultaneously.",
+      "Ecuador vs Germany at MetLife — only their second World Cup meeting (Germany won the first 3-0 in 2006).",
+      "Netherlands vs Tunisia at Arrowhead, Kansas City — their first-ever World Cup meeting; the Netherlands are the great side that has lost three finals and never won.",
+      "Japan vs Sweden (Dallas) and South Africa vs South Korea (Monterrey) — neither pair has met at a World Cup before."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The final group day — where the math comes due",
+      "framing": "For two games a group can hide. Teams trade results, fans do arithmetic, everyone plays the table. Then comes the last day, both games at once, and the hiding stops. The thread today isn't a place-to-place migration — it's a clock, ticking down simultaneously in six stadiums, with Mexico's running at the Azteca.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Why it's at once", "fact": "On the final group-stage day the two matches in a group kick off simultaneously, a rule born from old scandals — so no side can take the pitch already knowing the result it needs to engineer." },
+        { "label": "Mexico City", "fact": "Mexico close their group at the Estadio Azteca, the only stadium to have opened three different World Cups (1970, 1986, 2026), a full house and a home tournament pressing on every touch." },
+        { "label": "The opponent's echo", "fact": "Czechia, today's visitors, are the heirs of the Czechoslovakia side Mexico beat in 1962 for their first World Cup win ever — the team that broke one drought returning as the team that can end this group." },
+        { "label": "Everywhere else", "fact": "The giants resolve their fates the same way and the same minute — Germany, the Netherlands, Japan, Sweden, South Korea all playing their last group game with the table about to stop lying." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "3",
+      "surface_stat": "Netherlands · 3 finals, 0 titles",
+      "historical_anchor": "The Netherlands have lost three World Cup finals — 1974, 1978 and 2010 — and won none, the most final appearances of any nation never to lift the trophy. They invented Total Football and remade the sport's imagination, and they have walked off the last pitch of three World Cups as runners-up. They face Tunisia today carrying that paradox: the best team never to win the thing, still chasing a first star three generations of brilliance never earned.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1974", "v": "Lost 2-1 to West Germany — Cruyff's Total Football side, ahead before the Germans had touched the ball" },
+        { "k": "1978", "v": "Lost 3-1 to Argentina after extra time, in Buenos Aires, without the boycotting Cruyff" },
+        { "k": "2010", "v": "Lost 1-0 to Spain in extra time, Iniesta's late goal settling a bruising final" },
+        { "k": "0", "v": "World Cup titles — the most-decorated runners-up in the tournament's history" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "No nation has done more to shape how football is played and less to show for it at a World Cup final — three times the last team beaten.",
+        "The 1974 side is routinely called the greatest never to win; the trophy has eluded every Dutch generation since.",
+        "It is the cleanest 'story behind a number' in the game: three finals, three defeats, and a footballing identity worth more than the medals would suggest."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Mexico",
+        "Czechoslovakia"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1962",
+        "score": "3 — 1",
+        "host": "Chile",
+        "round": "Group 3 · Matchday 3",
+        "venue": "Estadio Sausalito, Viña del Mar",
+        "context_line": "Chile · group stage · Estadio Sausalito, Viña del Mar",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Václav Mašek", "minute": "1'", "note": "(for Czechoslovakia — one of the fastest goals in World Cup history, and for a moment the old Mexican story writing itself again)" },
+          { "scorer": "Isidoro Díaz", "minute": "12'", "note": null },
+          { "scorer": "Alfredo del Águila", "minute": "29'", "note": "(turning it around before half-time)" },
+          { "scorer": "Héctor Hernández", "minute": "90'", "note": "(a penalty at the death to seal the first win in Mexican World Cup history)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Mexico came to Chile in 1962 a four-time World Cup also-ran — 1930, 1950, 1954, 1958, and not a single win to show for any of them.",
+          "Mašek's goal inside the opening minute looked like more of the same. Then Díaz and del Águila turned it before half-time, and Hernández sealed it from the spot at the death: 3-1, the curse finally broken.",
+          "The cruel grace note: the team Mexico finally beat was no makeweight. Czechoslovakia went all the way to the final, losing 3-1 to Pelé-era Brazil.",
+          "Sixty-four years on, Mexico close a home World Cup group against that side's heir, Czechia — at the Azteca, where the first win's descendants now expect a knockout place, not a breakthrough."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Mexico's 3-1 win over Czechoslovakia in 1962 was the first World Cup victory in their history, after four tournaments without one. Czechia, today's opponent, is the recognised successor to that Czechoslovakia team — which recovered from this defeat to reach the 1962 final. The two nations' modern sides have rarely met; the Azteca closes a circle that opened in Viña del Mar, with Mexico now needing the kind of result they once waited 32 years to record.",
+      "video": {
+        "youtube_id": "4hmjT38-Grk",
+        "title": "Mexico vs Czechoslovakia — World Cup 1962, full match",
+        "caption": "The match this page is about: Mexico's first World Cup win, in Viña del Mar in 1962, against the side that would reach that year's final. Sixty-four years before they meet its heir at the Azteca.",
+        "source": "archive · 1962 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Lucía",
+      "asker_city": "Mexico City",
+      "asker_day": "Thu 25 Jun",
+      "question": "This is the third World Cup my family has watched Mexico play a group game at the Azteca — '70, '86, and now. Does a full Azteca actually move a result on the final group day, or is that just something we tell ourselves? And against Czechia, of all flags — the same one we beat for our very first win in '62 — what should I be feeling walking in?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The home-crowd effect is real but bounded: hosts and home venues lift performance at the margins, not the talent gap — the Azteca raises the floor, it doesn't guarantee the result.",
+          "On the final group day both games kick off at once, so Mexico can't manage the scoreboard — they have to take care of their own game against Czechia and trust the other result.",
+          "The opponent carries a quiet symmetry: Czechia is the successor to the Czechoslovakia side Mexico beat in 1962 for their first-ever World Cup win, a team good enough that year to reach the final.",
+          "Mexico's modern weight isn't first wins; it's the Round of 16 and the 'quinto partido' beyond it — closing the group safely at home is step one of a much older ambition."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question asks what to feel walking into the Azteca. The brief's answer: feel the symmetry, not the superstition. The crowd helps a little; the history rhymes a lot. In 1962 Czechoslovakia were the breakthrough; in 2026 their heirs are just the gate to the knockouts — and that shift, from first win to expected progress, is the whole story of where Mexican football has travelled."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Where the first win lives", "seed": "Mexico close their home group against Czechia, the recognised heir of the Czechoslovakia side they beat 3-1 in 1962 for the first World Cup win in their history — a team that, having lost to Mexico, still reached that year's final against Brazil." },
+      { "tag": "Three finals, no star", "seed": "The Netherlands, who face Tunisia today, have lost three World Cup finals (1974, 1978, 2010) and won none — the most-decorated runners-up in the tournament's history, the side that reshaped football and never got the trophy to prove it." },
+      { "tag": "The reckoning hour", "seed": "All six fixtures are the group stage's final round, the two games in each group kicking off at the same moment so no side can play to a known result — a month of qualifying arithmetic settled simultaneously across six stadiums." },
+      { "tag": "First-ever, twice over", "seed": "Two of the day's pairings have never met at a World Cup at all — Netherlands vs Tunisia and Japan vs Sweden — first meetings smuggled in on the last day of the group, when every result finally counts for everything." }
     ]
   }
 }
