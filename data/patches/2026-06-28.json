@@ -1,97 +1,95 @@
 {
   "date": "2026-06-28",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 18 — THE PIVOT. The knockouts begin: South Africa vs Canada at SoFi is the first-ever Round of 32 match (the new round the 48-team format created), played alongside the last two group games. Marquee heritage hook: Algeria vs Austria at Arrowhead, Kansas City (Group Stage - 3) is a rematch of the 1982 group that produced the 'Disgrace of Gijón'. back_story = Austria 2-0 Algeria, 1982 (Estadio Carlos Tartiere, Oviedo; Schachner 56', Krankl 67'), ledger = the Gijón collusion (West Germany 1-0 Austria, 25 Jun 1982, El Molinón; Hrubesch ~10') that eliminated an Algeria side which had beaten West Germany, and led FIFA to make final group games simultaneous. story_behind_number = 48 — first 48-team World Cup, 104 matches, 12 groups of 4, top-2 + 8 best thirds = 32 into the new Round of 32 that debuts today. Also: Jordan's World Cup debut vs reigning champions Argentina (AT&T, Dallas) — Messi's record sixth World Cup. here&there = Gijón 1982 ↔ Kansas City 2026 (the same two flags, 44 years on). Video = FIFA-official Algeria 2-1 West Germany 1982 (the upset that lit the group's fuse; no Austria-Algeria footage surfaced) — captioned honestly. where_played_before OMITTED (SoFi/Arrowhead/AT&T have no prior World Cup history). Fixtures + rounds (Algeria-Austria + Jordan-Argentina = Group Stage 3; South Africa-Canada = Round of 32) API-verified; heritage web-verified 2026-06-25.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 18 — the knockouts begin",
+    "tournament_summary": "The tournament turns today. South Africa vs Canada at SoFi is the first Round of 32 match in World Cup history — the new knockout round the 48-team format invented — and from here a loss ends your summer. It arrives on the same day the group stage finally empties out: Argentina, the holders, close their group against debutants Jordan in Dallas, and Algeria meet Austria in Kansas City, the two flags from the 1982 group that gave the game the 'Disgrace of Gijón'. Single-elimination starts; the table stops mattering.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "South Africa vs Canada at SoFi Stadium — the first-ever Round of 32 match, the opening knockout game of the expanded 48-team World Cup, and the first World Cup knockout appearance for both nations.",
+      "Algeria vs Austria at Arrowhead, Kansas City (final group game) — a rematch of the 1982 group whose final round produced the 'Disgrace of Gijón'.",
+      "Jordan vs Argentina at AT&T Stadium, Dallas — Jordan's first-ever World Cup, against the reigning champions; Lionel Messi's record sixth World Cup.",
+      "2026 is the first 48-team World Cup: 104 matches, 12 groups of four, the top two of each plus the eight best third-placed sides advancing to a 32-team knockout bracket."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Gijón ↔ Kansas City — the disgrace gets a rematch, 44 years on",
+      "framing": "When the draw paired Algeria with Austria again, anyone over fifty flinched. The last time these two shared a World Cup group, in 1982, it ended in the single most cynical afternoon the tournament has ever staged — and Algeria were the ones robbed. The thread from El Molinón in Gijón to Arrowhead in Kansas City is 44 years and one long-held grudge, the same two flags walking back out to settle a debt the rulebook was rewritten to prevent.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Gijón, 1982", "fact": "Algeria, on their World Cup debut, beat West Germany 2-1, then beat Chile — and looked set for the second round from a group of four." },
+        { "label": "The stitch-up", "fact": "In the final group game West Germany beat Austria 1-0 (Hrubesch, early); a result that sent both European sides through and eliminated Algeria. After the goal the two simply passed the ball around, knowing the score they both needed." },
+        { "label": "The rule it broke", "fact": "Because Algeria had played their last group game the day before, the Europeans took the field knowing exactly what to engineer. FIFA's response: from then on, the final two games in a group kick off at the same time — the rule still in force today." },
+        { "label": "Kansas City, 2026", "fact": "Algeria and Austria meet again on a final group day — now under the very simultaneity rule their 1982 group forced into being, the disgrace's own correction governing the rematch." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "48",
+      "surface_stat": "2026 · 48 teams, and a brand-new round",
+      "historical_anchor": "Today the first Round of 32 in World Cup history is played, and the number behind it is 48. This is the first 48-team World Cup, up from 32 — twelve groups of four, 104 matches instead of 64, the top two of every group plus the eight best third-placed sides going through to a 32-team bracket. The expansion didn't just add teams; it added a whole knockout round, and South Africa vs Canada at SoFi is the day it gets played for the very first time.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "48", "v": "teams in 2026 — up from 32, the first expansion since France 1998 went from 24 to 32" },
+        { "k": "104", "v": "matches in the tournament, up from 64 — semifinalists now play eight games, not seven" },
+        { "k": "12 → 32", "v": "twelve groups of four; top two of each (24) plus the eight best third-placed sides fill the new Round of 32" },
+        { "k": "1st", "v": "South Africa vs Canada at SoFi — the first Round of 32 match ever played, and the first knockout tie for both nations" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The Round of 32 is the only genuinely new shape in the bracket; everything from the Round of 16 down is the knockout the tournament has always had.",
+        "Letting eight third-placed teams through is the controversial part — it means finishing third in your group can still be enough, which the purists dislike and the debutant nations love.",
+        "For all the new math, the rule underneath is the oldest one in sport from here on: win or go home, starting at SoFi this afternoon."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Austria",
+        "Algeria"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1982",
+        "score": "2 — 0",
+        "host": "Spain",
+        "round": "Group 2 · Matchday 2",
+        "venue": "Estadio Carlos Tartiere, Oviedo",
+        "context_line": "Spain · group stage · Estadio Carlos Tartiere, Oviedo",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Walter Schachner", "minute": "56'", "note": "(Austria ahead — set up by Kurt Welzl)" },
+          { "scorer": "Hans Krankl", "minute": "67'", "note": "(Austria's talisman doubles it; 2-0)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Spain 1982, Group 2: West Germany, Algeria, Austria and Chile. Algeria opened by stunning West Germany 2-1 on their World Cup debut — one of the great upsets — and were suddenly a real threat to go through.",
+          "Austria beat them 2-0 in Oviedo through Schachner and Krankl, the result that left the group finely poised going into its final day.",
+          "Then came the 'Disgrace of Gijón': West Germany beat Austria 1-0, and once Hrubesch had scored early, both sides openly stopped competing — a 1-0 win sent both through and put Algeria out, despite Algeria having beaten the Germans.",
+          "FIFA changed the rules so final group games would kick off simultaneously, so no pair could ever again play to a result they both knew. Forty-four years on, the same two flags meet again — Austria and Algeria — under the rule their group created."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Austria beat Algeria 2-0 in 1982, but the number that matters from that group is the one nobody scored: the 1-0 West Germany inflicted on Austria days later, with both sides visibly coasting, eliminated an Algeria team that had beaten the Germans and the Chileans. It was so brazen that FIFA rewrote the schedule — final group games have kicked off simultaneously ever since. Algeria and Austria have not shared a World Cup group since. They do again today, the old grievance riding in with them.",
+      "video": {
+        "youtube_id": "fBWJS27wgZs",
+        "title": "Germany 1-2 Algeria | 1982 World Cup | Match Highlights",
+        "caption": "Not Austria-Algeria itself but the match that lit the group's fuse: Algeria stunning West Germany 2-1 on their World Cup debut in 1982 — days before the Gijón stitch-up knocked them out. The reason these two flags meeting again, 44 years on, still means something.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Marcus",
+      "asker_city": "Toronto",
+      "asker_day": "Sun 28 Jun",
+      "question": "I've followed Canada since the 2022 misery and now we're suddenly in something called a Round of 32 — which didn't exist last time I checked. Is this a real knockout or a participation round? It feels a little cheap that you can finish third in your group and still be here. Convince me this win-or-go-home game actually counts.",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The Round of 32 is brand new in 2026, created when the World Cup expanded from 32 teams to 48; South Africa vs Canada is the first one ever played.",
+          "It is full single-elimination — lose and the tournament is over — identical in stakes to every knockout round that follows it.",
+          "The 'finish third and survive' part is real: 24 teams qualify as group winners and runners-up, and the eight best third-placed sides fill out the 32 — the same mechanism the 24-team World Cups of 1986-1994 used.",
+          "Canada reaching a World Cup knockout game at all is new ground: their only previous World Cups, 1986 and 2022, both ended without a win and in the group stage."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether a Round of 32 counts. The brief's answer: the entry was widened, the exit wasn't. However you got into this game — group winner or best-of-the-thirds — losing it sends you home exactly the same way it sends home a Round-of-16 side. For a nation that had never won a single World Cup match before this tournament, 'still here, win or go home' isn't cheap. It's the furthest Canada has ever been."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The first knockout", "seed": "South Africa vs Canada at SoFi is the first Round of 32 match in World Cup history — a knockout round that didn't exist before 2026, invented when the field grew to 48, and the first time either nation has reached a World Cup knockout tie at all." },
+      { "tag": "The disgrace returns", "seed": "Algeria and Austria meet again on a final group day, 44 years after their 1982 group produced the 'Disgrace of Gijón' — West Germany and Austria coasting to a 1-0 that knocked out an Algeria side which had beaten the Germans, the cynicism that forced FIFA to make final group games kick off at once." },
+      { "tag": "Debut vs defending", "seed": "Jordan play their first-ever World Cup match against the reigning champions Argentina — and against Lionel Messi, who in 2026 reaches a record sixth World Cup, the widest possible gap in tournament experience on one pitch." },
+      { "tag": "Forty more games", "seed": "2026 is the first 48-team World Cup: 104 matches instead of 64, twelve groups of four, and a new Round of 32 that gets played for the very first time today — the biggest change to the tournament's shape since it last grew, in 1998." }
     ]
   }
 }

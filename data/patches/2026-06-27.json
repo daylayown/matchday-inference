@@ -1,97 +1,98 @@
 {
   "date": "2026-06-27",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 17 (Group Stage 3 — final round, eight games, the giants' last group day) — marquee Uruguay vs Spain at the Estadio Akron, Guadalajara: Group H closes the way it opened on June 15 (Spain vs Cape Verde's debut, the diaspora day). back_story = Spain 2-2 Uruguay, 1950 (Estádio do Pacaembu, São Paulo — NOT the Maracanã) — the opening game of the four-team final pool Uruguay went on to win in the Maracanazo. CORRECTION baked in: this is NOT the only Spain-Uruguay WC meeting — they also drew 0-0 in 1990; June 27 is their THIRD WC meeting (both priors draws). story_behind_number = 6 — Cristiano Ronaldo's sixth World Cup (Colombia vs Portugal, Miami): a new men's record shared with Messi (prior max five), with Ronaldo alone the first to score at six different finals; he is 41. here&there = Galicia/Spain ↔ Montevideo, the Río de la Plata Spanish emigration ('gallego'). Video = FIFA-official Maracanazo (the final this 2-2 set up; no footage of the Spain match survives) — captioned honestly. where_played_before OMITTED (Akron has no prior World Cup history; Guadalajara's WC heritage lived at the Estadio Jalisco, a different ground). Fixtures + round (all Group Stage - 3) API-verified; heritage web-verified 2026-06-25.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 17 — the giants close out",
+    "tournament_summary": "The biggest day of the group stage: eight games, the heavyweights all settling their fate at once. Uruguay and Spain meet in Guadalajara to close Group H — the group that opened on June 15 with Spain against Cape Verde's debut — while Cape Verde and Saudi Arabia play the other half at the same moment. Around them England, Portugal, Belgium, Croatia and Colombia all play their last group game, the table about to stop lying for half the field in a single afternoon.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Uruguay vs Spain at the Estadio Akron, Guadalajara — their third World Cup meeting (1950 and 1990 were both draws); Group H's final-day decider.",
+      "All eight fixtures are the group stage's final round (matchday 3); the two games in each group kick off simultaneously.",
+      "Colombia vs Portugal at Hard Rock Stadium, Miami — Cristiano Ronaldo's sixth World Cup, a tournament-record number he now shares with Lionel Messi.",
+      "Group H bookends the calendar: it opened June 15 (Spain-Cape Verde, the diaspora day) and closes today with Uruguay-Spain and Cape Verde-Saudi Arabia.",
+      "England (vs Panama), Belgium (vs New Zealand), Croatia (vs Ghana) and Egypt (vs Iran) all close their groups the same day."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Galicia ↔ Montevideo — why a Spain–Uruguay game is half a family reunion",
+      "framing": "Uruguay against Spain looks like a meeting of strangers from opposite shores. It isn't. For half a century either side of 1900, the boats from Galicia and the Basque Country emptied into the Río de la Plata, and Montevideo filled with Spaniards — so completely that the city still calls every Spaniard by one word. The thread between these two teams is a crossing, made by hundreds of thousands of people, most of them poor, most of them from the same green corner of Spain.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "The crossing", "fact": "In the late 19th and early 20th centuries Spanish emigration to the Río de la Plata was dominated by Galicians and Basques; Uruguay's open-door policy pulled them across in huge numbers." },
+        { "label": "Montevideo, 1860–1889", "fact": "Montevideo nearly quadrupled from about 57,000 people in 1860 to 215,000 by 1889, and by the end of that wave roughly half the city was foreign-born." },
+        { "label": "The word that gives it away", "fact": "Galician immigration was so dominant that Uruguayans (and Argentines) still call all Spaniards 'gallegos' — Galicians — whatever part of Spain they're actually from. Montevideo holds one of the largest Galician-descended populations anywhere outside Galicia." },
+        { "label": "The football underneath", "fact": "Uruguay's clubs were founded largely out of the British railway and port communities, but the crowd that filled them — and the country that produced two early World Cup titles — was built on Italian and Spanish immigrant stock, the gallegos among them." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "6",
+      "surface_stat": "Cristiano Ronaldo · 6th World Cup",
+      "historical_anchor": "Colombia play Portugal in Miami, and the number on the visitors' story is six: this is Cristiano Ronaldo's sixth World Cup, 2006 through 2026. No man had ever appeared at six before — the record stood at five, shared by goalkeepers and grizzled outfielders who stretched a career across two decades. In 2026 two men reach six in the same tournament, Ronaldo and Lionel Messi, and only one of them has scored at all six. Ronaldo is 41.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "6", "v": "World Cups for Ronaldo — 2006, 2010, 2014, 2018, 2022, 2026; the previous men's record was five" },
+        { "k": "+1", "v": "Lionel Messi also reaches his sixth World Cup in 2026 — the record is now jointly held by the two players who defined the era" },
+        { "k": "1st", "v": "Ronaldo is the first man to score at six different World Cups; Messi, scoreless in 2010, has found the net at five" },
+        { "k": "41", "v": "Ronaldo's age in June 2026 — born 5 February 1985, and the all-time leading scorer in men's international football" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Five World Cups used to be the outer limit of a career — Antonio Carbajal got there first in 1966, and only a handful followed over sixty years.",
+        "That two players cleared it in the same summer is the neatest measure of how long Ronaldo and Messi have stood at the top of the same sport.",
+        "The number isn't really six tournaments; it's twenty years of being good enough to be picked, which is the rarer feat than any single goal."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Spain",
+        "Uruguay"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1950",
+        "score": "2 — 2",
+        "host": "Brazil",
+        "round": "Final pool · Matchday 1",
+        "venue": "Estádio do Pacaembu, São Paulo",
+        "context_line": "Brazil · final round-robin pool · Estádio do Pacaembu, São Paulo",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Alcides Ghiggia", "minute": "29'", "note": "(for Uruguay — the same Ghiggia who, a week later, would silence the Maracanã)" },
+          { "scorer": "Estanislao Basora", "minute": "37'", "note": "(Spain level)" },
+          { "scorer": "Estanislao Basora", "minute": "39'", "note": "(his second in two minutes — Spain ahead 2-1 at the break)" },
+          { "scorer": "Obdulio Varela", "minute": "73'", "note": "(Uruguay's captain, 'El Negro Jefe', drags it back to 2-2)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "The 1950 World Cup ended not in a single final but in a four-team round-robin pool — Uruguay, Brazil, Sweden and Spain — and this 2-2 was its opening game, played at the Pacaembu in São Paulo, not the Maracanã the tournament is remembered for.",
+          "Spain led 2-1 through Basora's two-minute brace and could not hold it; Obdulio Varela, the captain who would days later steady Uruguay inside a silent Maracanã, hauled them level.",
+          "Spain went on to finish fourth in the pool. Uruguay went on to win the lot — beating host Brazil 2-1 in the decisive final-pool game, the Maracanazo, the most famous result in World Cup history.",
+          "Seventy-six years on, Spain and Uruguay meet again on a final group day — a fixture that has only ever produced draws at a World Cup, 1950 and 1990 both ending level."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Spain and Uruguay have met twice before at a World Cup and never separated: 2-2 in the 1950 final pool and 0-0 in the 1990 group stage. June 27, 2026 is their third meeting. The 1950 draw was the opening act of the pool Uruguay went on to win in the Maracanazo, with Spain fourth — a reminder that the two have crossed paths at the very top before, and that a Spaniard and a Uruguayan share more history than the scoreline ever shows.",
+      "video": {
+        "youtube_id": "Pu1WanatiAM",
+        "title": "1950 World Cup Final match: Uruguay 2-1 Brazil",
+        "caption": "Not the Spain match itself — no footage of the 1950 Spain-Uruguay 2-2 survives — but its sequel: the Maracanazo, Uruguay beating host Brazil to win the very pool this draw opened. The tournament's last word, a week after Spain held them.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Valentina",
+      "asker_city": "Montevideo",
+      "asker_day": "Sat 27 Jun",
+      "question": "My grandmother's people came from Galicia and we still call them los gallegos at the dinner table, half a joke, half a fact. So when Uruguay plays Spain I never know who I'm supposed to feel against. Is there really any World Cup history between us, or is this just two random teams in the same group? And should a Uruguayan feel anything other than 'them' when the Spanish anthem plays?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "There is real World Cup history: this is the third Uruguay-Spain meeting at a World Cup, after a 2-2 in 1950 and a 0-0 in 1990 — both draws, neither side ever beating the other on this stage.",
+          "The 1950 draw opened the final pool Uruguay went on to win in the Maracanazo; Spain finished fourth, so the two were briefly in the same title race.",
+          "The 'gallego' reflex is well founded — Galician and Basque emigration filled Montevideo around 1900, when roughly half the city was foreign-born, and the descendants are everywhere in modern Uruguay.",
+          "On the final group day both games kick off at once, so Uruguay can't manage the scoreboard against Cape Verde-Saudi Arabia — they have to take care of Spain themselves."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is who to feel against. The brief's answer: feel the draw, not the divide. Twice at a World Cup these two have refused to beat each other, and half of Montevideo descends from the shirt across the way. 'Them' is the easy word; 'us, a generation or two back' is the more honest one — which is exactly why a 2-2 keeps feeling like the right result."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Never a winner", "seed": "Spain and Uruguay have met twice at a World Cup — 2-2 in 1950, 0-0 in 1990 — and neither has ever beaten the other; their third meeting comes on Group H's final day in Guadalajara." },
+      { "tag": "Six, twice", "seed": "Cristiano Ronaldo reaches his sixth World Cup in Miami today — a men's record that stood at five until 2026, when both he and Lionel Messi cleared it in the same summer; only Ronaldo has scored at all six." },
+      { "tag": "The word for Spain", "seed": "Uruguayans still call every Spaniard a 'gallego' — Galician — a hangover from the emigration that filled Montevideo around 1900, when half the city was foreign-born; today the descendants watch Uruguay play the country their families left." },
+      { "tag": "The group bookend", "seed": "Group H opened on June 15 with Spain against Cape Verde's debut and closes today with Uruguay-Spain and Cape Verde-Saudi Arabia — the same four nations, the diaspora day twelve days on, the math finally due." }
     ]
   }
 }

@@ -1,97 +1,64 @@
 {
   "date": "2026-06-26",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 16 (Group Stage 3 — final round) — marquee Norway vs France at Gillette Stadium, Boston: the reigning runners-up / 2018 champions meet Haaland's Norway, back at a World Cup after a 28-year absence (last 1998). Mbappé vs Haaland, and it is their nations' FIRST-EVER World Cup meeting. story_behind_number = 10.8 — Hakan Şükür's 10.8-second strike (2002 third-place playoff vs South Korea), still the fastest goal in World Cup history; Türkiye, back for the first time since that 2002 third-place run, play host USA at SoFi. here&there = Erling Haaland's Leeds(born)↔Bryne(raised) thread. back_story + where_played_before OMITTED: no June-26 pairing has ever met at a World Cup (France-Norway, USA-Türkiye, Paraguay-Australia, Senegal-Iraq all first meetings), and Gillette has no prior World Cup history. Fixtures + round (all Group Stage - 3) API-verified; heritage web-verified 2026-06-25.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 16 — the holders meet the long-lost",
+    "tournament_summary": "The group stage keeps closing, two games per group at once so no one plays the scoreboard. The headline is in Boston: Norway, back at a World Cup for the first time since 1998, meet France, beaten finalists in 2022 and champions in 2018 — Erling Haaland against Kylian Mbappé, the two biggest forwards alive on the same World Cup pitch for the very first time. At SoFi the hosts close their group against Türkiye, a side back among the elite for the first time since their 2002 third-place run. Paraguay take Australia at Levi's, and Senegal meet Iraq in Toronto.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Norway vs France at Gillette Stadium, Boston — their first-ever World Cup meeting; Norway's first World Cup since 1998, France the 2018 champions and 2022 finalists.",
+      "All four fixtures are the group stage's final round (matchday 3); the two games in each group kick off simultaneously.",
+      "USA vs Türkiye at SoFi — the host nation closing its group against Türkiye, who are back at a World Cup for the first time since finishing third in 2002.",
+      "None of the day's four pairings has ever met at a World Cup before — France-Norway, USA-Türkiye, Paraguay-Australia and Senegal-Iraq are all first meetings."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Leeds ↔ Bryne — where Erling Haaland is from, twice",
+      "framing": "France-Norway is billed as Mbappé against Haaland, and Haaland is a thread all by himself: born in one country's football city, made in another country's farm town. The line that runs from a Yorkshire maternity ward to a dairy town in Jæren is the whole reason a Norwegian carries an English birthplace — and why, at 25, this is still his first World Cup.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Leeds, 2000", "fact": "Haaland was born on 21 July 2000 in Leeds, England — his father, Alf-Inge Haaland, was a Leeds United player at the time (he also played for Nottingham Forest and Manchester City)." },
+        { "label": "Bryne, age 3", "fact": "The family moved back to Bryne, a town of about 12,000 in the Jæren farming country of Rogaland, when Erling was three; he joined Bryne FK's academy at five. His nickname back home is 'the Bull from Jæren'." },
+        { "label": "The 28-year wait", "fact": "Norway had not reached a World Cup since 1998, missing six straight tournaments — so the best No. 9 in the world arrives at his first World Cup at 25, the absence longer than he is old." },
+        { "label": "France's mirror", "fact": "Across from him, Kylian Mbappé already owns a 2018 winner's medal and a hat-trick in the 2022 final — the same age-gap story read the other way: one man with everything from the World Cup, one man with his first taste of it." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "10.8",
+      "surface_stat": "Hakan Şükür · 10.8 seconds — the fastest goal in World Cup history",
+      "historical_anchor": "Türkiye are back at a World Cup for the first time since 2002, the tournament where they finished third — their best ever — and where Hakan Şükür scored the fastest goal in the competition's history. In the third-place playoff against South Korea, Korea played the ball back from kickoff, Şükür stole it and finished after 10.8 seconds. Nearly a quarter of a century on, the record still stands, and the team that set it is closing a group against the host nation at SoFi.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "10.8s", "v": "Şükür's strike against South Korea, 29 June 2002 — clocked at 10.8 seconds, still the fastest goal in World Cup history" },
+        { "k": "3rd", "v": "Türkiye's finish at the 2002 World Cup, beating South Korea 3-2 in that third-place match — their best result ever" },
+        { "k": "2026", "v": "Türkiye's first World Cup since 2002, a 24-year absence ended; they meet the host USA at SoFi" },
+        { "k": "0", "v": "World Cup goals Şükür is otherwise remembered for — a great scorer whose single most famous touch took eleven seconds" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The goal is almost a magic trick: from the kickoff whistle to the back of the net before most players have left their own half.",
+        "It belongs to the same 2002 side that beat Senegal and pushed Brazil — the high-water mark Turkish football has spent 24 years trying to find its way back to.",
+        "There is a neat symmetry in the fixture: the fastest goal in World Cup history was scored against an Asian co-host in 2002; the team that scored it now plays a North American co-host in 2026."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Sindre",
+      "asker_city": "Bryne, Norway",
+      "asker_day": "Fri 26 Jun",
+      "question": "I grew up watching Bryne in the lower divisions and never thought I'd see one of ours at a World Cup, let alone playing France. Be honest with me — is Haaland actually built for a tournament like this, or is he a league monster who goes quiet when the football slows down and the defences sit deep? And does a first World Cup at 25 count as late or right on time?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Haaland's scoring rate at club level is historically high, but international tournament football is a different test: fewer chances, deeper blocks, and France in particular defend the box as well as anyone.",
+          "This is genuinely his first World Cup — Norway missed every tournament from 2002 to 2022 — so there is no World Cup body of work yet to judge him on, for better or worse.",
+          "France arrive as 2018 champions and 2022 finalists; on paper the talent gap favours them, and a first-time World Cup side rarely overturns that with one striker alone.",
+          "Plenty of great forwards needed more than one tournament to leave a World Cup mark — arriving at 25 is closer to a beginning than a last chance."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question asks whether Haaland is built for this. The honest brief: nobody knows yet, and that's the point — there is no World Cup Haaland to argue about, only a club one. Tonight against France is the first data point, not the verdict. 'Late or right on time' is the wrong frame; 25 with the whole knockout era still ahead is simply on time."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "First meeting, biggest stage", "seed": "Norway and France have played each other fifteen times, but never once at a World Cup — their first finals meeting comes in Boston, with Haaland and Mbappé as the marquee, two of the best forwards alive sharing a World Cup pitch for the first time." },
+      { "tag": "Eleven seconds", "seed": "Türkiye, back at a World Cup for the first time since 2002, still hold the fastest goal in the competition's history — Hakan Şükür's strike against South Korea in the 2002 third-place playoff, timed at 10.8 seconds from kickoff." },
+      { "tag": "Born away, made at home", "seed": "Erling Haaland was born in Leeds, England, where his father was playing, and raised in Bryne, a 12,000-person farm town in Norway — a Yorkshire birth certificate on a Norwegian shirt, at his first World Cup at 25." },
+      { "tag": "Four first dates", "seed": "Every fixture on the slate is a first-ever World Cup meeting — France-Norway, USA-Türkiye, Paraguay-Australia and Senegal-Iraq — four pairs of nations meeting on this stage for the very first time, all on the same final group day." }
     ]
   }
 }
