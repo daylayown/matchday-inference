@@ -1,97 +1,96 @@
 {
   "date": "2026-06-30",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 20 — Round of 32 day three. Spine: Netherlands vs Morocco at Estadio BBVA, Monterrey — the tournament's defining diaspora pairing. The Moroccan-origin community in the Netherlands (~433k, the second-largest foreign-origin group) has fed Morocco's national team a generation of Dutch-born internationals who chose the Atlas Lions over Oranje (Hakim Ziyech, b. Dronten; Noussair Mazraoui; Sofyan & Nordin Amrabat). back_story = Netherlands 2-1 Morocco, 1994 group stage (Citrus Bowl, Orlando; Bergkamp 43', Hassan Nader 47', Bryan Roy 78') — their ONLY prior WC meeting, 32 years ago and also on a USA-hosted World Cup. Ledger carries Morocco's 2022 run (first African + first Arab nation to reach a WC semifinal). story_behind_number = 13 (Just Fontaine's single-tournament goal record, set at Sweden 1958) — deliberately carries the day's OTHER tie, France vs Sweden at MetLife (their first-ever WC meeting; both were at Sweden '58). Also: Ivory Coast vs Norway (Haaland's knockout debut). where_played_before OMITTED (Estadio BBVA opened 2015 — no prior WC history; Monterrey's 1986 matches were at other grounds). Fixtures + rounds API-verified; heritage web-verified 2026-06-28. Video = archive Holland 2-1 Morocco 1994 (-cIRvz9cq6Q, oembed-confirmed embeddable, non-FIFA channel -> 'archive'). CORRECTION baked: Anwar El Ghazi chose the Netherlands, NOT Morocco — excluded.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 20 — Round of 32, day three",
+    "tournament_summary": "The day the diaspora plays itself. Netherlands meet Morocco in Monterrey, and a large share of the Atlas Lions grew up Dutch — born in the Netherlands, raised in its academies, and choosing Morocco when the moment came. It is only the second World Cup meeting between the two, thirty-two years after the first. France and Sweden, who have never met at a World Cup, settle it at MetLife; Ivory Coast and Norway bring Erling Haaland into his first knockout tie. Win and the Round of 16 waits.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Netherlands vs Morocco at Estadio BBVA, Monterrey — Round of 32. Their only previous World Cup meeting was Netherlands 2-1 Morocco at the 1994 group stage in Orlando. Many of Morocco's internationals were born and raised in the Netherlands and chose Morocco.",
+      "France vs Sweden at MetLife Stadium — Round of 32, and remarkably their first-ever World Cup meeting; both nations were at Sweden's home World Cup of 1958, on opposite sides of the bracket.",
+      "Ivory Coast vs Norway — Round of 32, Erling Haaland's first World Cup knockout match.",
+      "Morocco arrive as the reigning surprise of world football: at Qatar 2022 they became the first African nation and the first Arab nation to reach a World Cup semifinal."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Amsterdam ↔ the Rif — the team that grew up Dutch",
+      "framing": "Morocco's spine speaks Dutch. The guest-worker migration of the 1960s and 70s pulled tens of thousands from Morocco's Rif to the Netherlands, and two generations later their grandsons came through Dutch academies — and then, at the decisive moment, pulled on the red of Morocco instead of the orange of the country that raised them. When the Netherlands face Morocco in Monterrey, half the opposition learned the game on Dutch pitches. It is less a match between two nations than a family deciding which half of itself to support.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "The migration", "fact": "Moroccan guest workers arrived in the Netherlands from the mid-1960s; the Moroccan-origin community now numbers roughly 433,000 — about 2.4% of the population, and the second-largest foreign-origin group in the country." },
+        { "label": "Hakim Ziyech", "fact": "Born in Dronten, the Netherlands, to a family from the Rif; came through Dutch football and chose Morocco — among the most gifted players the Atlas Lions have ever fielded." },
+        { "label": "Born Dutch, plays Moroccan", "fact": "Noussair Mazraoui and the brothers Sofyan and Nordin Amrabat were all born in the Netherlands and opted for Morocco — a recurring choice that has reshaped the national team." },
+        { "label": "Monterrey, 2026", "fact": "The Netherlands face a Morocco side stitched together from its own diaspora — a knockout tie in which the migration of half a century ago lines up on both touchlines at once." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "13",
+      "surface_stat": "France vs Sweden · the number that links them is 13, and it's almost seventy years old",
+      "historical_anchor": "France and Sweden have never met at a World Cup before today — but they share a number neither has ever lived down. Thirteen: the goals Just Fontaine scored for France at a single World Cup, the 1958 tournament that Sweden hosted. It is a record that has stood for sixty-eight years and shows no sign of falling. France finished third in Sweden, beating West Germany 6-3 in the third-place match with four Fontaine goals; the hosts went all the way to the final. The two were there together in 1958, on opposite sides of the draw — and only now, at MetLife, do they finally play.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "13", "v": "goals by Just Fontaine at the 1958 World Cup — still the record for a single tournament, 68 years on" },
+        { "k": "1958", "v": "Sweden's home World Cup: the hosts reached the final, France finished third — the two never met" },
+        { "k": "4", "v": "Fontaine goals in one match — France's 6-3 win over West Germany in the third-place playoff" },
+        { "k": "1st", "v": "today is the first World Cup meeting between France and Sweden, despite 68 years of near-misses" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Fontaine played all six of France's matches in 1958 and scored in every one — a tournament so complete it has outlasted every expansion of the World Cup since.",
+        "Sweden 1958 is also the tournament a seventeen-year-old Pelé announced himself, beating the hosts in the final — the backdrop against which Fontaine's record was set.",
+        "France and Sweden have played plenty since, in friendlies and qualifiers, but never with a World Cup on it — until a Round-of-32 knockout in New Jersey finally forces the issue."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Netherlands",
+        "Morocco"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1994",
+        "score": "2 — 1",
+        "host": "United States",
+        "round": "Group F · Matchday 2",
+        "venue": "Citrus Bowl, Orlando",
+        "context_line": "United States · group stage · Citrus Bowl, Orlando",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Dennis Bergkamp", "minute": "43'", "note": "(Netherlands ahead — set up by Peter van Vossen)" },
+          { "scorer": "Hassan Nader", "minute": "47'", "note": "(Morocco level within two minutes of the restart; assisted by Mustapha Hadji)" },
+          { "scorer": "Bryan Roy", "minute": "78'", "note": "(the late Dutch winner; 2-1)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "USA 1994, Group F, in the Orlando heat: Dennis Bergkamp put the Netherlands ahead just before the break, only for Hassan Nader to level for Morocco within two minutes of the restart.",
+          "It stayed level into the final quarter until Bryan Roy struck the winner with twelve minutes left — 2-1, and the only time these two have ever met at a World Cup.",
+          "Morocco of 1994 were the plucky outsiders; Morocco of 2026 are a different proposition entirely, semifinalists in Qatar and built around a generation raised in Europe.",
+          "Thirty-two years on, the rematch lands at another World Cup hosted in part by the United States — the same continent, the same fixture, a transformed balance of power."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "One World Cup meeting, Netherlands 2-1, thirty-two years ago — when Morocco were minnows and the Netherlands were perennial dark horses. Everything underneath has shifted. Morocco reached the semifinals at Qatar 2022, the first African and first Arab nation ever to do so, and now field a team drawn largely from the Dutch diaspora. The 1994 scoreline is a relic. The 2026 tie is even — and personal.",
+      "video": {
+        "youtube_id": "-cIRvz9cq6Q",
+        "title": "1994 (June 29) Holland 2 - Morocco 1 (World Cup)",
+        "caption": "The only prior meeting: Netherlands 2-1 Morocco, Orlando, 1994 — Bergkamp, Nader's quick reply, and Bryan Roy's late winner. Archive footage of the afternoon the rematch answers, 32 years on.",
+        "source": "archive · 1994 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Yassine",
+      "asker_city": "Rotterdam",
+      "asker_day": "Tue 30 Jun",
+      "question": "I'm Dutch-Moroccan, born in Rotterdam, and half the Morocco squad is basically my neighbours — kids who came up through the same academies I did and then picked Morocco. Part of me is proud and part of me feels like the Netherlands let them walk. Is that a real pattern, or am I reading too much into a few famous names?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The Moroccan-origin community in the Netherlands numbers roughly 433,000, the second-largest foreign-origin group, rooted in 1960s-70s guest-worker migration from the Rif.",
+          "Several of Morocco's key internationals were born and raised in the Netherlands and chose Morocco — Hakim Ziyech (born Dronten), Noussair Mazraoui, and the Amrabat brothers among them.",
+          "It is a genuine pattern, not a few isolated names: Morocco's 2022 semifinal squad drew heavily on players born or developed across Europe, the Netherlands prominent among them.",
+          "The choice runs both ways — Anwar El Ghazi, also Dutch-Moroccan, chose the Netherlands — so it is a decision each player makes, not a one-way drain."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether the diaspora pattern is real. The brief's answer: it's real and it's structural, not anecdotal — a half-century of migration produced a cohort of Dutch-raised players, and enough of them chose Morocco to reshape the national team. Whether the Netherlands 'let them walk' is the harder part: some felt more Moroccan, some saw a clearer path to playing, some both. You're not reading too much into it. You're reading exactly the right amount into it — and tonight both halves of that story are on the same pitch."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The team that grew up Dutch", "seed": "Morocco face the Netherlands with a squad drawn heavily from the Dutch-Moroccan diaspora — players like Hakim Ziyech (born in Dronten), Noussair Mazraoui and the Amrabat brothers, all raised in the Netherlands before choosing the country of their grandparents." },
+      { "tag": "Thirty-two years", "seed": "Netherlands vs Morocco is only their second-ever World Cup meeting; the first was a 2-1 Dutch win in Orlando in 1994 — also at a World Cup hosted in the United States, exactly thirty-two years ago." },
+      { "tag": "A record almost seventy years old", "seed": "France and Sweden meet at a World Cup for the first time ever, linked by Just Fontaine's 13 goals at Sweden's home tournament in 1958 — still the record for a single World Cup, set when the two shared that draw without ever playing." },
+      { "tag": "Africa's semifinalists", "seed": "Morocco arrive as the reigning groundbreakers of the world game — at Qatar 2022 they became the first African nation and the first Arab nation to reach a World Cup semifinal, and now meet the Netherlands as equals rather than outsiders." }
     ]
   }
 }

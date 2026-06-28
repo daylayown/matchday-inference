@@ -1,97 +1,97 @@
 {
   "date": "2026-06-29",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 19 — Round of 32 day two. Marquee + spine: Brazil vs Japan at NRG Stadium, Houston — the richest diaspora pairing in the tournament. Brazil holds the largest Japanese-descended population on earth outside Japan (~2 million Nikkei, a line that runs back to the Kasato Maru, June 1908), and the football has flowed both ways: Zico coached Japan (2002-2006, won the 2004 Asian Cup), and a generation of Brazilian-born players became Japan internationals (Wagner Lopes, Alessandro 'Alex' Santos, Marcus Tulio Tanaka). back_story = Brazil 4-1 Japan, 2006 group stage (Dortmund; Tamada 34', Ronaldo 45+1' & 81', Juninho Pernambucano 53', Gilberto 59') — their only prior WC meeting, and the match that knocked Zico's Japan out. story_behind_number = ~2 million (Japanese-Brazilians) — the people, anchored on 1908. here&there = the football crossover (the players who crossed the Pacific the other way). Also today: Germany vs Paraguay at Gillette Stadium — a rematch of the 2002 Round of 16 (Germany 1-0, Neuville 88', Jeju). where_played_before OMITTED (NRG Stadium + Gillette Stadium have no prior World Cup history). Fixtures + rounds API-verified; heritage web-verified 2026-06-28. Video = FIFA-official full match Japan 1-4 Brazil 2006 (Kev-Er-LAp4, oembed-confirmed FIFA + embeddable).",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 19 — Round of 32, day two",
+    "tournament_summary": "The Round of 32 keeps emptying the field. Brazil meet Japan in Houston in the one tie that carries a whole century of crossing water — Brazil is home to the largest Japanese community anywhere outside Japan, and the two football cultures have been borrowing from each other for decades. Germany and Paraguay reconvene in Foxborough, twenty-four years after a tight Round-of-16 in Korea. Win and the Round of 16 waits; lose and the summer's over.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Brazil vs Japan at NRG Stadium, Houston — Round of 32. Their only previous World Cup meeting was Brazil 4-1 Japan at the 2006 group stage in Dortmund. Brazil carries a diaspora tie unlike any other on the bracket: ~2 million Brazilians of Japanese descent.",
+      "Germany vs Paraguay at Gillette Stadium, Foxborough — Round of 32, a rematch of the 2002 Round of 16 that Germany won 1-0 through a late Oliver Neuville goal on the way to the final.",
+      "Knockout football: from here, every tie is single-elimination. The Round of 32 winners go through to a 16-team bracket."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "São Paulo ↔ Japan — the players who crossed the Pacific the other way",
+      "framing": "Most diaspora stories run one direction. The Brazil-Japan line runs both. A century after the first Japanese migrants sailed to Brazil's coffee country, their descendants sailed back to work Japanese factories — and somewhere in that round-trip, football changed hands. Brazil exported a way of playing; Japan, when it modernised, hired a Brazilian to teach it and naturalised Brazilians to play it. When these two walk out in Houston, half the football on the pitch has an accent from the other side.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Zico, 2002-2006", "fact": "Brazil's Zico coached Japan for four years after the 2002 World Cup, winning the 2004 Asian Cup and taking them to the 2006 finals — where his Japan side lost to his home country, Brazil, in the group stage." },
+        { "label": "Alessandro 'Alex' Santos", "fact": "Born in Maringá, Brazil; moved to Japan at sixteen, naturalised in 2001, won 82 caps and played the 2002 and 2006 World Cups for Japan." },
+        { "label": "Wagner Lopes & Tulio Tanaka", "fact": "Wagner Lopes, Brazilian-born, played Japan's 1998 World Cup after naturalising in 1997; Marcus Tulio Tanaka, of Japanese-Brazilian descent, anchored Japan's defence at the 2010 World Cup." },
+        { "label": "Houston, 2026", "fact": "When Brazil play Japan today, they meet a footballing nation a generation of Brazilians helped build — the diaspora's clearest sporting echo, lining up on the opposite side." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "2 million",
+      "surface_stat": "Brazil vs Japan · roughly 2 million Brazilians share Japanese blood",
+      "historical_anchor": "On the day Brazil play Japan, the number that matters isn't on the scoreline — it's the roughly two million Brazilians of Japanese descent, the largest Japanese-descended population anywhere outside Japan itself. It begins on 18 June 1908, when the ship Kasato Maru docked at the Port of Santos after a fifty-two-day crossing from Kobe, carrying 781 migrants to the coffee plantations of São Paulo. From that single voyage grew a community that, a century on, has produced national-team footballers for both countries and a reverse migration — the 'dekassegui' — back to Japan.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "~2M", "v": "Brazilians of Japanese descent (Nikkei) — the largest such community outside Japan, centred on São Paulo" },
+        { "k": "1908", "v": "the Kasato Maru reaches Santos after a 52-day voyage, 781 migrants aboard — the start of Japanese immigration to Brazil" },
+        { "k": "dekassegui", "v": "the late-20th-century reverse migration: Japanese-Brazilian descendants going back to Japan as factory workers" },
+        { "k": "both ways", "v": "the football crossed too — a Brazilian coached Japan, Brazilian-born players wore Japan's shirt at three World Cups" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The first migrants came as contract labour for São Paulo's coffee estates; within generations the community ran through farming, business and politics, and 'Liberdade' in São Paulo became the largest Japantown in the world.",
+        "The dekassegui flow reversed the original journey — grandchildren of the 1908 migrants working Japanese assembly lines, holding two homelands at once.",
+        "It is the rare World Cup tie where the heritage isn't a rivalry but a relation: two nations bound by a hundred years of the same families."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Brazil",
+        "Japan"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2006",
+        "score": "4 — 1",
+        "host": "Germany",
+        "round": "Group F · Matchday 3",
+        "venue": "Westfalenstadion (Signal Iduna Park), Dortmund",
+        "context_line": "Germany · group stage · Westfalenstadion, Dortmund",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Keiji Tamada", "minute": "34'", "note": "(Japan ahead — and dreaming, briefly)" },
+          { "scorer": "Ronaldo", "minute": "45+1'", "note": "(first-half stoppage time — Brazil level at the break)" },
+          { "scorer": "Juninho Pernambucano", "minute": "53'", "note": "(Brazil ahead)" },
+          { "scorer": "Gilberto", "minute": "59'", "note": "(3-1)" },
+          { "scorer": "Ronaldo", "minute": "81'", "note": "(his second; 4-1)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Germany 2006, Group F, final round: Japan needed to beat Brazil to have any chance of advancing, and for thirty-four minutes they had it — Keiji Tamada putting them ahead against the four-time champions.",
+          "Then Ronaldo equalised in first-half stoppage time, and after the break Brazil simply pulled rank: Juninho Pernambucano, Gilberto, and Ronaldo again, 4-1.",
+          "The man in the Japan dugout was Zico — a Brazilian, one of the greatest his country ever produced, watching his adopted side run into the country that made him. Japan went out; Zico's tenure ended with that whistle.",
+          "It is the only time Brazil and Japan have met at a World Cup. Twenty years on they meet again in Houston — this time with a knockout place on it, and no group-stage cushion underneath either of them."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "One prior World Cup meeting, and it was emphatic: Brazil 4-1, with Ronaldo scoring twice and a Brazilian coaching the losers. But that was a dead-rubber group game Japan had to chase; today is single-elimination, level terms, and a Japan side four managers and twenty years removed from Zico's. The history says Brazil. The format says anyone.",
+      "video": {
+        "youtube_id": "Kev-Er-LAp4",
+        "title": "FULL MATCH | Japan v Brazil | Group Stage | 2006 FIFA World Cup Germany",
+        "caption": "The full match: Japan 1-4 Brazil, Dortmund, 2006 — their only prior World Cup meeting. Tamada's early goal, then Ronaldo twice, Juninho and Gilberto, and the end of Zico's Japan. The tape the rematch is measured against.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Lin",
+      "asker_city": "Houston",
+      "asker_day": "Mon 29 Jun",
+      "question": "My grandfather's family is part of that whole Japan-Brazil story — we've got relatives on both sides of the Pacific and we genuinely don't know which shirt to wear to NRG. Is there any honest case for Japan here, or are we just turning up to watch Brazil be Brazil and pick the result we can live with?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Brazil have beaten Japan in their only previous World Cup meeting, 4-1 in 2006, and have five World Cup titles to Japan's best finish of the Round of 16.",
+          "But this is single-elimination on level terms: no group cushion, one game, and knockout ties compress the gap between favourite and underdog far more than a dead-rubber group match does.",
+          "Japan's modern sides have specialised in felling giants — they beat Germany and Spain in the 2022 group stage — and are quicker and more organised than the team Zico took to 2006.",
+          "Brazil remain Brazil: deeper, more individually gifted, and rarely beaten by a side that sits back. Japan's case rests on pressing high and taking an early lead, exactly as they did for thirty-four minutes in 2006."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether there's an honest case for Japan. The brief's answer: yes — not a likely one, but a real one. The 2006 result is a poor guide because it was a group game Japan had to chase; a single knockout tie is the format most forgiving to the better-drilled underdog, and Japan in 2022 proved they can beat anyone for ninety minutes. Wear both shirts, one over the other. You're covered either way, and so is the family."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "A hundred years on one pitch", "seed": "Brazil play Japan with the deepest diaspora tie on the bracket between them — roughly two million Brazilians of Japanese descent, a line running back to a single ship in 1908, and a football relationship that saw a Brazilian coach Japan and Brazilian-born players wear Japan's shirt at three World Cups." },
+      { "tag": "Zico's ghost", "seed": "The only previous Brazil-Japan World Cup meeting, in 2006, was managed from the Japan bench by Zico — a Brazilian legend watching his adopted nation lose 4-1 to his homeland; it was the match that ended his tenure." },
+      { "tag": "The 2002 rerun", "seed": "Germany and Paraguay meet in the Round of 32, twenty-four years after their 2002 Round-of-16, which Germany edged 1-0 on a late Oliver Neuville goal before going all the way to the final." },
+      { "tag": "Win or go home", "seed": "Day two of the Round of 32: every tie now is single-elimination, and the four-time and five-time champions are no safer than the debutants — a single bad ninety minutes ends anyone's tournament from here." }
     ]
   }
 }

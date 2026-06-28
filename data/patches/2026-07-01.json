@@ -1,97 +1,111 @@
 {
   "date": "2026-07-01",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 21 — Round of 32, final day. Spine: Mexico vs Ecuador at the Estadio Azteca (commercially 'Estadio Banorte'; FIFA tournament name 'Mexico City Stadium') — a HOME knockout, and the ghost of the curse. story_behind_number = 7 (Mexico eliminated in the Round of 16 at SEVEN consecutive World Cups, 1994-2018: Bulgaria, Germany, USA, Argentina x2, Netherlands, Brazil; 'el quinto partido' = the fifth game they could never reach; 2022 they didn't even escape the group). back_story = Mexico 2-1 Ecuador, 2002 group stage (their ONLY prior WC meeting; Agustín Delgado scored Ecuador's first-ever WC goal, Jared Borgetti + Gerardo Torrado replied). VIDEO on back_story is an honest Azteca-ghost (June-28 precedent of a related-not-same clip): Maradona's two goals vs England, 1986 QF AT THE AZTECA (FRAbNlPS2MI, FIFA official) — captioned as the ground's memory, not the fixture. where_played_before = THE AZTECA: only stadium to host three World Cups (1970, 1986, 2026) and two finals; the 1970 'Game of the Century' (Italy 4-3 West Germany) + 1986 Maradona QF were both here. here&there = altitude (Mexico City ~2240m ↔ Quito ~2850m). Also: England vs Congo DR (Atlanta), Belgium vs Senegal (Seattle). Fixtures + venue API-verified; heritage web-verified 2026-06-28. NOTE: only one prior Mexico-Ecuador WC meeting (2002) — do NOT claim a 2006 meeting (different groups).",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 21 — Round of 32, final day",
+    "tournament_summary": "Mexico go home to face the curse. The Round of 32 closes with the hosts playing a knockout at the Estadio Azteca — the only ground to stage three World Cups — against Ecuador, with a nation's oldest dread in the stands: seven straight World Cups eliminated at the Round of 16, the 'quinto partido' they could never reach. England meet Congo DR in Atlanta; Belgium face Senegal in Seattle. By tonight the Round of 16 is set, and Mexico will know whether the ghost walks again or finally rests.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Mexico vs Ecuador at the Estadio Azteca, Mexico City — Round of 32, and a home knockout for the hosts at the only stadium to host three World Cups (1970, 1986, 2026). Their only previous World Cup meeting was Mexico 2-1 Ecuador at the 2002 group stage.",
+      "Mexico's curse: eliminated in the Round of 16 at seven consecutive World Cups from 1994 to 2018, then a group-stage exit in 2022 — their first knockout appearance since 2018 comes at home.",
+      "England vs Congo DR at Mercedes-Benz Stadium, Atlanta — Round of 32.",
+      "Belgium vs Senegal at Lumen Field, Seattle — Round of 32; Senegal carry the legacy of their 2002 quarterfinal golden generation."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Mexico City ↔ Quito — a knockout in the thin air",
+      "framing": "Of all the ties the draw could have sent to the Azteca, it sent the one other team that lives where the air runs out. Mexico City sits around 2,240 metres; Quito, Ecuador's capital, climbs to roughly 2,850 — two of the great high-altitude footballing cultures, raised on lungs the rest of the world doesn't have. Most visitors to the Azteca arrive gasping. Ecuador arrive acclimatised. The home-altitude edge Mexico have leaned on for generations is, for once, no edge at all — and a knockout gets decided where both teams already know how to breathe.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Mexico City", "fact": "The Azteca sits at roughly 2,240 metres — high enough that visiting teams have complained of the altitude since the 1970 World Cup, and a fortress Mexico have guarded for half a century." },
+        { "label": "Quito", "fact": "Ecuador play World Cup qualifiers at the Estadio Rodrigo Paredes in Quito, around 2,850 metres — even higher than Mexico City, and a graveyard for visiting sides in CONMEBOL qualifying." },
+        { "label": "The neutralised edge", "fact": "Ecuador are one of the few nations on earth for whom the Azteca's thin air is familiar rather than hostile — the altitude advantage Mexico bank on simply cancels out." },
+        { "label": "The Azteca, tonight", "fact": "A World Cup knockout played between two high-altitude nations, at altitude, in a stadium built for exactly this kind of night — the conditions favour no one, which is its own kind of pressure on the hosts." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "7",
+      "surface_stat": "Mexico, at home in a knockout · and the number stalking them is 7",
+      "historical_anchor": "Mexico walk out at the Azteca for a knockout carrying the most famous number in Mexican football, and it isn't a good one. Seven: the number of consecutive World Cups — 1994, 1998, 2002, 2006, 2010, 2014, 2018 — at which Mexico were eliminated in the Round of 16. Seven times they reached the last sixteen; seven times they fell at it. The Mexican press named the barrier 'el quinto partido,' the fifth game, the quarterfinal they could never reach. Then 2022 went worse still — out in the group stage, no knockout at all. Tonight, for the first time since 2018, Mexico are back in a single-elimination tie, and it is at home.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "7", "v": "consecutive Round-of-16 eliminations, 1994 through 2018 — beaten by Bulgaria, Germany, USA, Argentina (twice), Netherlands and Brazil" },
+        { "k": "quinto partido", "v": "'the fifth game' — the quarterfinal Mexico have not reached on foreign soil since 1986, when they last hosted" },
+        { "k": "2022", "v": "the streak broke the wrong way: a group-stage exit, Mexico's first failure to reach the knockouts since 1978" },
+        { "k": "1986", "v": "the last time Mexico reached a World Cup quarterfinal — also at home, also at the Azteca" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The cruelty of 'el quinto partido' is that Mexico almost always make the Round of 16 — they are reliably good enough to qualify and to escape the group, and reliably undone one game later.",
+        "Both of Mexico's quarterfinal appearances, 1970 and 1986, came as hosts at the Azteca — the building is the site of the country's only escapes from the curse.",
+        "A home knockout cuts both ways: the Azteca has seen Mexico's highest World Cup moments, and the weight of finally needing one again sits on the same turf."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Mexico",
+        "Ecuador"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2002",
+        "score": "2 — 1",
+        "host": "South Korea / Japan",
+        "round": "Group G · Matchday 1",
+        "venue": "Gwangju World Cup Stadium, Gwangju",
+        "context_line": "South Korea/Japan · group stage · Gwangju",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Agustín Delgado", "minute": "5'", "note": "(Ecuador ahead — and the first World Cup goal in Ecuador's history)" },
+          { "scorer": "Jared Borgetti", "minute": "28'", "note": "(Mexico level)" },
+          { "scorer": "Gerardo Torrado", "minute": "57'", "note": "(Mexico's winner; 2-1)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Korea/Japan 2002, Group G, Ecuador's first World Cup: Agustín Delgado headed them ahead inside five minutes — the first World Cup goal Ecuador had ever scored.",
+          "It didn't last. Jared Borgetti levelled before the half, and Gerardo Torrado put Mexico ahead just after it — 2-1, and Mexico went on to win the group.",
+          "It remains the only time Mexico and Ecuador have met at a World Cup — a tidy group-stage win twenty-four years ago, with nothing of tonight's stakes.",
+          "Now the rematch is a knockout, at the Azteca, with the curse in the building. The 2002 result tells you Mexico can beat Ecuador. It tells you nothing about whether they can do it when it ends the loser's tournament."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
+      "ledger": "One World Cup meeting, Mexico 2-1, a 2002 group game in Gwangju that gave Ecuador their first World Cup goal and Mexico the three points. Twenty-four years on it is single-elimination and on home soil, and the head-to-head is the least of what Mexico carry into it. The opponent has changed less than the occasion has.",
+      "video": {
+        "youtube_id": "FRAbNlPS2MI",
+        "title": "Maradona's Famous 8 Minutes | Argentina 2-1 England | 1986 FIFA World Cup",
+        "caption": "Not Mexico-Ecuador, but this very ground's most famous knockout night: Maradona's two goals against England — the Hand of God, then the Goal of the Century — in the 1986 quarterfinal at the Azteca. The memory the building carries into every knockout it stages, including tonight's.",
+        "source": "FIFA · official"
+      }
     },
     "where_played_before": {
       "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
+        "name": "Estadio Azteca",
+        "city": "Mexico City, Mexico",
+        "capacity": 87000,
+        "opened": 1966,
+        "world_cups": [1970, 1986, 2026]
       },
       "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
+        { "year": "1970", "body": "The Azteca's first World Cup gave it the 'Game of the Century' — Italy 4-3 West Germany in the semifinal, five of the seven goals scored in extra time, Beckenbauer playing on with his arm in a sling. Three weeks later Brazil beat Italy 4-1 in the final here, Pelé's third and last World Cup title." },
+        { "year": "1986", "body": "Mexico's second World Cup brought the stadium its defining afternoon: Maradona's quarterfinal against England — the Hand of God and then the Goal of the Century, a solo run past five men — followed by the final, Argentina 3-2 West Germany, won under the same roof. The Azteca became the first ground to host two World Cup finals." },
+        { "year": "2026", "body": "With this tournament the Azteca becomes the only stadium ever to host three World Cups, and the first to stage three World Cup opening matches. Tonight it hosts a Mexico knockout — the building's first since 1986, when it last saw Mexico reach a quarterfinal." }
       ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "closer_hint": "No stadium has witnessed more of the World Cup's defining moments. Tonight Mexico ask it for one more — and for the curse it has twice helped them escape to stay broken."
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Diego",
+      "asker_city": "Mexico City",
+      "asker_day": "Wed 1 Jul",
+      "question": "I've watched 'el quinto partido' break my heart since I was a kid — seven Round-of-16 exits in a row, and then we couldn't even get out of the group in 2022. Now we're in a knockout at the Azteca itself. Is the curse actually a thing, or is it just bad luck we keep narrating into a curse because we lose one game we were always going to lose?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Mexico were eliminated in the Round of 16 at seven straight World Cups, 1994 to 2018 — a genuinely unmatched run of reaching the last sixteen and going no further.",
+          "The opponents were often elite: Germany, Argentina (twice), the Netherlands, Brazil — sides Mexico would be expected to lose to more often than not.",
+          "Mexico's two quarterfinal appearances, 1970 and 1986, both came as hosts at the Azteca; on neutral ground they have not reached the last eight since the World Cup expanded its knockout rounds.",
+          "In 2026 the bracket itself changed — a 48-team field added a Round of 32, so tonight is technically a round earlier than the stage the curse is named for."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether the curse is real or just narrated. The brief's answer: both, honestly. The pattern is real and historic — nobody else has lost the same game seven times running — but a lot of it is the ordinary math of a good-not-great side drawing strong opponents in a coin-flip round. What's also true: Mexico's only escapes both came at the Azteca, as hosts. Tonight they're back there. If the curse is partly a story Mexico tell themselves, this is the building where they've twice told a different one."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The curse comes home", "seed": "Mexico play a home World Cup knockout at the Azteca carrying 'el quinto partido' — seven consecutive Round-of-16 eliminations from 1994 to 2018, then a 2022 group-stage exit; their only two quarterfinal runs, 1970 and 1986, both came as hosts on this exact turf." },
+      { "tag": "Three World Cups, one ground", "seed": "With Mexico-Ecuador the Estadio Azteca becomes the only stadium ever to host three World Cups (1970, 1986, 2026) — the same ground that staged the 1970 'Game of the Century' and Maradona's 1986 quarterfinal against England." },
+      { "tag": "No altitude to hide behind", "seed": "Mexico's Azteca altitude advantage is neutralised by the one opponent who shares it — Ecuador play their qualifiers in Quito at roughly 2,850 metres, even higher than Mexico City's 2,240, so the thin air favours neither side." },
+      { "tag": "Ecuador's first goal, replayed", "seed": "The only previous Mexico-Ecuador World Cup meeting, in 2002, opened with Agustín Delgado heading in Ecuador's first-ever World Cup goal — before Borgetti and Torrado turned it around for a 2-1 Mexico win." }
     ]
   }
 }
