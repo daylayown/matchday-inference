@@ -1,97 +1,65 @@
 {
   "date": "2026-07-02",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 22 — Round of 32. Spine: Portugal vs Croatia at BMO Field, Toronto — their FIRST-ever World Cup meeting (10 prior meetings, all Euros/friendlies/Nations League), framed as the last dance of two 1985-born golden-generation talismans: Cristiano Ronaldo (b. 5 Feb 1985, 41) and Luka Modrić (b. 9 Sep 1985, 40), seven months apart. story_behind_number = 6 (Ronaldo the first player EVER to score at six different World Cups, 2006-2026, a 20-year span; set 23 Jun 2026 vs Uzbekistan; his 10th career WC goal passed Eusébio for Portugal's all-time WC record; Messi is the only other man to score at five). back_story + where_played_before + video OMITTED — no prior WC meeting (like June 18 Uzbekistan), and BMO Field is a first-time WC venue. here&there = Toronto's DOUBLE diaspora (Little Portugal, ~171k of Portuguese descent in metro Toronto ↔ Lisbon; Canada's largest Croatian community, Toronto ↔ Zagreb). Also: Spain vs Austria (SoFi, LA), USA vs Bosnia (Levi's, SF). Fixtures + venue API-verified; heritage web-verified 2026-07-01. NOTE: Modrić has FIVE World Cups (2006, 2014, 2018, 2022, 2026) — Croatia did NOT qualify for 2010, do not list it. Their only Croatia win over Portugal is a June 2024 friendly (2-1).",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 22 — Round of 32",
+    "tournament_summary": "The Round of 32 rolls on, and it hands us a first: Portugal and Croatia meet at a World Cup for the very first time, at BMO Field in Toronto — a city that happens to hold one of the largest Portuguese communities in the diaspora and the biggest Croatian community in Canada. On the pitch it is a meeting of two men born seven months apart in 1985 who refuse to leave: Cristiano Ronaldo, 41, at his sixth World Cup; Luka Modrić, 40, at his fifth. Elsewhere Spain face Austria in Los Angeles and the USA meet Bosnia in San Francisco. Somewhere in the crowd tonight, two homelands watch the same game from the same stands.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Portugal vs Croatia at BMO Field, Toronto — Round of 32, and the first time the two nations have EVER met at a World Cup. They have played ten times elsewhere (Euros, friendlies, Nations League), Portugal winning seven; their only knockout meeting was Euro 2016's Round of 16 (Portugal 1-0 a.e.t., Quaresma 117').",
+      "The subplot is age: Cristiano Ronaldo (born 5 Feb 1985) is 41 and at his sixth World Cup; Luka Modrić (born 9 Sep 1985) is 40 and at his fifth — two golden-generation talismans, seven months apart, likely playing their last World Cup knockout.",
+      "Ronaldo became the first player ever to score at six different World Cups on 23 June 2026 (vs Uzbekistan); his 10th career World Cup goal passed Eusébio as Portugal's all-time World Cup top scorer.",
+      "Spain vs Austria at SoFi Stadium, Los Angeles — Round of 32. USA vs Bosnia & Herzegovina at Levi's Stadium, San Francisco — Round of 32."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Toronto ↔ Lisbon ↔ Zagreb — a home game for both",
+      "framing": "Of all the cities the draw could have chosen for the first Portugal-Croatia World Cup meeting, it picked the one where both sets of fans could call it a home game. Toronto holds the largest Portuguese community in Canada — the Little Portugal enclave off College and Dundas, built by the immigration waves of the 1960s and 70s — and the largest Croatian community in the country too, settled by the post-war refugee generation. Two homelands that have never met at a World Cup, meeting for the first time in a stadium that both neighbourhoods can reach by streetcar. The 'here and there' tonight isn't Lisbon or Zagreb. It's the block in Toronto where the flags have been out all week.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Little Portugal, Toronto", "fact": "Metro Toronto is home to roughly 171,000 people of Portuguese descent — the largest Portuguese community in Canada — anchored by the historic Little Portugal district along College and Dundas Streets, built by 1960s-70s immigration." },
+        { "label": "Croatian Toronto", "fact": "Toronto holds the largest Croatian-Canadian community in the country, settled largely by a post-WWII refugee wave; when Croatia played their group match in the city, local fans called it 'a home game.'" },
+        { "label": "Lisbon & Zagreb", "fact": "The homelands have met ten times — Euros, friendlies, the Nations League — but never at a World Cup; tonight's is the first, watched from two Toronto neighbourhoods as much as from two capitals." },
+        { "label": "A shared stadium", "fact": "BMO Field sits where both diasporas can claim it — a first-ever World Cup meeting turned, by geography, into a derby of Toronto communities as much as of nations." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "6",
+      "surface_stat": "Portugal walk out with Ronaldo at 41 · and the number that trails him now is 6",
+      "historical_anchor": "On 23 June 2026, in the sixth minute against Uzbekistan, Cristiano Ronaldo did something no footballer had ever done: he scored at a sixth different World Cup. 2006, 2010, 2014, 2018, 2022, and now 2026 — a goal in each, across a span of twenty years, from a 21-year-old in Germany to a 41-year-old in North America. Only one other man, Lionel Messi, has scored at five. Ronaldo now stands alone at six. The same night, his tally passed Eusébio to make him Portugal's all-time leading World Cup scorer. He walks out at BMO Field tonight the oldest outfield story in the tournament — and the holder of a record that measures not a season but an entire career refusing to end.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "6", "v": "different World Cups at which Ronaldo has scored (2006-2026) — the first player in history to do it; Messi is the only other man to reach five" },
+        { "k": "20 years", "v": "the span of his World Cup goals, from Germany 2006 to this tournament — a goal at 21 and a goal at 41" },
+        { "k": "10", "v": "career World Cup goals, passing Eusébio (9) as Portugal's all-time World Cup top scorer, set the same night in Houston" },
+        { "k": "41 & 40", "v": "the ages of Ronaldo and Modrić tonight — two talismans born seven months apart in 1985, at their sixth and fifth World Cups" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Across the halfway line stands the same story in Croatian: Luka Modrić, 40, at his fifth World Cup, who in 2018 captained Croatia to the final, won the Golden Ball as the tournament's best player, and took the Ballon d'Or — the first man other than Messi or Ronaldo to win it in a decade.",
+        "Modrić has kept adding to the ledger this tournament too: at 40 years 291 days he became the oldest player on record to register an assist at a World Cup, and reached his 200th Croatia cap — the fourth man in history to 200 international appearances.",
+        "The number is a record, but the story is subtraction: two players the game keeps trying to age out, meeting in a knockout for the first time, each knowing this is very likely the last World Cup either will play."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Marko",
+      "asker_city": "Toronto",
+      "asker_day": "Thu 2 Jul",
+      "question": "My family's Croatian, my whole street's split for this one, and I keep hearing that Modrić at 40 can't do it in a knockout anymore — that Ronaldo and him are just names now, coasting on 2018 and the Ballon d'Or. Is that fair? Or is a 40-year-old midfielder actually still the guy Croatia lean on when it gets tight?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Modrić is 40 (born 9 Sep 1985), at his fifth World Cup, and is Croatia's most-capped player ever — he passed 200 international appearances this tournament, the fourth man in history to do so.",
+          "He is not coasting on 2018: at 40 years 291 days he became the oldest player on record to register an assist at a World Cup, against Ghana in the group stage.",
+          "His 2018 was historic — Golden Ball as the World Cup's best player AND the Ballon d'Or, the first player other than Messi or Ronaldo to win it since Kaká in 2007.",
+          "Across the pitch, Ronaldo at 41 just became the first footballer to score at six different World Cups — so the 'just names now' framing runs into two players still setting records this month."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question assumes age has made them ceremonial. The record says otherwise — both are still producing at this tournament, not just showing up for it. What's fair: neither can run a knockout for 120 minutes the way they once did, and Croatia lean on Modrić now for the twenty minutes that decide a tie, not the ninety. But 'still the guy they lean on' is exactly right. A 40-year-old registering World Cup assists and a 41-year-old breaking the six-World-Cups barrier are not names coasting. They're the reason both of these teams are still here."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "First meeting, tenth time", "seed": "Portugal and Croatia have met ten times — Euros, friendlies, the Nations League — but never once at a World Cup; tonight's Round of 32 tie at BMO Field is the first, and their only previous knockout meeting anywhere was Euro 2016's Round of 16, settled by Quaresma in the 117th minute." },
+      { "tag": "Six World Cups, one scorer", "seed": "Cristiano Ronaldo, 41, is the first player in history to score at six different World Cups — a goal at each of 2006, 2010, 2014, 2018, 2022 and 2026, a span of twenty years; the same goal made him Portugal's all-time World Cup top scorer, past Eusébio." },
+      { "tag": "Born seven months apart", "seed": "Ronaldo (5 Feb 1985) and Modrić (9 Sep 1985) were born seven months apart and are meeting in a World Cup knockout for the first time at 41 and 40 — two golden generations arriving at the same exit at the same time." },
+      { "tag": "The Ballon d'Or that broke the streak", "seed": "Luka Modrić's 2018 — Golden Ball as the World Cup's best player and the Ballon d'Or — was the first time in a decade that anyone other than Messi or Ronaldo won football's biggest individual prize; tonight he lines up directly opposite the man whose streak he ended." },
+      { "tag": "A derby of Toronto neighbourhoods", "seed": "The first Portugal-Croatia World Cup meeting lands in the one city that holds both the largest Portuguese community in Canada (Little Portugal, ~171k of Portuguese descent in metro Toronto) and the country's largest Croatian community — a homelands' first turned local derby by geography." }
     ]
   }
 }

@@ -1,97 +1,64 @@
 {
   "date": "2026-07-03",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 23 — Round of 32. Spine: Argentina (reigning champions, 2022) vs Cape Verde Islands at Hard Rock Stadium, Miami — the holders against a first-time World Cup nation that reached the knockouts UNDEFEATED in the group stage (0-0 Spain, 2-2 Uruguay, 0-0 Saudi Arabia, 2nd in Group H). First-ever meeting between the two nations → back_story + where_played_before + video OMITTED (no prior meeting; Hard Rock is a first-time WC venue; same convention as June 18 Uzbekistan). story_behind_number = 525,000 (Cape Verde's resident population — the smallest nation by population EVER to reach a men's World Cup knockout round; every comparably small side before them — Curaçao ~156k, who ALSO debuted this tournament on June 14, Iceland ~330k in 2018, Trinidad & Tobago ~1.3M in 2006 — went home after the group stage). here&there = the Cape Verdean diaspora, famously LARGER than the resident population (~700k abroad headline figure): USA/New England (New Bedford & Brockton MA, Providence & Pawtucket RI), Portugal (~100k), Netherlands (Rotterdam), France; ~14-15 of the 26-man squad born abroad. Praia/Mindelo ↔ New Bedford/Lisbon. Cape Verde = 'Tubarões Azuis' (Blue Sharks), 10 islands, former Portuguese colony, independent 1975. Also: Switzerland vs Algeria (BC Place, Vancouver), Australia vs Egypt (AT&T, Dallas). Fixtures + venue API-verified; heritage web-verified 2026-07-01. DO NOT assert Messi is in the 2026 squad (speculative — he'd be ~38-39; use 'holders'/'reigning champions'). Diaspora upper bound (~1.5M incl. descendants) is generous — keep ~700k abroad as the safe headline.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 23 — Round of 32",
+    "tournament_summary": "The reigning world champions meet a nation of half a million playing knockout football for the first time in its history. Argentina, who lifted the trophy in 2022, face Cape Verde at Hard Rock Stadium in Miami — the Blue Sharks, an archipelago of ten islands off West Africa, who came through the group stage undefeated in their first-ever World Cup and are now the smallest nation by population ever to reach a knockout round. Switzerland face Algeria in Vancouver and Australia meet Egypt in Dallas. However tonight ends, Cape Verde have already gone further than any country their size ever has.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Argentina vs Cape Verde Islands at Hard Rock Stadium, Miami — Round of 32, and the first meeting between the two nations at any level. Argentina are the defending champions (2022, beat France on penalties in the final); Cape Verde are at their first World Cup.",
+      "Cape Verde reached the knockouts UNDEFEATED: 0-0 vs Spain, 2-2 vs Uruguay, 0-0 vs Saudi Arabia, finishing second in Group H. With a resident population around 525,000 they are the smallest nation by population ever to reach a men's World Cup knockout round.",
+      "The Cape Verdean diaspora is larger than the country's resident population — roughly 700,000 live abroad, the biggest communities in the USA (New England), Portugal, the Netherlands and France; around 14-15 of the 26-man squad were born outside the islands.",
+      "Switzerland vs Algeria at BC Place, Vancouver — Round of 32. Australia vs Egypt at AT&T Stadium, Dallas — Round of 32."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Praia & Mindelo ↔ New Bedford & Lisbon — the country that lives abroad",
+      "framing": "Cape Verde is the rare nation where the 'there' is bigger than the 'here.' Around 525,000 people live on the ten islands; something like 700,000 Cape Verdeans live somewhere else — in the old whaling towns of Massachusetts, in Lisbon, in Rotterdam, in France. The archipelago has exported its people for two centuries, first to the New England whaling fleets that stopped for crew, later to anywhere with work, and the football team is the map of that exodus: two-thirds of the squad were born abroad, in the diaspora, and came home to play. When Cape Verde take the field in Miami, the 'here and there' isn't a metaphor. It's the actual shape of the country — a small resident island nation and a much larger scattered one, meeting in the same shirt.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Praia & Mindelo", "fact": "The islands hold around 525,000 people — capital Praia on Santiago, the port and cultural city Mindelo on São Vicente — an archipelago of ten islands off West Africa, a former Portuguese colony independent since 1975." },
+        { "label": "New Bedford, Massachusetts", "fact": "The oldest diaspora runs to New England — New Bedford and Brockton in Massachusetts, Providence and Pawtucket in Rhode Island — seeded by 19th-century whaling crews and now the heart of Cape Verdean America." },
+        { "label": "Lisbon, Rotterdam, France", "fact": "Portugal holds roughly 100,000 Cape Verdeans (the colonial tie), with large communities in the Netherlands (especially Rotterdam) and France; abroad, the diaspora numbers around 700,000 — more than live on the islands." },
+        { "label": "The squad is the map", "fact": "Around 14-15 of the 26-man squad were born outside Cape Verde, the Netherlands the biggest supplier — a national team assembled from the scattered country and brought back to the shirt." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "525,000",
+      "surface_stat": "A nation of about 525,000 · in the knockout round of a World Cup for the first time",
+      "historical_anchor": "Cape Verde's resident population is roughly 525,000 — smaller than a mid-sized American city — and with their group-stage draw against Saudi Arabia they became the smallest nation by population ever to reach the knockout round of a men's World Cup. The record matters because of who held the ground before them. Iceland, long the storybook minnow at around 330,000, reached the 2018 World Cup and went out in the group. Curaçao, at about 156,000, became the smallest nation ever to reach a World Cup when they debuted at this very tournament — and also went out in the group. Trinidad & Tobago, at 1.3 million, went home after three games in 2006. Every small nation before Cape Verde arrived, was celebrated, and left after the group stage. Cape Verde stayed — and did it without losing a match.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "525,000", "v": "Cape Verde's resident population — the smallest nation by population ever to reach a men's World Cup knockout round" },
+        { "k": "undefeated", "v": "the route there: 0-0 vs Spain, 2-2 vs Uruguay, 0-0 vs Saudi Arabia — second in Group H, not a single defeat" },
+        { "k": "156,000", "v": "Curaçao's population — smaller still, and also a debutant at this tournament, but eliminated in the group stage; Cape Verde went further" },
+        { "k": "10", "v": "islands in the archipelago, off the West African coast — a former Portuguese colony independent since 1975, at its first World Cup" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The comparison that makes 525,000 sing isn't the raw number — it's that every comparably small side (Iceland ~330k in 2018, Curaçao ~156k this tournament) reached a World Cup and was gone after three games. Cape Verde broke that pattern.",
+        "They didn't sneak through, either: undefeated in the group, with clean sheets against Spain and Saudi Arabia and a come-from-behind draw with two-time champions Uruguay.",
+        "Across the tunnel stand the reigning world champions — the holders against the smallest knockout nation in history, which is either the most unfair tie of the round or the most romantic, depending on which shirt you own."
       ]
     },
-    "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
-      "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
-        "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
-        ],
-        "narrative_beats": [
-          "TODO: a beat of the story"
-        ]
-      },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
-    },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Neuza",
+      "asker_city": "New Bedford, Massachusetts",
+      "asker_day": "Fri 3 Jul",
+      "question": "My grandparents came from São Vicente to New Bedford, and half the team feels like it grew up in the same places we did — Holland, Portugal, right here in Massachusetts. People keep calling us a fairytale and a feel-good story before the champions send us home. Are we actually a real team, or just a nice story that got lucky in an easy group?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Cape Verde came through Group H undefeated — 0-0 vs Spain, 2-2 vs Uruguay, 0-0 vs Saudi Arabia — with clean sheets against a former world champion (Spain) and Saudi Arabia, and a comeback draw against two-time winners Uruguay.",
+          "That group was not easy: Spain are among the tournament favourites, and Uruguay are two-time world champions — Cape Verde took points off both.",
+          "The squad is built from the diaspora — roughly 14-15 of 26 born abroad, in the Netherlands, Portugal, France and the USA — many playing in strong European leagues, not amateurs on a day out.",
+          "They are the smallest nation by population (~525,000) ever to reach a men's World Cup knockout round, going further than Iceland (2018) or Curaçao (this tournament) managed."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether it's luck or a real team. The group results answer it: you don't keep clean sheets against Spain and Saudi Arabia and come back to draw Uruguay by luck across three games — that's a defensive structure and a squad of genuine European professionals. What's fair is that Argentina are a level up, and the champions are rightly favourites tonight. But 'nice story that got lucky' undersells a side that finished a hard group undefeated. Cape Verde are a real team. Whether they're Argentina's equal for ninety minutes is the actual question — and the only way to answer it is to play it."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The smallest to ever stay", "seed": "Cape Verde, resident population ~525,000, are the smallest nation by population ever to reach a men's World Cup knockout round — going further than Iceland (~330k, 2018) or Curaçao (~156k, a debutant at THIS tournament), both of whom were eliminated in the group stage." },
+      { "tag": "Holders meet debutants", "seed": "Argentina, reigning world champions since 2022, face Cape Verde in the first-ever meeting between the two nations at any level — the defending champions against a country playing knockout World Cup football for the first time in its history." },
+      { "tag": "The country that lives abroad", "seed": "More Cape Verdeans live abroad (~700,000) than on the islands (~525,000); the national team mirrors the exodus, with around 14-15 of its 26 players born in the diaspora — the Netherlands, Portugal, France and the USA." },
+      { "tag": "Undefeated to get here", "seed": "Cape Verde reached the knockouts without losing — 0-0 vs Spain, 2-2 vs Uruguay, 0-0 vs Saudi Arabia — keeping clean sheets against a former world champion and drawing two-time winners Uruguay from behind." }
     ]
   }
 }

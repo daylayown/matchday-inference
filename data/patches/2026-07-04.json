@@ -1,97 +1,95 @@
 {
   "date": "2026-07-04",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 24 — the Round of 16 opens (also US Independence Day, the 250th / Semiquincentennial). Spine: Paraguay vs France at Lincoln Financial Field, Philadelphia (R16) — anchored on France 1-0 Paraguay, 1998 Round of 16, decided by Laurent Blanc's 114th-minute header, the FIRST golden goal in World Cup history (Trezeguet assist; José Luis Chilavert in the Paraguay goal; Zidane suspended; France went on to win the 1998 World Cup as hosts). This is their THIRD WC meeting (1958 group France 7-3 Paraguay, Just Fontaine hat-trick en route to his record 13; 1998 golden goal; 2026). back_story = France 1-0 Paraguay 1998 WITH VIDEO bGPP2K3vD9E (oembed author_name 'freekick3596', NOT FIFA → source 'archive · 1998 highlights'; no FIFA-official YouTube embed exists, FIFA+ only). story_behind_number = 4 (total golden goals EVER scored at a World Cup, all within 1998-2002; rule introduced 1993, abolished 2004; Blanc's was the first, then three at 2002 — Camara Senegal-Sweden, Ahn Jung-hwan Korea-Italy 117', Mansız Turkey-Senegal QF; ZERO possible in 2026, the rule is extinct). where_played_before OMITTED (Lincoln Financial Field opened 2003, no prior men's WC). here&there = Canada vs Morocco, the OTHER R16 today at NRG Houston — the host nation meeting the team that eliminated them at the 2022 group stage (Morocco 2-1 Canada; Ziyech, En-Nesyri, Aguerd OG), Morocco being 2022's first African/Arab semifinalist, built heavily from its European diaspora (France, Netherlands, Belgium, Spain). Also: Colombia vs Ghana (Arrowhead, Kansas City, R32). Fixtures + venue + rounds API-verified; heritage web-verified 2026-07-01. FLAGS: Blanc's minute is 114' primary (some say 113'/115'); Mansız as 4th WC golden goal + 2022 goal minutes are approximate — kept vague in copy.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 24 — Round of 16 begins",
+    "tournament_summary": "The Round of 16 opens, and it opens on the Fourth of July — the 250th, no less — with a World Cup knockout tie in the city where American independence was declared. Paraguay meet France at Lincoln Financial Field in Philadelphia, a rematch of the 1998 Round of 16 that gave the World Cup its first-ever golden goal, Laurent Blanc's header in the 114th minute. In Houston, the host nation gets a reckoning: Canada face Morocco, the team that knocked them out in 2022 and then became the first African side to reach a World Cup semifinal. Colombia meet Ghana in Kansas City to round out the day. The bracket narrows to sixteen, and the first tickets to the quarterfinals are handed out tonight.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Paraguay vs France at Lincoln Financial Field, Philadelphia — Round of 16, and the third World Cup meeting between the nations: France 7-3 Paraguay in the 1958 group stage (Just Fontaine hat-trick), and France 1-0 Paraguay in the 1998 Round of 16 on the first golden goal in World Cup history. France have won both.",
+      "The date is US Independence Day — the 250th anniversary (Semiquincentennial) — and Philadelphia, where independence was declared in 1776, hosts a World Cup knockout tie.",
+      "Canada vs Morocco at NRG Stadium, Houston — Round of 16, and a rematch of the 2022 group stage, where Morocco beat Canada 2-1 and went on to become the first African and Arab nation to reach a World Cup semifinal. Canada, co-hosts of 2026, went out winless in 2022.",
+      "Colombia vs Ghana at Arrowhead Stadium, Kansas City — Round of 32."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Houston ↔ Casablanca ↔ Paris — the host nation and the team it can't shake",
+      "framing": "The tie that isn't the marquee tonight might be the more loaded one. Canada, co-hosting this World Cup, drew Morocco in the Round of 16 — the exact team that beat them 2-1 in Qatar in 2022 and sent them home winless, before going on the run that made them the first African and Arab nation ever to reach a World Cup semifinal. Morocco's team is itself a 'here and there': a squad drawn as much from the diaspora of Paris, Rotterdam, Brussels and the Spanish enclaves as from Casablanca and Rabat, the children of migration playing for the country their parents left. The host nation wants revenge; the visitors are the continent's benchmark, assembled from half of Europe. Houston, a city of immigrants itself, is a fitting room for it.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Doha, 2022", "fact": "Morocco beat Canada 2-1 at the 2022 group stage — Hakim Ziyech and Youssef En-Nesyri scoring — and topped the group; Canada, back at a World Cup for the first time since 1986, went out having lost all three games." },
+        { "label": "Casablanca & the diaspora", "fact": "Morocco's 2022 semifinal squad was built heavily from the European diaspora — players born or raised in France, the Netherlands, Belgium and Spain — the children of Moroccan migration returning to the national shirt." },
+        { "label": "The benchmark", "fact": "Morocco in 2022 became the first African and first Arab nation to reach a World Cup semifinal, beating Belgium, Spain and Portugal along the way before losing to France." },
+        { "label": "Houston, tonight", "fact": "The co-host meets the team that ended its last World Cup, in a city shaped by immigration — a rematch loaded with everything the group stage of 2022 left unfinished." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "4",
+      "surface_stat": "Paraguay and France, a rematch of the golden goal · and the number is 4",
+      "historical_anchor": "In exactly four minutes across World Cup history, a single goal has ended a match on the spot — and France scored the first of them, against Paraguay. The golden goal, football's sudden-death experiment, was written into the laws in 1993 and used at only two World Cups, 1998 and 2002, before being abolished in 2004. In all that time, only four were ever scored at a World Cup. Laurent Blanc's header in the 114th minute against Paraguay in 1998 was the first. Three more followed at 2002 — Henri Camara for Senegal, Ahn Jung-hwan's header that knocked out Italy, İlhan Mansız for Turkey — and then the rule was gone. Tonight's rematch could go to extra time, could go to penalties, but it cannot produce a fifth golden goal. The rule that decided the first France-Paraguay knockout no longer exists.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "4", "v": "golden goals ever scored at a World Cup — all of them between 1998 and 2002, when the rule was in force" },
+        { "k": "1st", "v": "Blanc's 114th-minute header vs Paraguay in 1998 — the first golden goal in World Cup history, and the one that sent France toward the title" },
+        { "k": "1993-2004", "v": "the golden goal's whole life: written into the laws in 1993, used at two World Cups, abolished in 2004 — an extinct rule" },
+        { "k": "0", "v": "golden goals possible in 2026 — a level tie now plays the full 30 minutes of extra time and, if needed, penalties" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The golden goal was meant to encourage attacking extra time; in practice it often did the opposite, freezing teams terrified of conceding the one goal that ended everything — which is part of why it was scrapped.",
+        "France knew the rule from both sides: two years after Blanc's, David Trezeguet won France the Euro 2000 final with a golden goal against Italy — the same Trezeguet who set up Blanc's header in 1998.",
+        "For Paraguay it is the wound that won't quite close: 114 minutes of holding the hosts, goalkeeper-captain José Luis Chilavert unbeaten, and then a single header ended the game with no reply possible. Tonight is the first knockout rematch since."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "France",
+        "Paraguay"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1998",
+        "score": "1 — 0",
+        "host": "France",
+        "round": "Round of 16 · a.e.t.",
+        "venue": "Stade Félix-Bollaert, Lens",
+        "context_line": "France · Round of 16 · Lens",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Laurent Blanc", "minute": "114'", "note": "(golden goal — the first in World Cup history; headed in from a David Trezeguet knock-down)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "France 1998, Round of 16 in Lens: the hosts, missing the suspended Zinedine Zidane, spent 114 minutes unable to break a Paraguay side marshalled by its goalkeeper-captain José Luis Chilavert — the free-kick-taking, penalty-scoring keeper who was having the game of the tournament.",
+          "It was 0-0 into the second period of extra time under a brand-new rule: the golden goal, sudden death, the next goal ends it. Nobody had ever scored one at a World Cup.",
+          "Then David Trezeguet nodded a ball down and Laurent Blanc — a centre-back — swept it in from close range. The match stopped where it stood. The first golden goal in World Cup history, and France exhaled.",
+          "They never looked back: France won every knockout tie from there and beat Brazil 3-0 in the final to lift their first World Cup, at home. Blanc's header is remembered as the moment Les Bleus started to believe. Paraguay went home having lost a game they did not concede in for 114 minutes."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Three World Cup meetings, France have won all that mattered: a 7-3 goal-storm in the 1958 group stage, with Just Fontaine scoring three on his way to a record 13 for the tournament, and the 1998 golden goal in Lens. Paraguay have never beaten France at a World Cup — and the one that stings was decided by a rule that has since been abolished, on a header from a defender, with their goalkeeper otherwise unbeatable. Tonight is the first knockout rematch in twenty-eight years, and the first that can't end in sudden death.",
+      "video": {
+        "youtube_id": "bGPP2K3vD9E",
+        "title": "Laurent Blanc — the first golden goal in World Cup history, France 1-0 Paraguay, 1998",
+        "caption": "The moment itself: Trezeguet's knock-down, Blanc's header, and a World Cup match ending on the spot for the first time — the 114th minute in Lens, 1998, the goal that started France toward the trophy.",
+        "source": "archive · 1998 highlights"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Rodrigo",
+      "asker_city": "Asunción",
+      "asker_day": "Sat 4 Jul",
+      "question": "My dad still won't talk about 1998. Chilavert kept France out for almost two hours and then they beat us with a rule that doesn't even exist anymore — a golden goal, sudden death, no chance to answer. Was that fair? And does it change anything that tonight there's no golden goal to lose to?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "France beat Paraguay 1-0 in the 1998 Round of 16 on Laurent Blanc's 114th-minute header — the first golden goal ever scored at a World Cup, under a rule (introduced 1993) that ended the match the instant a goal was scored in extra time.",
+          "Paraguay had held the hosts scoreless for 114 minutes, goalkeeper-captain José Luis Chilavert outstanding; the golden goal gave them no opportunity to equalise.",
+          "The golden goal was used at only two World Cups (1998, 2002), produced just four goals in total, and was abolished in 2004 — extra time reverted to the full 30 minutes plus penalties.",
+          "Tonight's rematch, therefore, cannot be decided by a golden goal: if level after 90 it plays a full 30 minutes of extra time, and if still level, penalties."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question is whether 1998 was fair. The honest answer: it was within the rules — but the rules were bad, and football agreed, which is exactly why they're gone. The golden goal's cruelty was structural: it could end a game with no reply, and it rewarded fear over attack. Paraguay didn't lose to a better hour of football; they lost to a single moment under a rule the sport later decided was a mistake. Does tonight change it? It can't give 1998 back. But it does mean that whatever happens in Philadelphia, no one goes home to a sudden-death header they never got to answer. This time there's a full extra time, and if it comes to it, a shootout Chilavert's heirs get to take part in."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The first golden goal", "seed": "The last France-Paraguay World Cup knockout, in 1998, produced the first golden goal in World Cup history — Laurent Blanc's 114th-minute header in Lens, under a sudden-death rule that has since been abolished; France went on to win the tournament as hosts." },
+      { "tag": "An extinct rule", "seed": "Only four golden goals were ever scored at a World Cup, all between 1998 and 2002 — Blanc's the first — before the rule was scrapped in 2004; tonight's rematch, whatever happens, cannot produce a fifth." },
+      { "tag": "Three meetings, France win them all", "seed": "Paraguay vs France is the nations' third World Cup meeting after 1958 (France 7-3, Just Fontaine scoring three on the way to a record 13-goal tournament) and 1998 (the golden goal) — Paraguay have never beaten France at a World Cup." },
+      { "tag": "The host nation's reckoning", "seed": "In the other Round of 16 tie today, co-hosts Canada face Morocco — the team that beat them 2-1 in 2022 and then became the first African and Arab nation to reach a World Cup semifinal — a rematch of the group game that ended Canada's last World Cup winless." },
+      { "tag": "A knockout on the 250th", "seed": "The Round of 16 opens on US Independence Day — the 250th — with a World Cup knockout tie in Philadelphia, the city where American independence was declared in 1776." }
     ]
   }
 }
