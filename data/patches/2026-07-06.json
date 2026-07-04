@@ -1,97 +1,99 @@
 {
   "date": "2026-07-06",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 26 — Round of 16, two ties: Portugal vs Spain (SPINE — the Iberian derby) and Mexico vs England at Estadio Banorte, Mexico City (= the renamed Estadio Azteca, NOT Monterrey; FIFA brands it 'Mexico City Stadium' for the tournament). Spine spine: Portugal 3-3 Spain, the 2018 group-stage classic. back_story = Portugal 3-3 Spain, 15 June 2018, Fisht Stadium Sochi (Ronaldo 4' pen, Diego Costa 24', Ronaldo 44', Costa 55', Nacho 58', Ronaldo 88' free kick — Ronaldo's first WC hat-trick, oldest to score a WC hat-trick at 33; Spain had sacked coach Lopetegui two days before the tournament, Hierro's first game); VIDEO eLJ5MoSPjVE (oembed author_name 'FIFA' → 'FIFA · official', 'Portugal 3-3 Spain | Extended Highlights | 2018 FIFA World Cup'). story_behind_number = 6 (Ronaldo is the FIRST player to score at SIX different World Cups, 2006-2026; 10 career WC goals; age 41 in 2026). here&there = Portugal ↔ Spain, one Iberian Peninsula, the ~1,214 km land border (longest uninterrupted in the EU, 'La Raya'/'A Raia', dating to the 1297 Treaty of Alcañices), sister Ibero-Romance languages, Iberian Union 1580-1640; all-time 41 meetings Spain 17 / draws 18 / Portugal 6. where_played_before OMITTED (the Azteca's venue heritage was already told opening day 11 June + referenced 18 June — avoid a third telling; Portugal-Spain venue was null in the API). Mexico-England carried as strong context_notes + an anomaly (only prior WC meeting England 2-0 Mexico, 1966 group at Wembley, Bobby Charlton + Roger Hunt; England's return to the Azteca, scene of Maradona's 1986 'Hand of God' vs ARGENTINA not England; Mexico City altitude ~2,240m). Fixtures/venue/round API-verified (use_cache=False); heritage web-verified 2026-07-04. FLAGS: Lopetegui sacking is historically established (not independently double-sourced this pass but high confidence). Mexico-England shows UTC T00:00 on the 6th (July 5 evening local) — API date-buckets it on 2026-07-06, same as the orchestrator query.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 26 — Round of 16",
+    "tournament_summary": "Two ties, and the marquee is a neighbour's quarrel. Portugal meet Spain in the Round of 16 — the Iberian derby, two nations that share one peninsula, the longest unbroken land border in the European Union, and a football rivalry that runs a century deep. The last time they met at a World Cup, in 2018, they drew 3-3 in one of the tournament's great nights: a Cristiano Ronaldo hat-trick capped by a 25-yard free kick in the 88th minute. Ronaldo is still here — at 41, the first man ever to score at six different World Cups. Elsewhere, England return to the Estadio Azteca in Mexico City to face the co-hosts, in a knockout staged a mile and a half above sea level at the only stadium ever to hold three World Cups.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Portugal vs Spain — Round of 16, the Iberian derby. Their last World Cup meeting was the 3-3 draw at Russia 2018, a Cristiano Ronaldo hat-trick answered twice by Spain. All-time the two have met 41 times: Spain lead with 17 wins to Portugal's 6, with 18 draws.",
+      "This is Portugal and Spain's first World Cup knockout meeting since 2010, when Spain won a Round of 16 tie 1-0 in South Africa and went on to lift the trophy — and their first ever World Cup knockout Iberian derby since that title run.",
+      "Mexico vs England at the Estadio Banorte, Mexico City — the renamed Estadio Azteca, branded 'Mexico City Stadium' for the tournament — a Round of 16 tie at ~2,240 m altitude, in the only stadium to host three World Cups (1970, 1986, 2026).",
+      "Mexico and England have met only once at a World Cup: England 2-0 Mexico in the 1966 group stage at Wembley (Bobby Charlton and Roger Hunt), during England's home-soil title run. The Azteca is also where Maradona's 'Hand of God' knocked England out in 1986 — against Argentina, not Mexico — a ghost the English press has been happy to raise all week."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "La Raya — the same house, two rooms",
+      "framing": "You could walk from one team's country to the other's. Portugal and Spain are the two nations of the Iberian Peninsula, divided by the longest uninterrupted land border in the European Union — some 1,214 kilometres the Spanish call La Raya and the Portuguese A Raia, 'the line,' a frontier so old it has barely moved since 1297. They speak sister languages descended from the same Latin, close enough to half-understand each other across a bar. Their crowns were briefly one, in the Iberian Union of 1580 to 1640. And on a football pitch they have met 41 times in a hundred years, close enough that in their last World Cup game Ronaldo won a penalty off Nacho — his own Real Madrid teammate. This is not two strangers drawn together by a bracket. It is one house, two rooms, and a wall thin enough to hear through — the most intimate derby the Round of 16 could have produced.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "The line", "fact": "Portugal and Spain share a land border of roughly 1,214 km — the longest uninterrupted frontier in the European Union — known as La Raya (Spanish) or A Raia (Portuguese), largely unchanged since the 1297 Treaty of Alcañices, one of the oldest borders in the world." },
+        { "label": "Sister tongues", "fact": "Portuguese and Spanish are Ibero-Romance languages descended from Vulgar Latin, mutually intelligible enough that speakers can often follow each other; the two crowns were even united in the Iberian Union from 1580 to 1640." },
+        { "label": "41 meetings", "fact": "The nations have played 41 official matches since their first in 1921 (Spain 3-1, Madrid): Spain lead 17 wins to Portugal's 6, with 18 draws — a century of a neighbour's rivalry." },
+        { "label": "Same dressing rooms", "fact": "So intertwined are the two football cultures that in the 2018 World Cup meeting Ronaldo won his opening penalty after being fouled by Nacho — a fellow Real Madrid player — one club's teammates on opposite international sides." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "6",
+      "surface_stat": "Portugal vs Spain, a rematch of the 3-3 — and the number is 6",
+      "historical_anchor": "Six is how many different World Cups Cristiano Ronaldo has now scored at — 2006, 2010, 2014, 2018, 2022 and 2026 — the first player in the history of the tournament to do it. He reached it this summer, at 41, with two goals against Uzbekistan in the group stage, extending a career total that stands at ten World Cup goals. Four of those ten came in a single night against the team he faces today: the 2018 hat-trick in Sochi, the first World Cup hat-trick of his life and, at 33, the oldest hat-trick the tournament had seen. Spain have never had a player carry a rivalry the way Ronaldo has carried this one — across two decades, six tournaments, and one 3-3 draw that belonged entirely to him. He is the number, and the number is the point: no one has ever lasted this long at this level, and he saved some of his best for exactly this opponent.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "6", "v": "different World Cups Ronaldo has scored at (2006-2026) — the first player ever to reach six" },
+        { "k": "10", "v": "his career World Cup goals — four of them in one 2018 night against Spain" },
+        { "k": "41", "v": "years old: Ronaldo, born 5 February 1985, is still Portugal's talisman six tournaments on" },
+        { "k": "3-3", "v": "the last World Cup meeting between the two — a Ronaldo hat-trick capped by an 88th-minute free kick" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "His 2018 hat-trick made him, at 33 years and 130 days, the oldest player to score a World Cup hat-trick, and the fourth man to score at four different World Cups — a list, joining Pelé, Klose and Seeler, he has since left behind entirely by reaching six.",
+        "The night's other headline was Spain's chaos, not Portugal's brilliance: Spain had sacked coach Julen Lopetegui two days before the tournament after Real Madrid announced him as their next manager, and Fernando Hierro took charge for this, his first match.",
+        "For all Ronaldo's individual ownership of the fixture, the results have gone Spain's way when it mattered: they beat Portugal in the 2010 World Cup second round and knocked them out of Euro 2012 on penalties, winning the trophy each time."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Portugal",
+        "Spain"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2018",
+        "score": "3 — 3",
+        "host": "Russia",
+        "round": "Group stage · opening match",
+        "venue": "Fisht Stadium, Sochi",
+        "context_line": "Russia · Group B · Sochi",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Cristiano Ronaldo", "minute": "4'", "note": "(penalty — won it himself, fouled by Nacho)" },
+          { "scorer": "Diego Costa", "minute": "24'", "note": "(Spain — bundled in after a physical duel with Pepe)" },
+          { "scorer": "Cristiano Ronaldo", "minute": "44'", "note": "(a low shot from distance that slipped through De Gea's hands)" },
+          { "scorer": "Diego Costa", "minute": "55'", "note": "(Spain — a fine turn and finish to level at 2-2)" },
+          { "scorer": "Nacho", "minute": "58'", "note": "(Spain — a curling half-volley into the far corner, 3-2)" },
+          { "scorer": "Cristiano Ronaldo", "minute": "88'", "note": "(free kick — over the wall, top corner, completing the hat-trick and the 3-3)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Russia 2018, the opening game of Group B in Sochi, and it was Ronaldo's from the fourth minute, when he went down under Nacho's challenge and slotted the penalty himself.",
+          "Spain kept answering. Diego Costa levelled it twice — a bundled effort off a duel with Pepe, then a turn and finish — and just before the hour Nacho lashed in a half-volley to put Spain 3-2 ahead. In between, Ronaldo's second had squirmed through David de Gea's hands, the error that would define Spain's tournament.",
+          "Then the 88th minute, and the image everyone kept: Portugal a free kick, 25 yards out, Ronaldo standing over it, the whole stadium knowing. He curled it over the wall into the top corner past De Gea for the hat-trick and the 3-3.",
+          "It was his first World Cup hat-trick, at 33 the oldest the tournament had seen, and it came against the neighbour on a night Spain were already in turmoil — they had sacked their coach two days earlier. Eight years on, the two meet again, this time with no group table to soften it: a knockout, one of them gone by the night's end."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Forty-one meetings in a century, and Spain hold the edge: 17 wins to Portugal's 6, with 18 draws. The tournament history bends Spain's way too — a 1-0 win in the 2010 World Cup second round on the way to the title, and a penalty-shootout win in the Euro 2012 semi-final before another. Portugal's counterweight is the 3-3 of 2018 and the man who authored it: Ronaldo, who has scored at six different World Cups and saved four of his ten World Cup goals for Spain. This is their first World Cup knockout meeting since 2010 — the first time in sixteen years that the Iberian derby ends with one of them going home.",
+      "video": {
+        "youtube_id": "eLJ5MoSPjVE",
+        "title": "Portugal 3-3 Spain, 2018 — the Ronaldo hat-trick",
+        "caption": "The last World Cup meeting between the neighbours: Ronaldo's early penalty, Diego Costa's two, Nacho's screamer, and the 88th-minute free kick that completed the hat-trick and the 3-3 — his first World Cup treble, at 33.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Álvaro",
+      "asker_city": "Sevilla",
+      "asker_day": "Mon 6 Jul",
+      "question": "People talk about Portugal-Spain like it's a coin-flip rivalry, but every time I actually look it up we're ahead. Is the Iberian derby genuinely even, or is that just the drama of the 2018 game and Ronaldo talking? And have we ever actually knocked them out of a World Cup?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Spain lead the all-time series comfortably: 17 wins to Portugal's 6, with 18 draws across 41 meetings since 1921. The 'even rivalry' framing is about proximity and drama more than results.",
+          "The two biggest recent tournament meetings both went Spain's way and both preceded a Spanish trophy: Spain won the 2010 World Cup second-round tie 1-0 (then won the World Cup), and won the Euro 2012 semi-final 4-2 on penalties (then won the Euro).",
+          "The famous 2018 game was a 3-3 draw, not a Portugal win — decided in Spain's favour only in memory by Ronaldo's late free kick and De Gea's error.",
+          "Portugal's real argument is individual, not collective: Ronaldo's 2018 hat-trick, and the fact that he has now scored at six different World Cups — a record Spain have never matched with any player."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The honest reading: the series is not a coin flip. Spain are ahead over a century, and in the two knockout-stakes meetings that actually decided something, Spain won both and went on to win the tournament each time. What makes the derby feel even is the intimacy — one peninsula, one border, shared clubs — and the one night Ronaldo made it his. Today is the tie the head-to-head has been missing: a straight knockout, no group table to hide in, and the first World Cup elimination between them since Spain's 2010 win. If Álvaro wants the ledger to stay in Spain's favour, history is with him. If Portugal want to change the story, they have the one man who has always been able to."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Six World Cups", "seed": "Cristiano Ronaldo, at 41, is the first player in history to score at six different World Cups (2006-2026); four of his ten career World Cup goals came in a single night — the 2018 hat-trick against today's opponent, Spain." },
+      { "tag": "The 88th-minute free kick", "seed": "The last World Cup meeting between Portugal and Spain was the 3-3 of 2018, capped by Ronaldo's 25-yard free kick in the 88th minute — his first World Cup hat-trick, at 33 the oldest the tournament had seen, on a night Spain were reeling from sacking their coach two days before the finals." },
+      { "tag": "Spain's quiet edge", "seed": "For all the drama, Spain lead the Iberian derby 17-6 (18 draws) over 41 meetings — and won both prior knockout-stakes tournament ties, the 2010 World Cup second round and the Euro 2012 semi, going on to win the trophy each time." },
+      { "tag": "England back at the Azteca", "seed": "In the other tie, England face co-hosts Mexico at the Estadio Azteca — their only previous World Cup meeting was England 2-0 Mexico in the 1966 group stage — at the ground where Maradona's 1986 'Hand of God' knocked England out, the only stadium ever to host three World Cups." }
     ]
   }
 }

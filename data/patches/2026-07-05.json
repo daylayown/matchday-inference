@@ -1,97 +1,96 @@
 {
   "date": "2026-07-05",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 25 — Round of 16, a single tie: Brazil vs Norway at MetLife Stadium, East Rutherford NJ (the stadium that hosts the FINAL on 19 July, 14 days later). Spine: Brazil have NEVER beaten Norway. Four completed meetings — 1988 friendly 1-1, 1997 friendly Norway 4-2, 1998 WC group Norway 2-1, 2006 friendly 1-1 — two Norway wins, two draws, ZERO Brazil wins. back_story = Norway 2-1 Brazil, 1998 group stage, Stade Vélodrome Marseille (Bebeto 78', Flo 83', Rekdal pen 89') — Brazil already through as group winners, Norway needed a win to advance and got it, knocking out Morocco; VIDEO IOrd3lHYfiA (oembed author_name 'FIFA' → 'FIFA · official', '15-Minute Match: Brazil 1-2 Norway | 1998 Stunner'). story_behind_number = 0 (Brazil's wins vs Norway, all-time) with the 14 (days to the final on this same pitch) folded in as foreshadowing. here&there = Leeds → Bryne, the Haaland homecoming (born Leeds 2000 to Norwegian father Alf-Inge; raised Bryne; Norway's first WC since 1998; Erling's FIRST WC knockout, 4 group-stage goals). where_played_before OMITTED (MetLife opened 2010, no prior men's WC — the venue's story is the final it will host, carried in the number instead). Fixtures/venue/round API-verified (use_cache=False); heritage web-verified 2026-07-04. FLAGS: Bebeto 78' vs 79' and Flo 83' vs 84' differ by source — used Wikipedia 78'/83'/89'. Do NOT claim Alf-Inge Haaland played in the 1998 Brazil match — frame as 'the last Norway WC generation'.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 25 — Round of 16",
+    "tournament_summary": "One tie today, and it carries a secret the record book has kept for decades: Brazil have never beaten Norway. Not in 1988, not in 1997, not at France '98, not in 2006 — four meetings, two Norwegian wins, two draws, and no Brazilian victory anywhere in the ledger. They settle it in the Round of 16 at MetLife Stadium in New Jersey, the exact field that will host the World Cup final two weeks from now. Norway are back at a World Cup for the first time since 1998 — the very tournament where they last beat Brazil — and Erling Haaland, born in England, raised in Norway, plays the first knockout match of his career on the biggest stage his country has reached in a generation.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Brazil vs Norway at MetLife Stadium, East Rutherford NJ — Round of 16. It is the nations' fifth meeting and Brazil have won none of the previous four: a 1988 friendly (1-1), a 1997 friendly in Oslo (Norway 4-2), the 1998 World Cup group game (Norway 2-1), and a 2006 friendly (1-1).",
+      "MetLife Stadium hosts the 2026 World Cup final on 19 July — 14 days after this tie. Whoever wins here has stood on the final's turf two weeks early.",
+      "Norway are at a World Cup for the first time since France 1998 — a 28-year, seven-tournament absence — and it is Erling Haaland's first World Cup; he scored four goals in the group stage to drive the return, but has never played a knockout match at this level.",
+      "Brazil are the only nation to have appeared at every World Cup and hold a record five titles (1958, 1962, 1970, 1994, 2002) — and yet Norway is the one opponent they have never found a way to beat."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Leeds → Bryne → the Meadowlands — the Haaland homecoming",
+      "framing": "The best striker Norway has ever produced was born in England. Erling Haaland arrived on 21 July 2000 in Leeds, where his father Alf-Inge was playing in the Premier League, and grew up in the small town of Bryne on Norway's rain-swept southwest coast — a boy raised on the edge of a country that hadn't been to a World Cup since two years before he was born. Norway's last World Cup was France 1998; their last knockout footballer a whole generation removed. Now the son of that lost era walks into the New York metropolitan area to play the first knockout match of his life, against Brazil, on the very pitch that hosts the final. Born there, forged here, arriving somewhere else entirely: the geography of a modern footballer, and the thread that ties a small Norwegian town to the biggest stadium of the tournament.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Leeds, 2000", "fact": "Erling Haaland was born 21 July 2000 in Leeds, England, where his Norwegian father Alf-Inge 'Alfie' Haaland was then a Premier League player; both parents are Norwegian and Erling grew up in Bryne, on Norway's southwest coast." },
+        { "label": "The 28-year gap", "fact": "Norway's 2026 World Cup is their first since France 1998 — a seven-tournament absence. The last time they reached one, they beat Brazil to get out of the group; Haaland was not yet born." },
+        { "label": "The first knockout", "fact": "Haaland scored four goals in the 2026 group stage to carry Norway's return, but this Round of 16 is the first World Cup knockout match of his career — at 25, on the field that will host the final." },
+        { "label": "The Meadowlands, tonight", "fact": "MetLife Stadium in East Rutherford, New Jersey — the home of the New York Giants and Jets, and the site of the 19 July World Cup final — is where the boy from Bryne meets the five-time champions his country has never lost to." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "0",
+      "surface_stat": "Brazil, five-time World Cup winners, against Norway — and the number is 0",
+      "historical_anchor": "Zero is how many times Brazil have beaten Norway. Ever. The five-time world champions, the only nation to play in every World Cup, the country that gave the game Pelé and Garrincha and Ronaldo — have met Norway four times and won none of them. A 1-1 friendly in 1988. A 4-2 loss in Oslo in 1997. A 2-1 defeat at France '98 that knocked Norway into the second round and Brazil out of an unbeaten group. A 1-1 draw in 2006. Two Norwegian wins, two draws, and a nought in the Brazil column that has sat there for twenty years. It is the kind of private hex that means nothing on paper — a thin sample, mostly friendlies, the last of them two decades old — and everything in a single-elimination knockout, where the ghost only has to walk once. Tonight, on the field that hosts the final, Brazil try to write a 1 where there has only ever been a 0.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "0", "v": "Brazil wins against Norway, all-time — four completed meetings, and not one of them Brazil's" },
+        { "k": "2 + 2", "v": "Norway's ledger vs Brazil: two wins (1997, 1998) and two draws (1988, 2006)" },
+        { "k": "14", "v": "days from tonight to the World Cup final on this same MetLife pitch — the winner has already seen the stage" },
+        { "k": "5", "v": "Brazil's World Cup titles, the most of any nation — set against the one team they cannot beat" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The one competitive meeting is the one that matters most: at France '98, Brazil led 1-0 into the final minutes and lost 2-1, a late Kjetil Rekdal penalty completing a comeback that sent Norway through and Morocco home.",
+        "The record is built mostly of friendlies and it is old — but it is also the exact stage Norway are at now: in 1998 they beat Brazil to escape the group, and tonight they meet them again in the first knockout round.",
+        "For Brazil the number is a needling footnote in a glorious history; for Norway it is a talisman — proof that the sport's aristocracy has, against them, always come up short."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Norway",
+        "Brazil"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1998",
+        "score": "2 — 1",
+        "host": "France",
+        "round": "Group stage · final matchday",
+        "venue": "Stade Vélodrome, Marseille",
+        "context_line": "France · Group A · Marseille",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Bebeto", "minute": "78'", "note": "(Brazil — the defending champions, already through, ahead with twelve minutes left)" },
+          { "scorer": "Tore André Flo", "minute": "83'", "note": "(Norway — the equaliser that put the comeback in motion)" },
+          { "scorer": "Kjetil Rekdal", "minute": "89'", "note": "(penalty — the winner that sent Norway to the second round and knocked Morocco out)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "France '98, the final group game in Marseille: Brazil were the defending champions and had already qualified as group winners with a match to spare. Norway needed to win — a draw would not do — against the best team in the world.",
+          "For 78 minutes it went as the form book demanded. Bebeto put Brazil ahead, and Norway's World Cup looked over: a point short, on their way home, beaten by the aristocracy.",
+          "Then it turned. Tore André Flo levelled on 83 minutes, and with the clock at 89 Norway won a penalty. Kjetil Rekdal stepped up and buried it — 2-1 — and Norway, not Brazil, walked off having decided the group.",
+          "The win vaulted Norway to the second round and knocked out Morocco, who had been sitting in the qualifying place with ten minutes to go. FIFA's own account of the night is filed under 'upset.' It remains the only competitive meeting between the two nations — and, like the rest of the ledger, one Brazil did not win."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Four completed meetings, and Brazil have won none: a 1-1 friendly in 1988, a 4-2 defeat in Oslo in 1997, the 2-1 loss at France '98, and a 1-1 draw in 2006. Two Norwegian wins, two draws, zero for the five-time champions — the only nation with a positive all-time record against Brazil across more than two meetings. Tonight is the first ever in a knockout, and the first in twenty years, with a place in the quarter-finals of a home-soil final at stake.",
+      "video": {
+        "youtube_id": "IOrd3lHYfiA",
+        "title": "Norway 2-1 Brazil, 1998 — the upset in Marseille",
+        "caption": "The only competitive meeting the two nations have ever had: Bebeto's opener, Flo's equaliser, and Rekdal's 89th-minute penalty that sent Norway past the defending champions and into the second round at France '98.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Ingrid",
+      "asker_city": "Bergen",
+      "asker_day": "Sun 5 Jul",
+      "question": "Everyone keeps telling me Norway have never lost to Brazil, like it's a shield we can carry into a knockout. Is that actually true, and does a record built mostly on old friendlies mean anything when it's sudden-death and Haaland's never played one?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "It is true, and it is unusual: across four completed meetings — 1988, 1997, 1998 and 2006 — Norway have two wins and two draws against Brazil, and Brazil have never beaten them. No other nation has faced Brazil more than twice and avoided defeat.",
+          "The sample is thin, though: three of the four were friendlies, and the last meeting of any kind was in 2006. Only one was competitive — the 2-1 at France '98 — and that is the one that rhymes with tonight, a knockout-stakes group decider Norway won late.",
+          "This is Erling Haaland's first World Cup and his first knockout match at the level; he scored four times in the group stage, but has no experience of single-elimination football on this stage.",
+          "The tie is at MetLife Stadium, which hosts the World Cup final on 19 July — so the reward for winning is not just a quarter-final but a look at the ground where the trophy will be lifted."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The record is real but it is a talisman, not a tactic. Brazil are not haunted by a 1-1 friendly from 1988; they are, if anything, motivated by a footnote they'd like to erase. What actually travels from 1998 to tonight is narrower and better: proof that Norway can beat this specific opponent when the stakes are highest, because they've done it once, in the one game that counted. That won't keep Haaland calm on his first knockout night — but it's a truer thing to carry than the full unbeaten list, most of which was written in meaningless friendlies a lifetime ago."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The team Brazil can't beat", "seed": "Brazil, five-time world champions and ever-present at every World Cup, have played Norway four times and won none — two Norwegian wins, two draws — the only nation with a positive all-time record against Brazil across more than two meetings." },
+      { "tag": "The Marseille upset", "seed": "The only competitive Brazil-Norway meeting was at France '98: Brazil led 1-0 with twelve minutes left and lost 2-1, Kjetil Rekdal's 89th-minute penalty completing a comeback that sent Norway to the second round and knocked Morocco out." },
+      { "tag": "Haaland's first knockout", "seed": "Norway are at a World Cup for the first time since 1998 and Erling Haaland — born in Leeds, raised in Bryne — plays the first knockout match of his career, having scored four times in the group stage to carry the return." },
+      { "tag": "Fourteen days from the final", "seed": "The tie is at MetLife Stadium, which hosts the World Cup final on 19 July — so the quarter-final ticket on offer tonight comes on the exact pitch where the trophy will be lifted two weeks later." }
     ]
   }
 }

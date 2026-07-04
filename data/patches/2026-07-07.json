@@ -1,97 +1,97 @@
 {
   "date": "2026-07-07",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 27 — Round of 16, three ties: USA vs Belgium at Lumen Field, Seattle (SPINE — host nation, 2014 rematch), Argentina vs Egypt, and Switzerland vs Colombia (a real CONFIRMED fixture — Switzerland beat Algeria 2-0, Colombia beat Ghana 1-0 in the R32; NOT a projection, verified API use_cache=False). Spine: USA-Belgium is a rematch of the 2014 R16, the Tim Howard night. back_story = Belgium 2-1 USA (a.e.t.), 1 July 2014, Arena Fonte Nova Salvador (De Bruyne 93', Lukaku 105', Julian Green 107'); Belgium dominated, Tim Howard made 16 saves — the FIFA-credited World Cup single-match record (records since 1966; previous 13, Ramón Quiroga Peru 1978). VIDEO nyDS6hLJXmM (oembed author_name 'FIFA' → 'FIFA · official', '10-Minute Match | Late Goals Undo Hero Howard, USA'). story_behind_number = 16 (Howard's saves). here&there = the night a keeper became folk hero — White House 'Secretary of Defense' petition + Obama addressing it + Hagel phoning Howard, #ThingsTimHowardCouldSave, and the 'I Believe That We Will Win' chant (origin 1998 Naval Academy Prep, Jay Rodriguez). H2H WC ledger: USA 3-0 Belgium in 1930 (the USA's FIRST-EVER WC match, en route to the semis) and Belgium 2-1 in 2014 → 1-1, tonight the rubber match. where_played_before OMITTED (Lumen Field opened 2002, no prior men's WC). Argentina-Egypt (Atlanta) carried as context/anomaly: NEVER met at a WC (first ever competitive meeting; only prior a 2008 friendly Argentina 2-0); Argentina reigning champions (2022); Egypt just won their first-ever WC knockout tie, beating Australia on penalties. Switzerland-Colombia noted. Fixtures/venue/round API-verified (use_cache=False); heritage web-verified 2026-07-04. FLAGS: Howard's saves = 16 per FIFA (some outlets say 15) — attribute to FIFA. Do NOT repeat the unverified 'Eloy Room broke the record with 15' claim (15<16, self-contradictory). USA-Belgium shows UTC T00:00 on the 7th (July 6 evening Seattle) — API date-buckets it on 2026-07-07, same as the orchestrator query.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 27 — Round of 16",
+    "tournament_summary": "The host nation gets its rematch. Twelve years after Belgium beat the United States in the Round of 16 in Salvador — the night Tim Howard made a record sixteen saves and still lost — the two meet again, this time in Seattle, on American soil, with a quarter-final at stake. It is the rubber match of a World Cup rivalry that began in 1930 and has one win each. Elsewhere, the reigning champions Argentina face Egypt in Atlanta in the nations' first competitive meeting, and Switzerland play Colombia to fill the last quarter-final place. But the day belongs to a goalkeeper who became a folk hero in defeat, and the country trying to finish tonight what he couldn't in 2014.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "USA vs Belgium at Lumen Field, Seattle — Round of 16, and a rematch of the 2014 Round of 16, when Belgium won 2-1 after extra time and Tim Howard made a World Cup-record 16 saves. It is the nations' third World Cup meeting: USA beat Belgium 3-0 in 1930, Belgium won in 2014 — 1-1, and tonight decides it.",
+      "The USA's 3-0 win over Belgium in 1930 was the United States' first-ever World Cup match; they went on to reach the semi-finals, still their best World Cup finish.",
+      "Argentina vs Egypt at Atlanta — Round of 16, and the first competitive meeting between the nations (their only prior meeting was a 2008 friendly, Argentina 2-0). Argentina are the reigning world champions from 2022.",
+      "Egypt reached this round by winning their first-ever World Cup knockout tie, beating Australia on penalties after a 1-1 draw — only the second African side to win a World Cup shootout, after Morocco.",
+      "Switzerland vs Colombia — Round of 16, the last tie of the round, to complete the quarter-final line-up. Switzerland beat Algeria 2-0 and Colombia beat Ghana 1-0 to get here."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The night a goalkeeper became Secretary of Defense",
+      "framing": "The United States lost that game, and the country threw a parade anyway. When Tim Howard made sixteen saves against Belgium in 2014 — a World Cup record, in a match the U.S. still lost 2-1 — something strange and very American happened: the defeat became folklore. A White House petition asked to name Howard Secretary of Defense. The President mentioned it in his weekly address. The actual Secretary of Defense phoned him to say thanks. Twitter filled with #ThingsTimHowardCouldSave — dinosaurs, the Titanic, Private Ryan — and the crowds sang the chant a Navy prep-school student had invented in 1998, I Believe That We Will Win, as if the scoreboard were a detail. Tonight the same fixture comes back, on home soil, with the result reversed as the whole point: not a heroic loss to mythologize, but a game to actually win. The thread runs from Salvador to Seattle — from the country that turned a goalkeeper's defeat into legend, to the one now asking it to become a victory.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Salvador, 2014", "fact": "Tim Howard made 16 saves against Belgium in the 2014 Round of 16 — a World Cup record for a single match — but the U.S. lost 2-1 in extra time, Belgium's Kevin De Bruyne and Romelu Lukaku scoring before Julian Green pulled one back." },
+        { "label": "Secretary of Defense", "fact": "A White House petition asked to name Howard Secretary of Defense; President Obama referenced it in his weekly address, and then-Defense Secretary Chuck Hagel personally phoned Howard to thank him and invited the squad to the Pentagon. #ThingsTimHowardCouldSave trended worldwide." },
+        { "label": "I Believe That We Will Win", "fact": "The definitive USMNT chant was created in 1998 by a student, Jay Rodriguez, at the Naval Academy Preparatory School as a platoon cheer; it spread through the Naval Academy to American Outlaws supporters and became the soundtrack of U.S. World Cup crowds." },
+        { "label": "Seattle, tonight", "fact": "The same tie returns at Lumen Field, one of American soccer's loudest grounds, with the host nation trying to turn the most beloved loss in its World Cup history into a win — and reach the quarter-finals on home soil." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "16",
+      "surface_stat": "USA vs Belgium, the 2014 rematch — and the number is 16",
+      "historical_anchor": "Sixteen is how many saves Tim Howard made against Belgium on 1 July 2014 — the most any goalkeeper has made in a single World Cup match since FIFA began counting in 1966. Belgium came at the United States in wave after wave that night in Salvador, thirty-odd shots, and for 120 minutes Howard turned back nearly all of them: diving, blocking, smothering, a one-man barricade in a game the U.S. had no business staying in. He beat the old record of 13, set by Peru's Ramón Quiroga in 1978, by three. And then the U.S. lost — De Bruyne and Lukaku in extra time — which is the whole strange beauty of the number. Sixteen is a record set in defeat, a monument to a night that ended in elimination, and the reason a losing goalkeeper became a national folk hero. Tonight the fixture returns, on home soil, and the number the U.S. wants this time isn't saves. It's a scoreline.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "16", "v": "saves by Tim Howard vs Belgium, 2014 — the most in a single World Cup match since records began in 1966 (per FIFA)" },
+        { "k": "13", "v": "the previous record, held by Peru's Ramón Quiroga at the 1978 World Cup — beaten by three" },
+        { "k": "1-1", "v": "the USA-Belgium World Cup ledger: USA 3-0 in 1930, Belgium 2-1 in 2014 — tonight is the decider" },
+        { "k": "1930", "v": "the year of the USA's 3-0 win over Belgium — the United States' first-ever World Cup match, on the way to a semi-final" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Belgium dominated the 2014 tie almost completely — well over thirty shots — and it took two extra-time goals, from Kevin De Bruyne (93') and Romelu Lukaku (105'), to finally break Howard; 19-year-old substitute Julian Green volleyed one back at 107' and the U.S. nearly forced penalties off a late free kick.",
+        "Some outlets credit Howard with 15 rather than 16, but FIFA's official count is 16, and it is FIFA's record book that lists it as the single-match record.",
+        "The 2014 Belgium side was a 'golden generation' — De Bruyne, Lukaku, Hazard, Courtois — that peaked at third place in 2018 and never won a major trophy; the Belgium the U.S. faces tonight is a rebuilt, largely different team."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "USA",
+        "Belgium"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2014",
+        "score": "1 — 2",
+        "host": "Brazil",
+        "round": "Round of 16 · a.e.t.",
+        "venue": "Arena Fonte Nova, Salvador",
+        "context_line": "Brazil · Round of 16 · Salvador",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Kevin De Bruyne", "minute": "93'", "note": "(Belgium — the breakthrough, minutes into extra time after 90 goalless)" },
+          { "scorer": "Romelu Lukaku", "minute": "105'", "note": "(Belgium — set up by De Bruyne, to make it 2-0)" },
+          { "scorer": "Julian Green", "minute": "107'", "note": "(USA — a 19-year-old substitute's first-touch volley, from a Michael Bradley pass)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Brazil 2014, the Round of 16 in Salvador: Belgium's golden generation against a United States side that spent the night under siege. Belgium had more than thirty shots; the U.S. had a goalkeeper.",
+          "Tim Howard made save after save — sixteen in all, a World Cup record — and dragged a scoreless game through 90 minutes and into extra time it had no right to reach. It was one of the great individual goalkeeping displays the tournament has seen.",
+          "Then the dam broke: Kevin De Bruyne finished at 93 minutes, Romelu Lukaku made it 2-0 at 105. But the U.S. would not quite die — Julian Green, a 19-year-old substitute, volleyed in Michael Bradley's pass on 107, and a late worked free kick nearly forced penalties.",
+          "It ended 2-1, and the United States went home — to a hero's reception for the man who'd lost. Howard's sixteen saves became folklore, a White House petition, a presidential aside. Twelve years on, the same two teams meet again, on American soil, with the U.S. finally in a position to rewrite the ending."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Three World Cup meetings, one win each so far. The United States beat Belgium 3-0 in 1930 — the USA's first-ever World Cup match, on the way to a semi-final that remains their best finish. Belgium answered in 2014, winning 2-1 after extra time on the night Tim Howard's 16 saves set a record and still weren't enough. That leaves it 1-1, and tonight the rubber match — the first time the fixture has been played on U.S. soil, with a quarter-final, and a chance to avenge the most celebrated defeat in American World Cup history, on the line.",
+      "video": {
+        "youtube_id": "nyDS6hLJXmM",
+        "title": "Belgium 2-1 USA, 2014 — the Tim Howard game",
+        "caption": "The night Tim Howard made a World Cup-record 16 saves and the United States still lost: Belgium's extra-time goals from De Bruyne and Lukaku, Julian Green's reply, and the goalkeeping display that turned a Round of 16 defeat into American folklore.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Marcus",
+      "asker_city": "Portland",
+      "asker_day": "Tue 7 Jul",
+      "question": "We lost that 2014 game and still talk about it like a triumph. Was Tim Howard's 16-save night actually the World Cup record, or is that a story we've told ourselves so many times it just feels true? And has the U.S. ever actually beaten Belgium when it counted?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "It's real: FIFA credits Tim Howard with 16 saves against Belgium in 2014 — the most in a single World Cup match since record-keeping began in 1966, beating the 13 set by Peru's Ramón Quiroga in 1978. (Some outlets say 15; FIFA's official figure, and its record, is 16.)",
+          "The catch is that Belgium won 2-1 in extra time (De Bruyne 93', Lukaku 105'), so it's the rare record set in a losing effort — which is exactly why it became folklore rather than a footnote.",
+          "The U.S. has beaten Belgium at a World Cup: 3-0 in 1930, the United States' first-ever World Cup match, on the way to the semi-finals. That leaves the World Cup ledger 1-1 heading into tonight.",
+          "This is the first time the fixture has been played in the United States — a home-soil Round of 16 with a quarter-final place at stake."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The story is true, which is the best kind of story. Howard's 16 is a genuine FIFA record, not a fan exaggeration, and the reason it endures is the paradox at its heart: the greatest goalkeeping performance in modern World Cup memory happened in a game the U.S. lost. What Marcus is really asking is whether a beloved defeat can finally become a win. The pieces are different — Belgium's golden generation is gone, this is a rebuilt side, and the game is in Seattle, not Salvador — but the fixture is the same, and so is the record it's remembered for. The U.S. has beaten Belgium before, in 1930. Tonight is the chance to make the more famous meeting end the other way."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "A record set in defeat", "seed": "Tim Howard's 16 saves against Belgium in 2014 are, per FIFA, the most in a single World Cup match since records began in 1966 — and yet the United States lost the game 2-1 in extra time, which is why the night became folklore rather than a footnote." },
+      { "tag": "The rubber match", "seed": "USA and Belgium have met twice at a World Cup and won once each — USA 3-0 in 1930 (the Americans' first-ever World Cup match, en route to the semis) and Belgium 2-1 in 2014 — making tonight, on U.S. soil, the decider." },
+      { "tag": "Champions meet Egypt for the first time", "seed": "Argentina, the reigning world champions, face Egypt in Atlanta in the nations' first-ever competitive meeting — Egypt arriving off their first World Cup knockout win ever, a penalty-shootout victory over Australia, only the second by an African side after Morocco." },
+      { "tag": "The last ticket", "seed": "Switzerland vs Colombia completes the Round of 16 and fills the final quarter-final place — Switzerland having beaten Algeria 2-0 and Colombia edged Ghana 1-0 to get here." }
     ]
   }
 }
