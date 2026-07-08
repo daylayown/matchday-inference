@@ -1,97 +1,95 @@
 {
   "date": "2026-07-12",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 31 — Quarter-final: Argentina vs Switzerland at Arrowhead Stadium, Kansas City (API-verified use_cache=False; single fixture on the date, kickoff 01:00 UTC 12 Jul = evening of 11 Jul local CDT — API date-buckets it 2026-07-12, same as the orchestrator query; SAME pattern as the July 7 USA-Belgium T00:00 case). Spine: the 2014 Round of 16 rematch — Argentina 1-0 Switzerland (Arena Corinthians, São Paulo, 1 Jul 2014; Ángel Di María 118', assist Lionel Messi) — a grinding 0-0 that Messi's slipped pass finally broke in the 118th minute; Switzerland nearly equalised in the dying seconds (Blerim Dzemaili header off the POST, rebound off his own knee). back_story = the 2014 R16. VIDEO wGiDDjn4yKc (oembed author_name 'FIFA' → 'FIFA · official', 'Argentina v Switzerland | 2014 FIFA World Cup | Match Highlights'). story_behind_number = 118 (the minute of Di María's winner). H2H World Cup: only TWO prior meetings, both Argentina wins — 1966 group (2-0) and 2014 R16 (1-0); Argentina have never lost to Switzerland at a WC. here&there = Messi's likely last World Cup (39, his 6th, reigning champion) vs Switzerland the eternal last-16 wall (out in R16 in 2006/2014/2018/2022; 2026 is their FIRST QF since 1954). where_played_before OMITTED (Arrowhead never hosted a men's WC). FLAGS: Dzemaili's near-equaliser was off the POST (not crossbar). Shaqiri is NOT in this team — he retired from internationals July 2024 after Euro 2024; do NOT write him in. Switzerland captained by Granit Xhaka (4th WC), coached by Murat Yakin, beat Colombia 4-3 on pens (0-0) to reach this. Messi 'one final campaign' exact wording is from AI-tinged summaries — treat as widely-framed-as-last, not a hard quote; solid facts: 39, 6th WC, 2022 winner, defending champs. Do NOT name Switzerland's 2026 keeper (Sommer vs Kobel unconfirmed). Heritage web-verified 2026-07-08; scores/goal-minute/assist/venue API-verified.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 31 — Quarter-final",
+    "tournament_summary": "The champions against the wall. Argentina, holders of the World Cup and carried once more by a 39-year-old Lionel Messi in what everyone treats as his last, arrive at Arrowhead to face the one kind of opponent that has always given them trouble at a World Cup and never actually beaten them: Switzerland, the eternal hard out, a team that defends for its life and makes the great sides sweat. They have met at exactly this stage of a tournament before — the 2014 Round of 16, a suffocating goalless grind that Messi and Ángel Di María finally cracked in the 118th minute, seconds before Switzerland nearly equalised off the post. Twelve years on the Swiss are in a quarter-final for the first time since 1954, and the reigning champions have to get past them to keep a farewell tour alive.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Argentina vs Switzerland at Arrowhead Stadium, Kansas City — World Cup quarter-final, and a rematch of the 2014 Round of 16, which Argentina won 1-0 on Ángel Di María's goal in the 118th minute, set up by Lionel Messi.",
+      "The two have met only twice before at a World Cup, and Argentina won both — 2-0 in the 1966 group stage and 1-0 in 2014; Switzerland have never beaten Argentina at a World Cup.",
+      "Argentina are the reigning champions (2022) and are trying to become the first back-to-back winners since Brazil in 1958-62; Lionel Messi, 39, is playing his sixth and widely his final World Cup.",
+      "Switzerland reached this stage by beating Colombia 4-3 on penalties after a 0-0 draw; captained by Granit Xhaka and coached by Murat Yakin, it is their first World Cup quarter-final since 1954.",
+      "Switzerland are the tournament's great last-16 wall — eliminated at the Round of 16 in 2006, 2014, 2018 and 2022 — a team built to frustrate favourites; this run is the furthest they have gone in 72 years."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The last dance and the immovable object",
+      "framing": "Two teams arrive at Arrowhead carrying opposite kinds of history. Argentina bring Lionel Messi, 39 years old, world champion, playing what is universally understood to be his final World Cup — the last chapter of the longest and most scrutinised career football has produced, a man trying to add a second star to a farewell. Switzerland bring the opposite of a story: no superstar, no fairy tale, just the most stubborn defensive organisation in the tournament and a national habit of dragging the great sides into the mud. For two decades the Swiss have been the World Cup's immovable object — out in the Round of 16 in 2006, 2014, 2018 and 2022, always hard to beat, never quite good enough — and now, for the first time since 1954, they've broken through to a quarter-final by out-suffering Colombia in a shootout. The last time these two met, at the same knockout stage in 2014, it took Messi until the 118th minute to find a way through, and even then Switzerland hit the post in the final seconds. That is the whole thread: the most irresistible force in the game's history, running out of tournaments, against the team that specialises in refusing to move.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "São Paulo, 2014", "fact": "Argentina beat Switzerland 1-0 in the 2014 Round of 16, but only in the 118th minute — a Messi run and slipped pass for Di María — after 117 minutes in which the Swiss defence would not break, and they nearly equalised off the post moments later." },
+        { "label": "The last-16 wall", "fact": "Switzerland have exited the World Cup in the Round of 16 in 2006, 2014, 2018 and 2022 — reliably hard to beat, reliably one round short; 2026 is their first quarter-final since 1954, when they were the hosts." },
+        { "label": "The final campaign", "fact": "Lionel Messi is 39 and playing his sixth World Cup, widely regarded as his last; Argentina are the reigning champions and are chasing the first back-to-back World Cup since Brazil in 1958-62." },
+        { "label": "Kansas City, tonight", "fact": "The same fixture from 2014 returns at a quarter-final, the champions needing to solve the tournament's most stubborn defence to keep Messi's farewell — and their title defence — alive." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "118",
+      "surface_stat": "Argentina vs Switzerland, the 2014 rematch — and the number is 118",
+      "historical_anchor": "The 118th minute is where the last one finally gave way. On 1 July 2014, in São Paulo, Argentina and Switzerland played 117 minutes of almost nothing — a tense, gridlocked Round of 16 tie in which the Swiss defended in numbers and Messi, for once, kept running into walls. It had extra time written all over it, and penalties beyond that, until the 118th minute: Messi collected the ball in midfield, drove at a tiring defence, and slipped it to Ángel Di María, who swept the only goal of the game into the corner. Two minutes from a shootout, the immovable object moved. And it was nearly undone straight away — Blerim Dzemaili met a Swiss cross and thumped a header against the post in the dying seconds, the rebound spinning off his own knee and wide. That is why 118 is the number: it is the measure of exactly how hard Switzerland are to beat, and of the single moment of Messi genius it took to do it. Twelve years later the same two teams meet at the same knockout round, and Argentina know better than anyone that the Swiss will make them wait until the very last minute again.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "118", "v": "the minute of Di María's winner in the 2014 Round of 16 — assisted by Messi, two minutes from a penalty shootout" },
+        { "k": "0-0", "v": "the score through 117 minutes, a grinding tie the Swiss defence nearly took to penalties" },
+        { "k": "2-0", "v": "Argentina's World Cup record vs Switzerland — 1966 (2-0) and 2014 (1-0); the Swiss have never beaten them at a World Cup" },
+        { "k": "1954", "v": "the last time before 2026 that Switzerland reached a World Cup quarter-final — when they hosted the tournament" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Switzerland nearly forced penalties in 2014: Blerim Dzemaili's stoppage-time header hit the post, the rebound bouncing off his own knee and away, seconds after Di María had scored.",
+        "That Argentina side went all the way to the 2014 final, losing 1-0 to Germany in extra time — Messi's closest brush with the trophy before he finally won it in 2022.",
+        "Switzerland's reputation as the tournament's hardest out is statistical, not sentimental: four straight Round-of-16 exits (2006-2022) by a team designed to frustrate, before this year's breakthrough past Colombia on penalties."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Argentina",
+        "Switzerland"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2014",
+        "score": "1 — 0",
+        "host": "Brazil",
+        "round": "Round of 16 · a.e.t.",
+        "venue": "Arena Corinthians, São Paulo",
+        "context_line": "Brazil · Round of 16 · São Paulo",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Ángel di María", "minute": "118'", "note": "(Argentina — the only goal, from a Messi run and slipped pass, two minutes from penalties)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Brazil 2014, the Round of 16 in São Paulo: Argentina, chasing Lionel Messi's first World Cup, against a Switzerland side doing what Switzerland do — defending in disciplined banks, absorbing everything, refusing to break.",
+          "For 117 minutes it worked. The Swiss frustrated Messi, blocked the lanes, forced Argentina wide, and dragged a scoreless tie deep into extra time with penalties looming and belief growing that they might just steal it.",
+          "Then, in the 118th minute, Messi did the one thing a packed defence can't legislate for: he took the ball, ran straight at it, and threaded a pass to Ángel Di María, who finished low into the corner. Two minutes from a shootout, Argentina were through.",
+          "And it almost didn't hold — Blerim Dzemaili headed a Swiss cross against the post in the final seconds, the rebound flicking off his own knee and wide. Argentina survived, went all the way to the final, and lost to Germany; Messi would wait until 2022 for his trophy. Twelve years on, the same two teams, the same knockout stage — and the champions must solve the same stubborn Swiss puzzle all over again."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Argentina have played Switzerland twice at a World Cup and won both — 2-0 in the 1966 group stage and 1-0 in the 2014 Round of 16 — and Switzerland have never beaten them on this stage. But the 2014 meeting is the warning inside the record: a tie the Swiss took to the 118th minute and nearly to penalties, decided only by a flash of Messi. Tonight the reigning champions meet the same opponent at the same knockout round, with Switzerland in their first quarter-final since 1954 and Argentina chasing back-to-back titles in Messi's last World Cup — the favourite ahead on history, and forewarned about exactly how long it can take to break this team down.",
+      "video": {
+        "youtube_id": "wGiDDjn4yKc",
+        "title": "Argentina 1-0 Switzerland, 2014 — Di María at 118'",
+        "caption": "The night the immovable object finally moved: 117 minutes of Swiss resistance in the 2014 Round of 16, Messi's run and slipped pass for Ángel di María's 118th-minute winner, and Dzemaili's header off the post seconds later as Switzerland came within inches of penalties.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Tomás",
+      "asker_city": "Rosario",
+      "asker_day": "Sat 11 Jul",
+      "question": "Everyone keeps calling Switzerland an easy draw and I don't trust it — I remember 2014 being agony. Have we actually ever lost to them, and is the 2014 game the reason I've got a bad feeling about this?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Argentina have never lost to Switzerland at a World Cup — they've met twice and Argentina won both, 2-0 in 1966 and 1-0 in 2014.",
+          "But the 2014 tie earns the bad feeling: a Round of 16 that stayed 0-0 for 117 minutes against a packed Swiss defence, decided only when Messi set up Di María in the 118th — two minutes from a penalty shootout — and Switzerland then hit the post trying to equalise.",
+          "Switzerland are the World Cup's great hard-out: eliminated in the Round of 16 in 2006, 2014, 2018 and 2022, a team built to frustrate favourites. This year they finally broke through, beating Colombia 4-3 on penalties to reach their first quarter-final since 1954.",
+          "Argentina arrive as reigning champions with Messi, 39, in his last World Cup, chasing the first back-to-back title since Brazil in 1958-62."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The instinct is right, even if the record is reassuring. Argentina have never lost this fixture at a World Cup, but 'never lost' and 'easy' are different things — 2014 was 117 minutes of exactly the agony Tomás remembers, saved by a single moment of Messi, and Switzerland hit the woodwork before it was safe. This is a team that has spent twenty years being nearly impossible to beat and one round short of proving it; now they're finally in the quarters. The history favours Argentina. The memory of 2014 says it will take until the last minute anyway."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Decided in the 118th minute", "seed": "The last time Argentina played Switzerland at a World Cup, the 2014 Round of 16, it stayed 0-0 until the 118th minute, when Messi set up Di María — two minutes from a shootout — and Switzerland then hit the post trying to equalise." },
+      { "tag": "Never beaten them", "seed": "Argentina have met Switzerland twice at a World Cup and won both (1966 and 2014); the Swiss have never beaten them on this stage — though the 2014 tie went to the very last minute." },
+      { "tag": "The wall finally cracks its own ceiling", "seed": "Switzerland exited the World Cup in the Round of 16 four tournaments running (2006, 2014, 2018, 2022) before reaching their first quarter-final since 1954 — beating Colombia 4-3 on penalties to get here." },
+      { "tag": "The last campaign", "seed": "Lionel Messi, 39, is playing his sixth and widely his final World Cup, with Argentina chasing the first back-to-back title since Brazil in 1958-62 — and Switzerland the obstacle standing in the way of the semi-finals." }
     ]
   }
 }

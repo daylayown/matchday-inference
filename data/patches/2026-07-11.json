@@ -1,97 +1,97 @@
 {
   "date": "2026-07-11",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 31 — Quarter-final: Norway vs England at Hard Rock Stadium, Miami (API-verified use_cache=False; single fixture on the date, 21:00 UTC). Spine: the two nations have NEVER met at a World Cup finals — tonight is the first — so back_story pivots to their most legendary meeting, the 1981 WC QUALIFIER (Norway 2-1 England, Ullevaal Stadion, Oslo, 9 Sept 1981; Robson 15', Albertsen 35', Thoresen 41') that produced Bjørge Lillelien's immortal NRK radio commentary ('Maggie Thatcher... your boys took a hell of a beating!'), voted the greatest piece of sports commentary ever. back_story explicitly labels it a QUALIFIER and notes tonight is their first WC-finals meeting. VIDEO PqZTP8-8wIs (oembed author_name 'Michael Alcorn', NOT FIFA → source 'archive · 1981 commentary'; it's 45-year-old TV footage, no FIFA-official clip exists). story_behind_number = 28 (years of Norway's WC absence, 1998→2026 — their FIRST-ever WC quarter-final, best-ever was R16 in 1998). here&there = the rivalry defined by one commentary + Haaland's first WC (born July 2000, after Norway's last WC; he knocked Brazil out 2-1 on July 5, scoring twice late; ~7 goals this tournament, level with Messi/Mbappé). where_played_before OMITTED (Hard Rock/Miami never hosted a men's WC; not a 1994 venue). FLAGS: Lillelien quote wording — name-list (Nelson, Beaverbrook, Churchill, Eden, Attlee, Cooper, Lady Diana) + Thatcher ending are rock-solid; the connective 'birthplace of giants' and exact repetition vary between transcriptions, so don't present one transcription as word-perfect. Albertsen's 1981 goal (the 'never touched the ball' anecdote) is folklore-tier color, not hard record — omitted from hard facts. Also a 1993 qualifier Norway 2-0 England (Graham Taylor era, USA'94) as extra ledger. Alfie Haaland (Erling's father) / Roy Keane 2001 feud available as color but NOT central. Heritage web-verified 2026-07-08; fixtures/venue API-verified.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 31 — Quarter-final",
+    "tournament_summary": "The strangest quarter-final of the eight, because the two teams have never actually done this. Norway and England have met plenty of times — in friendlies, in qualifiers, in one broadcast that outlived the match itself — but never once at a World Cup finals. Tonight, at Hard Rock Stadium in Miami, they finally do, and the stakes are absurd for the Norwegians: a country that hadn't reached a World Cup since 1998, that has never in its history been to a quarter-final, dragged this far by Erling Haaland, who knocked out Brazil almost on his own. England arrive as the heavyweight, the perennial contender. Norway arrive as the team that once beat them so completely a radio commentator recited the whole of English history back at Margaret Thatcher. It has been forty-five years. Norway would like to do it again when it counts even more.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Norway vs England at Hard Rock Stadium, Miami — World Cup quarter-final, and the first time the two nations have ever met at a World Cup finals tournament.",
+      "Their most famous meeting was a qualifier: Norway 2-1 England in Oslo on 9 September 1981, after which Norwegian commentator Bjørge Lillelien delivered his 'Maggie Thatcher, your boys took a hell of a beating!' radio call — later voted the greatest piece of sports commentary ever.",
+      "This is Norway's first World Cup since 1998 — a 28-year absence — and their first-ever World Cup quarter-final; their best previous finish was the Round of 16 in 1998.",
+      "Norway reached this stage by beating five-time champions Brazil 2-1 in the Round of 16, Erling Haaland scoring twice in the final minutes. It is Haaland's first World Cup — he was born in 2000, two years after Norway's last one.",
+      "England arrive as one of the tournament favourites, having beaten Mexico 3-2 in the Round of 16; the two also met in a 1993 qualifier, Norway winning 2-0 in the Graham Taylor era, a result that helped cost England a place at USA '94."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The night a commentator beat England",
+      "framing": "On 9 September 1981, in Oslo, Norway beat England 2-1 in a World Cup qualifier, and a radio commentator named Bjørge Lillelien lost his mind on air in the most magnificent way sport has ever recorded. Switching between Norwegian and English, he began reciting the names of England's dead and famous — Nelson, Churchill, Eden, Attlee, Henry Cooper, Lady Diana — and finished by addressing the Prime Minister directly: 'Maggie Thatcher, can you hear me? Your boys took a hell of a beating!' It was meant for a home audience of a few hundred thousand Norwegians. It became, by a 2002 vote, the greatest piece of sports commentary ever broadcast, and the single thing most people who aren't Norwegian know about Norwegian football. For forty-five years it has been the whole of this rivalry, because there wasn't much else: Norway didn't reach a World Cup between 1998 and this one, and had never once gone as far as a quarter-final. Now they have — carried by a striker, Erling Haaland, who wasn't born the last time Norway played at a World Cup — and they meet England not on a wet Tuesday in a qualifier but in the last eight of a World Cup. The thread runs from a radio booth in Oslo to a Sunday night in Miami: the same fixture, the same underdog, and a great deal more than pride on the line this time.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Oslo, 1981", "fact": "Norway beat England 2-1 in a World Cup qualifier at Ullevaal Stadion on 9 September 1981; Bryan Robson scored early for England before Roger Albertsen and Hallvar Thoresen turned it around." },
+        { "label": "'A hell of a beating'", "fact": "Bjørge Lillelien's radio call — naming Nelson, Beaverbrook, Churchill, Eden, Attlee, Henry Cooper and Lady Diana before taunting 'Maggie Thatcher, your boys took a hell of a beating!' — was voted the greatest piece of sports commentary of all time by The Observer in 2002." },
+        { "label": "28 years away", "fact": "Norway had not reached a World Cup since 1998 before this tournament, and had never advanced past the Round of 16; 2026 is the first World Cup quarter-final in their history." },
+        { "label": "Miami, tonight", "fact": "The two nations meet at a World Cup finals for the very first time — Norway dragged here by Erling Haaland, who scored twice to knock out Brazil and was born two years after Norway's last World Cup appearance." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "28",
+      "surface_stat": "Norway in a World Cup quarter-final — and the number is 28",
+      "historical_anchor": "Twenty-eight years is how long Norway waited between World Cups. They went to France in 1998 — beat Brazil in the group stage, lost to Italy in the Round of 16, went home — and then simply vanished from the tournament for nearly three decades. A whole generation of Norwegian football existed without a World Cup to aim at; Erling Haaland, now the best striker on the planet, was born in July 2000, two years after that last appearance, and had never played in one until this summer. So the number is really a measure of absence — 28 years of watching, of near-misses in qualifying, of a proud football country stuck on the outside — and of how violently it has ended. Norway didn't just come back; they beat five-time champions Brazil to reach the first quarter-final in their history, a stage they never reached in 1938 or 1994 or even the celebrated 1998 side. Twenty-eight years of nothing, and now the deepest run they have ever made, with England the only thing standing between them and a World Cup semi-final.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "28", "v": "years between Norway's World Cup appearances — France 1998 to 2026" },
+        { "k": "1st", "v": "World Cup quarter-final in Norway's history — they had never gone past the Round of 16 (1998) before this" },
+        { "k": "3", "v": "Norway's previous World Cup finals, ever: 1938, 1994 and 1998" },
+        { "k": "2000", "v": "the year Erling Haaland was born — after Norway's last World Cup; 2026 is his first" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Norway qualified for 2026 by winning all eight of their qualifiers and topping their group, ending the 28-year wait.",
+        "In the Round of 16 they beat Brazil 2-1, Haaland scoring twice in the final minutes to knock out the five-time champions — the biggest result in modern Norwegian football history.",
+        "Their 1998 side, the last to reach a World Cup, also beat Brazil in the group stage but fell in the Round of 16 to Italy; no Norway team had ever gone further, until now."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Norway",
+        "England"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1981",
+        "score": "2 — 1",
+        "host": "World Cup qualifier",
+        "round": "1982 WC qualifier · Group 4",
+        "venue": "Ullevaal Stadion, Oslo",
+        "context_line": "WC qualifier · Oslo · 9 Sept 1981",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Bryan Robson", "minute": "15'", "note": "(England — an early lead that would not last)" },
+          { "scorer": "Roger Albertsen", "minute": "35'", "note": "(Norway — the equaliser before half-time)" },
+          { "scorer": "Hallvar Thoresen", "minute": "41'", "note": "(Norway — the winner, and the cue for the most famous commentary in football)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "This is not a World Cup meeting — Norway and England have never had one, until tonight — but it is the meeting that made the rivalry, and it belongs on any page about the two: a World Cup qualifier in Oslo, 9 September 1981.",
+          "England, expected to win comfortably, led early through Bryan Robson. Then Norway — part-timers and lower-league professionals against a side of First Division stars — struck twice before half-time, Roger Albertsen levelling and Hallvar Thoresen turning it around, and held on for a 2-1 win that stunned English football.",
+          "At the final whistle the Norwegian radio commentator Bjørge Lillelien detonated. He named the English dead and famous one by one — Nelson, Churchill, Eden, Attlee, Henry Cooper, Lady Diana — and delivered the line that outlived everyone in it: 'Maggie Thatcher, your boys took a hell of a beating!' It was later voted the greatest piece of sports commentary ever.",
+          "The two would meet again in a 1993 qualifier — Norway 2-0, a result that helped sink England's bid to reach USA '94 — but never at a World Cup finals. That happens for the first time tonight, in Miami, with a semi-final at stake, and Norway trying to give Lillelien's ghost a sequel that counts for even more."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "The two have never met at a World Cup finals — tonight in Miami is the first time — so the head-to-head that matters is the qualifying lore. Norway beat England 2-1 in Oslo in 1981, the night Bjørge Lillelien's radio call taunted Margaret Thatcher into football immortality, and again 2-0 in 1993, a defeat that helped cost England their place at the 1994 World Cup. England have far the better record across the whole history of the fixture and arrive as heavy favourites; but the results Norway remember are the ones where the underdog won, and now the same match is worth a World Cup semi-final for the first time ever.",
+      "video": {
+        "youtube_id": "PqZTP8-8wIs",
+        "title": "Norway 2-1 England, 1981 — the Lillelien commentary",
+        "caption": "The goals and the commentary that outlived the match: Norway's 1981 World Cup qualifier win over England in Oslo, and Bjørge Lillelien's immortal radio call — the roll of English names ending in 'Maggie Thatcher, your boys took a hell of a beating!' — later voted the greatest piece of sports commentary of all time.",
+        "source": "archive · 1981 commentary"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Ingrid",
+      "asker_city": "Oslo",
+      "asker_day": "Sat 11 Jul",
+      "question": "My dad still quotes the 'hell of a beating' commentary at every England game. But have we ever actually beaten England at a World Cup — and have we ever been this far before? It feels like we're making all of this up as we go.",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Norway and England have never met at a World Cup finals before tonight, so there is no World Cup result between them, good or bad — this quarter-final in Miami is the first time.",
+          "The famous night your dad quotes was a qualifier: Norway 2-1 England in Oslo, 9 September 1981, after which Bjørge Lillelien's 'Maggie Thatcher, your boys took a hell of a beating!' radio call was later voted the greatest piece of sports commentary ever. Norway also beat England 2-0 in a 1993 qualifier.",
+          "This is Norway's first World Cup since 1998 and the first World Cup quarter-final in the country's entire history — they had never gone past the Round of 16 before.",
+          "They got here by beating five-time champions Brazil 2-1 in the last 16, Erling Haaland scoring twice in the closing minutes."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "You're not making it up — you're living the part of Norwegian football history that had never happened before. The 'hell of a beating' is real and it's a qualifier, not a World Cup, which is exactly why tonight is different: for forty-five years the best Norway had over England was a stunning result on a Tuesday that kept England home. Now the same fixture is a World Cup quarter-final, and Norway, for the first time ever, are the ones with a semi-final to reach. The history your dad quotes was the ceiling. Haaland's Norway just walked through it."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "First-ever World Cup meeting", "seed": "Norway and England have never met at a World Cup finals in the tournament's history — tonight's quarter-final in Miami is the first time, despite a rivalry that produced the most famous commentary in football." },
+      { "tag": "The greatest commentary ever", "seed": "After Norway beat England 2-1 in a 1981 qualifier, commentator Bjørge Lillelien's radio call — reciting English icons before taunting 'Maggie Thatcher, your boys took a hell of a beating!' — was voted the greatest piece of sports commentary of all time, and has outlived nearly everyone it named." },
+      { "tag": "28 years, then the deepest run ever", "seed": "Norway hadn't reached a World Cup since 1998 and had never gone past the Round of 16 — then beat five-time champions Brazil 2-1 to reach the first World Cup quarter-final in their history." },
+      { "tag": "Born after the last one", "seed": "Erling Haaland, who scored twice to knock Brazil out, was born in July 2000 — two years after Norway's previous World Cup appearance — so 2026 is the first World Cup of his life, and Norway's first in his lifetime." }
     ]
   }
 }

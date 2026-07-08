@@ -1,97 +1,96 @@
 {
   "date": "2026-07-09",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 29 — Quarter-final: France vs Morocco at Gillette Stadium, Foxborough (API-verified use_cache=False; single fixture on the date, 20:00 UTC). Spine: the 2022 semi-final rematch — France 2-0 Morocco (Al Bayt Stadium, Al Khor, 14 Dec 2022; Théo Hernández 5', Randal Kolo Muani 79') — reframed through the France/Morocco colonial history (protectorate 1912-1956, Treaty of Fes) and the diaspora that runs BOTH ways: 14 of Morocco's 26-man 2022 squad were born outside Morocco, coach Walid Regragui born in a Paris suburb, Achraf Hakimi born in Madrid and chose Morocco; France's own squad is North/West African heritage (Mbappé Cameroonian father/Algerian mother, Kolo Muani Congolese descent). back_story = the 2022 semi. VIDEO PHjukOhzFLE (oembed author_name 'FIFA' → 'FIFA · official', 'Allez Les Bleus | France v Morocco | Semi-Final | FIFA World Cup Qatar 2022'). story_behind_number = 14 (Morocco's foreign-born 2022 squad members — the diaspora made a semi-finalist). here&there = colony/coloniser + the Hakimi-Mbappé PSG friendship (born a month apart, Mbappé taught Hakimi French at PSG). VENUE FLAG: the API says Al Bayt Stadium for the 2022 semi and that is CORRECT (Lusail hosted the FINAL, not this semi) — a research pass wrongly said Lusail; trust the API + Al Bayt. where_played_before OMITTED (Gillette opened 2002; the old Foxboro Stadium on the site hosted 1994 but is a different, demolished ground). OTHER FLAGS: Morocco = first African AND first Arab nation to a WC semi (2022). Kolo Muani's 79' goal came ~44 seconds after he came on (his first France goal). Do NOT invent a single named 'colonizer vs colonized' quote — it's a media-wide framing, not one soundbite. Heritage web-verified 2026-07-08; scores/venue/goals API-verified.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 29 — Quarter-final",
+    "tournament_summary": "The tournament's heaviest rematch. Nineteen months after France ended the most romantic run in World Cup history — Morocco's, the first African and first Arab side ever to reach a semi-final — the two meet again, a quarter-final now, at Gillette Stadium outside Boston. The football alone would be enough: Mbappé against Hakimi, best friends from Paris on opposite sides. But this fixture never travels light. France governed Morocco for forty-four years, and the team it sends out is itself the child of empire — French stars of Cameroonian, Algerian, Congolese descent — while Morocco's squad is a map of the diaspora Europe raised and Morocco claimed back. It is the same match as 2022, and a different tournament, and the same long argument about who a country belongs to.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "France vs Morocco at Gillette Stadium, Foxborough — World Cup quarter-final, and a rematch of the 2022 semi-final, which France won 2-0 (Théo Hernández 5', Randal Kolo Muani 79') at Al Bayt Stadium in Qatar.",
+      "That 2022 semi-final was historic: Morocco were the first African nation and the first Arab nation ever to reach a World Cup semi-final, having knocked out Belgium, Spain and Portugal on the way.",
+      "France was Morocco's colonial ruler — a protectorate from 1912 (the Treaty of Fes) to 1956 — which is why the fixture is read everywhere as more than a football match.",
+      "Both squads are shaped by migration: 14 of Morocco's 26 players at the 2022 World Cup were born outside Morocco, and coach Walid Regragui was himself born in a Paris suburb; France's side carries deep North and West African heritage, from Kylian Mbappé (Cameroonian father, Algerian mother) to Kolo Muani.",
+      "France reached the quarter-final by beating Paraguay 1-0; Morocco beat Canada 3-0. Morocco's Achraf Hakimi and France's Kylian Mbappé are close friends and PSG team-mates on opposite sides tonight."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Two friends, one empire, and the passports in between",
+      "framing": "Kylian Mbappé and Achraf Hakimi met in a Paris dressing room in 2021, born a month apart, and became close enough that Mbappé — who spoke a little Spanish — helped a French-less Hakimi settle at PSG. Tonight they line up against each other in a World Cup quarter-final, which is the small, human version of the larger thing this fixture always is. Hakimi was born in Madrid to Moroccan migrant parents, a street vendor and a domestic worker, and could have played for Spain; he chose Morocco, because that was the house he grew up in. He is not the exception but the rule: fourteen of Morocco's 2022 squad were born outside the country, coached by a man raised in the suburbs of the very capital that once ruled Rabat. And France, the former coloniser, sends out a team just as much a product of migration in the other direction — Mbappé's Algerian mother and Cameroonian father, a spine of players whose families came from the empire France used to run. The thread ties Paris to Casablanca to Madrid and back: two nations arguing, through a game, about where a person is really from — and two friends who already know the answer is both.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Paris, 2021", "fact": "Hakimi joined PSG speaking no French; Mbappé, who spoke some Spanish, helped him settle, and the two became close friends — 'a friendship beyond football,' Hakimi has said. Tonight they meet as opponents in a World Cup quarter-final." },
+        { "label": "Madrid, born 1998", "fact": "Achraf Hakimi was born in Madrid to Moroccan migrant parents and was eligible for Spain; he chose Morocco — 'it's where my parents come from... they raised me in a Moroccan home' — one of many diaspora players who did the same." },
+        { "label": "The diaspora squad", "fact": "Fourteen of Morocco's 26 players at the 2022 World Cup were born outside Morocco — in the Netherlands, Belgium, Spain, France, Canada — and their coach Walid Regragui was born in a southern suburb of Paris, the empire's old capital." },
+        { "label": "The mirror", "fact": "France, Morocco's former colonial ruler, fields a team just as shaped by migration the other way — Kylian Mbappé (Cameroonian father, Algerian mother), Kolo Muani and others of North and West African descent — so the heritage runs across the halfway line in both directions." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "14",
+      "surface_stat": "France vs Morocco, the 2022 rematch — and the number is 14",
+      "historical_anchor": "Fourteen of the twenty-six players Morocco took to the 2022 World Cup were born somewhere other than Morocco — in Rotterdam and Amsterdam, Brussels, Madrid, Paris, Montreal, the cities of the European diaspora. It is not a footnote to Morocco's semi-final run; it is the reason for it. This was a squad assembled from the children and grandchildren of people who left — for work, for safety, for a future — and who could, most of them, have chosen the flags of the countries that raised them. They chose Morocco. Their coach, Walid Regragui, was born in a Paris suburb and did the same. Fourteen is the number that turned a good national team into the first African and Arab side ever to reach a World Cup semi-final, and it is the number that makes tonight's opponent so pointed: France, the country many of them were born and raised in, the country that once ruled the one they play for. The diaspora didn't dilute Morocco. It built it.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "14", "v": "of Morocco's 26 players at the 2022 World Cup were born outside Morocco — the diaspora squad that reached the semi-finals" },
+        { "k": "1st", "v": "Morocco in 2022 became the first African nation and first Arab nation ever to reach a World Cup semi-final" },
+        { "k": "1912-1956", "v": "the years Morocco was a French protectorate — 44 years of colonial rule, the backdrop to every France-Morocco match" },
+        { "k": "2-0", "v": "France's win in that 2022 semi-final (Hernández 5', Kolo Muani 79'), the only time all tournament Morocco trailed until the very end" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Coach Walid Regragui — born in Corbeil-Essonnes, a southern suburb of Paris, to Moroccan parents — became the first African and first Arab coach to take a team to a World Cup semi-final in 2022.",
+        "Morocco had not conceded a goal from open play all tournament before that semi-final; France's fifth-minute strike, an acrobatic Théo Hernández finish, was the first time Morocco fell behind in the whole of 2022.",
+        "Kolo Muani's clinching goal came roughly 44 seconds after he came off the bench — his first-ever goal for France — one of the fastest by a substitute in World Cup history."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "France",
+        "Morocco"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2022",
+        "score": "2 — 0",
+        "host": "Qatar",
+        "round": "Semi-final",
+        "venue": "Al Bayt Stadium, Al Khor",
+        "context_line": "Qatar · Semi-final · Al Khor",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Théo Hernández", "minute": "5'", "note": "(France — an acrobatic early finish, the first time Morocco trailed all tournament)" },
+          { "scorer": "Randal Kolo Muani", "minute": "79'", "note": "(France — his first France goal, roughly 44 seconds after coming on)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Qatar 2022, a World Cup semi-final, and the most improbable story the tournament had told in years: Morocco, the first African and first Arab side ever to reach the last four, having already put out Belgium, Spain and Portugal without conceding a goal from open play.",
+          "France, the holders, struck almost before the noise had settled — Théo Hernández swivelling to volley in inside five minutes, the first time in the entire tournament Morocco had gone behind.",
+          "For an hour Morocco pushed, the neutral world behind them, but the equaliser never came; instead Randal Kolo Muani, on the field barely forty-four seconds, turned in a deflected Mbappé shot for his first goal in a France shirt, and it was 2-0.",
+          "France went to a final; Morocco went home to a hero's welcome and a fourth-place finish that redrew the map of who is allowed to dream at a World Cup. Nineteen months on, the same two nations meet again — a quarter-final this time, on American turf, with Morocco no longer a surprise and the old colonial weight sitting exactly where it always does."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "France won the meeting that mattered most — the 2022 semi-final, 2-0 — on the night Morocco's history-making run finally ran out. It was the pattern of the whole rivalry in miniature: the former colonial power ending the colonised nation's biggest moment, and doing it with a team itself built from the children of empire. Tonight is the answer Morocco has waited a year and a half to write — the same fixture, a quarter-final now, with a chance to turn the most painful defeat in their history into the reason they go further than they ever have.",
+      "video": {
+        "youtube_id": "PHjukOhzFLE",
+        "title": "France 2-0 Morocco, 2022 — the semi-final",
+        "caption": "The night France ended Morocco's historic run: Théo Hernández's acrobatic fifth-minute opener, Kolo Muani's late clincher seconds after coming on, and the first Arab and African World Cup semi-finalists falling just short of the final.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Yassine",
+      "asker_city": "Brussels",
+      "asker_day": "Thu 9 Jul",
+      "question": "Half my family is in Casablanca and half is here, and half the Morocco team grew up around the corner from me. People online keep saying our players 'aren't really Moroccan' because they were born in Europe. Is that fair — and how many of them actually were born abroad?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Fourteen of Morocco's 26 players at the 2022 World Cup were born outside Morocco — including in Belgium, the Netherlands, Spain, France and Canada — and that squad reached the semi-finals, the first African or Arab nation ever to do so.",
+          "Their coach, Walid Regragui, was himself born in a suburb of Paris to Moroccan parents; Achraf Hakimi was born in Madrid and was eligible to play for Spain before choosing Morocco.",
+          "France, tonight's opponent and Morocco's former colonial ruler (a protectorate from 1912 to 1956), fields a team just as shaped by migration — its stars descended from Algeria, Cameroon, Congo and elsewhere — so the 'born abroad' line cuts both ways across the pitch.",
+          "The players themselves have answered the question directly: Hakimi said he chose Morocco because 'it's where my parents come from... they raised me in a Moroccan home.'"
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The 'not really Moroccan' line doesn't survive contact with the facts — or with the fixture. A team where fourteen of twenty-six were born abroad didn't reach a World Cup semi-final in spite of the diaspora; it did it because of the diaspora, players who could have picked the countries that raised them and chose the one their parents left. And they're playing France, whose own squad is the same story told from the other side of the colonial ledger. What Yassine is describing — half the family here, half there — isn't a flaw in the team. It's the team."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The diaspora built a semi-finalist", "seed": "Fourteen of Morocco's 26 players at the 2022 World Cup were born outside Morocco, and coached by a man born near Paris — the squad that became the first African and first Arab side ever to reach a World Cup semi-final." },
+      { "tag": "Empire on both sides", "seed": "France ruled Morocco as a protectorate from 1912 to 1956, and the France team tonight is itself built from the descendants of its former colonies — Mbappé (Algerian mother, Cameroonian father), Kolo Muani and others — so the heritage runs across the halfway line in both directions." },
+      { "tag": "Friends in opposite shirts", "seed": "Kylian Mbappé and Achraf Hakimi, born a month apart and close friends since Hakimi joined PSG in 2021 — where Mbappé helped him learn French — line up against each other in a World Cup quarter-final." },
+      { "tag": "The 44-second goal", "seed": "France's second in the 2022 semi-final came from Randal Kolo Muani roughly 44 seconds after he came off the bench — his first-ever France goal, one of the fastest by a substitute in World Cup history — to end Morocco's run." }
     ]
   }
 }

@@ -1,97 +1,96 @@
 {
   "date": "2026-07-10",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 30 — Quarter-final: Spain vs Belgium at SoFi Stadium, Los Angeles (API-verified use_cache=False; single fixture on the date, 19:00 UTC). Spine: the golden generation's last dance — Belgium's De Bruyne/Lukaku/Courtois core (3rd at 2018, their best-ever finish, still no major trophy) against a young Spain that already won everything (2010 World Cup, Euro 2024, Yamal 18). back_story = the 1986 World Cup QUARTER-FINAL, Estadio Cuauhtémoc, Puebla, Mexico, 22 June 1986: Jan Ceulemans 34', Señor 85' equalised for Spain, 1-1 after extra time, Belgium won the shootout 5-4 — the FIRST side in World Cup history to convert all five penalties; Spain's only miss was Eloy, saved by Jean-Marie Pfaff. Belgium reached the semis (their best finish until 2018). VIDEO JQRWxyRm_og (oembed author_name 'FIFA' → 'FIFA · official', 'Full Penalty Shoot-out: Spain v Belgium | 1986 FIFA World Cup Quarter-Final'). story_behind_number = 40 (years since that Puebla shootout). H2H World Cup ledger: two meetings, one decisive result each — Belgium 1986 (on penalties), Spain 2-1 in the 1990 group stage — tonight is the decider. here&there = the two ends of a golden generation (Belgium falls just short, Spain finishes the job). where_played_before OMITTED (SoFi opened 2020, no prior men's WC). FLAGS: 1986 goal minutes are 34'/85' (an early Wikipedia knockout-stage summary misreports 77'/83' and names the wrong stadium 'La Corregidora' which is in Querétaro — correct venue is Estadio Cuauhtémoc, Puebla; trust the match archive). Belgium's 2018 quartet is often cited as De Bruyne/Lukaku/Hazard/Courtois — Hazard RETIRED in 2023, so frame him as already gone. Euro 1980 group stage was Belgium 2-1 Spain (context only). Heritage web-verified 2026-07-08; scores/venue API-verified.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 30 — Quarter-final",
+    "tournament_summary": "The last dance gets a quarter-final. Belgium's golden generation — De Bruyne, Lukaku, Courtois, the group that finished third in 2018 and has never won a thing — arrives at SoFi Stadium with the tournament down to eight, and across from it stands the opposite of itself: a Spain side already holding the 2010 World Cup and the 2024 European title, now rebuilt around teenagers. It is also, quietly, a rematch four decades in the making. The last time these two met with a World Cup semi-final on the line, in Puebla in 1986, Belgium won a shootout by scoring all five — the first team in World Cup history to do it — and marched to the best finish in their history. Tonight the country that keeps making great teams that fall just short tries once more, against the country that keeps finding a way to finish the job.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Spain vs Belgium at SoFi Stadium, Los Angeles — World Cup quarter-final. Their third World Cup meeting: Belgium won the 1986 quarter-final on penalties, Spain won 2-1 in the 1990 group stage — one decisive result each, with tonight the decider.",
+      "The 1986 quarter-final in Puebla ended 1-1 after extra time (Ceulemans for Belgium, Señor equalising late for Spain) and Belgium won the shootout 5-4 — the first side in World Cup history to convert all five penalties. They reached the semi-finals, still bettered only by their third place in 2018.",
+      "Belgium's 'golden generation' — Kevin De Bruyne, Romelu Lukaku, Thibaut Courtois — peaked at third at the 2018 World Cup and has never won a major trophy; this is widely framed as its final World Cup. Eden Hazard, the fourth name of that era, retired in 2023.",
+      "Spain arrive as reigning European champions (Euro 2024, beating England 2-1 in the final) and 2010 world champions, now rebuilt around a teenage core — Lamine Yamal, 18, and Pedri — the youngest spine of any side left in the tournament.",
+      "Belgium reached the quarter-final by beating the host United States 4-1 in the Round of 16; Spain edged Portugal 1-0."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The two ends of a golden generation",
+      "framing": "Belgium is the country that keeps building great teams and keeps not quite winning. Forty years ago a side of Pfaff, Scifo and Ceulemans reached a World Cup semi-final on a flawless penalty shootout against Spain — and then lost to Maradona. A generation later the most gifted group Belgium has ever produced — De Bruyne, Lukaku, Hazard, Courtois — finished third in 2018, sat top of the world rankings for years, and retired one by one without a single trophy between them. Tonight what's left of that group, De Bruyne at 35 and Lukaku at 33, plays what everyone accepts is its last World Cup. And the team across from it is the argument against everything Belgium has lived: Spain, who won the World Cup at their first golden-generation peak in 2010, won Europe again in 2024, and have already handed the keys to an 18-year-old. One side is trying to finish a twenty-year story before the final whistle of a career. The other has a teenager who thinks the story is just starting. The thread runs from Puebla to Los Angeles — the country that falls just short, meeting the country that doesn't.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Puebla, 1986", "fact": "Belgium's first golden generation reached the 1986 World Cup semi-finals by beating Spain in a quarter-final shootout — converting all five penalties, the first team in World Cup history to do so — the deepest run in Belgian history until 2018." },
+        { "label": "The trophy that never came", "fact": "The De Bruyne–Lukaku–Hazard–Courtois generation topped the world rankings for a record stretch and finished third at the 2018 World Cup, but won no major tournament; Hazard retired in 2023, and 2026 is widely seen as the last World Cup for De Bruyne (35) and Lukaku (33)." },
+        { "label": "Spain, both ends of the arc", "fact": "Spain won the 2010 World Cup with their own golden generation and were European champions again at Euro 2024 — and have already rebuilt around Lamine Yamal, who was 17 when he starred at that Euro, the youngest player ever to appear in a European Championship final." },
+        { "label": "Los Angeles, tonight", "fact": "At SoFi Stadium the two collide again with a semi-final at stake — Belgium chasing the one prize its greatest players never won, Spain carrying a teenager who has barely started counting." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "40",
+      "surface_stat": "Spain vs Belgium in a World Cup quarter-final — and the number is 40",
+      "historical_anchor": "Forty years ago, almost to the week, Spain and Belgium played a World Cup quarter-final in the heat of Puebla, Mexico, and it went the distance. Jan Ceulemans put Belgium ahead just after the half-hour; Spain's substitute Señor forced it level with five minutes left; extra time settled nothing. So it went to penalties — and Belgium made history the hard way, scoring all five, the first team ever to complete a perfect five-from-five shootout at a World Cup. Spain's only miss, from Eloy, was saved by Jean-Marie Pfaff, and Belgium marched on to a semi-final and the best World Cup finish they would have for the next thirty-two years. Forty is the gap between that afternoon and this one — long enough that not one player from Puebla is anywhere near tonight's teams, long enough that Belgium has since built and buried a second, even more gifted golden generation, and long enough to make a quarter-final between the same two nations feel less like coincidence than a debt being called in.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "40", "v": "years since Spain and Belgium last met in a World Cup quarter-final — Puebla, 22 June 1986" },
+        { "k": "5/5", "v": "Belgium's penalties in that 1986 shootout — the first perfect five-from-five in World Cup history, winning it 5-4" },
+        { "k": "1-1", "v": "the World Cup ledger between them: Belgium won the 1986 quarter-final on penalties, Spain won the 1990 group meeting 2-1" },
+        { "k": "1986 / 2018", "v": "Belgium's two best World Cup finishes — semi-final and third place — the only times they have gone past the quarters" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "The 1986 quarter-final was played at Estadio Cuauhtémoc in Puebla; Belgium went on to lose the semi-final to Diego Maradona's Argentina, the eventual champions.",
+        "Belgium reached that shootout with the closest thing the country had to a golden generation before the current one — Jean-Marie Pfaff in goal, a young Enzo Scifo, the captain Jan Ceulemans.",
+        "Since 1986 the two have met once more at a World Cup, in the 1990 group stage, where Spain won 2-1 — which is why, whatever the modern form guide says, tonight reads as a rubber match four decades in the writing."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "Spain",
+        "Belgium"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1986",
+        "score": "1 — 1",
+        "host": "Mexico",
+        "round": "Quarter-final · Belgium won 5-4 on pens",
+        "venue": "Estadio Cuauhtémoc, Puebla",
+        "context_line": "Mexico · Quarter-final · Puebla",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Jan Ceulemans", "minute": "34'", "note": "(Belgium — the captain, opening the scoring just after the half-hour)" },
+          { "scorer": "Señor", "minute": "85'", "note": "(Spain — a substitute's late strike to force extra time)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "Mexico 1986, a quarter-final in the thin, hot air of Puebla: Spain, built around the elegant Emilio Butragueño, against a Belgium side that had crept out of its group and was quietly becoming the best team the country had ever sent to a World Cup.",
+          "Jan Ceulemans, the captain, put Belgium ahead just after the half-hour, and for the better part of an hour it looked like enough — until the substitute Señor lashed in an equaliser with five minutes left and dragged the tie through 90 minutes and a scoreless extra time to penalties.",
+          "Then Belgium did something no team had done at a World Cup before: they scored all five. Claesen, Scifo, Broos, Vervoort, Van der Elst — five from five, the first flawless shootout in the tournament's history. Spain's only miss, Eloy's, was pushed away by Jean-Marie Pfaff, and it was over, 5-4.",
+          "Belgium went on to the semi-final and a defeat to Maradona's Argentina, but the run stood as the high-water mark of Belgian football for thirty-two years — until a second, even more celebrated generation matched it with third place in 2018. Forty years on, the same two nations meet at the same stage, and Belgium's current group, running out of tournaments, would take Puebla's ending gladly."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Two World Cup meetings, one decisive result each. Belgium won the 1986 quarter-final on penalties — 1-1 after extra time, then a perfect 5-4 shootout, the first five-from-five in World Cup history — and reached the semi-finals. Spain answered in the 1990 group stage, winning 2-1. That leaves the head-to-head level at a World Cup, and tonight in Los Angeles the same fixture returns at the very round it turned on four decades ago, with a semi-final and — for Belgium's fading golden generation — very likely a last chance on the line.",
+      "video": {
+        "youtube_id": "JQRWxyRm_og",
+        "title": "Spain v Belgium, 1986 — the full quarter-final shootout",
+        "caption": "The complete penalty shootout from the 1986 World Cup quarter-final in Puebla: Belgium convert all five — the first perfect shootout in World Cup history — Jean-Marie Pfaff saves Eloy's kick, and Belgium go through 5-4 to the deepest World Cup run they would have for the next thirty-two years.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Dieter",
+      "asker_city": "Antwerp",
+      "asker_day": "Fri 10 Jul",
+      "question": "I've followed this Belgium team through every near-miss and I'm almost afraid to hope. Has this golden generation actually ever won anything, and have we ever beaten Spain when it mattered? I keep hearing about 1986 but that was before I was born.",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The current golden generation — De Bruyne, Lukaku, Courtois, and the retired Hazard — has never won a major trophy. Its high point is third place at the 2018 World Cup, Belgium's best-ever finish; it was also ranked world number one for a record stretch without silverware to show for it.",
+          "Belgium have beaten Spain when it mattered, but you have to go back to 1986: a World Cup quarter-final in Puebla, 1-1 after extra time, won 5-4 on penalties — and it remains one of only two times Belgium has ever reached a World Cup semi-final.",
+          "The teams have met once more at a World Cup since, the 1990 group stage, and Spain won that one 2-1 — so the World Cup head-to-head is level.",
+          "Spain arrive as the reigning European champions (Euro 2024) and 2010 world champions, rebuilt around 18-year-old Lamine Yamal — the toughest possible test for a Belgian side trying to finally turn its talent into a trophy."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The fear is earned — this is a group that has spent a decade being the best team never to win — but the history isn't all heartbreak. Belgium have beaten Spain on the World Cup's biggest afternoon before, in that 1986 shootout Dieter is too young to remember, and it carried them to the semi-finals. What tonight really asks is whether the same fixture, at the same stage, can rescue a generation that is almost out of chances. Spain are the hardest imaginable opponent for it — young, decorated, unbothered — which is exactly why beating them would mean everything."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The first perfect shootout", "seed": "When Belgium knocked Spain out of the 1986 World Cup quarter-final, they became the first team in the tournament's history to convert all five penalties in a shootout — 5-4, with Pfaff saving Spain's only miss — and it carried them to their deepest World Cup run until 2018." },
+      { "tag": "The best team never to win", "seed": "Belgium's De Bruyne–Lukaku–Courtois generation spent a record stretch ranked world number one and finished third at the 2018 World Cup, yet retired one by one without a single major trophy — 2026 is widely seen as its last World Cup." },
+      { "tag": "Both ends of the arc", "seed": "Spain won the World Cup at their golden generation's peak in 2010 and are European champions again as of 2024 — and have already rebuilt around 18-year-old Lamine Yamal, meeting a Belgium side trying to win something before its own great players run out of tournaments." },
+      { "tag": "The rubber match, forty years on", "seed": "Spain and Belgium have met twice at a World Cup — Belgium on penalties in the 1986 quarter-final, Spain 2-1 in the 1990 group — so tonight, at the same quarter-final stage four decades later, reads as a decider." }
     ]
   }
 }
