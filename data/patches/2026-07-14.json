@@ -1,97 +1,99 @@
 {
   "date": "2026-07-14",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 32 — Semi-final: France vs Spain at AT&T Stadium, Arlington/Dallas (API-verified use_cache=False; single fixture on the date, Semi-finals round; the July 13 & 16 rest days have no fixtures). Venue is new-in-2026 (opened 2009 as Cowboys Stadium, ~94k in the semi config, the tournament's largest bowl) and hosted no prior men's World Cup — Dallas '94 was the Cotton Bowl — so WHERE THEY PLAYED BEFORE is OMITTED. Spine: this is the rematch of the Euro 2024 semi-final (Spain 2-1, 9 Jul 2024, Munich — Kolo Muani 9', then Lamine Yamal's 21' long-range strike aged 16 + Dani Olmo 25'; Spain went on to win the Euro), but the World Cup ledger runs the other way — France have NEVER lost to Spain at a World Cup. back_story = the only WC meeting: France 3-1 Spain, 2006 Round of 16, Hanover, 27 Jun 2006 (Villa 28' pen; Ribéry 41'; Vieira 83'; Zidane 90'+ in stoppage time — Zidane's last World Cup, he retired after the '06 final; the veteran France core knocked out the young Spain amid pre-match talk that France were 'finished'). VIDEO duZZiIXTidA (oembed author_name FIFA → source 'FIFA · official'; title '10-Minute Match | France vs Spain | Round of 16 (2006)' — a 10-min condensed match, not a reel). story_behind_number = 3 (win tonight and France reach a THIRD consecutive World Cup final — 2018 won, 2022 lost on pens to Argentina — a feat only West Germany 1982-86-90 and Brazil 1994-98-2002 have managed). here&there = the swinging rivalry (France own the WC + the 2021 Nations League final via Mbappé's contentious winner; Spain own the recent Euros — 2012, and 2024 through a 16-year-old). from_the_stands = a Paris reader on whether France have ever actually lost to Spain when it counted at a World Cup (no — 2006 is the only WC meeting). FLAGS: Zidane '06 goal is stoppage time, exact +offset varies (90+1/90+2) so written as 'in stoppage time'; the 'old France' pre-match storyline is well documented as narrative but avoid pinning a single named quote. This-tournament paths API-verified (France: 3-1 Senegal, 3-0 Iraq, lost 4-1 to Norway, 3-0 Sweden R32, 1-0 Paraguay R16, 2-0 Morocco QF; Spain unbeaten: 0-0 Cape Verde, 4-0 Saudi, 1-0 Uruguay, 3-0 Austria R32, 1-0 Portugal R16, 2-1 Belgium QF). Heritage web-verified 2026-07-12.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 32 — Semi-final",
+    "tournament_summary": "The first semi-final, and a rematch nobody in blue has forgotten. Two summers ago, at Euro 2024, Spain knocked France out at the semi-final stage — a 16-year-old named Lamine Yamal curling in from distance on the way to the trophy — and France have been waiting to answer it ever since. Tonight they get the chance in the biggest room of all: AT&T Stadium in Dallas, ~94,000 seats, the largest venue at the tournament, and a World Cup semi-final on the line. The strange thing is that the ledger everyone actually shares points the other way. France and Spain have met only once at a World Cup — the 2006 Round of 16 — and France won it, Zidane scoring the last goal of his last tournament to send a young Spain home. So there are two rivalries here, and they disagree: the recent one, where Spain are the reigning European champions and beat France when it mattered; and the World Cup one, where Spain have never beaten France at all. One of them settles tonight, and the winner goes to the final at MetLife.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "France vs Spain at AT&T Stadium, Arlington/Dallas — the first of the two World Cup semi-finals; the winner reaches the July 19 final at MetLife.",
+      "This is a rematch of the Euro 2024 semi-final, which Spain won 2-1 in Munich (9 Jul 2024) on the way to the European title — France ahead early through Kolo Muani before Lamine Yamal, then 16, equalised with a long-range strike and Dani Olmo won it.",
+      "But France have never lost to Spain at a World Cup: their only previous meeting was the 2006 Round of 16, France winning 3-1 in Hanover with Zinedine Zidane scoring the final goal of his career-ending tournament.",
+      "France are the 2018 world champions and 2022 runners-up (beaten on penalties by Argentina); win tonight and they become only the third nation ever to reach three consecutive World Cup finals.",
+      "Spain, the reigning European champions and 2010 world champions, have reached the semi-final unbeaten — 0-0 Cape Verde, 4-0 Saudi Arabia, 1-0 Uruguay, then 3-0 Austria, 1-0 Portugal and 2-1 Belgium in the knockouts.",
+      "France lost 4-1 to Norway in the group stage and still arrived here, beating Sweden 3-0, Paraguay 1-0 and Morocco 2-0 in the knockout rounds."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The rivalry that can't agree with itself",
+      "framing": "France and Spain have spent forty years trading eras, and the record depends entirely on which competition you point at. Point at the World Cup and Spain have never beaten France — one meeting, 2006, France 3-1, Zidane's goodbye. Point at the European Championship and the ledger flips: Spain put France out at Euro 2012, and again at the Euro 2024 semi-final, where a 16-year-old called Lamine Yamal announced himself by curling a shot in from twenty-five yards and the reigning-champions-to-be went through 2-1. In between sits France's own revenge — the 2021 Nations League final in Milan, won 2-1 by a Mbappé goal Spain still insist was offside. It is a rivalry that keeps changing hands and never settling, because the two keep meeting in different tournaments and the winner is never the same twice. Tonight, for the first time, they meet in a World Cup semi-final in the United States — Spain the European champions carrying the most recent word, France the World Cup side that has never lost this fixture on this stage. Both of those things cannot survive the night.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Hanover, 2006", "fact": "The only World Cup meeting: France 3-1 Spain in the 2006 Round of 16, Zinedine Zidane scoring in stoppage time in what proved the last tournament of his career." },
+        { "label": "Munich, 2024", "fact": "Spain beat France 2-1 in the Euro 2024 semi-final; Lamine Yamal, then 16, equalised with a long-range strike — the youngest scorer in European Championship history — before Dani Olmo's winner, and Spain went on to lift the trophy." },
+        { "label": "Milan, 2021", "fact": "France beat Spain 2-1 in the UEFA Nations League final, Kylian Mbappé scoring a late winner from a position Spain protested as offside, played on by a defender's touch." },
+        { "label": "The record disagrees", "fact": "Spain have never beaten France at a World Cup, and France have never beaten Spain at a European Championship since Euro 1984 — the rivalry splits cleanly by competition, and tonight is the first time it is contested in a World Cup semi-final." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "3",
+      "surface_stat": "France in the semi-final, and the number is 3",
+      "historical_anchor": "Win tonight and France reach a third World Cup final in a row — 2018, 2022, 2026 — and only two nations in the history of the tournament have ever done that. West Germany did it across 1982, 1986 and 1990, losing the first two and winning the last. Brazil did it across 1994, 1998 and 2002, winning the first and third. Nobody else has managed three straight, not the great Hungary or Netherlands sides, not Italy, not anyone. France are one win from joining that two-team club: they beat Croatia to win 2018, lost the 2022 final to Argentina on penalties after Mbappé's hat-trick couldn't quite save them, and now stand ninety minutes from a third consecutive final. The number is a measure of a generation's grip on the sport — a France side that has been in the last act of the World Cup for eight straight years and is trying to make it twelve. Spain, standing in the way, would rather it stayed a two-team club.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "3", "v": "consecutive World Cup finals France would reach by winning tonight — 2018, 2022, 2026" },
+        { "k": "2", "v": "nations who have ever reached three straight finals: West Germany (1982-86-90) and Brazil (1994-98-2002)" },
+        { "k": "2018", "v": "France's last World Cup title, beating Croatia 4-2 in the final" },
+        { "k": "2022", "v": "France's most recent final — lost to Argentina on penalties after a 3-3 draw and Mbappé's hat-trick" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "No nation has reached three consecutive World Cup finals since Brazil in 1994, 1998 and 2002; France are one semi-final win from becoming the third ever to do it.",
+        "France's run of finals began with the 2018 title under Didier Deschamps and continued to the 2022 final in Qatar, lost to Argentina in a penalty shootout.",
+        "Reaching the final would also make France the first European nation to appear in three straight World Cup finals since West Germany's run ended in 1990."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "France",
+        "Spain"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2006",
+        "score": "3 — 1",
+        "host": "Germany",
+        "round": "Round of 16",
+        "venue": "AWD-Arena, Hanover",
+        "context_line": "Germany 2006 · Round of 16 · Hanover · 27 Jun 2006",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "David Villa", "minute": "28'", "note": "(Spain — a penalty, and for an hour it looked like the changing of the guard)" },
+          { "scorer": "Franck Ribéry", "minute": "41'", "note": "(France — the equaliser before half-time, a young winger announcing himself)" },
+          { "scorer": "Patrick Vieira", "minute": "83'", "note": "(France — a header to turn the tie late)" },
+          { "scorer": "Zinedine Zidane", "minute": "90'+", "note": "(France — in stoppage time, the last World Cup goal Zidane ever scored)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "It is the only time France and Spain have ever met at a World Cup, and it doubled as a funeral for one idea and a coronation for another: 27 June 2006, Hanover, Spain young and rising, France old and — everyone had decided — finished.",
+          "Spain led. David Villa's penalty on 28 minutes fit the story everyone had written in advance: a fresh Spanish generation putting the veterans of France, Zidane and Vieira and Thuram and Makélélé, out to pasture. For an hour it held.",
+          "Then the old side refused the script. Franck Ribéry equalised before half-time, Patrick Vieira headed France ahead with seven minutes left, and in stoppage time Zinedine Zidane — playing the last tournament of his life, about to retire after the final — dribbled in the third. 3-1, and Spain went home.",
+          "Zidane would reach the 2006 final, score again from the penalty spot, headbutt Marco Materazzi, get sent off, and vanish from football with a red card. The goal in Hanover was the last he scored at a World Cup that did not end in the sport's most famous dismissal — and the last word, for twenty years, on France versus Spain."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "France and Spain have met only once at a World Cup — the 2006 Round of 16, France 3-1 — and Spain have never beaten them on this stage. The wider rivalry is where Spain hold cards: they knocked France out of Euro 2012 and, more painfully, the Euro 2024 semi-final on the way to the European title, a 16-year-old Lamine Yamal scoring from distance. France's answer was the 2021 Nations League final, won 2-1 by a contested Mbappé goal. So the head-to-head everyone actually carries into tonight depends on the trophy: at the World Cup, France have never lost to Spain; at the Euros, Spain keep ending France's summers. One of those streaks breaks in Dallas.",
+      "video": {
+        "youtube_id": "duZZiIXTidA",
+        "title": "France 3-1 Spain, 2006 — the veterans answer",
+        "caption": "The only World Cup meeting of these two: France 3-1 Spain in the 2006 Round of 16 at Hanover. David Villa's early penalty had Spain dreaming of a changing of the guard; then Ribéry, Vieira and finally Zinedine Zidane — in stoppage time, in the last tournament of his career — sent the old France through and the young Spain home.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Julien",
+      "asker_city": "Paris",
+      "asker_day": "Tue 14 Jul",
+      "question": "Everyone keeps bringing up Euro 2024 like Spain own us now. But have we ever actually lost to Spain at a World Cup? It feels like the tournament that matters most is the one we never lose this fixture in.",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "France have never lost to Spain at a World Cup. The two nations have met only once at the tournament — the 2006 Round of 16 — and France won it 3-1, Zidane scoring in stoppage time in what turned out to be the last World Cup of his career.",
+          "Spain's wins over France have all come at the European Championship: the Euro 2012 quarter-final (2-0) and the Euro 2024 semi-final (2-1), the latter on the way to Spain's European title.",
+          "France's most recent win over Spain was the 2021 Nations League final, 2-1 in Milan, decided by a late and heavily disputed Kylian Mbappé goal.",
+          "Tonight in Dallas is the first time the two have ever met in a World Cup semi-final — and only the second time they have met at a World Cup at all."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "You're right about the split, and it's a real one, not a comfort. Spain have twice ended France's summers at the Euros, most recently in 2024 with a teenager's goal, and that is the meeting living rent-free in everyone's head. But the World Cup is a separate ledger, and on it France are unbeaten against Spain — one match, one win, 2006. Tonight doesn't erase Munich; it just gets contested somewhere Spain have never actually beaten you. Whether that's an omen or just trivia is the ninety minutes."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The rematch of a title run", "seed": "Spain knocked France out of the Euro 2024 semi-final on the way to lifting the trophy — a 16-year-old Lamine Yamal scoring from distance — and tonight France get the rematch in a World Cup semi-final, the biggest stage the two have ever shared." },
+      { "tag": "Never beaten at a World Cup", "seed": "Spain have never beaten France at a World Cup: the only previous meeting was the 2006 Round of 16, France winning 3-1, Zidane scoring the last World Cup goal of his career before retiring after that tournament's final." },
+      { "tag": "One win from a three-team feat", "seed": "Win tonight and France reach a third consecutive World Cup final (2018, 2022, 2026) — something only West Germany (1982-86-90) and Brazil (1994-98-2002) have ever done." },
+      { "tag": "Lost in the group, still here", "seed": "France were beaten 4-1 by Norway in the group stage and still reached the semi-final, winning every knockout tie since — Sweden 3-0, Paraguay 1-0, Morocco 2-0 — while Spain arrived unbeaten across the whole tournament." }
     ]
   }
 }

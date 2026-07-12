@@ -1,97 +1,98 @@
 {
   "date": "2026-07-15",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 33 — Semi-final: England vs Argentina at Mercedes-Benz Stadium, Atlanta (API-verified use_cache=False; single fixture on the date, Semi-finals round; 'Atlanta Stadium' is FIFA's tournament branding). Venue new-in-2026 (opened Aug 2017, ~71,000, replaced the Georgia Dome), no prior men's World Cup, so WHERE THEY PLAYED BEFORE is OMITTED. Spine: the most storied fixture in football, and they haven't met at a World Cup since 2002. back_story = the 1986 quarter-final, Argentina 2-1 England, Estadio Azteca, 22 Jun 1986 — Maradona's 'Hand of God' handball (51') and, four minutes later, the 'Goal of the Century' solo run past five men + Shilton (55'); Lineker pulled one back (81'). ~4 years after the 1982 Falklands/Malvinas War; Maradona later framed the goals as 'symbolic revenge' ('we knew they had killed a lot of Argentine boys there... this was revenge'). Azteca = only stadium to host two men's WC finals (1970, 1986) and in 2026 the only to host three World Cups. VIDEO FRAbNlPS2MI (oembed author_name FIFA → source 'FIFA · official'; title 'Maradona's Famous 8 Minutes | Argentina 2-1 England | 1986 FIFA World Cup'). story_behind_number = 60 (years since England's only World Cup final, 1966 — the same tournament they beat Argentina 1-0 in the QF; 'thirty years of hurt' from the 1996 anthem is now sixty). here&there = four decades of grievance: 1966 (Rattín sent off, Ramsey's 'animals'), 1986 (Falklands, Hand of God), 1998 (Beckham red + the shootout), 2002 (Beckham's penalty redemption). from_the_stands = an England reader who remembers only the defeats, shown England actually LEAD the WC head-to-head 3-1-1 (won 1962, 1966, 2002; lost 1986; drew 1998 and lost on pens). LEDGER FACTS (all web-verified): 1962 group England 3-1 (Chile); 1966 QF England 1-0 (Hurst 78', Rattín off 35'); 1986 QF Argentina 2-1; 1998 R16 2-2, Argentina 4-3 pens (Batistuta 6' pen, Shearer 10' pen, Owen 16', Zanetti 45+1'; Beckham red ~47'; Ince & Batty missed pens); 2002 group England 1-0 (Beckham pen 44'). Tonight is their 6th WC meeting, first since 2002. Argentina are the DEFENDING champions (2022) chasing back-to-back (last done by Brazil 1958+1962). This-tournament paths API-verified (England: 4-2 Croatia, 0-0 Ghana, 2-0 Panama, 2-1 Congo DR R32, 3-2 Mexico R16, 2-1 Norway AET QF — avenging the 1981 Lillelien ghost; Argentina: 3-0 Algeria, 2-0 Austria, 3-1 Jordan, 3-2 Cape Verde AET R32, 3-2 Egypt R16, 3-1 Switzerland AET QF). Heritage web-verified 2026-07-12.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 33 — Semi-final",
+    "tournament_summary": "There is no bigger fixture the game can hand you, and it has been twenty-four years since the World Cup last did. England and Argentina have not met at this tournament since 2002 — since David Beckham's penalty in Sapporo settled a private four-year debt — and now they are drawn together in a semi-final, in Atlanta, one win from the final. Everything about the pairing is loaded. There is 1966, when England beat Argentina at Wembley and their manager called the losing side 'animals.' There is 1986, four years after the Falklands War, when Diego Maradona beat England twice in four minutes — once with his hand, once with the greatest goal ever scored — and later called it revenge. There is 1998, the Beckham red card and the shootout that broke England. And there is tonight, the defending world champions against the country that has waited sixty years to reach another final. They meet again with the oldest grievance in the sport between them and a place at MetLife on the far side of it.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "England vs Argentina at Mercedes-Benz Stadium, Atlanta — the second World Cup semi-final; the winner reaches the July 19 final at MetLife.",
+      "It is the two nations' first World Cup meeting since 2002, and their sixth overall; the rivalry runs through 1966 (Rattín's sending-off and Alf Ramsey's 'animals'), 1986 (Maradona's 'Hand of God' and 'Goal of the Century', four years after the Falklands War) and the 1998 penalty shootout.",
+      "Argentina are the defending world champions, having won the 2022 final against France on penalties; a title here would be the first back-to-back World Cup since Brazil in 1958 and 1962.",
+      "England have not reached a World Cup final since they won the tournament in 1966 — a 60-year wait — though they reached the semi-finals in 1990 and 2018.",
+      "England reached this semi-final by beating Norway 2-1 after extra time in the quarter-final — settling, at last and when it counted, the ghost of Norway's famous 1981 win over them.",
+      "Argentina have ground their way here the hard way, needing extra time in both the Round of 32 (3-2 Cape Verde) and the quarter-final (3-1 Switzerland), with a 3-2 win over Egypt in the Round of 16 in between."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "Sixty years of bad blood",
+      "framing": "No two countries carry a heavier football grudge, and almost all of it was made at World Cups. It started at Wembley in 1966, when England beat Argentina 1-0 in a quarter-final so ill-tempered that the Argentine captain, Antonio Rattín, was sent off and refused to leave, and the England manager Alf Ramsey afterwards called the opposition 'animals' and stopped his players swapping shirts. It detonated in 1986, at the Estadio Azteca, four years after British and Argentine soldiers had killed each other over the Falkland Islands: Diego Maradona punched the ball past Peter Shilton, called it 'the Hand of God,' and four minutes later ran through half the England team to score what a global vote later named the greatest goal in World Cup history. He said, decades on, that it had felt like revenge for the war. Then 1998 — Michael Owen's wonder goal, David Beckham sent off for a flick of the boot at Diego Simeone, England out on penalties, Beckham burned in effigy back home. Then 2002, Beckham's penalty in Sapporo, the debt repaid. They have not met at a World Cup since. Twenty-four years later the draw has put them in a semi-final, and every one of those nights is in the room.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Wembley, 1966", "fact": "England beat Argentina 1-0 in the quarter-final; captain Antonio Rattín was sent off and refused to go, and Alf Ramsey called Argentina 'animals' — the incident helped inspire the invention of red and yellow cards." },
+        { "label": "Azteca, 1986", "fact": "Argentina beat England 2-1 in the quarter-final, four years after the Falklands War; Maradona scored the 'Hand of God' handball (51') and, four minutes later, the 'Goal of the Century' (55'), and later called the win a symbolic revenge for the war." },
+        { "label": "Saint-Étienne, 1998", "fact": "Argentina and England drew 2-2 — Owen's solo goal, Beckham sent off for kicking Simeone — and Argentina won the shootout 4-3, Paul Ince and David Batty missing." },
+        { "label": "Sapporo, 2002", "fact": "England beat Argentina 1-0 in the group stage, David Beckham scoring the winning penalty — his redemption four years after the red card — and it is the last time the two met at a World Cup, until tonight." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "60",
+      "surface_stat": "England in a World Cup semi-final, and the number is 60",
+      "historical_anchor": "Sixty years ago, in 1966, England won the World Cup — the only time they have ever reached the final, let alone lifted it — and the tournament they won ran straight through Argentina, beaten 1-0 in a bad-tempered Wembley quarter-final on the way. Every England side since has chased that summer and failed to reach even the last game: the near-misses of Italia '90 and Russia 2018 got as far as the semi-final and no further, the penalty heartbreaks of the Euros stopped one round or one kick short. When the anthem 'Three Lions' promised, in 1996, that football was coming home after 'thirty years of hurt,' it was counting from 1966. That number is now sixty. Tonight England stand ninety minutes — against, of all opponents, Argentina — from the first World Cup final they will have contested since the day they won it. The wait is the story, and the team blocking it is the one they beat to start the clock.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "60", "v": "years since England's only World Cup final — the 1966 win over West Germany at Wembley" },
+        { "k": "1966", "v": "the tournament England won by beating Argentina 1-0 in the quarter-final along the way" },
+        { "k": "2", "v": "World Cup semi-finals England have reached since 1966 — 1990 and 2018 — losing both" },
+        { "k": "30", "v": "the 'years of hurt' the 1996 anthem counted from 1966; it has now doubled" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "England have not reached a World Cup final since winning the 1966 tournament on home soil; their deepest runs since were semi-final defeats in 1990 (to West Germany on penalties) and 2018 (to Croatia).",
+        "The 1966 World Cup, England's only final, included a 1-0 quarter-final win over Argentina — making tonight's opponent the team England beat en route to the very trophy they have chased ever since.",
+        "Argentina, by contrast, arrive as reigning champions seeking back-to-back titles; the asymmetry — one side ending a 60-year wait, the other defending the crown — is the whole shape of the night."
       ]
     },
     "back_story": {
       "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
+        "England",
+        "Argentina"
       ],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1986",
+        "score": "1 — 2",
+        "host": "Mexico",
+        "round": "Quarter-final",
+        "venue": "Estadio Azteca, Mexico City",
+        "context_line": "Mexico 1986 · Quarter-final · Estadio Azteca · 22 Jun 1986",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Diego Maradona", "minute": "51'", "note": "(Argentina — the 'Hand of God', punched past Shilton and given by a referee who did not see it)" },
+          { "scorer": "Diego Maradona", "minute": "55'", "note": "(Argentina — four minutes later, the slalom past five England players later voted the Goal of the Century)" },
+          { "scorer": "Gary Lineker", "minute": "81'", "note": "(England — a header to make it 2-1, nine minutes from the end; England could not find the second)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "It is the most famous quarter-final ever played, and it was never only about football. On 22 June 1986, at the Estadio Azteca, England met Argentina four years after the two countries had fought the Falklands War — a fact nobody in either camp pretended not to feel.",
+          "Six minutes into the second half, Diego Maradona rose with Peter Shilton and punched the ball into the net. The referee gave it. Maradona would call it 'a little of the hand of God' — the Hand of God — a goal that should not have counted and has never stopped being argued about.",
+          "Four minutes later he settled the argument another way. Collecting the ball inside his own half, he beat Beardsley, Reid, Butcher, Fenwick and then Shilton, and rolled it in: sixty yards, eleven touches, five England players, later voted in a global FIFA poll the greatest goal in World Cup history. Two goals, four minutes, one with his fist and one with everything he had.",
+          "Gary Lineker headed one back on 81 minutes and nearly forced a second, but Argentina held on 2-1, went on to beat West Germany in the final at the same stadium, and Maradona carried a nation. Years later he said the win over England had felt like revenge — 'we knew they had killed a lot of Argentine boys there... this was revenge.' The match has been shorthand for the whole rivalry ever since."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "England and Argentina have met five times at a World Cup, and England actually lead it — three wins (1962, 1966, 2002), one loss (1986) and one draw (1998, which Argentina won on penalties). But the two defeats are the ones that echo: Maradona's Hand of God and Goal of the Century in 1986, four years after the Falklands War, and the 1998 shootout that sent David Beckham home a villain. England's wins were cleaner and quieter — a 3-1 in 1962, the 1-0 at Wembley in 1966 on the way to the title, Beckham's redemption penalty in 2002 — and they are the ones nobody outside England remembers. Tonight is the sixth meeting, the first since 2002, and the first ever with a World Cup final at stake.",
+      "video": {
+        "youtube_id": "FRAbNlPS2MI",
+        "title": "Maradona's famous 8 minutes — Argentina 2-1 England, 1986",
+        "caption": "The quarter-final that became shorthand for the whole rivalry: Argentina 2-1 England at the Estadio Azteca, 1986. In the space of four minutes Diego Maradona scored the 'Hand of God' with his fist and then the 'Goal of the Century' with a run past five England players — the two goals, one infamous and one immortal, that knocked England out four years after the Falklands War.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Gary",
+      "asker_city": "Manchester",
+      "asker_day": "Wed 15 Jul",
+      "question": "Every time we play Argentina it feels like we lose — Maradona's hand, Beckham getting sent off, the shootout. Have we ever actually beaten them at a World Cup, or do I just remember the disasters?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "England actually lead the World Cup head-to-head with Argentina: five meetings, three England wins (1962, 1966, 2002), one loss (1986) and one draw (1998, which Argentina won on penalties).",
+          "England beat Argentina 3-1 in the 1962 group stage, 1-0 in the 1966 quarter-final at Wembley on the way to winning the tournament, and 1-0 again in the 2002 group stage through David Beckham's penalty.",
+          "The two defeats are the famous ones: the 1986 quarter-final (Maradona's Hand of God and Goal of the Century) and the 1998 Round of 16, drawn 2-2 with Beckham sent off, lost 4-3 on penalties.",
+          "Tonight is the sixth World Cup meeting and the first since 2002 — and the first with a place in the final on the line."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "You remember the disasters because they were spectacular and they hurt — a handball that stood, the greatest goal ever scored, a red card and a shootout. But the record is the other way around: England have beaten Argentina at three World Cups and lost at only one, with the 1998 tie decided on penalties. The rivalry feels like a losing streak because the losses were unforgettable and the wins were ordinary. What's never happened, in any of the five, is the two of them meeting this late with this much at stake. Whatever tonight becomes, it won't be ordinary."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "The oldest grudge, first final at stake", "seed": "England and Argentina have met five times at a World Cup across sixty years of grievance — 1966, 1986, 1998 and more — but never once with a place in the final on the line, until tonight." },
+      { "tag": "Two goals, four minutes", "seed": "In the 1986 quarter-final Diego Maradona scored twice in four minutes against England — the 'Hand of God' handball and then the 'Goal of the Century' — the only time one player has produced football's most infamous goal and its most celebrated one in the same match." },
+      { "tag": "Sixty years of hurt", "seed": "England have not reached a World Cup final since they won the tournament in 1966 — a 60-year wait — and the team standing between them and one is Argentina, the same side they beat in the 1966 quarter-final on the way to the trophy." },
+      { "tag": "Champions, the hard way", "seed": "Argentina arrive as reigning champions chasing the first back-to-back World Cup since Brazil in 1962, but they have needed extra time to survive both the Round of 32 and the quarter-final — grinding, not gliding, to the semi." }
     ]
   }
 }
