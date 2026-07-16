@@ -1,97 +1,89 @@
 {
   "date": "2026-07-19",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 35 — Final: Spain vs Argentina at MetLife Stadium, East Rutherford, NJ (API-verified use_cache=False; single fixture on the date, 'Final' round, kickoff 19:00 UTC). Both finalists arrive unbeaten in normal-time terms since the group stage's early jitters — Spain beat France 2-0 in the semi, Argentina beat England 2-1 (Messi assisting both late Argentina goals in a stoppage-time turnaround). CORRECTED ASSUMPTION (web-verified via parallel research agent 2026-07-16): Spain and Argentina are NOT strangers — they met once before, in the 1966 group stage at Villa Park, Birmingham (Argentina 2-1), 60 years to this same July. But it is genuinely their first-ever World Cup KNOCKOUT meeting, first meeting of any kind in 60 years, and — per FIFA/Bolavip framing found by the research agent — the first-ever World Cup final between a reigning European champion (Spain) and a reigning South American champion (Argentina), a pairing football had tried and failed to arrange as a one-off 'Finalissima' friendly. back_story = the 1966 meeting (Luis Artime's brace either side of a Pirri equalizer). NO VIDEO — web search + oembed could not surface any accessible YouTube footage of a 60-year-old group match (footballia.net has the full match behind a paywall; no free clip found) — video omitted, degrades to text-only per convention. here_there_thread = the club-not-country thread: Alfredo Di Stéfano (born Buenos Aires, capped by Argentina AND Spain, Real Madrid legend) never played a single minute at a men's World Cup finals for either country — visa/entry disputes, an Argentine FA withdrawal, a FIFA ban after unauthorized Colombian appearances, and finally a pre-tournament injury in 1962 cost him every chance; Argentina has supplied more foreign-born players to the Spain national team (13) than any other nation, and Argentina's own two greatest players, Maradona and Messi, both built their club legend at Barcelona, in Spain. story_behind_number = 1 (Spain have conceded a single goal across their seven matches to reach the final — API-verified from the season's full fixture list: 0-0 Cape Verde, 4-0 Saudi Arabia, 1-0 away at Uruguay, 3-0 Austria, 1-0 away at Portugal, 2-1 Belgium, 2-0 France — against Argentina's 19 scored / 7 conceded across the same seven rounds: a clash of the tournament's tightest defense and its most explosive attack). where_played_before OMITTED — MetLife Stadium opened 2010, no prior men's World Cup (it postdates USA '94 entirely); the EARLIER stadium on a nearby footprint, Giants Stadium (demolished 2010), did hosted 7 matches at the 1994 World Cup including a Round of 16 shootout (Bulgaria beat Mexico on penalties, 5 Jul 1994) — noted here for color only, not attributed to MetLife itself, since it is a different building. from_the_stands = a reader asking about Messi's age and how many World Cups this really is for him (39 in June; World Cup debut 2006; this is his sixth). All facts web-verified via parallel research agent 2026-07-16; sources include 11v11, ESPN, thesoccerworldcups.com, Bolavip, Yahoo Sports, Wikipedia (Alfredo Di Stéfano; List of Spain international footballers born outside Spain; Diego Maradona; Career of Lionel Messi; Giants Stadium; MetLife Stadium), FCBarcelona.com.",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 35 — Final",
+    "tournament_summary": "Five weeks end tonight at MetLife Stadium, where Spain and Argentina meet for the trophy — a pairing that sounds like it should have happened a dozen times before and, remarkably, hasn't. These two have played each other exactly once at a World Cup: a group game in 1966, at Villa Park in Birmingham, sixty years ago to this very July, which Argentina won 2-1 and nobody much remembers. They have never met in a knockout match. They have never met with anything like this at stake. Tonight is the first World Cup final ever contested between a reigning European champion and a reigning South American champion — the fixture international football kept trying and failing to arrange as a standalone friendly, arriving instead as the biggest game there is. The two sides could not have gotten here more differently. Spain have conceded a single goal in seven matches — the meanest defensive record left in the tournament wrapped around a side that has also scored thirteen. Argentina have conceded seven and scored nineteen, riding their number ten, thirty-nine-year-old Lionel Messi, whose two assists in the final ten minutes turned the semi-final from a loss into a classic. Between the countries, the two flagship stars of Argentine football, Diego Maradona and Messi himself, both built their club legend in Spain, at Barcelona — proof the border between these two football nations has always run through a dressing room, not a fixture list.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "Spain vs Argentina at MetLife Stadium, East Rutherford — the World Cup final, both sides through via near-mirror semi-final wins (Spain 2-0 over France, Argentina 2-1 over England).",
+      "It is only the second-ever World Cup meeting between the two nations — the first was the 1966 group stage at Villa Park, Birmingham, won 2-1 by Argentina — and the first time they've ever met in a knockout match, let alone a final.",
+      "Tonight is the first World Cup final ever between a reigning European champion and a reigning South American champion, a pairing (a 'Finalissima') the sport has previously tried and failed to schedule outside a tournament.",
+      "Spain have conceded just one goal in seven matches this tournament; Argentina have scored nineteen and conceded seven over the same span — the competition's tightest defense against its most explosive attack.",
+      "Lionel Messi, 39, is playing his sixth World Cup; his two assists in the final ten minutes of the semi-final turned a losing position into Argentina's route to this final.",
+      "MetLife Stadium has no World Cup history of its own — it opened in 2010, after the USA's 1994 tournament — though an earlier stadium nearby, Giants Stadium, hosted seven 1994 World Cup matches before it was demolished."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The border runs through the dressing room",
+      "framing": "Spain and Argentina have almost no history as national teams, but Argentine footballers have shaped Spanish club football for a century — sometimes at the cost of their own World Cup.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Real Madrid, 1957–61", "fact": "Alfredo Di Stéfano — born in Buenos Aires, capped by Argentina in 1947, naturalized and capped by Spain from 1957 — won everything there was to win at club level and never played a single minute at a men's World Cup finals, for either country. Argentina withdrew from the 1950 and 1954 tournaments; FIFA separately banned him from the Argentina squad after unauthorized appearances for a Colombian club side; he played every 1958 qualifier for Spain, who then failed to qualify; Spain finally qualified in 1962, and he was ruled out just before the tournament by injury." },
+        { "label": "Barcelona, 1982–84", "fact": "Diego Maradona's two seasons at Barcelona produced 38 goals in 58 appearances and two trophies, the Copa del Rey and Copa de la Liga, both won in finals against Real Madrid — the first great Argentine talent to make his name on a Spanish stage." },
+        { "label": "Barcelona, 2004–21", "fact": "Lionel Messi played 17 seasons at Barcelona, a club-record 778 appearances and 672 goals, and won a club-record 34 trophies — the defining club career of his generation, built entirely in Spain, for a player who tonight plays Spain's national team for the first time." },
+        { "label": "The wider ledger", "fact": "Argentina has supplied 13 foreign-born players to the Spain national team over the past century — more than any other country — a quiet, century-long footballing migration that runs in the opposite direction from tonight's fixture." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "1",
+      "surface_stat": "Spain have conceded one goal in seven matches on the way to the final",
+      "historical_anchor": "It is the meanest defensive record left standing in the tournament, and it belongs to a team that has also scored thirteen — a side that wins by starving opponents of the ball rather than by out-scoring them. Spain shut out Cape Verde, Austria and France, won 1-0 away at both Uruguay and Portugal, and let in only a single goal, against Belgium in the quarter-final. Across seven matches — three group games, a Round of 32, a Round of 16, a quarter-final and a semi-final — one goal has beaten the Spanish goalkeeper. Argentina's route looks nothing like it: nineteen goals scored, seven conceded, extra time needed twice, three different matches won by a single goal margin late on. Tonight puts the tournament's most careful team against its most reckless one, and the final is, in a small way, a referendum on which version of winning a World Cup actually works.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "1", "v": "goal Spain have conceded in 7 matches this tournament (vs Belgium, quarter-final)" },
+        { "k": "13", "v": "goals Spain have scored across the same 7 matches" },
+        { "k": "19", "v": "goals Argentina have scored across their 7 matches" },
+        { "k": "7", "v": "goals Argentina have conceded across the same 7 matches" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "Spain's only concession all tournament came in a 2-1 quarter-final win over Belgium; every other match — Cape Verde, Saudi Arabia, Uruguay, Austria, Portugal, and the France semi-final — finished with a clean sheet.",
+        "Argentina needed extra time twice (Round of 32 vs Cape Verde, quarter-final vs Switzerland) and have won three matches, including the semi-final, by a single goal decided late.",
+        "No side has reached a World Cup final on a meaner defensive record than Spain's one goal conceded in seven matches in the modern tournament era; no side has scored more freely en route than Argentina's nineteen."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["Spain", "Argentina"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "1966",
+        "score": "1 — 2",
+        "host": "England",
+        "round": "Group stage",
+        "venue": "Villa Park, Birmingham",
+        "context_line": "England 1966 · Group 2 · Villa Park · 13 Jul 1966",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Luis Artime", "minute": "65'", "note": "(Argentina — opening the scoring)" },
+          { "scorer": "José 'Pirri' Martínez", "minute": "71'", "note": "(Spain — leveling it at 1-1)" },
+          { "scorer": "Luis Artime", "minute": "79'", "note": "(Argentina — the winner, his second of the match)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "It barely registers in either country's football memory — a group game, at Villa Park, in a World Cup neither side would go on to win. But it is, to this day, the only time Spain and Argentina have ever met at a World Cup, and July 19, 2026 falls almost exactly sixty years after it was played.",
+          "Luis Artime, Argentina's centre-forward, put his side ahead in the second half and looked to have settled it before Spain's Pirri — better known for a decade of service to Real Madrid — pulled a goal back to make it 1-1 with under twenty minutes left.",
+          "Artime restored Argentina's lead soon after and it held; Argentina won the group, Spain went home. Neither side would meet the other again for the rest of the century, or the one after it — sixty years without a return fixture, at any level of the men's World Cup, until tonight.",
+          "That two footballing nations this decorated could go six decades without a rematch, then find each other again for the biggest possible stakes, is the whole shape of this final: barely any shared history between the flags, and an ocean of it between the clubs."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "Tonight is only the second time Spain and Argentina have ever met at a World Cup. The first, in 1966, was a routine group-stage match at Villa Park that Argentina won 2-1 — not a knockout tie, not a final, not even a match either country's football history dwells on. They have never met again at this tournament since, at any stage, until now. There is no rivalry to draw on here in the way France-England or England-Argentina carry decades of grudge; the two nations' World Cup relationship is one match deep and sixty years old. What tonight actually rests on is the club history running underneath it — two of Argentina's greatest players, Maradona and Messi, made in Spain, at Barcelona — rather than anything the national teams have done to each other."
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Tomás",
+      "asker_city": "Rosario",
+      "asker_day": "Fri 17 Jul",
+      "question": "Everyone keeps saying this might be Messi's last World Cup. He's 39 — how many has he actually played, and is tonight really it?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "Lionel Messi made his World Cup debut in 2006, as an 18-year-old squad member, and has been part of every Argentina World Cup squad since — 2010, 2014, 2018, 2022, and now 2026.",
+          "Tonight's final is his sixth World Cup and his third World Cup final, after 2014 (a runner-up loss to Germany) and 2022 (a penalty-shootout win over France).",
+          "He turned 39 in June, making him one of the oldest outfield players in the tournament, and provided both of Argentina's goals in the semi-final comeback with two assists inside the final ten minutes.",
+          "Nobody outside his own dressing room actually knows if this is his last World Cup — Messi has not announced a retirement from international football — but the arithmetic of a fourth World Cup final at 43 is not in his favor, which is what's driving the 'last dance' framing."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "The question of whether it's really his last is unanswerable tonight, and that's part of what makes it worth asking. What's certain: this is already his third World Cup final in twelve years, an extraordinary run for any player at any age, and if it is the last one, he's arranged for it to be against a team he has almost no history with as a country — and enormous history with as a club player, one motorway down the road from where he made his name."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Sixty years between meetings", "seed": "Spain and Argentina have met exactly once before at a World Cup — a 1966 group game at Villa Park, won 2-1 by Argentina — and tonight, sixty years later almost to the month, is only their second meeting and their first-ever knockout tie." },
+      { "tag": "The final nobody could schedule", "seed": "Tonight is the first World Cup final ever contested between a reigning European champion and a reigning South American champion — a pairing football tried and failed to arrange outside a tournament, arriving instead as the biggest match there is." },
+      { "tag": "The World Cup Di Stéfano never played", "seed": "Alfredo Di Stéfano was capped by both Argentina and Spain and is a Real Madrid legend by any measure — yet a withdrawal, a ban, a failed qualification and a late injury meant he never played a single minute at a men's World Cup finals, for either country." },
+      { "tag": "One goal against nineteen scored", "seed": "Spain have conceded a single goal in seven matches to reach the final; Argentina have scored nineteen in the same span — the tournament's tightest defense meeting its most prolific attack for the trophy." }
     ]
   }
 }

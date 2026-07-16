@@ -1,97 +1,93 @@
 {
   "date": "2026-07-18",
-  "note": "TODO: one-line reason this patch exists / what's notable today",
+  "note": "Matchday 34 — Third-Place Play-off: France vs England at Hard Rock Stadium, Miami Gardens (API-verified use_cache=False; single fixture on the date, '3rd Place Final' round, kickoff 21:00 UTC; July 16 & 17 were rest days, no fixtures). Both semi-final losers arrive by an almost identical margin — France lost 0-2 to Spain in Dallas, England lost 1-2 to Argentina in Atlanta (Messi assisting both late Argentina goals). Venue has no men's World Cup history before this summer — Miami was not selected as a host city in 1994 (Orlando's Citrus Bowl was used instead) — so WHERE THEY PLAYED BEFORE is OMITTED, though this is Hard Rock Stadium's 8th match of the 2026 tournament itself. CORRECTED ASSUMPTION (web-verified via parallel research agent 2026-07-16): this is NOT a first-ever meeting — France and England have played three prior World Cups: 1966 group stage (England 2-0, Wembley, Roger Hunt brace), 1982 group stage (England 3-1, Bilbao, Bryan Robson's then-fastest-ever World Cup goal), and 2022 quarter-final (France 2-1, Al Bayt Stadium, Qatar — Tchouaméni 17', Giroud 78' off a Griezmann assist, against Kane's 54' equalizing penalty and 84' miss that ended England's title defense). England lead the all-time ledger 2-1 but France own the freshest and most painful meeting. back_story = the 2022 QF. VIDEO Q-zmXSb0WKU (oembed author_name FIFA → source 'FIFA · official'; title 'Giroud header wins it! | England v France | FIFA World Cup Qatar 2022'). story_behind_number = 0 (England have never won a World Cup third-place play-off: lost 1990 to Italy at Bari — Schillaci's 86th-minute penalty sealing his Golden Boot — and lost 2018 to Belgium at St Petersburg, Meunier 4' and Hazard 82'; France, by contrast, have a winning record in this exact fixture: won 1958 6-3 vs West Germany at Gothenburg — Just Fontaine's 4 goals that day were part of the 13 he scored that tournament, still the all-time single-tournament record — lost 1982 to Poland 3-2 at Alicante, won 1986 4-2 AET vs Belgium at Puebla). here_there_thread = the fixture nobody wants, three prior stagings across three eras. from_the_stands = a reader asking whether the third-place game even matters. All facts web-verified via parallel research agent 2026-07-16; sources include Sports Mole, National Football Teams, ESPN, Sky Sports, historicalsoccer.com, planetworldcup.com, englandfootballonline.com, italyonthisday.com, Washington Post, CBS News, Wikipedia (Hard Rock Stadium).",
   "fixtures": {},
   "day_context": {
-    "today_label": "TODO: e.g. 'Matchday 1 — the tournament opens'",
-    "tournament_summary": "TODO: where the tournament stands this morning",
+    "today_label": "Matchday 34 — Third-Place Play-off",
+    "tournament_summary": "The two teams nobody wanted to see here meet in the match nobody wants to play. France lost their semi-final 0-2 to Spain in Dallas; England lost theirs 1-2 to Argentina in Atlanta, undone by a Lionel Messi-inspired collapse in the final ten minutes. Now, in Miami, they play for a bronze medal neither side set out chasing. It is only the fourth time France and England have ever met at a World Cup — a strangely thin history for two neighbors this competitive — and the first time the fixture has been for anything other than group points or a place in the next round. England lead the head-to-head 2-1 across 1966 and 1982, but the freshest meeting is the one that still stings: France's 2-1 win in the 2022 quarter-final in Qatar, Harry Kane's missed penalty still rattling around English memory. England carry a separate, less flattering history into tonight: they have played this exact fixture twice before, in 1990 and 2018, and lost both times. A third defeat would make it a clean sweep of World Cup bronze-medal losses. France, whose only previous defeat in a third-place match came at the hands of Poland in 1982, own the better memory of the occasion — including the day Just Fontaine scored four goals in it.",
     "context_notes": [
-      "TODO: bullet of standings/storyline context"
+      "France vs England at Hard Rock Stadium, Miami Gardens — the third-place play-off; the winner leaves the tournament with a bronze medal, the loser with fourth place.",
+      "It is the fourth all-time World Cup meeting between the two nations — 1966 (England 2-0, Wembley), 1982 (England 3-1, Bilbao) and 2022 (France 2-1, Qatar quarter-final) — and the first that isn't a group game or a knockout tie to advance.",
+      "England have never won a World Cup third-place play-off: they lost in 1990 to Italy (Bari) and in 2018 to Belgium (St Petersburg). France have won two of theirs: 6-3 over West Germany in 1958 (Fontaine's 4 goals) and 4-2 after extra time over Belgium in 1986, against a single loss to Poland in 1982.",
+      "Both sides arrive from near-identical semi-final defeats: France lost 0-2 to Spain, England lost 1-2 to Argentina, with Lionel Messi setting up both Argentina goals in the final ten minutes.",
+      "Hard Rock Stadium has no World Cup history before this summer — Miami was not selected as a 1994 host city — but this is its eighth match of the 2026 tournament."
     ]
   },
   "editorial_seeds": {
     "here_there_thread": {
-      "topic": "TODO: the thread tying two places/teams together",
-      "framing": "TODO: a sentence framing why the thread matters today",
+      "topic": "The fixture nobody wants",
+      "framing": "The third-place play-off has no fans and barely any stakes, but it has produced real history anyway — a record that still stands, and a rival nation's total inability to win it.",
       "facts": [
-        {
-          "label": "TODO: year/place tag",
-          "fact": "TODO: the fact"
-        }
+        { "label": "Gothenburg, 1958", "fact": "France beat West Germany 6-3 in the first third-place match either nation had played; Just Fontaine scored four of the six, taking his tournament tally to 13 goals — still, nearly seventy years later, the most any player has scored at a single World Cup." },
+        { "label": "Bari, 1990", "fact": "England lost their first-ever third-place play-off, 2-1 to hosts Italy, David Platt's header not enough; Salvatore 'Toto' Schillaci's 86th-minute penalty was his sixth goal of the tournament, sealing the Golden Boot." },
+        { "label": "St Petersburg, 2018", "fact": "England lost their second third-place play-off, 2-0 to Belgium — Thomas Meunier inside four minutes, Eden Hazard late — meaning England have played this exact fixture twice and lost both times." }
       ]
     },
     "story_behind_number": {
-      "number": "TODO: the headline number (e.g. '1966')",
-      "surface_stat": "TODO: the stat as it appears on the surface",
-      "historical_anchor": "TODO: what the number really points back to",
+      "number": "0",
+      "surface_stat": "England's win total in World Cup third-place play-offs: zero, from two attempts",
+      "historical_anchor": "Twice England have arrived at this fixture already hurting from a semi-final loss, and twice they have lost it too — 1990 to Italy in Bari, undone by a late Schillaci penalty, and 2018 to Belgium in St Petersburg, beaten inside four minutes and again late on. There is no version of this specific match England have ever won. France's record in the same fixture is close to the opposite: they have played it three times and won two, including the very first third-place match either country contested, a 6-3 demolition of West Germany in 1958 that is remembered less for the scoreline than for what one man did inside it — Just Fontaine's four goals that day were part of a 13-goal haul across the tournament, a single-tournament scoring record that has survived every World Cup since. France's one loss in this fixture, to Poland in 1982, is the exception in an otherwise winning history with the occasion.",
       "quick_facts": [
-        {
-          "k": "TODO: label",
-          "v": "TODO: value"
-        }
+        { "k": "0", "v": "England's wins in 2 prior World Cup third-place play-offs (1990, 2018)" },
+        { "k": "2", "v": "France's wins in 3 prior third-place play-offs (1958, 1986), against 1 loss (1982)" },
+        { "k": "13", "v": "Just Fontaine's goals at the 1958 World Cup — still the all-time record for a single tournament — 4 of them scored in the third-place match itself" },
+        { "k": "4th", "v": "the number of times France and England have ever met at a World Cup, counting tonight" }
       ],
       "supporting_context": [
-        "TODO: a supporting sentence"
+        "England have contested the World Cup third-place play-off twice, in 1990 and 2018, and lost both times — to Italy and Belgium respectively.",
+        "France have contested it three times, winning in 1958 (6-3 vs West Germany) and 1986 (4-2 AET vs Belgium), losing only in 1982 (2-3 vs Poland).",
+        "Just Fontaine's four goals in the 1958 third-place match were part of the 13 he scored across that entire World Cup — the most any player has scored at a single tournament, a record now closing in on seventy years old."
       ]
     },
     "back_story": {
-      "teams": [
-        "TODO: Team A",
-        "TODO: Team B"
-      ],
+      "teams": ["France", "England"],
       "focus_meeting": {
-        "year": "TODO: YYYY",
-        "score": "TODO: e.g. '4 — 3'",
-        "host": "TODO: host nation",
-        "round": "TODO: e.g. 'Round of 16'",
-        "venue": "TODO: stadium, city",
-        "context_line": "TODO: host · round · venue",
+        "year": "2022",
+        "score": "2 — 1",
+        "host": "Qatar",
+        "round": "Quarter-final",
+        "venue": "Al Bayt Stadium, Al Khor",
+        "context_line": "Qatar 2022 · Quarter-final · Al Bayt Stadium · 10 Dec 2022",
         "goals": [
-          {
-            "scorer": "TODO: name",
-            "minute": "TODO: e.g. \"41'\"",
-            "note": null
-          }
+          { "scorer": "Aurélien Tchouaméni", "minute": "17'", "note": "(France — a long-range strike to open the scoring)" },
+          { "scorer": "Harry Kane", "minute": "54'", "note": "(England — penalty, equalizing at 1-1)" },
+          { "scorer": "Olivier Giroud", "minute": "78'", "note": "(France — header from an Antoine Griezmann delivery, the winner)" }
         ],
         "narrative_beats": [
-          "TODO: a beat of the story"
+          "France arrived as defending champions and reigning favorites; England arrived believing this was finally their tournament. Aurélien Tchouaméni's early strike from distance put France ahead and set the tone for a night England spent chasing the game.",
+          "Harry Kane, England's captain and record scorer, leveled it from the penalty spot just after the hour — parity, and belief, restored.",
+          "Sixteen minutes later Olivier Giroud rose to meet an Antoine Griezmann cross and headed France back in front — his 53rd international goal, breaking Thierry Henry's all-time French scoring record in the process.",
+          "England had one more chance to level it: a second penalty, with ten minutes left. Kane, the same man who had scored the first, sent this one over the bar. France held on, ended England's World Cup, and went on to reach the final. It is the wound this rematch reopens."
         ]
       },
-      "ledger": "TODO: the head-to-head ledger before today"
-    },
-    "where_played_before": {
-      "venue": {
-        "name": "TODO: stadium name",
-        "city": "TODO: city, country",
-        "capacity": 0,
-        "opened": 0,
-        "world_cups": []
-      },
-      "historical_matches": [
-        {
-          "year": "TODO: YYYY",
-          "body": "TODO: what happened here"
-        }
-      ],
-      "closer_hint": "TODO: a closing line about the venue"
+      "ledger": "France and England have met three times at a World Cup before tonight, and the record is closer than either side's fans usually admit. England won the first two — 2-0 in the 1966 group stage at Wembley (Roger Hunt scoring both) and 3-1 in 1982 at Bilbao, Bryan Robson opening the scoring with what was then the fastest goal in World Cup history. France finally broke through in the meeting that matters most now: the 2022 quarter-final in Qatar, won 2-1, Harry Kane's missed second penalty still the abiding image of that night for English fans. England lead the all-time ledger 2-1, but France have the more recent memory — and it is the only one either side is thinking about walking out tonight.",
+      "video": {
+        "youtube_id": "Q-zmXSb0WKU",
+        "title": "Giroud header wins it! | England v France | FIFA World Cup Qatar 2022",
+        "caption": "The last time these two met: France 2-1 England, the 2022 quarter-final in Al Khor. Aurélien Tchouaméni's opener, Harry Kane's leveling penalty, and then Olivier Giroud's late header — the goal, and the missed second Kane penalty ten minutes later, that ended England's tournament and sent France on to the final they'd go on to lose to Argentina on penalties.",
+        "source": "FIFA · official"
+      }
     },
     "from_the_stands": {
-      "asker_name": "TODO: reader first name",
-      "asker_city": "TODO: reader city",
-      "asker_day": "TODO: e.g. 'Sun 14 Jun'",
-      "question": "TODO: the reader's question",
+      "asker_name": "Priya",
+      "asker_city": "Leicester",
+      "asker_day": "Thu 16 Jul",
+      "question": "Be honest — does the third-place match actually mean anything, or is it just a formality nobody tries at?",
       "factual_brief": {
         "facts": [
-          "TODO: a fact that answers the question"
+          "The very first third-place match, in 1958, produced one of the most famous individual performances in World Cup history: Just Fontaine scored four goals in France's 6-3 win over West Germany, part of a 13-goal tournament that remains the all-time single-tournament scoring record.",
+          "England have taken the fixture seriously and still lost it both times they've played it — 1990 to Italy, sealed by a Schillaci penalty in the 86th minute, and 2018 to Belgium, in which Eden Hazard scored the decisive goal in the 82nd minute of what was, by that point, a fully committed contest.",
+          "France's 1986 third-place win over Belgium needed extra time to settle — 2-2 after 90 minutes before two late goals broke the deadlock — hardly the profile of a match played at half-speed.",
+          "There is no evidence either nation has ever treated this specific fixture as a dead rubber; if anything, some of the tournament's most memorable individual moments have happened inside it."
         ],
-        "note": "TODO: what the brief shows vs. what the question assumes"
+        "note": "It's fair to feel like the third-place match is an afterthought — nobody grows up dreaming of winning it. But the history says otherwise: a record-breaking individual haul, extra time, and two teams (England, twice) who wanted it and still lost. Tonight won't lack effort just because the trophy on offer is bronze."
       }
     },
     "anomalies": [
-      {
-        "tag": "TODO: short tag",
-        "seed": "TODO: the odd/notable thing"
-      }
+      { "tag": "Zero for two", "seed": "England have never won a World Cup third-place play-off — beaten by Italy in 1990 and Belgium in 2018 — and a loss tonight would make it a clean sweep across every time they've played this exact fixture." },
+      { "tag": "Four goals, one afternoon", "seed": "Just Fontaine's four goals in the 1958 third-place match were part of the 13 he scored that tournament — the all-time record for goals scored by one player at a single World Cup, still unbroken nearly seventy years later." },
+      { "tag": "The fourth meeting, the first for nothing to advance", "seed": "Tonight is only the fourth time France and England have ever met at a World Cup — 1966, 1982, 2022, and now — and the first time the fixture isn't for group points or a place in the next round." },
+      { "tag": "Same margin, different cities", "seed": "Both finalists-that-weren't arrive from near-mirror-image defeats: France lost 0-2 to Spain in Dallas, England lost 1-2 to Argentina in Atlanta — with Lionel Messi providing both Argentina goals in the last ten minutes." }
     ]
   }
 }
