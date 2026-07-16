@@ -277,6 +277,9 @@ Just `git push` anything touching `web/**` — the `deploy-web.yml` GH Actions w
 - **Backlog E:** update the gpt-5.5 price placeholder in `src/inference/content/api.py` if OpenAI published official numbers.
 - **Backlog F:** render Cultural Critic + The Beat Reporter at full 8 sections (~$0.32) for complete cross-lens samples.
 
+### Planned: post-tournament wrap-up email (noted 2026-07-16, not built)
+User wants to send subscribers a **one-off tournament wrap-up email** on **Sunday 2026-07-19, after the final** — a retrospective looking back on the whole tournament plus a thank-you for reading. Not scoped or built yet: no template, no send script, no content plan. It's a one-time send outside the daily orchestrator/cron path, so it likely wants its own small script (e.g. reusing `send_issue`/Resend plumbing from `src/inference/delivery/email.py` against the live subscriber list from `SubscriberStore`) rather than forcing it through `run_day.py`. Also revert `fly.toml`'s `auto_stop_machines='off'` back to `'stop'` around the same time (see the launch-machinery checklist above) — both are natural end-of-tournament cleanup to bundle together.
+
 ## Next session — first actions
 
 See "⏯️ PICK UP HERE" above for the authoritative state. In short:
